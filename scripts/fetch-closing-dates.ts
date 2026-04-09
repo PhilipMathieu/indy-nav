@@ -66,23 +66,58 @@ async function extractClosingDate(
   const { object } = await generateObject({
     model: google("gemini-3.1-flash-lite-preview"),
     schema: closingDateSchema,
-    prompt: `You are extracting ski season closing date information.
+    prompt: `You are extracting the closing date for the 2025-2026 ski season.
 
 Mountain: ${mountain.name} (${mountain.state})
 Source URL: ${mountain.closingDateUrl}
+Today's date: ${new Date().toISOString().slice(0, 10)}
 
 Page content:
 ${pageContent}
 
-Extract the closing date for the 2025-2026 ski season. Look for phrases like "closing day", "last day", "season ends", "final day of skiing", or specific date announcements. The season typically ends between March and May 2026.
+Instructions:
+1. Look for explicit closing dates: "closing day April 11", "last day 4/11", "season ends May 3", "open through April 19", "open daily through 3/15"
+2. Look for schedule tables showing the last date with operating hours
+3. If the page says "closed for the season" or "thanks for a great season", look for the LAST DATE mentioned on the page (e.g., a "last updated" date, "final report" date, or the most recent date in any schedule). That date is likely the closing date or very close to it.
+4. If the page shows a snow/trail report dated a specific day with "closed" status, that report date may be the closing date.
+5. The 2025-2026 season runs roughly November 2025 through May 2026. Closing dates are typically between February and May 2026.
 
-If the page mentions the mountain is already closed for the season, still extract the closing date if mentioned.
-If no closing date information is found, return null for closingDate with low confidence.`,
+Return the closing date in YYYY-MM-DD format. Only return null if there is truly no date information anywhere on the page.`,
   });
 
   return {
     closingDate: object.closingDate,
     confidence: object.confidence,
+  };
+}
+
+async function searchClosingDate(
+  mountain: MountainSeed
+): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low"; source: string }> {
+  const { object } = await generateObject({
+    model: google("gemini-3.1-flash-lite-preview"),
+    schema: closingDateSchema,
+    tools: {
+      googleSearch: google.tools.googleSearch,
+    },
+    prompt: `Search for the closing date of ${mountain.name} ski area in ${mountain.state} for the 2025-2026 ski season.
+
+Use Google Search to find when ${mountain.name} closes or closed for the 2025-2026 season. Look for:
+- Official announcements of closing day
+- News articles about the season ending
+- Social media posts about last day of skiing
+- Forum discussions about closing dates
+
+Today's date is ${new Date().toISOString().slice(0, 10)}.
+The season runs roughly November 2025 through May 2026.
+
+Return the closing date in YYYY-MM-DD format if found.`,
+  });
+
+  return {
+    closingDate: object.closingDate,
+    confidence: object.confidence,
+    source: "google-search",
   };
 }
 
@@ -129,10 +164,27 @@ async function main() {
       const pageContent = await fetchPageContent(seed.closingDateUrl);
 
       console.log(`🤖 ${seed.name} — extracting closing date with Gemini...`);
-      const { closingDate, confidence } = await extractClosingDate(
+      let { closingDate, confidence } = await extractClosingDate(
         seed,
         pageContent
       );
+      let source = seed.closingDateUrl;
+
+      // Fallback: if scraping didn't find a date, try Google Search
+      if (!closingDate) {
+        console.log(`🔎 ${seed.name} — scrape returned unknown, trying Google Search...`);
+        try {
+          const searchResult = await searchClosingDate(seed);
+          if (searchResult.closingDate) {
+            closingDate = searchResult.closingDate;
+            confidence = searchResult.confidence;
+            source = "google-search";
+            console.log(`🔎 ${seed.name} — found via search: ${closingDate}`);
+          }
+        } catch (searchError) {
+          console.log(`🔎 ${seed.name} — search fallback failed: ${searchError instanceof Error ? searchError.message : searchError}`);
+        }
+      }
 
       const mountain: Mountain = {
         id: seed.id,
@@ -140,7 +192,7 @@ async function main() {
         region: seed.region,
         state: seed.state,
         closingDate,
-        closingDateSource: seed.closingDateUrl,
+        closingDateSource: source,
         closingDateConfidence: confidence,
         lastUpdated: new Date().toISOString(),
         websiteUrl: seed.websiteUrl,
@@ -155,8 +207,33 @@ async function main() {
       );
     } catch (error) {
       console.error(
-        `❌ ${seed.name} — failed: ${error instanceof Error ? error.message : error}\n`
+        `❌ ${seed.name} — scrape failed: ${error instanceof Error ? error.message : error}`
       );
+
+      // Try Google Search as fallback when scraping fails entirely
+      console.log(`🔎 ${seed.name} — trying Google Search fallback...`);
+      try {
+        const searchResult = await searchClosingDate(seed);
+        if (searchResult.closingDate) {
+          console.log(`🔎 ${seed.name} — found via search: ${searchResult.closingDate}\n`);
+          results.push({
+            id: seed.id,
+            name: seed.name,
+            region: seed.region,
+            state: seed.state,
+            closingDate: searchResult.closingDate,
+            closingDateSource: "google-search",
+            closingDateConfidence: searchResult.confidence,
+            lastUpdated: new Date().toISOString(),
+            websiteUrl: seed.websiteUrl,
+          });
+          fetched++;
+          await sleep(DELAY_MS);
+          continue;
+        }
+      } catch (searchError) {
+        console.log(`🔎 ${seed.name} — search fallback also failed\n`);
+      }
 
       // Keep previous result if available, otherwise create a placeholder
       if (prev) {

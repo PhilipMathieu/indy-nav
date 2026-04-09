@@ -7,19 +7,19 @@
     "closingDate": "2026-05-10",
     "closingDateSource": "https://www.mtbohemia.com/current-conditions/",
     "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-09T22:12:36.789Z",
+    "lastUpdated": "2026-04-09T22:35:44.105Z",
     "websiteUrl": "https://www.mtbohemia.com"
   },
   {
-    "id": "jay-peak",
-    "name": "Jay Peak",
+    "id": "black-mountain-nh",
+    "name": "Black Mountain (NH)",
     "region": "Northeast",
-    "state": "VT",
-    "closingDate": "2026-05-03",
-    "closingDateSource": "https://jaypeakresort.com/conditions",
-    "closingDateConfidence": "medium",
-    "lastUpdated": "2026-04-09T22:12:15.922Z",
-    "websiteUrl": "https://jaypeakresort.com"
+    "state": "NH",
+    "closingDate": "2026-04-26",
+    "closingDateSource": "https://www.blackmt.com",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:34:44.814Z",
+    "websiteUrl": "https://www.blackmt.com"
   },
   {
     "id": "saddleback-mountain",
@@ -29,8 +29,30 @@
     "closingDate": "2026-04-19",
     "closingDateSource": "https://www.saddlebackmaine.com/mountain-report/",
     "closingDateConfidence": "medium",
-    "lastUpdated": "2026-04-09T22:12:54.321Z",
+    "lastUpdated": "2026-04-09T22:35:59.372Z",
     "websiteUrl": "https://www.saddlebackmaine.com"
+  },
+  {
+    "id": "bolton-valley",
+    "name": "Bolton Valley",
+    "region": "Northeast",
+    "state": "VT",
+    "closingDate": "2026-04-12",
+    "closingDateSource": "https://www.boltonvalley.com/the-resort/hours-of-operation/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:34:47.268Z",
+    "websiteUrl": "https://www.boltonvalley.com"
+  },
+  {
+    "id": "magic-mountain",
+    "name": "Magic Mountain",
+    "region": "Northeast",
+    "state": "VT",
+    "closingDate": "2026-04-12",
+    "closingDateSource": "google-search",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:29.154Z",
+    "websiteUrl": "https://www.magicmtn.com"
   },
   {
     "id": "wachusett-mountain",
@@ -40,7 +62,7 @@
     "closingDate": "2026-04-11",
     "closingDateSource": "https://www.wachusett.com/hours",
     "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-09T22:13:37.023Z",
+    "lastUpdated": "2026-04-09T22:36:21.378Z",
     "websiteUrl": "https://www.wachusett.com"
   },
   {
@@ -51,8 +73,107 @@
     "closingDate": "2026-04-09",
     "closingDateSource": "https://www.greekpeak.net/hours-of-operation",
     "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-09T22:12:12.544Z",
+    "lastUpdated": "2026-04-09T22:35:19.712Z",
     "websiteUrl": "https://www.greekpeak.net"
+  },
+  {
+    "id": "snowshoe",
+    "name": "Snowshoe",
+    "region": "Northeast",
+    "state": "WV",
+    "closingDate": "2026-04-05",
+    "closingDateSource": "google-search",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:36:03.765Z",
+    "websiteUrl": "https://www.snowshoemtn.com"
+  },
+  {
+    "id": "mcintyre-ski-area",
+    "name": "McIntyre Ski Area",
+    "region": "Northeast",
+    "state": "NH",
+    "closingDate": "2026-03-31",
+    "closingDateSource": "https://www.mcintyreskiarea.com/mountain-report/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:40.466Z",
+    "websiteUrl": "https://www.mcintyreskiarea.com"
+  },
+  {
+    "id": "plattekill",
+    "name": "Plattekill",
+    "region": "Northeast",
+    "state": "NY",
+    "closingDate": "2026-03-31",
+    "closingDateSource": "https://www.plattekill.com/on-the-trail/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:54.213Z",
+    "websiteUrl": "https://www.plattekill.com"
+  },
+  {
+    "id": "catamount",
+    "name": "Catamount",
+    "region": "Northeast",
+    "state": "NY",
+    "closingDate": "2026-03-29",
+    "closingDateSource": "google-search",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:07.854Z",
+    "websiteUrl": "https://www.catamountski.com"
+  },
+  {
+    "id": "mount-southington",
+    "name": "Mount Southington",
+    "region": "Northeast",
+    "state": "CT",
+    "closingDate": "2026-03-29",
+    "closingDateSource": "google-search",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:48.610Z",
+    "websiteUrl": "https://www.mountsouthington.com"
+  },
+  {
+    "id": "swain",
+    "name": "Swain",
+    "region": "Northeast",
+    "state": "NY",
+    "closingDate": "2026-03-28",
+    "closingDateSource": "https://www.swain.com/trail-report/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:36:11.369Z",
+    "websiteUrl": "https://www.swain.com"
+  },
+  {
+    "id": "elk-mountain",
+    "name": "Elk Mountain",
+    "region": "Northeast",
+    "state": "PA",
+    "closingDate": "2026-03-23",
+    "closingDateSource": "https://www.elkskier.com/conditions/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:13.896Z",
+    "websiteUrl": "https://www.elkskier.com"
+  },
+  {
+    "id": "suicide-six",
+    "name": "Suicide Six",
+    "region": "Northeast",
+    "state": "VT",
+    "closingDate": "2026-03-22",
+    "closingDateSource": "google-search",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:36:07.763Z",
+    "websiteUrl": "https://www.suicide6.com"
+  },
+  {
+    "id": "timberline-mountain",
+    "name": "Timberline Mountain",
+    "region": "Northeast",
+    "state": "WV",
+    "closingDate": "2026-03-22",
+    "closingDateSource": "https://www.timberlinemountain.com/snow-report/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:36:18.831Z",
+    "websiteUrl": "https://www.timberlinemountain.com"
   },
   {
     "id": "massanutten",
@@ -62,7 +183,7 @@
     "closingDate": "2026-03-17",
     "closingDateSource": "https://www.massresort.com/play/snow-sports/snow-conditions/",
     "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-09T22:12:27.288Z",
+    "lastUpdated": "2026-04-09T22:35:36.732Z",
     "websiteUrl": "https://www.massresort.com"
   },
   {
@@ -73,8 +194,30 @@
     "closingDate": "2026-03-15",
     "closingDateSource": "https://www.skibradford.com/snow-report/",
     "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-09T22:11:41.822Z",
+    "lastUpdated": "2026-04-09T22:34:51.062Z",
     "websiteUrl": "https://www.skibradford.com"
+  },
+  {
+    "id": "bryce-resort",
+    "name": "Bryce Resort",
+    "region": "Northeast",
+    "state": "VA",
+    "closingDate": "2026-03-15",
+    "closingDateSource": "https://www.bryceresort.com/mountain-info/conditions",
+    "closingDateConfidence": "medium",
+    "lastUpdated": "2026-04-09T22:34:54.421Z",
+    "websiteUrl": "https://www.bryceresort.com"
+  },
+  {
+    "id": "dartmouth-skiway",
+    "name": "Dartmouth Skiway",
+    "region": "Northeast",
+    "state": "NH",
+    "closingDate": "2026-03-15",
+    "closingDateSource": "https://dartmouthskiway.com/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:35:10.415Z",
+    "websiteUrl": "https://skiway.dartmouth.edu"
   },
   {
     "id": "canaan-valley",
@@ -84,7 +227,7 @@
     "closingDate": "2026-03-06",
     "closingDateSource": "https://www.canaanresort.com/trail-report/",
     "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-09T22:11:53.199Z",
+    "lastUpdated": "2026-04-09T22:35:02.651Z",
     "websiteUrl": "https://www.canaanresort.com"
   },
   {
@@ -95,41 +238,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.berkshireeast.com/plan/hours-of-operation",
     "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:11:31.376Z",
+    "lastUpdated": "2026-04-09T22:34:40.718Z",
     "websiteUrl": "https://www.berkshireeast.com"
-  },
-  {
-    "id": "black-mountain-nh",
-    "name": "Black Mountain (NH)",
-    "region": "Northeast",
-    "state": "NH",
-    "closingDate": null,
-    "closingDateSource": "https://www.blackmt.com",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:11:34.408Z",
-    "websiteUrl": "https://www.blackmt.com"
-  },
-  {
-    "id": "bolton-valley",
-    "name": "Bolton Valley",
-    "region": "Northeast",
-    "state": "VT",
-    "closingDate": null,
-    "closingDateSource": "https://www.boltonvalley.com/the-resort/hours-of-operation/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:11:37.828Z",
-    "websiteUrl": "https://www.boltonvalley.com"
-  },
-  {
-    "id": "bryce-resort",
-    "name": "Bryce Resort",
-    "region": "Northeast",
-    "state": "VA",
-    "closingDate": null,
-    "closingDateSource": "https://www.bryceresort.com/mountain-info/conditions",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:11:44.586Z",
-    "websiteUrl": "https://www.bryceresort.com"
   },
   {
     "id": "camden-snow-bowl",
@@ -139,41 +249,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.camdensnowbowl.com",
     "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:11:49.087Z",
+    "lastUpdated": "2026-04-09T22:34:59.560Z",
     "websiteUrl": "https://www.camdensnowbowl.com"
-  },
-  {
-    "id": "catamount",
-    "name": "Catamount",
-    "region": "Northeast",
-    "state": "NY",
-    "closingDate": null,
-    "closingDateSource": "https://www.catamountski.com/winter/the-mountain/mountain-conditions",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:11:58.410Z",
-    "websiteUrl": "https://www.catamountski.com"
-  },
-  {
-    "id": "dartmouth-skiway",
-    "name": "Dartmouth Skiway",
-    "region": "Northeast",
-    "state": "NH",
-    "closingDate": null,
-    "closingDateSource": "https://dartmouthskiway.com/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:01.789Z",
-    "websiteUrl": "https://skiway.dartmouth.edu"
-  },
-  {
-    "id": "elk-mountain",
-    "name": "Elk Mountain",
-    "region": "Northeast",
-    "state": "PA",
-    "closingDate": null,
-    "closingDateSource": "https://www.elkskier.com/conditions/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:05.169Z",
-    "websiteUrl": "https://www.elkskier.com"
   },
   {
     "id": "granite-gorge",
@@ -187,15 +264,15 @@
     "websiteUrl": "https://www.granitegorge.com"
   },
   {
-    "id": "magic-mountain",
-    "name": "Magic Mountain",
+    "id": "jay-peak",
+    "name": "Jay Peak",
     "region": "Northeast",
     "state": "VT",
     "closingDate": null,
-    "closingDateSource": "https://www.magicmtn.com",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:20.529Z",
-    "websiteUrl": "https://www.magicmtn.com"
+    "closingDateSource": "https://jaypeakresort.com/conditions",
+    "closingDateConfidence": "medium",
+    "lastUpdated": "2026-04-09T22:35:23.751Z",
+    "websiteUrl": "https://jaypeakresort.com"
   },
   {
     "id": "maple-wind-farm-xc",
@@ -205,41 +282,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.maplewindfarm.com",
     "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:23.603Z",
+    "lastUpdated": "2026-04-09T22:35:33.868Z",
     "websiteUrl": "https://www.maplewindfarm.com"
-  },
-  {
-    "id": "mcintyre-ski-area",
-    "name": "McIntyre Ski Area",
-    "region": "Northeast",
-    "state": "NH",
-    "closingDate": null,
-    "closingDateSource": "https://www.mcintyreskiarea.com/mountain-report/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:32.022Z",
-    "websiteUrl": "https://www.mcintyreskiarea.com"
-  },
-  {
-    "id": "mount-southington",
-    "name": "Mount Southington",
-    "region": "Northeast",
-    "state": "CT",
-    "closingDate": null,
-    "closingDateSource": "https://www.mountsouthington.com/hours-of-operation",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:41.726Z",
-    "websiteUrl": "https://www.mountsouthington.com"
-  },
-  {
-    "id": "plattekill",
-    "name": "Plattekill",
-    "region": "Northeast",
-    "state": "NY",
-    "closingDate": null,
-    "closingDateSource": "https://www.plattekill.com/on-the-trail/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:49.714Z",
-    "websiteUrl": "https://www.plattekill.com"
   },
   {
     "id": "powder-ridge",
@@ -251,49 +295,5 @@
     "closingDateConfidence": "low",
     "lastUpdated": "2026-04-09T22:12:51.006Z",
     "websiteUrl": "https://www.powderridgepark.com"
-  },
-  {
-    "id": "snowshoe",
-    "name": "Snowshoe",
-    "region": "Northeast",
-    "state": "WV",
-    "closingDate": null,
-    "closingDateSource": "https://www.snowshoemtn.com/mountain-info/mountain-report",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:58.008Z",
-    "websiteUrl": "https://www.snowshoemtn.com"
-  },
-  {
-    "id": "suicide-six",
-    "name": "Suicide Six",
-    "region": "Northeast",
-    "state": "VT",
-    "closingDate": null,
-    "closingDateSource": "https://www.saskadenasix.com/winter/conditions",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:13:02.003Z",
-    "websiteUrl": "https://www.suicide6.com"
-  },
-  {
-    "id": "swain",
-    "name": "Swain",
-    "region": "Northeast",
-    "state": "NY",
-    "closingDate": null,
-    "closingDateSource": "https://www.swain.com/trail-report/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:13:17.055Z",
-    "websiteUrl": "https://www.swain.com"
-  },
-  {
-    "id": "timberline-mountain",
-    "name": "Timberline Mountain",
-    "region": "Northeast",
-    "state": "WV",
-    "closingDate": null,
-    "closingDateSource": "https://www.timberlinemountain.com/snow-report/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:13:33.058Z",
-    "websiteUrl": "https://www.timberlinemountain.com"
   }
 ]
