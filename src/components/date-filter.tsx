@@ -4,6 +4,7 @@ import * as React from "react";
 import { format } from "date-fns";
 import { CalendarIcon, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import {
   Popover,
@@ -22,17 +23,15 @@ export function DateFilter({ date, onDateChange }: DateFilterProps) {
     <div className="flex items-center gap-2">
       <span className="text-sm text-muted-foreground">As of:</span>
       <Popover>
-        <PopoverTrigger asChild>
-          <Button
-            variant="outline"
-            className={cn(
-              "w-[200px] justify-start text-left font-normal",
-              !date && "text-muted-foreground"
-            )}
-          >
-            <CalendarIcon className="mr-2 h-4 w-4" />
-            {date ? format(date, "MMM d, yyyy") : "All mountains"}
-          </Button>
+        <PopoverTrigger
+          className={cn(
+            buttonVariants({ variant: "outline" }),
+            "w-[200px] justify-start text-left font-normal",
+            !date && "text-muted-foreground"
+          )}
+        >
+          <CalendarIcon className="mr-2 h-4 w-4" />
+          {date ? format(date, "MMM d, yyyy") : "All mountains"}
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0" align="start">
           <Calendar
