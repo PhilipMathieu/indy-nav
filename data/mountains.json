@@ -112,14 +112,6 @@
     "closingDateUrl": "https://www.magicmtn.com"
   },
   {
-    "id": "maple-wind-farm-xc",
-    "name": "Maple Wind Farm XC",
-    "state": "VT",
-    "region": "Northeast",
-    "websiteUrl": "https://www.maplewindfarm.com",
-    "closingDateUrl": "https://www.maplewindfarm.com"
-  },
-  {
     "id": "massanutten",
     "name": "Massanutten",
     "state": "VA",

@@ -88,6 +88,17 @@
     "websiteUrl": "https://www.snowshoemtn.com"
   },
   {
+    "id": "berkshire-east",
+    "name": "Berkshire East",
+    "region": "Northeast",
+    "state": "MA",
+    "closingDate": "2026-04-04",
+    "closingDateSource": "manual-research",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-09T22:34:40.718Z",
+    "websiteUrl": "https://www.berkshireeast.com"
+  },
+  {
     "id": "mcintyre-ski-area",
     "name": "McIntyre Ski Area",
     "region": "Northeast",
@@ -187,6 +198,17 @@
     "websiteUrl": "https://www.massresort.com"
   },
   {
+    "id": "camden-snow-bowl",
+    "name": "Camden Snow Bowl",
+    "region": "Northeast",
+    "state": "ME",
+    "closingDate": "2026-03-17",
+    "closingDateSource": "manual-research",
+    "closingDateConfidence": "medium",
+    "lastUpdated": "2026-04-09T22:34:59.560Z",
+    "websiteUrl": "https://www.camdensnowbowl.com"
+  },
+  {
     "id": "bradford-ski-area",
     "name": "Bradford Ski Area",
     "region": "Northeast",
@@ -220,6 +242,28 @@
     "websiteUrl": "https://skiway.dartmouth.edu"
   },
   {
+    "id": "granite-gorge",
+    "name": "Granite Gorge",
+    "region": "Northeast",
+    "state": "NH",
+    "closingDate": "2026-03-15",
+    "closingDateSource": "manual-research",
+    "closingDateConfidence": "low",
+    "lastUpdated": "2026-04-09T22:12:06.558Z",
+    "websiteUrl": "https://www.granitegorge.com"
+  },
+  {
+    "id": "powder-ridge",
+    "name": "Powder Ridge",
+    "region": "Northeast",
+    "state": "CT",
+    "closingDate": "2026-03-15",
+    "closingDateSource": "manual-research",
+    "closingDateConfidence": "medium",
+    "lastUpdated": "2026-04-09T22:12:51.006Z",
+    "websiteUrl": "https://www.powderridgepark.com"
+  },
+  {
     "id": "canaan-valley",
     "name": "Canaan Valley",
     "region": "Northeast",
@@ -231,39 +275,6 @@
     "websiteUrl": "https://www.canaanresort.com"
   },
   {
-    "id": "berkshire-east",
-    "name": "Berkshire East",
-    "region": "Northeast",
-    "state": "MA",
-    "closingDate": null,
-    "closingDateSource": "https://www.berkshireeast.com/plan/hours-of-operation",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:34:40.718Z",
-    "websiteUrl": "https://www.berkshireeast.com"
-  },
-  {
-    "id": "camden-snow-bowl",
-    "name": "Camden Snow Bowl",
-    "region": "Northeast",
-    "state": "ME",
-    "closingDate": null,
-    "closingDateSource": "https://www.camdensnowbowl.com",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:34:59.560Z",
-    "websiteUrl": "https://www.camdensnowbowl.com"
-  },
-  {
-    "id": "granite-gorge",
-    "name": "Granite Gorge",
-    "region": "Northeast",
-    "state": "NH",
-    "closingDate": null,
-    "closingDateSource": "https://www.granitegorge.com",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:06.558Z",
-    "websiteUrl": "https://www.granitegorge.com"
-  },
-  {
     "id": "jay-peak",
     "name": "Jay Peak",
     "region": "Northeast",
@@ -273,27 +284,5 @@
     "closingDateConfidence": "medium",
     "lastUpdated": "2026-04-09T22:35:23.751Z",
     "websiteUrl": "https://jaypeakresort.com"
-  },
-  {
-    "id": "maple-wind-farm-xc",
-    "name": "Maple Wind Farm XC",
-    "region": "Northeast",
-    "state": "VT",
-    "closingDate": null,
-    "closingDateSource": "https://www.maplewindfarm.com",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:35:33.868Z",
-    "websiteUrl": "https://www.maplewindfarm.com"
-  },
-  {
-    "id": "powder-ridge",
-    "name": "Powder Ridge",
-    "region": "Northeast",
-    "state": "CT",
-    "closingDate": null,
-    "closingDateSource": "https://www.powderridgepark.com",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-09T22:12:51.006Z",
-    "websiteUrl": "https://www.powderridgepark.com"
   }
 ]
