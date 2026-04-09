@@ -1,0 +1,218 @@
+[
+  {
+    "id": "berkshire-east",
+    "name": "Berkshire East",
+    "state": "MA",
+    "region": "Northeast",
+    "websiteUrl": "https://www.berkshireeast.com",
+    "closingDateUrl": "https://www.berkshireeast.com/conditions"
+  },
+  {
+    "id": "black-mountain-nh",
+    "name": "Black Mountain (NH)",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.blackmt.com",
+    "closingDateUrl": "https://www.blackmt.com"
+  },
+  {
+    "id": "bolton-valley",
+    "name": "Bolton Valley",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.boltonvalley.com",
+    "closingDateUrl": "https://www.boltonvalley.com/conditions"
+  },
+  {
+    "id": "bradford-ski-area",
+    "name": "Bradford Ski Area",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.skibradford.com",
+    "closingDateUrl": "https://www.skibradford.com"
+  },
+  {
+    "id": "bryce-resort",
+    "name": "Bryce Resort",
+    "state": "VA",
+    "region": "Northeast",
+    "websiteUrl": "https://www.bryceresort.com",
+    "closingDateUrl": "https://www.bryceresort.com/skiing"
+  },
+  {
+    "id": "camden-snow-bowl",
+    "name": "Camden Snow Bowl",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://www.camdensnowbowl.com",
+    "closingDateUrl": "https://www.camdensnowbowl.com"
+  },
+  {
+    "id": "canaan-valley",
+    "name": "Canaan Valley",
+    "state": "WV",
+    "region": "Northeast",
+    "websiteUrl": "https://www.canaanresort.com",
+    "closingDateUrl": "https://www.canaanresort.com/ski-area"
+  },
+  {
+    "id": "catamount",
+    "name": "Catamount",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.catamountski.com",
+    "closingDateUrl": "https://www.catamountski.com/conditions"
+  },
+  {
+    "id": "dartmouth-skiway",
+    "name": "Dartmouth Skiway",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://skiway.dartmouth.edu",
+    "closingDateUrl": "https://skiway.dartmouth.edu"
+  },
+  {
+    "id": "elk-mountain",
+    "name": "Elk Mountain",
+    "state": "PA",
+    "region": "Northeast",
+    "websiteUrl": "https://www.elkskier.com",
+    "closingDateUrl": "https://www.elkskier.com"
+  },
+  {
+    "id": "granite-gorge",
+    "name": "Granite Gorge",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.granitegorge.com",
+    "closingDateUrl": "https://www.granitegorge.com"
+  },
+  {
+    "id": "greek-peak",
+    "name": "Greek Peak",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.greekpeak.net",
+    "closingDateUrl": "https://www.greekpeak.net/conditions"
+  },
+  {
+    "id": "jay-peak",
+    "name": "Jay Peak",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://jaypeakresort.com",
+    "closingDateUrl": "https://jaypeakresort.com/conditions"
+  },
+  {
+    "id": "magic-mountain",
+    "name": "Magic Mountain",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.magicmtn.com",
+    "closingDateUrl": "https://www.magicmtn.com"
+  },
+  {
+    "id": "maple-wind-farm-xc",
+    "name": "Maple Wind Farm XC",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.maplewindfarm.com",
+    "closingDateUrl": "https://www.maplewindfarm.com"
+  },
+  {
+    "id": "massanutten",
+    "name": "Massanutten",
+    "state": "VA",
+    "region": "Northeast",
+    "websiteUrl": "https://www.massresort.com",
+    "closingDateUrl": "https://www.massresort.com/ski"
+  },
+  {
+    "id": "mcintyre-ski-area",
+    "name": "McIntyre Ski Area",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.mcintyreskiarea.com",
+    "closingDateUrl": "https://www.mcintyreskiarea.com"
+  },
+  {
+    "id": "mount-bohemia",
+    "name": "Mount Bohemia",
+    "state": "MI",
+    "region": "Northeast",
+    "websiteUrl": "https://www.mtbohemia.com",
+    "closingDateUrl": "https://www.mtbohemia.com"
+  },
+  {
+    "id": "mount-southington",
+    "name": "Mount Southington",
+    "state": "CT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.mountsouthington.com",
+    "closingDateUrl": "https://www.mountsouthington.com/conditions"
+  },
+  {
+    "id": "plattekill",
+    "name": "Plattekill",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.plattekill.com",
+    "closingDateUrl": "https://www.plattekill.com"
+  },
+  {
+    "id": "powder-ridge",
+    "name": "Powder Ridge",
+    "state": "CT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.powderridgepark.com",
+    "closingDateUrl": "https://www.powderridgepark.com"
+  },
+  {
+    "id": "saddleback-mountain",
+    "name": "Saddleback Mountain",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://www.saddlebackmaine.com",
+    "closingDateUrl": "https://www.saddlebackmaine.com/conditions"
+  },
+  {
+    "id": "snowshoe",
+    "name": "Snowshoe",
+    "state": "WV",
+    "region": "Northeast",
+    "websiteUrl": "https://www.snowshoemtn.com",
+    "closingDateUrl": "https://www.snowshoemtn.com/conditions"
+  },
+  {
+    "id": "suicide-six",
+    "name": "Suicide Six",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.suicide6.com",
+    "closingDateUrl": "https://www.suicide6.com"
+  },
+  {
+    "id": "swain",
+    "name": "Swain",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.swain.com",
+    "closingDateUrl": "https://www.swain.com/conditions"
+  },
+  {
+    "id": "timberline-mountain",
+    "name": "Timberline Mountain",
+    "state": "WV",
+    "region": "Northeast",
+    "websiteUrl": "https://www.timberlinemountain.com",
+    "closingDateUrl": "https://www.timberlinemountain.com/conditions"
+  },
+  {
+    "id": "wachusett-mountain",
+    "name": "Wachusett Mountain",
+    "state": "MA",
+    "region": "Northeast",
+    "websiteUrl": "https://www.wachusett.com",
+    "closingDateUrl": "https://www.wachusett.com/conditions"
+  }
+]
