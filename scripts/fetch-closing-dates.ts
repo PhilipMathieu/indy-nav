@@ -1,3 +1,5 @@
+import { config } from "dotenv";
+config({ path: ".env.local" });
 import { generateObject } from "ai";
 import { google } from "@ai-sdk/google";
 import { z } from "zod";
