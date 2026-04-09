@@ -5,7 +5,7 @@
     "state": "MA",
     "region": "Northeast",
     "websiteUrl": "https://www.berkshireeast.com",
-    "closingDateUrl": "https://www.berkshireeast.com"
+    "closingDateUrl": "https://www.berkshireeast.com/plan/hours-of-operation"
   },
   {
     "id": "black-mountain-nh",
@@ -21,7 +21,7 @@
     "state": "VT",
     "region": "Northeast",
     "websiteUrl": "https://www.boltonvalley.com",
-    "closingDateUrl": "https://www.boltonvalley.com"
+    "closingDateUrl": "https://www.boltonvalley.com/the-resort/hours-of-operation/"
   },
   {
     "id": "bradford-ski-area",
@@ -29,7 +29,7 @@
     "state": "VT",
     "region": "Northeast",
     "websiteUrl": "https://www.skibradford.com",
-    "closingDateUrl": "https://www.skibradford.com"
+    "closingDateUrl": "https://www.skibradford.com/snow-report/"
   },
   {
     "id": "bryce-resort",
@@ -37,7 +37,7 @@
     "state": "VA",
     "region": "Northeast",
     "websiteUrl": "https://www.bryceresort.com",
-    "closingDateUrl": "https://www.bryceresort.com"
+    "closingDateUrl": "https://www.bryceresort.com/mountain-info/conditions"
   },
   {
     "id": "camden-snow-bowl",
@@ -53,7 +53,7 @@
     "state": "WV",
     "region": "Northeast",
     "websiteUrl": "https://www.canaanresort.com",
-    "closingDateUrl": "https://www.canaanresort.com"
+    "closingDateUrl": "https://www.canaanresort.com/trail-report/"
   },
   {
     "id": "catamount",
@@ -61,7 +61,7 @@
     "state": "NY",
     "region": "Northeast",
     "websiteUrl": "https://www.catamountski.com",
-    "closingDateUrl": "https://www.catamountski.com"
+    "closingDateUrl": "https://www.catamountski.com/winter/the-mountain/mountain-conditions"
   },
   {
     "id": "dartmouth-skiway",
@@ -69,7 +69,7 @@
     "state": "NH",
     "region": "Northeast",
     "websiteUrl": "https://skiway.dartmouth.edu",
-    "closingDateUrl": "https://skiway.dartmouth.edu"
+    "closingDateUrl": "https://dartmouthskiway.com/"
   },
   {
     "id": "elk-mountain",
@@ -77,7 +77,7 @@
     "state": "PA",
     "region": "Northeast",
     "websiteUrl": "https://www.elkskier.com",
-    "closingDateUrl": "https://www.elkskier.com"
+    "closingDateUrl": "https://www.elkskier.com/conditions/"
   },
   {
     "id": "granite-gorge",
@@ -93,7 +93,7 @@
     "state": "NY",
     "region": "Northeast",
     "websiteUrl": "https://www.greekpeak.net",
-    "closingDateUrl": "https://www.greekpeak.net"
+    "closingDateUrl": "https://www.greekpeak.net/hours-of-operation"
   },
   {
     "id": "jay-peak",
@@ -101,7 +101,7 @@
     "state": "VT",
     "region": "Northeast",
     "websiteUrl": "https://jaypeakresort.com",
-    "closingDateUrl": "https://jaypeakresort.com"
+    "closingDateUrl": "https://jaypeakresort.com/conditions"
   },
   {
     "id": "magic-mountain",
@@ -125,7 +125,7 @@
     "state": "VA",
     "region": "Northeast",
     "websiteUrl": "https://www.massresort.com",
-    "closingDateUrl": "https://www.massresort.com"
+    "closingDateUrl": "https://www.massresort.com/play/snow-sports/snow-conditions/"
   },
   {
     "id": "mcintyre-ski-area",
@@ -133,7 +133,7 @@
     "state": "NH",
     "region": "Northeast",
     "websiteUrl": "https://www.mcintyreskiarea.com",
-    "closingDateUrl": "https://www.mcintyreskiarea.com"
+    "closingDateUrl": "https://www.mcintyreskiarea.com/mountain-report/"
   },
   {
     "id": "mount-bohemia",
@@ -141,7 +141,7 @@
     "state": "MI",
     "region": "Northeast",
     "websiteUrl": "https://www.mtbohemia.com",
-    "closingDateUrl": "https://www.mtbohemia.com"
+    "closingDateUrl": "https://www.mtbohemia.com/current-conditions/"
   },
   {
     "id": "mount-southington",
@@ -149,7 +149,7 @@
     "state": "CT",
     "region": "Northeast",
     "websiteUrl": "https://www.mountsouthington.com",
-    "closingDateUrl": "https://www.mountsouthington.com"
+    "closingDateUrl": "https://www.mountsouthington.com/hours-of-operation"
   },
   {
     "id": "plattekill",
@@ -157,7 +157,7 @@
     "state": "NY",
     "region": "Northeast",
     "websiteUrl": "https://www.plattekill.com",
-    "closingDateUrl": "https://www.plattekill.com"
+    "closingDateUrl": "https://www.plattekill.com/on-the-trail/"
   },
   {
     "id": "powder-ridge",
@@ -173,7 +173,7 @@
     "state": "ME",
     "region": "Northeast",
     "websiteUrl": "https://www.saddlebackmaine.com",
-    "closingDateUrl": "https://www.saddlebackmaine.com"
+    "closingDateUrl": "https://www.saddlebackmaine.com/mountain-report/"
   },
   {
     "id": "snowshoe",
@@ -181,7 +181,7 @@
     "state": "WV",
     "region": "Northeast",
     "websiteUrl": "https://www.snowshoemtn.com",
-    "closingDateUrl": "https://www.snowshoemtn.com"
+    "closingDateUrl": "https://www.snowshoemtn.com/mountain-info/mountain-report"
   },
   {
     "id": "suicide-six",
@@ -189,7 +189,7 @@
     "state": "VT",
     "region": "Northeast",
     "websiteUrl": "https://www.suicide6.com",
-    "closingDateUrl": "https://www.suicide6.com"
+    "closingDateUrl": "https://www.saskadenasix.com/winter/conditions"
   },
   {
     "id": "swain",
@@ -197,7 +197,7 @@
     "state": "NY",
     "region": "Northeast",
     "websiteUrl": "https://www.swain.com",
-    "closingDateUrl": "https://www.swain.com"
+    "closingDateUrl": "https://www.swain.com/trail-report/"
   },
   {
     "id": "timberline-mountain",
@@ -205,7 +205,7 @@
     "state": "WV",
     "region": "Northeast",
     "websiteUrl": "https://www.timberlinemountain.com",
-    "closingDateUrl": "https://www.timberlinemountain.com"
+    "closingDateUrl": "https://www.timberlinemountain.com/snow-report/"
   },
   {
     "id": "wachusett-mountain",
@@ -213,6 +213,6 @@
     "state": "MA",
     "region": "Northeast",
     "websiteUrl": "https://www.wachusett.com",
-    "closingDateUrl": "https://www.wachusett.com"
+    "closingDateUrl": "https://www.wachusett.com/hours"
   }
 ]

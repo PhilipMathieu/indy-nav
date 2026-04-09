@@ -64,7 +64,7 @@ async function extractClosingDate(
   pageContent: string
 ): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low" }> {
   const { object } = await generateObject({
-    model: google("gemini-2.0-flash-lite"),
+    model: google("gemini-3.1-flash-lite-preview"),
     schema: closingDateSchema,
     prompt: `You are extracting ski season closing date information.
 
