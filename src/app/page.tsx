@@ -39,6 +39,17 @@ export default function Home() {
             Source on GitHub
           </a>
         </p>
+        <a
+          href="https://buymeacoffee.com/philipmathieu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.shields.io/badge/%F0%9F%8D%BB_buy_me_a_brewski-FFDD00?style=flat-square"
+            alt="Buy Me a Brewski"
+            className="mt-2"
+          />
+        </a>
       </footer>
     </main>
   );

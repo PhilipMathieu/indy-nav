@@ -1,6 +1,6 @@
 # Indy Nav
 
-[![Buy Me a Brewski](https://img.shields.io/badge/Buy_Me_a_Brewski-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/philipmathieu)
+[![Buy Me a Brewski](https://img.shields.io/badge/%F0%9F%8D%BB_Buy_Me_a_Brewski-FFDD00?style=for-the-badge)](https://buymeacoffee.com/philipmathieu)
 
 Unofficial closing date tracker for [Indy Pass](https://www.indyskipass.com/) ski mountains. Helps you plan spring skiing by showing which mountains are still open, closing soon, or already done for the season.
 
