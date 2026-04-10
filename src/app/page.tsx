@@ -16,6 +16,21 @@ export default function Home() {
         </p>
       </div>
       <ClosingDatesTable mountains={mountains} />
+      <footer className="mt-12 border-t pt-6 text-xs text-muted-foreground space-y-2">
+        <p className="font-medium text-foreground">How it works</p>
+        <p>
+          Closing dates are gathered automatically each morning by fetching
+          mountain websites and using AI (Gemini Flash Lite) to extract season
+          end dates. Dates with high confidence come from official announcements;
+          medium and low confidence dates are inferred from schedules, snow
+          reports, or web searches. High-confidence dates are locked in and not
+          re-checked.
+        </p>
+        <p>
+          This is an unofficial community tool and is not affiliated with Indy
+          Pass. Always confirm with the mountain before making travel plans.
+        </p>
+      </footer>
     </main>
   );
 }
