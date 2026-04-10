@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/table";
 import { columns } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
+import { RegionFilter } from "@/components/region-filter";
 import type { Mountain } from "@/lib/types";
 import { parseISO, isBefore, startOfDay } from "date-fns";
 
@@ -67,13 +68,19 @@ function groupAndSort(
 export function ClosingDatesTable({ mountains }: ClosingDatesTableProps) {
   const [asOfDate, setAsOfDate] = React.useState<Date | undefined>(undefined);
   const [sorting, setSorting] = React.useState<SortingState>([]);
+  const [selectedRegions, setSelectedRegions] = React.useState<string[]>([]);
+
+  const filteredData = React.useMemo(() => {
+    if (selectedRegions.length === 0) return mountains;
+    return mountains.filter((m) => selectedRegions.includes(m.region));
+  }, [mountains, selectedRegions]);
 
   const sortedData = React.useMemo(() => {
     // When user manually sorts via column headers, use TanStack sorting
-    if (sorting.length > 0) return mountains;
+    if (sorting.length > 0) return filteredData;
     // Otherwise use the custom group-and-sort logic
-    return groupAndSort(mountains, asOfDate);
-  }, [mountains, asOfDate, sorting]);
+    return groupAndSort(filteredData, asOfDate);
+  }, [filteredData, asOfDate, sorting]);
 
   const table = useReactTable({
     data: sortedData,
@@ -88,7 +95,10 @@ export function ClosingDatesTable({ mountains }: ClosingDatesTableProps) {
 
   return (
     <div className="space-y-4">
-      <DateFilter date={asOfDate} onDateChange={setAsOfDate} />
+      <div className="flex flex-wrap items-start gap-4">
+        <DateFilter date={asOfDate} onDateChange={setAsOfDate} />
+        <RegionFilter selected={selectedRegions} onSelectionChange={setSelectedRegions} />
+      </div>
       <div className="rounded-md border">
         <Table>
           <TableHeader>
@@ -150,7 +160,7 @@ export function ClosingDatesTable({ mountains }: ClosingDatesTableProps) {
         </Table>
       </div>
       <p className="text-xs text-muted-foreground">
-        {mountains.length} mountains
+        {filteredData.length}{filteredData.length !== mountains.length ? ` of ${mountains.length}` : ""} mountains
         {asOfDate ? ` as of ${referenceDate.toLocaleDateString()}` : ""}
       </p>
     </div>
