@@ -29,6 +29,15 @@ export default function Home() {
         <p>
           This is an unofficial community tool and is not affiliated with Indy
           Pass. Always confirm with the mountain before making travel plans.
+          {" "}
+          <a
+            href="https://github.com/PhilipMathieu/indy-nav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-foreground"
+          >
+            Source on GitHub
+          </a>
         </p>
       </footer>
     </main>
