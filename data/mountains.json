@@ -192,14 +192,6 @@
     "closingDateUrl": "https://cataloochee.com/"
   },
   {
-    "id": "massanutten-resort",
-    "name": "Massanutten Resort",
-    "state": "VA",
-    "region": "Mid-Atlantic",
-    "websiteUrl": "https://www.massresort.com/",
-    "closingDateUrl": "https://www.massresort.com/play/snow-sports/"
-  },
-  {
     "id": "montage-mountain",
     "name": "Montage Mountain",
     "state": "PA",
@@ -576,14 +568,6 @@
     "closingDateUrl": "https://www.blackmt.com"
   },
   {
-    "id": "black-mountain-ski-area",
-    "name": "Black Mountain Ski Area",
-    "state": "NH",
-    "region": "Northeast",
-    "websiteUrl": "https://www.blackmt.com",
-    "closingDateUrl": "https://www.blackmt.com/conditions"
-  },
-  {
     "id": "black-mountain-of-maine",
     "name": "Black Mountain of Maine",
     "state": "ME",
@@ -598,14 +582,6 @@
     "region": "Northeast",
     "websiteUrl": "https://www.boltonvalley.com",
     "closingDateUrl": "https://www.boltonvalley.com/the-resort/hours-of-operation/"
-  },
-  {
-    "id": "bolton-valley-resort",
-    "name": "Bolton Valley Resort",
-    "state": "VT",
-    "region": "Northeast",
-    "websiteUrl": "https://www.boltonvalley.com/",
-    "closingDateUrl": "https://www.boltonvalley.com/"
   },
   {
     "id": "bousquet-mountain",
@@ -728,14 +704,6 @@
     "closingDateUrl": "https://www.greekpeak.net/hours-of-operation"
   },
   {
-    "id": "greek-peak-mountain-resort",
-    "name": "Greek Peak Mountain Resort",
-    "state": "NY",
-    "region": "Northeast",
-    "websiteUrl": "https://www.greekpeak.net/",
-    "closingDateUrl": "https://www.greekpeak.net/"
-  },
-  {
     "id": "hunt-hollow-ski-club",
     "name": "Hunt Hollow Ski Club",
     "state": "NY",
@@ -750,14 +718,6 @@
     "region": "Northeast",
     "websiteUrl": "https://jaypeakresort.com",
     "closingDateUrl": "https://jaypeakresort.com/conditions"
-  },
-  {
-    "id": "jay-peak-resort",
-    "name": "Jay Peak Resort",
-    "state": "VT",
-    "region": "Northeast",
-    "websiteUrl": "https://jaypeakresort.com/",
-    "closingDateUrl": "https://jaypeakresort.com/"
   },
   {
     "id": "king-pine",

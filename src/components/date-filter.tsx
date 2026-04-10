@@ -31,7 +31,7 @@ export function DateFilter({ date, onDateChange }: DateFilterProps) {
           )}
         >
           <CalendarIcon className="mr-2 h-4 w-4" />
-          {date ? format(date, "MMM d, yyyy") : "All mountains"}
+          {date ? format(date, "MMM d, yyyy") : "Today"}
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0" align="start">
           <Calendar

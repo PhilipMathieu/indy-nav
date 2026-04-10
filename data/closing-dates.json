@@ -44,17 +44,6 @@
     "websiteUrl": "https://www.blackmt.com"
   },
   {
-    "id": "black-mountain-ski-area",
-    "name": "Black Mountain Ski Area",
-    "region": "Northeast",
-    "state": "NH",
-    "closingDate": "2026-04-26",
-    "closingDateSource": "https://www.blackmt.com/conditions",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T00:14:07.555Z",
-    "websiteUrl": "https://www.blackmt.com"
-  },
-  {
     "id": "loveland-ski-area",
     "name": "Loveland Ski Area",
     "region": "Rockies",
@@ -1001,17 +990,6 @@
     "websiteUrl": "https://www.elkskier.com"
   },
   {
-    "id": "massanutten-resort",
-    "name": "Massanutten Resort",
-    "region": "Mid-Atlantic",
-    "state": "VA",
-    "closingDate": "2026-03-22",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T00:11:01.840Z",
-    "websiteUrl": "https://www.massresort.com/"
-  },
-  {
     "id": "winterplace-ski-resort",
     "name": "Winterplace Ski Resort",
     "region": "Mid-Atlantic",
@@ -1562,17 +1540,6 @@
     "websiteUrl": "https://www.bigrockmaine.com/"
   },
   {
-    "id": "bolton-valley-resort",
-    "name": "Bolton Valley Resort",
-    "region": "Northeast",
-    "state": "VT",
-    "closingDate": null,
-    "closingDateSource": "https://www.boltonvalley.com/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T00:14:16.008Z",
-    "websiteUrl": "https://www.boltonvalley.com/"
-  },
-  {
     "id": "catamount",
     "name": "Catamount",
     "region": "Northeast",
@@ -1593,28 +1560,6 @@
     "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T00:15:08.758Z",
     "websiteUrl": "https://www.skidryhill.com/"
-  },
-  {
-    "id": "greek-peak-mountain-resort",
-    "name": "Greek Peak Mountain Resort",
-    "region": "Northeast",
-    "state": "NY",
-    "closingDate": null,
-    "closingDateSource": "https://www.greekpeak.net/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T00:15:20.644Z",
-    "websiteUrl": "https://www.greekpeak.net/"
-  },
-  {
-    "id": "jay-peak-resort",
-    "name": "Jay Peak Resort",
-    "region": "Northeast",
-    "state": "VT",
-    "closingDate": null,
-    "closingDateSource": "https://jaypeakresort.com/",
-    "closingDateConfidence": "medium",
-    "lastUpdated": "2026-04-10T00:15:31.379Z",
-    "websiteUrl": "https://jaypeakresort.com/"
   },
   {
     "id": "king-pine",
