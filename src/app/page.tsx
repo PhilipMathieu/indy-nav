@@ -45,7 +45,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20brewski&emoji=%F0%9F%8D%BB&slug=philipmathieu&button_colour=E4312B&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff"
+            src="https://img.buymeacoffee.com/button-api/?text=BUY%20ME%20A%20BREWSKI&emoji=%F0%9F%8D%BB&slug=philipmathieu&button_colour=E4312B&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"
             alt="Buy Me a Brewski"
             className="mt-2"
           />

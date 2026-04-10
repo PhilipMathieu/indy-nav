@@ -1,6 +1,6 @@
 # Indy Nav
 
-[![Buy Me a Brewski](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20brewski&emoji=%F0%9F%8D%BB&slug=philipmathieu&button_colour=E4312B&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/philipmathieu)
+[![Buy Me a Brewski](https://img.buymeacoffee.com/button-api/?text=BUY%20ME%20A%20BREWSKI&emoji=%F0%9F%8D%BB&slug=philipmathieu&button_colour=E4312B&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/philipmathieu)
 
 Unofficial closing date tracker for [Indy Pass](https://www.indyskipass.com/) ski mountains. Helps you plan spring skiing by showing which mountains are still open, closing soon, or already done for the season.
 
