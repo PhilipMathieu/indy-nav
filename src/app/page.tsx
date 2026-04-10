@@ -1,20 +1,9 @@
-import { readFileSync } from "fs";
-import { join } from "path";
 import { ClosingDatesTable } from "@/components/closing-dates-table";
 import type { Mountain } from "@/lib/types";
-
-function loadMountains(): Mountain[] {
-  try {
-    const filePath = join(process.cwd(), "data", "closing-dates.json");
-    const raw = readFileSync(filePath, "utf-8");
-    return JSON.parse(raw);
-  } catch {
-    return [];
-  }
-}
+import closingDates from "../../data/closing-dates.json";
 
 export default function Home() {
-  const mountains = loadMountains();
+  const mountains = closingDates as Mountain[];
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8">
