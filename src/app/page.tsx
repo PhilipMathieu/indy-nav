@@ -45,7 +45,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="https://img.shields.io/badge/%F0%9F%8D%BB_buy_me_a_brewski-E4312B?style=flat-square&labelColor=E4312B"
+            src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20brewski&emoji=%F0%9F%8D%BB&slug=philipmathieu&button_colour=E4312B&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff"
             alt="Buy Me a Brewski"
             className="mt-2"
           />
