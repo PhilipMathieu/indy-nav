@@ -145,18 +145,26 @@ async function main() {
   let failed = 0;
 
   for (const seed of seeds) {
-    // Check if we can skip this mountain (recently updated)
+    // Check if we can skip this mountain
     const prev = existingMap.get(seed.id);
-    if (
-      !forceRefresh &&
-      prev &&
-      prev.lastUpdated &&
-      Date.now() - new Date(prev.lastUpdated).getTime() < SKIP_THRESHOLD_MS
-    ) {
-      console.log(`⏭  ${seed.name} — skipped (updated recently)`);
-      results.push(prev);
-      skipped++;
-      continue;
+    if (!forceRefresh && prev) {
+      // Skip high-confidence results entirely — no need to re-check firm dates
+      if (prev.closingDate && prev.closingDateConfidence === "high") {
+        console.log(`⏭  ${seed.name} — skipped (high confidence: ${prev.closingDate})`);
+        results.push(prev);
+        skipped++;
+        continue;
+      }
+      // Skip medium/low if recently updated (within 24h)
+      if (
+        prev.lastUpdated &&
+        Date.now() - new Date(prev.lastUpdated).getTime() < SKIP_THRESHOLD_MS
+      ) {
+        console.log(`⏭  ${seed.name} — skipped (updated recently)`);
+        results.push(prev);
+        skipped++;
+        continue;
+      }
     }
 
     try {
