@@ -1,16 +1,5 @@
 [
   {
-    "id": "kaunertaler-gletscher",
-    "name": "Kaunertaler Gletscher",
-    "region": "Europe",
-    "state": "Austria",
-    "closingDate": "2026-05-25",
-    "closingDateSource": "https://www.snowpark-kaunertal.tirol/",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T12:52:17.161Z",
-    "websiteUrl": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/winter/ski-area.html"
-  },
-  {
     "id": "black-mountain-ski-area",
     "name": "Black Mountain Ski Area",
     "region": "East",
@@ -20,6 +9,17 @@
     "closingDateConfidence": "medium",
     "lastUpdated": "2026-04-10T12:45:50.695Z",
     "websiteUrl": "https://www.blackmt.com"
+  },
+  {
+    "id": "kaunertaler-gletscher",
+    "name": "Kaunertaler Gletscher",
+    "region": "Europe",
+    "state": "Austria",
+    "closingDate": "2026-05-25",
+    "closingDateSource": "https://www.snowpark-kaunertal.tirol/",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-10T12:52:17.161Z",
+    "websiteUrl": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/winter/ski-area.html"
   },
   {
     "id": "riksgransen",
@@ -143,17 +143,6 @@
     "websiteUrl": "https://skiloveland.com/"
   },
   {
-    "id": "stoten-i-salen",
-    "name": "Stöten i Sälen",
-    "region": "Europe",
-    "state": "Sweden",
-    "closingDate": "2026-04-26",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T13:01:41.976Z",
-    "websiteUrl": "https://www.stoten.se/en/"
-  },
-  {
     "id": "massif-du-sud",
     "name": "Massif du Sud",
     "region": "Europe",
@@ -163,6 +152,17 @@
     "closingDateConfidence": "medium",
     "lastUpdated": "2026-04-10T12:54:53.630Z",
     "websiteUrl": "https://massifdusud.net/en/"
+  },
+  {
+    "id": "stoten-i-salen",
+    "name": "Stöten i Sälen",
+    "region": "Europe",
+    "state": "Sweden",
+    "closingDate": "2026-04-26",
+    "closingDateSource": "google-search",
+    "closingDateConfidence": "high",
+    "lastUpdated": "2026-04-10T13:01:41.976Z",
+    "websiteUrl": "https://www.stoten.se/en/"
   },
   {
     "id": "arctic-valley",
@@ -242,6 +242,17 @@
     "websiteUrl": "https://brundage.com"
   },
   {
+    "id": "burke-mountain",
+    "name": "Burke Mountain",
+    "region": "East",
+    "state": "VT",
+    "closingDate": "2026-04-12",
+    "closingDateSource": "cross-checked: google-search",
+    "closingDateConfidence": "medium",
+    "lastUpdated": "2026-04-10T12:46:35.957Z",
+    "websiteUrl": "https://www.skiburke.com"
+  },
+  {
     "id": "camp-fortune",
     "name": "Camp Fortune",
     "region": "Canada",
@@ -303,7 +314,7 @@
     "state": "CO",
     "closingDate": "2026-04-12",
     "closingDateSource": "google-search",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:49:31.165Z",
     "websiteUrl": "https://echomtn.com"
   },
@@ -314,7 +325,7 @@
     "state": "WI",
     "closingDate": "2026-04-12",
     "closingDateSource": "google-search",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:50:22.380Z",
     "websiteUrl": "https://www.skigranitepeak.com"
   },
@@ -358,7 +369,7 @@
     "state": "CO",
     "closingDate": "2026-04-12",
     "closingDateSource": "google-search",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:59:24.686Z",
     "websiteUrl": "https://powderhorn.com/"
   },
@@ -440,17 +451,6 @@
     "websiteUrl": "https://westmountain.com"
   },
   {
-    "id": "burke-mountain",
-    "name": "Burke Mountain",
-    "region": "East",
-    "state": "VT",
-    "closingDate": "2026-04-12",
-    "closingDateSource": "cross-checked: google-search",
-    "closingDateConfidence": "medium",
-    "lastUpdated": "2026-04-10T12:46:35.957Z",
-    "websiteUrl": "https://www.skiburke.com"
-  },
-  {
     "id": "leukerbad-torrent-ski-resort-gemmi-resort",
     "name": "Leukerbad Torrent Ski Resort & Gemmi Resort",
     "region": "Europe",
@@ -501,7 +501,7 @@
     "state": "MA",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://bousquetmountain.com/lift-trail-status/",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:46:16.705Z",
     "websiteUrl": "https://bousquetmountain.com/"
   },
@@ -523,7 +523,7 @@
     "state": "UT",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://www.eaglepointresort.com/snow-report",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:49:23.075Z",
     "websiteUrl": "https://www.eaglepointresort.com"
   },
@@ -545,7 +545,7 @@
     "state": "CO",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://granbyranch.com",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:50:19.191Z",
     "websiteUrl": "https://granbyranch.com"
   },
@@ -600,7 +600,7 @@
     "state": "BC",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://www.manningpark.com/weather-webcams-and-trail-status/",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:54:20.964Z",
     "websiteUrl": "https://www.manningpark.com"
   },
@@ -688,7 +688,7 @@
     "state": "NH",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://www.raggedmountainresort.com/mountain-report-cams/#conditions",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:59:31.956Z",
     "websiteUrl": "https://www.raggedmountainresort.com/"
   },
@@ -721,7 +721,7 @@
     "state": "ID",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://opensnow.com/location/soldiermountain/snow-summary#report",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T13:01:17.020Z",
     "websiteUrl": "https://soldiermountain.com/"
   },
@@ -732,7 +732,7 @@
     "state": "CO",
     "closingDate": "2026-04-10",
     "closingDateSource": "https://sunlightmtn.com/the-mountain/snow-weather-report",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T13:02:00.927Z",
     "websiteUrl": "https://sunlightmtn.com"
   },
@@ -880,17 +880,6 @@
     "websiteUrl": "https://apexresort.com"
   },
   {
-    "id": "black-jack-cross-country-ski-club",
-    "name": "Black Jack Cross Country Ski Club",
-    "region": "Canada",
-    "state": "BC",
-    "closingDate": "2026-04-05",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T12:45:42.725Z",
-    "websiteUrl": ""
-  },
-  {
     "id": "castle-mountain-resort",
     "name": "Castle Mountain Resort",
     "region": "Canada",
@@ -944,17 +933,6 @@
     "closingDateConfidence": "high",
     "lastUpdated": "2026-04-10T12:51:15.310Z",
     "websiteUrl": "https://en.hodaigi.jp/"
-  },
-  {
-    "id": "jackson-xc",
-    "name": "Jackson XC",
-    "region": "East",
-    "state": "NH",
-    "closingDate": "2026-04-05",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T12:52:03.541Z",
-    "websiteUrl": ""
   },
   {
     "id": "magic-mountain",
@@ -1109,17 +1087,6 @@
     "closingDateConfidence": "high",
     "lastUpdated": "2026-04-10T12:54:59.057Z",
     "websiteUrl": "https://www.mcintyreskiarea.com"
-  },
-  {
-    "id": "mount-racey-ski-resort",
-    "name": "Mount Racey Ski Resort",
-    "region": "Europe",
-    "state": "Hokkaido",
-    "closingDate": "2026-03-31",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T12:55:56.848Z",
-    "websiteUrl": ""
   },
   {
     "id": "onikoube-ski-resort",
@@ -1516,17 +1483,6 @@
     "closingDateConfidence": "high",
     "lastUpdated": "2026-04-10T13:04:12.433Z",
     "websiteUrl": "https://whitecapresort.com/"
-  },
-  {
-    "id": "woodstock-nordic-center",
-    "name": "Woodstock Nordic Center",
-    "region": "East",
-    "state": "VT",
-    "closingDate": "2026-03-29",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T13:04:39.774Z",
-    "websiteUrl": ""
   },
   {
     "id": "yuzawa-nakazato-snow-resort",
@@ -1934,17 +1890,6 @@
     "closingDateConfidence": "high",
     "lastUpdated": "2026-04-10T12:44:53.249Z",
     "websiteUrl": "https://www.bcmountainresort.com/"
-  },
-  {
-    "id": "andes-tower-hills",
-    "name": "Andes Tower Hills",
-    "region": "Midwest",
-    "state": "MN",
-    "closingDate": "2026-03-08",
-    "closingDateSource": "google-search",
-    "closingDateConfidence": "high",
-    "lastUpdated": "2026-04-10T12:44:13.519Z",
-    "websiteUrl": ""
   },
   {
     "id": "bryce-resort",
@@ -2431,17 +2376,6 @@
     "websiteUrl": "https://www.hilltopskiarea.org/"
   },
   {
-    "id": "homestake-lodge",
-    "name": "Homestake Lodge",
-    "region": "Rockies",
-    "state": "MT",
-    "closingDate": null,
-    "closingDateSource": "",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T12:51:23.465Z",
-    "websiteUrl": ""
-  },
-  {
     "id": "hoodoo",
     "name": "Hoodoo",
     "region": "West",
@@ -2506,17 +2440,6 @@
     "closingDateConfidence": "medium",
     "lastUpdated": "2026-04-10T12:52:07.432Z",
     "websiteUrl": "https://jaypeakresort.com"
-  },
-  {
-    "id": "kaya-palazzo-kartalkaya-ski-mountain-resort",
-    "name": "Kaya Palazzo Kartalkaya Ski & Mountain Resort",
-    "region": "Europe",
-    "state": "Türkiye",
-    "closingDate": null,
-    "closingDateSource": "",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T12:52:20.130Z",
-    "websiteUrl": ""
   },
   {
     "id": "kimberley-nordic-club",
@@ -2627,17 +2550,6 @@
     "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:55:09.706Z",
     "websiteUrl": "https://www.middleburysnowbowl.com/"
-  },
-  {
-    "id": "minocqua-winter-park",
-    "name": "Minocqua Winter Park",
-    "region": "Midwest",
-    "state": "WI",
-    "closingDate": null,
-    "closingDateSource": "",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T12:55:12.267Z",
-    "websiteUrl": ""
   },
   {
     "id": "mount-baldy-ski-area",
@@ -2792,17 +2704,6 @@
     "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T12:59:28.781Z",
     "websiteUrl": "https://quarryroad.org/"
-  },
-  {
-    "id": "rangeley-lakes-trail-center",
-    "name": "Rangeley Lakes Trail Center",
-    "region": "East",
-    "state": "ME",
-    "closingDate": null,
-    "closingDateSource": "",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T12:59:34.210Z",
-    "websiteUrl": ""
   },
   {
     "id": "rikert-nordic-center",
@@ -3023,17 +2924,6 @@
     "closingDateConfidence": "low",
     "lastUpdated": "2026-04-10T13:04:06.700Z",
     "websiteUrl": "https://whitepinewyoming.com"
-  },
-  {
-    "id": "white-pine-touring-nordic-center",
-    "name": "White Pine Touring Nordic Center",
-    "region": "Rockies",
-    "state": "UT",
-    "closingDate": null,
-    "closingDateSource": "",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T13:04:09.361Z",
-    "websiteUrl": ""
   },
   {
     "id": "whitehorse-nordic-centre",
