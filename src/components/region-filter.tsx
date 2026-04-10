@@ -6,12 +6,15 @@ import {
 } from "@/components/ui/toggle-group";
 
 const REGIONS = [
-  "Northeast",
+  "East",
   "Mid-Atlantic",
   "Midwest",
   "Rockies",
   "West",
   "Canada",
+  "Japan",
+  "Europe",
+  "South America",
 ] as const;
 
 interface RegionFilterProps {

@@ -1,0 +1,41 @@
+name: Update Resort List
+
+on:
+  workflow_dispatch: # Manual trigger only
+
+permissions:
+  contents: write
+
+jobs:
+  update-resorts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scrape resort list from Indy Pass
+        run: npx tsx scripts/fetch-resorts.ts
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/mountains.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit updated resort list
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/mountains.json
+          git commit -m "chore: update resort list from indyskipass.com $(date -u +%Y-%m-%d)"
+          git push

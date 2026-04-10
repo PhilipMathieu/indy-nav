@@ -145,6 +145,13 @@ async function main() {
   let failed = 0;
 
   for (const seed of seeds) {
+    // Skip resorts with no URL to scrape
+    if (!seed.websiteUrl && !seed.closingDateUrl) {
+      console.log(`⏭  ${seed.name} — skipped (no URL)`);
+      skipped++;
+      continue;
+    }
+
     // Check if we can skip this mountain
     const prev = existingMap.get(seed.id);
     if (!forceRefresh && prev) {

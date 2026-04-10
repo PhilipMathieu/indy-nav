@@ -3,6 +3,12 @@ export interface MountainSeed {
   name: string;
   state: string;
   region: string;
+  lat: number | null;
+  lon: number | null;
+  isNordic: boolean;
+  isAlpineXc: boolean;
+  isXcOnly: boolean;
+  isAllied: boolean;
   websiteUrl: string;
   closingDateUrl: string;
 }

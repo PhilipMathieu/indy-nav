@@ -12,7 +12,7 @@ export default function Home() {
           Indy Nav
         </h1>
         <p className="text-sm text-muted-foreground">
-          Northeast Indy Pass closing dates — 2025/2026 season
+          Indy Pass closing dates — 2025/2026 season
         </p>
       </div>
       <ClosingDatesTable mountains={mountains} />

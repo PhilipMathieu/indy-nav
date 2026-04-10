@@ -29,6 +29,9 @@ jobs:
           GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
         run: npx tsx scripts/fetch-closing-dates.ts
 
+      - name: Cross-check against OnTheSnow
+        run: npx tsx scripts/cross-check-closing-dates.ts --fix
+
       - name: Check for changes
         id: changes
         run: |

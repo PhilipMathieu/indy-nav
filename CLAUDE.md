@@ -26,8 +26,11 @@ Two independent subsystems:
 ```bash
 npm run dev                                    # Start dev server
 npx next build                                 # Static export to out/
+npx tsx scripts/fetch-resorts.ts               # Scrape resort list from indyskipass.com
 npx tsx scripts/fetch-closing-dates.ts         # Run pipeline (incremental)
 npx tsx scripts/fetch-closing-dates.ts --force # Re-check all mountains
+npx tsx scripts/cross-check-closing-dates.ts   # Report conflicts vs OnTheSnow
+npx tsx scripts/cross-check-closing-dates.ts --fix # Apply corrections
 ```
 
 ## Important Conventions

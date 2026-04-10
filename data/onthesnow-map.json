@@ -1,0 +1,502 @@
+[
+  {
+    "id": "lutsen-mountains",
+    "otsPath": "minnesota/lutsen-mountains"
+  },
+  {
+    "id": "loveland-ski-area",
+    "otsPath": "colorado/loveland"
+  },
+  {
+    "id": "brundage-mountain-resort",
+    "otsPath": "idaho/brundage-mountain-resort"
+  },
+  {
+    "id": "camp-fortune",
+    "otsPath": "quebec/camp-fortune"
+  },
+  {
+    "id": "cannon-mountain",
+    "otsPath": "new-hampshire/cannon-mountain"
+  },
+  {
+    "id": "destination-owls-head",
+    "otsPath": "quebec/owls-head"
+  },
+  {
+    "id": "eaglecrest",
+    "otsPath": "alaska/eaglecrest-ski-area"
+  },
+  {
+    "id": "echo-mountain",
+    "otsPath": "colorado/echo-mountain"
+  },
+  {
+    "id": "granite-peak",
+    "otsPath": "wisconsin/granite-peak-ski-area"
+  },
+  {
+    "id": "massif-du-sud",
+    "otsPath": "quebec/massif-du-sud"
+  },
+  {
+    "id": "mont-sutton",
+    "otsPath": "quebec/mont-sutton"
+  },
+  {
+    "id": "powderhorn",
+    "otsPath": "colorado/powderhorn"
+  },
+  {
+    "id": "red-lodge-mountain",
+    "otsPath": "montana/red-lodge-mountain"
+  },
+  {
+    "id": "snowriver",
+    "otsPath": "michigan/snowriver-mountain-resort"
+  },
+  {
+    "id": "tenney-mountain",
+    "otsPath": "new-hampshire/tenney-mountain"
+  },
+  {
+    "id": "west-mountain",
+    "otsPath": "new-york/west-mountain"
+  },
+  {
+    "id": "apex-mountain-resort",
+    "otsPath": "british-columbia/apex-mountain"
+  },
+  {
+    "id": "big-white-ski-resort",
+    "otsPath": "british-columbia/big-white"
+  },
+  {
+    "id": "bousquet-mountain-0",
+    "otsPath": "massachusetts/bousquet-ski-area"
+  },
+  {
+    "id": "eagle-point",
+    "otsPath": "utah/eagle-point"
+  },
+  {
+    "id": "granby-ranch",
+    "otsPath": "colorado/ski-granby-ranch"
+  },
+  {
+    "id": "kiroro-snow-world",
+    "otsPath": "hokkaido/kiroro"
+  },
+  {
+    "id": "manning-park",
+    "otsPath": "british-columbia/manning-park-resort"
+  },
+  {
+    "id": "mt-abram",
+    "otsPath": "maine/mt-abram-ski-resort"
+  },
+  {
+    "id": "pebble-creek-ski-area",
+    "otsPath": "idaho/pebble-creek-ski-area"
+  },
+  {
+    "id": "ragged-mountain",
+    "otsPath": "new-hampshire/ragged-mountain-resort"
+  },
+  {
+    "id": "snow-king-mountain-resort",
+    "otsPath": "wyoming/snow-king-resort"
+  },
+  {
+    "id": "soldier-mountain",
+    "otsPath": "idaho/soldier-mountain-ski-area"
+  },
+  {
+    "id": "sunlight-mountain-resort",
+    "otsPath": "colorado/sunlight-mountain-resort"
+  },
+  {
+    "id": "wintergreen",
+    "otsPath": "virginia/wintergreen-resort"
+  },
+  {
+    "id": "49-degrees-north",
+    "otsPath": "washington/49-degrees-north"
+  },
+  {
+    "id": "montana-snowbowl",
+    "otsPath": "montana/montana-snowbowl"
+  },
+  {
+    "id": "nubs-nob-0",
+    "otsPath": "michigan/nubs-nob-ski-area"
+  },
+  {
+    "id": "burke-mountain",
+    "otsPath": "vermont/burke-mountain"
+  },
+  {
+    "id": "castle-mountain-resort",
+    "otsPath": "alberta/castle-mountain"
+  },
+  {
+    "id": "crystal-mountain",
+    "otsPath": "michigan/crystal-mountain"
+  },
+  {
+    "id": "magic-mountain",
+    "otsPath": "vermont/magic-mountain"
+  },
+  {
+    "id": "mission-ridge",
+    "otsPath": "washington/mission-ridge"
+  },
+  {
+    "id": "snow-ridge",
+    "otsPath": "new-york/snow-ridge"
+  },
+  {
+    "id": "tamarack-mountain-resort",
+    "otsPath": "idaho/tamarack-resort"
+  },
+  {
+    "id": "centre-vorlage",
+    "otsPath": "quebec/vorlage"
+  },
+  {
+    "id": "greek-peak-mountain-resort",
+    "otsPath": "new-york/greek-peak"
+  },
+  {
+    "id": "big-powderhorn",
+    "otsPath": "michigan/big-powderhorn-mountain"
+  },
+  {
+    "id": "lost-trail-powder-mountain",
+    "otsPath": "utah/powder-mountain"
+  },
+  {
+    "id": "mountain-high",
+    "otsPath": "california/mountain-high"
+  },
+  {
+    "id": "beaver-mountain",
+    "otsPath": "utah/beaver-mountain"
+  },
+  {
+    "id": "black-mountain-of-maine",
+    "otsPath": "maine/black-mountain-of-maine"
+  },
+  {
+    "id": "black-mountain-ski-area",
+    "otsPath": "new-hampshire/black-mountain"
+  },
+  {
+    "id": "blacktail-mountain-resort",
+    "otsPath": "montana/blacktail-mountain-ski-area"
+  },
+  {
+    "id": "blue-knob-all-season-resort",
+    "otsPath": "pennsylvania/blue-knob"
+  },
+  {
+    "id": "caberfae-peaks",
+    "otsPath": "michigan/caberfae-peaks-ski-golf-resort"
+  },
+  {
+    "id": "cataloochee-ski-area",
+    "otsPath": "north-carolina/cataloochee-ski-area"
+  },
+  {
+    "id": "dartmouth-skiway",
+    "otsPath": "new-hampshire/dartmouth-skiway"
+  },
+  {
+    "id": "lost-valley",
+    "otsPath": "maine/lost-valley"
+  },
+  {
+    "id": "magic-mountain-idaho",
+    "otsPath": "vermont/magic-mountain"
+  },
+  {
+    "id": "mont-ripley-ski-area",
+    "otsPath": "michigan/mont-ripley"
+  },
+  {
+    "id": "pats-peak",
+    "otsPath": "new-hampshire/pats-peak"
+  },
+  {
+    "id": "shawnee-mountain-ski-area",
+    "otsPath": "pennsylvania/shawnee-mountain-ski-area"
+  },
+  {
+    "id": "spirit-mountain",
+    "otsPath": "minnesota/spirit-mountain"
+  },
+  {
+    "id": "whitecap-mountains-resort",
+    "otsPath": "wisconsin/whitecap-mountain"
+  },
+  {
+    "id": "kelly-canyon",
+    "otsPath": "idaho/kelly-canyon-ski-area"
+  },
+  {
+    "id": "swain-resort",
+    "otsPath": "new-york/swain"
+  },
+  {
+    "id": "ski-bluewood",
+    "otsPath": "washington/bluewood"
+  },
+  {
+    "id": "montage-mountain",
+    "otsPath": "pennsylvania/montage-mountain"
+  },
+  {
+    "id": "buffalo-ski-club",
+    "otsPath": "new-york/buffalo-ski-club-ski-area"
+  },
+  {
+    "id": "mohawk-mountain",
+    "otsPath": "connecticut/mohawk-mountain"
+  },
+  {
+    "id": "nordic-mountain",
+    "otsPath": "wisconsin/nordic-mountain"
+  },
+  {
+    "id": "howelsen-hill",
+    "otsPath": "colorado/howelsen-hill"
+  },
+  {
+    "id": "mount-kato",
+    "otsPath": "minnesota/mount-kato-ski-area"
+  },
+  {
+    "id": "powder-ridge",
+    "otsPath": "minnesota/powder-ridge-ski-area"
+  },
+  {
+    "id": "schuss-mountain-at-shanty-creek",
+    "otsPath": "michigan/shanty-creek"
+  },
+  {
+    "id": "treetops-resort",
+    "otsPath": "michigan/treetops-resort"
+  },
+  {
+    "id": "winterplace-ski-resort",
+    "otsPath": "west-virginia/winterplace-ski-resort"
+  },
+  {
+    "id": "christie-mountain",
+    "otsPath": "wisconsin/christie-mountain"
+  },
+  {
+    "id": "wisp",
+    "otsPath": "maryland/wisp"
+  },
+  {
+    "id": "camden-snow-bowl",
+    "otsPath": "maine/camden-snow-bowl"
+  },
+  {
+    "id": "massanutten-resort",
+    "otsPath": "virginia/massanutten"
+  },
+  {
+    "id": "cooper-spur-ski-area",
+    "otsPath": "oregon/cooper-spur"
+  },
+  {
+    "id": "ski-big-bear",
+    "otsPath": "pennsylvania/big-bear"
+  },
+  {
+    "id": "dodge-ridge",
+    "otsPath": "california/dodge-ridge"
+  },
+  {
+    "id": "whaleback-mountain",
+    "otsPath": "new-hampshire/whaleback-mountain"
+  },
+  {
+    "id": "bear-creek",
+    "otsPath": "pennsylvania/bear-creek-mountain-resort"
+  },
+  {
+    "id": "andes-tower-hills",
+    "otsPath": "minnesota/andes-tower-hills-ski-area"
+  },
+  {
+    "id": "bryce-resort",
+    "otsPath": "virginia/bryce-resort"
+  },
+  {
+    "id": "chestnut-mountain-resort",
+    "otsPath": "illinois/chestnut-mountain-resort"
+  },
+  {
+    "id": "snowstar",
+    "otsPath": "illinois/ski-snowstar-winter-sports-park"
+  },
+  {
+    "id": "tussey-mountain",
+    "otsPath": "pennsylvania/tussey-mountain"
+  },
+  {
+    "id": "sundown-mountain",
+    "otsPath": "iowa/sundown-mountain"
+  },
+  {
+    "id": "canaan-valley",
+    "otsPath": "west-virginia/canaan-valley-resort"
+  },
+  {
+    "id": "pomerelle-mountain-resort",
+    "otsPath": "idaho/pomerelle-mountain-resort"
+  },
+  {
+    "id": "bruce-mound-winter-sports-area",
+    "otsPath": "wisconsin/bruce-mound"
+  },
+  {
+    "id": "loch-lomond",
+    "otsPath": "ontario/loch-lomond"
+  },
+  {
+    "id": "steamboat-ski-touring-center",
+    "otsPath": "colorado/steamboat"
+  },
+  {
+    "id": "bear-valley-adventure-company",
+    "otsPath": "california/bear-valley"
+  },
+  {
+    "id": "bear-valley-mountain-resort",
+    "otsPath": "california/bear-valley"
+  },
+  {
+    "id": "berkshire-east-mountain-resort",
+    "otsPath": "massachusetts/berkshire-east"
+  },
+  {
+    "id": "bolton-valley-resort",
+    "otsPath": "vermont/bolton-valley"
+  },
+  {
+    "id": "calabogie-peaks-resort",
+    "otsPath": "ontario/calabogie-peaks"
+  },
+  {
+    "id": "china-peak",
+    "otsPath": "california/ski-china-peak"
+  },
+  {
+    "id": "donner-ski-ranch",
+    "otsPath": "california/donner-ski-ranch"
+  },
+  {
+    "id": "dry-hill-ski-area",
+    "otsPath": "new-york/dry-hill-ski-area"
+  },
+  {
+    "id": "hilltop-ski-area",
+    "otsPath": "alaska/hilltop-ski-area"
+  },
+  {
+    "id": "hoodoo",
+    "otsPath": "oregon/hoodoo-ski-area"
+  },
+  {
+    "id": "hudson-bay-mountain",
+    "otsPath": "british-columbia/hudson-bay-mountain"
+  },
+  {
+    "id": "hunt-hollow-ski-club",
+    "otsPath": "new-york/hunt-hollow-ski-club"
+  },
+  {
+    "id": "jay-peak-resort",
+    "otsPath": "vermont/jay-peak"
+  },
+  {
+    "id": "kimberley-nordic-club",
+    "otsPath": "british-columbia/kimberley"
+  },
+  {
+    "id": "king-pine",
+    "otsPath": "new-hampshire/king-pine"
+  },
+  {
+    "id": "little-switzerland",
+    "otsPath": "wisconsin/little-switzerland"
+  },
+  {
+    "id": "maple-ski-ridge",
+    "otsPath": "new-york/maple-ski-ridge"
+  },
+  {
+    "id": "marquette-mountain",
+    "otsPath": "michigan/marquette-mountain"
+  },
+  {
+    "id": "mt-hood-meadows",
+    "otsPath": "oregon/mt-hood-meadows"
+  },
+  {
+    "id": "mt-washington",
+    "otsPath": "british-columbia/mt-washington-alpine-resort"
+  },
+  {
+    "id": "norway-mountain",
+    "otsPath": "michigan/norway-mountain"
+  },
+  {
+    "id": "pine-mountain",
+    "otsPath": "michigan/pine-mountain"
+  },
+  {
+    "id": "silver-mountain",
+    "otsPath": "idaho/silver-mountain"
+  },
+  {
+    "id": "ski-sawmill",
+    "otsPath": "pennsylvania/ski-sawmill"
+  },
+  {
+    "id": "sunburst-ski-area",
+    "otsPath": "wisconsin/sunburst"
+  },
+  {
+    "id": "terry-peak",
+    "otsPath": "south-dakota/terry-peak-ski-area"
+  },
+  {
+    "id": "titus-mountain",
+    "otsPath": "new-york/titus-mountain"
+  },
+  {
+    "id": "trollhaugen",
+    "otsPath": "wisconsin/trollhaugen"
+  },
+  {
+    "id": "tyrol-basin-ski-and-snowboard",
+    "otsPath": "wisconsin/tyrol-basin"
+  },
+  {
+    "id": "waterville-valley-resort",
+    "otsPath": "new-hampshire/waterville-valley"
+  },
+  {
+    "id": "white-pass",
+    "otsPath": "washington/white-pass"
+  },
+  {
+    "id": "white-pine-resort",
+    "otsPath": "wyoming/white-pine-ski-area"
+  }
+]
