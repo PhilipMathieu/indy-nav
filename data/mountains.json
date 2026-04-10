@@ -1,11 +1,571 @@
 [
   {
+    "id": "apex-mountain-resort",
+    "name": "Apex Mountain Resort",
+    "state": "BC",
+    "region": "Canada",
+    "websiteUrl": "https://apexresort.com/",
+    "closingDateUrl": "https://apexresort.com/"
+  },
+  {
+    "id": "baldy-mountain-resort",
+    "name": "Baldy Mountain Resort",
+    "state": "BC",
+    "region": "Canada",
+    "websiteUrl": "https://baldyresort.com/",
+    "closingDateUrl": "https://baldyresort.com/"
+  },
+  {
+    "id": "big-white-ski-resort",
+    "name": "Big White Ski Resort",
+    "state": "BC",
+    "region": "Canada",
+    "websiteUrl": "https://www.bigwhite.com/",
+    "closingDateUrl": "https://www.bigwhite.com/"
+  },
+  {
+    "id": "calabogie-peaks-resort",
+    "name": "Calabogie Peaks Resort",
+    "state": "ON",
+    "region": "Canada",
+    "websiteUrl": "https://calabogie.com/",
+    "closingDateUrl": "https://calabogie.com/"
+  },
+  {
+    "id": "camp-fortune",
+    "name": "Camp Fortune",
+    "state": "ON",
+    "region": "Canada",
+    "websiteUrl": "https://campfortune.com/en/",
+    "closingDateUrl": "https://campfortune.com/en/"
+  },
+  {
+    "id": "cape-smokey",
+    "name": "Cape Smokey",
+    "state": "NS",
+    "region": "Canada",
+    "websiteUrl": "https://www.capesmokey.ca/",
+    "closingDateUrl": "https://www.capesmokey.ca/"
+  },
+  {
+    "id": "castle-mountain-resort",
+    "name": "Castle Mountain Resort",
+    "state": "AB",
+    "region": "Canada",
+    "websiteUrl": "https://www.skicastle.ca/",
+    "closingDateUrl": "https://www.skicastle.ca/"
+  },
+  {
+    "id": "centre-vorlage",
+    "name": "Centre Vorlage",
+    "state": "QC",
+    "region": "Canada",
+    "websiteUrl": "https://centrevorlage.ca/",
+    "closingDateUrl": "https://centrevorlage.ca/winter/"
+  },
+  {
+    "id": "destination-owls-head",
+    "name": "Destination Owls Head",
+    "state": "QC",
+    "region": "Canada",
+    "websiteUrl": "https://owlshead.com/en/",
+    "closingDateUrl": "https://owlshead.com/en/"
+  },
+  {
+    "id": "hockley-valley-resort",
+    "name": "Hockley Valley Resort",
+    "state": "ON",
+    "region": "Canada",
+    "websiteUrl": "https://hockley.com/",
+    "closingDateUrl": "https://hockley.com/"
+  },
+  {
+    "id": "loch-lomond",
+    "name": "Loch Lomond",
+    "state": "ON",
+    "region": "Canada",
+    "websiteUrl": "https://www.lochlomond.ca/",
+    "closingDateUrl": "https://www.lochlomond.ca/"
+  },
+  {
+    "id": "manning-park",
+    "name": "Manning Park",
+    "state": "BC",
+    "region": "Canada",
+    "websiteUrl": "https://manningpark.com/winter-activities/",
+    "closingDateUrl": "https://manningpark.com/winter-activities/"
+  },
+  {
+    "id": "marble-mountain",
+    "name": "Marble Mountain",
+    "state": "NL",
+    "region": "Canada",
+    "websiteUrl": "https://skimarble.com/",
+    "closingDateUrl": "https://skimarble.com/"
+  },
+  {
+    "id": "massif-du-sud",
+    "name": "Massif du Sud",
+    "state": "QC",
+    "region": "Canada",
+    "websiteUrl": "https://massifdusud.net/en/",
+    "closingDateUrl": "https://massifdusud.net/en/opening"
+  },
+  {
+    "id": "mont-edouard",
+    "name": "Mont Edouard",
+    "state": "QC",
+    "region": "Canada",
+    "websiteUrl": "https://www.montedouard.com/",
+    "closingDateUrl": "https://www.montedouard.com/en/winter-at-mount-edward"
+  },
+  {
+    "id": "mont-sutton",
+    "name": "Mont Sutton",
+    "state": "QC",
+    "region": "Canada",
+    "websiteUrl": "https://montsutton.com/en/",
+    "closingDateUrl": "https://montsutton.com/en/"
+  },
+  {
+    "id": "mount-baldy-ski-area",
+    "name": "Mount Baldy Ski Area",
+    "state": "ON",
+    "region": "Canada",
+    "websiteUrl": "https://www.skimountbaldy.ca/",
+    "closingDateUrl": "https://www.skimountbaldy.ca/"
+  },
+  {
+    "id": "pass-powderkeg",
+    "name": "Pass Powderkeg",
+    "state": "AB",
+    "region": "Canada",
+    "websiteUrl": "https://www.passpowderkeg.com/",
+    "closingDateUrl": "https://www.passpowderkeg.com/"
+  },
+  {
+    "id": "sasquatch-mountain-resort",
+    "name": "Sasquatch Mountain Resort",
+    "state": "BC",
+    "region": "Canada",
+    "websiteUrl": "https://sasquatchmountain.ca/",
+    "closingDateUrl": "https://sasquatchmountain.ca/"
+  },
+  {
+    "id": "shames-mountain",
+    "name": "Shames Mountain",
+    "state": "BC",
+    "region": "Canada",
+    "websiteUrl": "https://mymountaincoop.ca/",
+    "closingDateUrl": "https://mymountaincoop.ca/"
+  },
+  {
+    "id": "val-d-irene",
+    "name": "Val d'Irene",
+    "state": "QC",
+    "region": "Canada",
+    "websiteUrl": "https://valdi.ski/en/home.html",
+    "closingDateUrl": "https://valdi.ski/en/home.html"
+  },
+  {
+    "id": "bear-creek",
+    "name": "Bear Creek",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.bcmountainresort.com/",
+    "closingDateUrl": "https://www.bcmountainresort.com/"
+  },
+  {
+    "id": "blue-knob-all-season-resort",
+    "name": "Blue Knob All Season Resort",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://blueknob.com/",
+    "closingDateUrl": "https://blueknob.com/hours/"
+  },
+  {
+    "id": "cataloochee-ski-area",
+    "name": "Cataloochee Ski Area",
+    "state": "NC",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://cataloochee.com/",
+    "closingDateUrl": "https://cataloochee.com/"
+  },
+  {
+    "id": "massanutten-resort",
+    "name": "Massanutten Resort",
+    "state": "VA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.massresort.com/",
+    "closingDateUrl": "https://www.massresort.com/play/snow-sports/"
+  },
+  {
+    "id": "montage-mountain",
+    "name": "Montage Mountain",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.montagemountainresorts.com/",
+    "closingDateUrl": "https://www.montagemountainresorts.com/trails/"
+  },
+  {
+    "id": "ober-mountain",
+    "name": "Ober Mountain",
+    "state": "TN",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.obermountain.com/",
+    "closingDateUrl": "https://www.obermountain.com/slope-report"
+  },
+  {
+    "id": "shawnee-mountain-ski-area",
+    "name": "Shawnee Mountain Ski Area",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://shawneemt.com/",
+    "closingDateUrl": "https://shawneemt.com/"
+  },
+  {
+    "id": "ski-big-bear",
+    "name": "Ski Big Bear",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.ski-bigbear.com/",
+    "closingDateUrl": "https://www.ski-bigbear.com/"
+  },
+  {
+    "id": "tussey-mountain",
+    "name": "Tussey Mountain",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://tusseymountain.com/",
+    "closingDateUrl": "https://tusseymountain.com/"
+  },
+  {
+    "id": "wintergreen",
+    "name": "Wintergreen",
+    "state": "VA",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.wintergreenresort.com/",
+    "closingDateUrl": "https://www.wintergreenresort.com/"
+  },
+  {
+    "id": "winterplace-ski-resort",
+    "name": "Winterplace Ski Resort",
+    "state": "WV",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://winterplace.com/",
+    "closingDateUrl": "https://winterplace.com/"
+  },
+  {
+    "id": "wisp",
+    "name": "Wisp",
+    "state": "MD",
+    "region": "Mid-Atlantic",
+    "websiteUrl": "https://www.wispresort.com/",
+    "closingDateUrl": "https://www.wispresort.com/"
+  },
+  {
+    "id": "andes-tower-hills",
+    "name": "Andes Tower Hills",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://www.andestowerhills.com/",
+    "closingDateUrl": "https://www.andestowerhills.com/"
+  },
+  {
+    "id": "big-powderhorn",
+    "name": "Big Powderhorn",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://bigpowderhorn.net/",
+    "closingDateUrl": "https://bigpowderhorn.net/"
+  },
+  {
+    "id": "bottineau-winter-park",
+    "name": "Bottineau Winter Park",
+    "state": "ND",
+    "region": "Midwest",
+    "websiteUrl": "https://skibwp.com/",
+    "closingDateUrl": "https://skibwp.com/"
+  },
+  {
+    "id": "bruce-mound",
+    "name": "Bruce Mound",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.clarkcountywi.gov/brucemound",
+    "closingDateUrl": "https://www.clarkcountywi.gov/brucemound"
+  },
+  {
+    "id": "caberfae-peaks",
+    "name": "Caberfae Peaks",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://caberfaepeaks.com/",
+    "closingDateUrl": "https://caberfaepeaks.com/"
+  },
+  {
+    "id": "chestnut-mountain-resort",
+    "name": "Chestnut Mountain Resort",
+    "state": "IL",
+    "region": "Midwest",
+    "websiteUrl": "https://www.chestnutmtn.com/",
+    "closingDateUrl": "https://www.chestnutmtn.com/"
+  },
+  {
+    "id": "christie-mountain",
+    "name": "Christie Mountain",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.christiemountain.com/",
+    "closingDateUrl": "https://www.christiemountain.com/"
+  },
+  {
+    "id": "coffee-mill-ski-area",
+    "name": "Coffee Mill Ski Area",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://cmskiarea.com/",
+    "closingDateUrl": "https://cmskiarea.com/hours-events/"
+  },
+  {
+    "id": "crystal-mountain-mi",
+    "name": "Crystal Mountain MI",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.crystalmountain.com/",
+    "closingDateUrl": "https://www.crystalmountain.com/ski/cams-conditions/mountain-report"
+  },
+  {
+    "id": "detroit-mountain",
+    "name": "Detroit Mountain",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://detroitmountain.com/",
+    "closingDateUrl": "https://detroitmountain.com/"
+  },
+  {
+    "id": "granite-peak",
+    "name": "Granite Peak",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.skigranitepeak.com/",
+    "closingDateUrl": "https://www.skigranitepeak.com/mountain-info/trail-map-mountain-stats"
+  },
+  {
+    "id": "great-bear-ski-valley",
+    "name": "Great Bear Ski Valley",
+    "state": "SD",
+    "region": "Midwest",
+    "websiteUrl": "https://www.greatbearpark.com/",
+    "closingDateUrl": "https://www.greatbearpark.com/"
+  },
+  {
+    "id": "huff-hills-ski-area",
+    "name": "Huff Hills Ski Area",
+    "state": "ND",
+    "region": "Midwest",
+    "websiteUrl": "https://www.huffhills.com/",
+    "closingDateUrl": "https://www.huffhills.com/"
+  },
+  {
+    "id": "hyland-hills",
+    "name": "Hyland Hills",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://www.threeriversparks.org/location/hyland-hills-ski-area",
+    "closingDateUrl": "https://www.threeriversparks.org/page/hyland-hills-ski-area-hours-rates"
+  },
+  {
+    "id": "little-switzerland",
+    "name": "Little Switzerland",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.littleswitz.com/",
+    "closingDateUrl": "https://www.littleswitz.com/"
+  },
+  {
+    "id": "lutsen-mountains",
+    "name": "Lutsen Mountains",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://www.lutsen.com/",
+    "closingDateUrl": "https://www.lutsen.com/"
+  },
+  {
+    "id": "marquette-mountain",
+    "name": "Marquette Mountain",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.marquettemountain.com/",
+    "closingDateUrl": "https://www.marquettemountain.com/"
+  },
+  {
+    "id": "mont-ripley-ski-area",
+    "name": "Mont Ripley Ski Area",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.mtu.edu/mont-ripley/",
+    "closingDateUrl": "https://www.mtu.edu/mont-ripley/"
+  },
+  {
+    "id": "mount-kato",
+    "name": "Mount Kato",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://mountkato.com/",
+    "closingDateUrl": "https://mountkato.com/"
+  },
+  {
+    "id": "mt-la-crosse",
+    "name": "Mt La Crosse",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://mtlacrosse.com/",
+    "closingDateUrl": "https://mtlacrosse.com/"
+  },
+  {
+    "id": "mt-holiday",
+    "name": "Mt. Holiday",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://mt-holiday.com/",
+    "closingDateUrl": "https://mt-holiday.com/"
+  },
+  {
+    "id": "nordic-mountain",
+    "name": "Nordic Mountain",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.nordicmountain.com/",
+    "closingDateUrl": "https://www.nordicmountain.com/"
+  },
+  {
+    "id": "nubs-nob",
+    "name": "Nubs Nob",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.nubsnob.com/",
+    "closingDateUrl": "https://www.nubsnob.com/conditions-tables/"
+  },
+  {
+    "id": "pine-mountain",
+    "name": "Pine Mountain",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.pinemountainresort.com/",
+    "closingDateUrl": "https://www.pinemountainresort.com/"
+  },
+  {
+    "id": "powder-ridge-mn",
+    "name": "Powder Ridge MN",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://powderridge.com/",
+    "closingDateUrl": "https://powderridge.com/"
+  },
+  {
+    "id": "snowriver",
+    "name": "Snowriver",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.snowriver.com/",
+    "closingDateUrl": "https://www.snowriver.com/mountain-info/trail-map-mountain-stats"
+  },
+  {
+    "id": "snowstar",
+    "name": "Snowstar",
+    "state": "IL",
+    "region": "Midwest",
+    "websiteUrl": "https://skisnowstar.com/",
+    "closingDateUrl": "https://skisnowstar.com/"
+  },
+  {
+    "id": "spirit-mountain",
+    "name": "Spirit Mountain",
+    "state": "MN",
+    "region": "Midwest",
+    "websiteUrl": "https://spiritmt.com/",
+    "closingDateUrl": "https://spiritmt.com/"
+  },
+  {
+    "id": "sundown-mountain",
+    "name": "Sundown Mountain",
+    "state": "IA",
+    "region": "Midwest",
+    "websiteUrl": "https://sundownmtn.com/",
+    "closingDateUrl": "https://sundownmtn.com/"
+  },
+  {
+    "id": "terry-peak",
+    "name": "Terry Peak",
+    "state": "SD",
+    "region": "Midwest",
+    "websiteUrl": "https://terrypeak.com/",
+    "closingDateUrl": "https://terrypeak.com/"
+  },
+  {
+    "id": "treetops-resort",
+    "name": "Treetops Resort",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://www.treetops.com/",
+    "closingDateUrl": "https://www.treetops.com/winter-getaway/skiing/"
+  },
+  {
+    "id": "trollhaugen",
+    "name": "Trollhaugen",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://trollhaugen.com/",
+    "closingDateUrl": "https://trollhaugen.com/snow-report/"
+  },
+  {
+    "id": "tyrol-basin",
+    "name": "Tyrol Basin",
+    "state": "WI",
+    "region": "Midwest",
+    "websiteUrl": "https://tyrolbasin.com/",
+    "closingDateUrl": "https://tyrolbasin.com/"
+  },
+  {
+    "id": "whitecap-mountains-resort",
+    "name": "Whitecap Mountains Resort",
+    "state": "MI",
+    "region": "Midwest",
+    "websiteUrl": "https://whitecapresort.com/",
+    "closingDateUrl": "https://whitecapresort.com/winter"
+  },
+  {
     "id": "berkshire-east",
     "name": "Berkshire East",
     "state": "MA",
     "region": "Northeast",
     "websiteUrl": "https://www.berkshireeast.com",
     "closingDateUrl": "https://www.berkshireeast.com/plan/hours-of-operation"
+  },
+  {
+    "id": "berkshire-east-mountain-resort",
+    "name": "Berkshire East Mountain Resort",
+    "state": "MA",
+    "region": "Northeast",
+    "websiteUrl": "https://berkshireeast.com/",
+    "closingDateUrl": "https://berkshireeast.com/winter/mountain-conditions"
+  },
+  {
+    "id": "big-moose",
+    "name": "Big Moose",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://skibigmoose.com/",
+    "closingDateUrl": "https://skibigmoose.com/"
+  },
+  {
+    "id": "big-rock-mountain",
+    "name": "Big Rock Mountain",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://www.bigrockmaine.com/",
+    "closingDateUrl": "https://www.bigrockmaine.com/"
   },
   {
     "id": "black-mountain-nh",
@@ -16,12 +576,44 @@
     "closingDateUrl": "https://www.blackmt.com"
   },
   {
+    "id": "black-mountain-ski-area",
+    "name": "Black Mountain Ski Area",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.blackmt.com",
+    "closingDateUrl": "https://www.blackmt.com/conditions"
+  },
+  {
+    "id": "black-mountain-of-maine",
+    "name": "Black Mountain of Maine",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://skiblackmountain.org/",
+    "closingDateUrl": "https://skiblackmountain.org/mountain-report"
+  },
+  {
     "id": "bolton-valley",
     "name": "Bolton Valley",
     "state": "VT",
     "region": "Northeast",
     "websiteUrl": "https://www.boltonvalley.com",
     "closingDateUrl": "https://www.boltonvalley.com/the-resort/hours-of-operation/"
+  },
+  {
+    "id": "bolton-valley-resort",
+    "name": "Bolton Valley Resort",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.boltonvalley.com/",
+    "closingDateUrl": "https://www.boltonvalley.com/"
+  },
+  {
+    "id": "bousquet-mountain",
+    "name": "Bousquet Mountain",
+    "state": "MA",
+    "region": "Northeast",
+    "websiteUrl": "https://bousquetmountain.com/",
+    "closingDateUrl": "https://bousquetmountain.com/"
   },
   {
     "id": "bradford-ski-area",
@@ -40,6 +632,22 @@
     "closingDateUrl": "https://www.bryceresort.com/mountain-info/conditions"
   },
   {
+    "id": "buffalo-ski-club",
+    "name": "Buffalo Ski Club",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.buffaloskicenter.com/",
+    "closingDateUrl": "https://www.buffaloskicenter.com/"
+  },
+  {
+    "id": "burke-mountain",
+    "name": "Burke Mountain",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://skiburke.com/",
+    "closingDateUrl": "https://skiburke.com/the-mountain/weather-conditions"
+  },
+  {
     "id": "camden-snow-bowl",
     "name": "Camden Snow Bowl",
     "state": "ME",
@@ -56,6 +664,14 @@
     "closingDateUrl": "https://www.canaanresort.com/trail-report/"
   },
   {
+    "id": "cannon-mountain",
+    "name": "Cannon Mountain",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.cannonmt.com/",
+    "closingDateUrl": "https://www.cannonmt.com/mountain-report"
+  },
+  {
     "id": "catamount",
     "name": "Catamount",
     "state": "NY",
@@ -64,12 +680,28 @@
     "closingDateUrl": "https://www.catamountski.com/winter/the-mountain/mountain-conditions"
   },
   {
+    "id": "catamount-mountain-resort",
+    "name": "Catamount Mountain Resort",
+    "state": "MA",
+    "region": "Northeast",
+    "websiteUrl": "https://catamountski.com/",
+    "closingDateUrl": "https://catamountski.com/winter/the-mountain/mountain-conditions"
+  },
+  {
     "id": "dartmouth-skiway",
     "name": "Dartmouth Skiway",
     "state": "NH",
     "region": "Northeast",
     "websiteUrl": "https://skiway.dartmouth.edu",
     "closingDateUrl": "https://dartmouthskiway.com/"
+  },
+  {
+    "id": "dry-hill-ski-area",
+    "name": "Dry Hill Ski Area",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.skidryhill.com/",
+    "closingDateUrl": "https://www.skidryhill.com/general-6"
   },
   {
     "id": "elk-mountain",
@@ -96,6 +728,22 @@
     "closingDateUrl": "https://www.greekpeak.net/hours-of-operation"
   },
   {
+    "id": "greek-peak-mountain-resort",
+    "name": "Greek Peak Mountain Resort",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.greekpeak.net/",
+    "closingDateUrl": "https://www.greekpeak.net/"
+  },
+  {
+    "id": "hunt-hollow-ski-club",
+    "name": "Hunt Hollow Ski Club",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.hunthollow.com/",
+    "closingDateUrl": "https://www.hunthollow.com/The_Mountain/Hours_of_Operation"
+  },
+  {
     "id": "jay-peak",
     "name": "Jay Peak",
     "state": "VT",
@@ -104,12 +752,44 @@
     "closingDateUrl": "https://jaypeakresort.com/conditions"
   },
   {
+    "id": "jay-peak-resort",
+    "name": "Jay Peak Resort",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://jaypeakresort.com/",
+    "closingDateUrl": "https://jaypeakresort.com/"
+  },
+  {
+    "id": "king-pine",
+    "name": "King Pine",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.kingpine.com/",
+    "closingDateUrl": "https://www.kingpine.com/"
+  },
+  {
+    "id": "lost-valley",
+    "name": "Lost Valley",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://www.lostvalleyski.com/",
+    "closingDateUrl": "https://www.lostvalleyski.com/"
+  },
+  {
     "id": "magic-mountain",
     "name": "Magic Mountain",
     "state": "VT",
     "region": "Northeast",
     "websiteUrl": "https://www.magicmtn.com",
     "closingDateUrl": "https://www.magicmtn.com"
+  },
+  {
+    "id": "maple-ski-ridge",
+    "name": "Maple Ski Ridge",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.mapleskiridge.com/",
+    "closingDateUrl": "https://www.mapleskiridge.com/hours-info"
   },
   {
     "id": "massanutten",
@@ -128,6 +808,22 @@
     "closingDateUrl": "https://www.mcintyreskiarea.com/mountain-report/"
   },
   {
+    "id": "middlebury-snowbowl",
+    "name": "Middlebury Snowbowl",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://middleburysnowbowl.com/",
+    "closingDateUrl": "https://middleburysnowbowl.com/"
+  },
+  {
+    "id": "mohawk-mountain",
+    "name": "Mohawk Mountain",
+    "state": "CT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.mohawkmtn.com/",
+    "closingDateUrl": "https://www.mohawkmtn.com/"
+  },
+  {
     "id": "mount-bohemia",
     "name": "Mount Bohemia",
     "state": "MI",
@@ -142,6 +838,30 @@
     "region": "Northeast",
     "websiteUrl": "https://www.mountsouthington.com",
     "closingDateUrl": "https://www.mountsouthington.com/hours-of-operation"
+  },
+  {
+    "id": "mt-abram",
+    "name": "Mt. Abram",
+    "state": "ME",
+    "region": "Northeast",
+    "websiteUrl": "https://www.mtabram.com/",
+    "closingDateUrl": "https://www.mtabram.com/"
+  },
+  {
+    "id": "pats-peak",
+    "name": "Pats Peak",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.patspeak.com/",
+    "closingDateUrl": "https://www.patspeak.com/"
+  },
+  {
+    "id": "peek-n-peak",
+    "name": "Peek 'n Peak",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.pknpk.com/",
+    "closingDateUrl": "https://www.pknpk.com/"
   },
   {
     "id": "plattekill",
@@ -160,12 +880,44 @@
     "closingDateUrl": "https://www.powderridgepark.com"
   },
   {
+    "id": "ragged-mountain",
+    "name": "Ragged Mountain",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.raggedmountainresort.com/",
+    "closingDateUrl": "https://www.raggedmountainresort.com/"
+  },
+  {
     "id": "saddleback-mountain",
     "name": "Saddleback Mountain",
     "state": "ME",
     "region": "Northeast",
     "websiteUrl": "https://www.saddlebackmaine.com",
     "closingDateUrl": "https://www.saddlebackmaine.com/mountain-report/"
+  },
+  {
+    "id": "saskadena-six-ski-area",
+    "name": "Saskadena Six Ski Area",
+    "state": "VT",
+    "region": "Northeast",
+    "websiteUrl": "https://www.saskadenasix.com/",
+    "closingDateUrl": "https://www.saskadenasix.com/the-mountain/conditions"
+  },
+  {
+    "id": "skaneateles-ski-club",
+    "name": "Skaneateles Ski Club",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.skiskan.com",
+    "closingDateUrl": "https://www.skiskan.com"
+  },
+  {
+    "id": "snow-ridge",
+    "name": "Snow Ridge",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://snowridge.com/",
+    "closingDateUrl": "https://snowridge.com/"
   },
   {
     "id": "snowshoe",
@@ -192,6 +944,22 @@
     "closingDateUrl": "https://www.swain.com/trail-report/"
   },
   {
+    "id": "swain-resort",
+    "name": "Swain Resort",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://swain.com/",
+    "closingDateUrl": "https://swain.com/"
+  },
+  {
+    "id": "tenney-mountain",
+    "name": "Tenney Mountain",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://skitenney.com/",
+    "closingDateUrl": "https://skitenney.com/"
+  },
+  {
     "id": "timberline-mountain",
     "name": "Timberline Mountain",
     "state": "WV",
@@ -200,11 +968,427 @@
     "closingDateUrl": "https://www.timberlinemountain.com/snow-report/"
   },
   {
+    "id": "titus-mountain",
+    "name": "Titus Mountain",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://www.titusmountain.com/",
+    "closingDateUrl": "https://www.titusmountain.com/conditions"
+  },
+  {
     "id": "wachusett-mountain",
     "name": "Wachusett Mountain",
     "state": "MA",
     "region": "Northeast",
     "websiteUrl": "https://www.wachusett.com",
     "closingDateUrl": "https://www.wachusett.com/hours"
+  },
+  {
+    "id": "waterville-valley-resort",
+    "name": "Waterville Valley Resort",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.waterville.com/",
+    "closingDateUrl": "https://www.waterville.com/"
+  },
+  {
+    "id": "west-mountain",
+    "name": "West Mountain",
+    "state": "NY",
+    "region": "Northeast",
+    "websiteUrl": "https://westmountain.com/",
+    "closingDateUrl": "https://westmountain.com/trail-conditions/"
+  },
+  {
+    "id": "whaleback-mountain",
+    "name": "Whaleback Mountain",
+    "state": "NH",
+    "region": "Northeast",
+    "websiteUrl": "https://www.whaleback.com/",
+    "closingDateUrl": "https://www.whaleback.com/hours-location"
+  },
+  {
+    "id": "antelope-butte",
+    "name": "Antelope Butte",
+    "state": "WY",
+    "region": "Rockies",
+    "websiteUrl": "https://www.skiantelopebutte.com/",
+    "closingDateUrl": "https://www.skiantelopebutte.com/"
+  },
+  {
+    "id": "beaver-mountain",
+    "name": "Beaver Mountain",
+    "state": "UT",
+    "region": "Rockies",
+    "websiteUrl": "https://www.skithebeav.com/",
+    "closingDateUrl": "https://www.skithebeav.com/"
+  },
+  {
+    "id": "blacktail-mountain-resort",
+    "name": "Blacktail Mountain Resort",
+    "state": "MT",
+    "region": "Rockies",
+    "websiteUrl": "https://blacktailmountain.com/",
+    "closingDateUrl": "https://blacktailmountain.com/"
+  },
+  {
+    "id": "brundage-mountain-resort",
+    "name": "Brundage Mountain Resort",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://brundage.com/",
+    "closingDateUrl": "https://brundage.com/"
+  },
+  {
+    "id": "cherry-peak",
+    "name": "Cherry Peak",
+    "state": "UT",
+    "region": "Rockies",
+    "websiteUrl": "https://www.skicpr.com/",
+    "closingDateUrl": "https://www.skicpr.com/"
+  },
+  {
+    "id": "cuchara",
+    "name": "Cuchara",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://cucharamountainpark.org/",
+    "closingDateUrl": "https://cucharamountainpark.org/"
+  },
+  {
+    "id": "eagle-point",
+    "name": "Eagle Point",
+    "state": "UT",
+    "region": "Rockies",
+    "websiteUrl": "https://www.eaglepointresort.com/",
+    "closingDateUrl": "https://www.eaglepointresort.com/"
+  },
+  {
+    "id": "echo-mountain",
+    "name": "Echo Mountain",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://echomtn.com/",
+    "closingDateUrl": "https://echomtn.com/"
+  },
+  {
+    "id": "granby-ranch",
+    "name": "Granby Ranch",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://granbyranch.com/",
+    "closingDateUrl": "https://granbyranch.com/"
+  },
+  {
+    "id": "howelsen-hill",
+    "name": "Howelsen Hill",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area",
+    "closingDateUrl": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area"
+  },
+  {
+    "id": "kelly-canyon",
+    "name": "Kelly Canyon",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://www.kellycanyonresort.com/",
+    "closingDateUrl": "https://www.kellycanyonresort.com/"
+  },
+  {
+    "id": "little-ski-hill",
+    "name": "Little Ski Hill",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://payettelakesskiclub.org/",
+    "closingDateUrl": "https://payettelakesskiclub.org/"
+  },
+  {
+    "id": "lost-trail-powder-mountain",
+    "name": "Lost Trail Powder Mountain",
+    "state": "MT",
+    "region": "Rockies",
+    "websiteUrl": "https://losttrail.com/",
+    "closingDateUrl": "https://losttrail.com/"
+  },
+  {
+    "id": "loveland-ski-area",
+    "name": "Loveland Ski Area",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://skiloveland.com/",
+    "closingDateUrl": "https://skiloveland.com/"
+  },
+  {
+    "id": "magic-mountain-idaho",
+    "name": "Magic Mountain Idaho",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://magicmountainresort.com/",
+    "closingDateUrl": "https://magicmountainresort.com/"
+  },
+  {
+    "id": "meadowlark-ski-resort",
+    "name": "Meadowlark Ski Resort",
+    "state": "WY",
+    "region": "Rockies",
+    "websiteUrl": "https://meadowlarklakeresort.com/",
+    "closingDateUrl": "https://meadowlarklakeresort.com/"
+  },
+  {
+    "id": "montana-snowbowl",
+    "name": "Montana Snowbowl",
+    "state": "MT",
+    "region": "Rockies",
+    "websiteUrl": "https://www.montanasnowbowl.com/",
+    "closingDateUrl": "https://www.montanasnowbowl.com/"
+  },
+  {
+    "id": "pebble-creek-ski-area",
+    "name": "Pebble Creek Ski Area",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://pebblecreekskiarea.com/",
+    "closingDateUrl": "https://pebblecreekskiarea.com/"
+  },
+  {
+    "id": "pomerelle-mountain-resort",
+    "name": "Pomerelle Mountain Resort",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://www.pomerelle.com/",
+    "closingDateUrl": "https://www.pomerelle.com/"
+  },
+  {
+    "id": "powderhorn",
+    "name": "Powderhorn",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://powderhorn.com/",
+    "closingDateUrl": "https://powderhorn.com/"
+  },
+  {
+    "id": "red-lodge-mountain",
+    "name": "Red Lodge Mountain",
+    "state": "MT",
+    "region": "Rockies",
+    "websiteUrl": "https://www.redlodgemountain.com/",
+    "closingDateUrl": "https://www.redlodgemountain.com/"
+  },
+  {
+    "id": "silver-mountain",
+    "name": "Silver Mountain",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://silvermt.com/",
+    "closingDateUrl": "https://silvermt.com/"
+  },
+  {
+    "id": "snow-king-mountain-resort",
+    "name": "Snow King Mountain Resort",
+    "state": "WY",
+    "region": "Rockies",
+    "websiteUrl": "https://snowkingmountain.com/",
+    "closingDateUrl": "https://snowkingmountain.com/"
+  },
+  {
+    "id": "soldier-mountain",
+    "name": "Soldier Mountain",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://soldiermountain.com/",
+    "closingDateUrl": "https://soldiermountain.com/"
+  },
+  {
+    "id": "sunlight-mountain-resort",
+    "name": "Sunlight Mountain Resort",
+    "state": "CO",
+    "region": "Rockies",
+    "websiteUrl": "https://sunlightmtn.com/",
+    "closingDateUrl": "https://sunlightmtn.com/"
+  },
+  {
+    "id": "tamarack-mountain-resort",
+    "name": "Tamarack Mountain Resort",
+    "state": "ID",
+    "region": "Rockies",
+    "websiteUrl": "https://tamarackidaho.com/",
+    "closingDateUrl": "https://tamarackidaho.com/"
+  },
+  {
+    "id": "white-pine-resort",
+    "name": "White Pine Resort",
+    "state": "WY",
+    "region": "Rockies",
+    "websiteUrl": "https://www.whitepineresort.com/",
+    "closingDateUrl": "https://www.whitepineresort.com/"
+  },
+  {
+    "id": "49-degrees-north",
+    "name": "49 Degrees North",
+    "state": "WA",
+    "region": "West",
+    "websiteUrl": "https://ski49n.com/",
+    "closingDateUrl": "https://ski49n.com/"
+  },
+  {
+    "id": "arctic-valley",
+    "name": "Arctic Valley",
+    "state": "AK",
+    "region": "West",
+    "websiteUrl": "https://arcticvalley.org/",
+    "closingDateUrl": "https://arcticvalley.org/conditions/"
+  },
+  {
+    "id": "bear-valley-mountain-resort",
+    "name": "Bear Valley Mountain Resort",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "https://www.bearvalley.com/",
+    "closingDateUrl": "https://www.bearvalley.com/hours"
+  },
+  {
+    "id": "china-peak",
+    "name": "China Peak",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "https://www.skichinapeak.com/",
+    "closingDateUrl": "https://www.skichinapeak.com/"
+  },
+  {
+    "id": "cooper-spur-ski-area",
+    "name": "Cooper Spur Ski Area",
+    "state": "OR",
+    "region": "West",
+    "websiteUrl": "https://cooperspur.com/",
+    "closingDateUrl": "https://cooperspur.com/"
+  },
+  {
+    "id": "dodge-ridge",
+    "name": "Dodge Ridge",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "https://dodgeridge.com/",
+    "closingDateUrl": "https://dodgeridge.com/"
+  },
+  {
+    "id": "donner-ski-ranch",
+    "name": "Donner Ski Ranch",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "https://www.donnerskiranch.com/",
+    "closingDateUrl": "https://www.donnerskiranch.com/"
+  },
+  {
+    "id": "eaglecrest",
+    "name": "Eaglecrest",
+    "state": "AK",
+    "region": "West",
+    "websiteUrl": "https://skieaglecrest.com/",
+    "closingDateUrl": "https://skieaglecrest.com/"
+  },
+  {
+    "id": "hilltop-ski-area",
+    "name": "Hilltop Ski Area",
+    "state": "AK",
+    "region": "West",
+    "websiteUrl": "https://www.hilltopskiarea.org/",
+    "closingDateUrl": "https://www.hilltopskiarea.org/hours-and-location"
+  },
+  {
+    "id": "hoodoo",
+    "name": "Hoodoo",
+    "state": "OR",
+    "region": "West",
+    "websiteUrl": "https://hoodoo.com/",
+    "closingDateUrl": "https://hoodoo.com/"
+  },
+  {
+    "id": "hurricane-ridge",
+    "name": "Hurricane Ridge",
+    "state": "WA",
+    "region": "West",
+    "websiteUrl": "https://www.hurricaneridge.com/",
+    "closingDateUrl": "https://www.hurricaneridge.com/"
+  },
+  {
+    "id": "loup-loup-ski-bowl",
+    "name": "Loup Loup Ski Bowl",
+    "state": "WA",
+    "region": "West",
+    "websiteUrl": "https://skitheloup.org/",
+    "closingDateUrl": "https://skitheloup.org/"
+  },
+  {
+    "id": "mission-ridge",
+    "name": "Mission Ridge",
+    "state": "WA",
+    "region": "West",
+    "websiteUrl": "https://www.missionridge.com/",
+    "closingDateUrl": "https://www.missionridge.com/"
+  },
+  {
+    "id": "mountain-high",
+    "name": "Mountain High",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "https://www.mthigh.com/site",
+    "closingDateUrl": "https://www.mthigh.com/site"
+  },
+  {
+    "id": "mt-eyak",
+    "name": "Mt Eyak",
+    "state": "AK",
+    "region": "West",
+    "websiteUrl": "https://www.mteyak.org/",
+    "closingDateUrl": "https://www.mteyak.org/latest-info"
+  },
+  {
+    "id": "mt-hood-meadows",
+    "name": "Mt. Hood Meadows",
+    "state": "OR",
+    "region": "West",
+    "websiteUrl": "https://www.skihood.com/",
+    "closingDateUrl": "https://www.skihood.com/"
+  },
+  {
+    "id": "mt-shasta-ski-park",
+    "name": "Mt. Shasta Ski Park",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "https://www.skipark.com/",
+    "closingDateUrl": "https://www.skipark.com/winter/conditions"
+  },
+  {
+    "id": "ski-bluewood",
+    "name": "Ski Bluewood",
+    "state": "WA",
+    "region": "West",
+    "websiteUrl": "https://bluewood.com/",
+    "closingDateUrl": "https://bluewood.com/"
+  },
+  {
+    "id": "snow-valley",
+    "name": "Snow Valley",
+    "state": "CA",
+    "region": "West",
+    "websiteUrl": "http://www.snow-valley.com/",
+    "closingDateUrl": "http://www.snow-valley.com/"
+  },
+  {
+    "id": "sunrise-park-resort",
+    "name": "Sunrise Park Resort",
+    "state": "AZ",
+    "region": "West",
+    "websiteUrl": "https://sunrise.ski/",
+    "closingDateUrl": "https://sunrise.ski/"
+  },
+  {
+    "id": "white-pass",
+    "name": "White Pass",
+    "state": "WA",
+    "region": "West",
+    "websiteUrl": "https://skiwhitepass.com/",
+    "closingDateUrl": "https://skiwhitepass.com/"
   }
 ]
