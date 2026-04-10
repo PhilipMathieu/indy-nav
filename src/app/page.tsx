@@ -45,7 +45,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="https://img.shields.io/badge/%F0%9F%8D%BB_buy_me_a_brewski-FFDD00?style=flat-square"
+            src="https://img.shields.io/badge/%F0%9F%8D%BB_buy_me_a_brewski-E4312B?style=flat-square&labelColor=E4312B"
             alt="Buy Me a Brewski"
             className="mt-2"
           />
