@@ -29,7 +29,13 @@ const closingDateSchema = z.object({
     ),
   reasoning: z
     .string()
-    .describe("Brief explanation of how the date was determined"),
+    .describe("Brief explanation of how the date was determined, including any key phrases or context from the source"),
+  sourceUrl: z
+    .string()
+    .nullable()
+    .describe(
+      "The specific URL of the page or article where the closing date information was found, or null if not available"
+    ),
 });
 
 async function fetchPageContent(url: string): Promise<string> {
@@ -62,7 +68,7 @@ async function fetchPageContent(url: string): Promise<string> {
 async function extractClosingDate(
   mountain: MountainSeed,
   pageContent: string
-): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low" }> {
+): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low"; reasoning: string }> {
   const { object } = await generateObject({
     model: google("gemini-3.1-flash-lite-preview"),
     schema: closingDateSchema,
@@ -82,18 +88,21 @@ Instructions:
 4. If the page shows a snow/trail report dated a specific day with "closed" status, that report date may be the closing date.
 5. The 2025-2026 season runs roughly November 2025 through May 2026. Closing dates are typically between February and May 2026.
 
-Return the closing date in YYYY-MM-DD format. Only return null if there is truly no date information anywhere on the page.`,
+Return the closing date in YYYY-MM-DD format. Only return null if there is truly no date information anywhere on the page.
+For reasoning, quote the key phrase(s) from the page that led to the date, e.g. 'Page says "Season ends May 3"'.
+For sourceUrl, return null (the source is already known as ${mountain.closingDateUrl}).`,
   });
 
   return {
     closingDate: object.closingDate,
     confidence: object.confidence,
+    reasoning: object.reasoning,
   };
 }
 
 async function searchClosingDate(
   mountain: MountainSeed
-): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low"; source: string }> {
+): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low"; source: string; reasoning: string }> {
   const { object } = await generateObject({
     model: google("gemini-3.1-flash-lite-preview"),
     schema: closingDateSchema,
@@ -111,13 +120,16 @@ Use Google Search to find when ${mountain.name} closes or closed for the 2025-20
 Today's date is ${new Date().toISOString().slice(0, 10)}.
 The season runs roughly November 2025 through May 2026.
 
-Return the closing date in YYYY-MM-DD format if found.`,
+Return the closing date in YYYY-MM-DD format if found.
+For sourceUrl, return the URL of the specific page or article where you found the closing date information.
+For reasoning, quote or paraphrase the key text from that source that confirmed the date.`,
   });
 
   return {
     closingDate: object.closingDate,
     confidence: object.confidence,
-    source: "google-search",
+    source: object.sourceUrl ?? "google-search",
+    reasoning: object.reasoning,
   };
 }
 
@@ -179,7 +191,7 @@ async function main() {
       const pageContent = await fetchPageContent(seed.closingDateUrl);
 
       console.log(`🤖 ${seed.name} — extracting closing date with Gemini...`);
-      let { closingDate, confidence } = await extractClosingDate(
+      let { closingDate, confidence, reasoning } = await extractClosingDate(
         seed,
         pageContent
       );
@@ -193,7 +205,8 @@ async function main() {
           if (searchResult.closingDate) {
             closingDate = searchResult.closingDate;
             confidence = searchResult.confidence;
-            source = "google-search";
+            source = searchResult.source;
+            reasoning = searchResult.reasoning;
             console.log(`🔎 ${seed.name} — found via search: ${closingDate}`);
           }
         } catch (searchError) {
@@ -209,6 +222,7 @@ async function main() {
         closingDate,
         closingDateSource: source,
         closingDateConfidence: confidence,
+        closingDateReasoning: reasoning || undefined,
         lastUpdated: new Date().toISOString(),
         websiteUrl: seed.websiteUrl,
       };
@@ -237,8 +251,9 @@ async function main() {
             region: seed.region,
             state: seed.state,
             closingDate: searchResult.closingDate,
-            closingDateSource: "google-search",
+            closingDateSource: searchResult.source,
             closingDateConfidence: searchResult.confidence,
+            closingDateReasoning: searchResult.reasoning || undefined,
             lastUpdated: new Date().toISOString(),
             websiteUrl: seed.websiteUrl,
           });

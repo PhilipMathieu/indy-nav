@@ -1,9 +1,14 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown } from "lucide-react";
+import { ArrowUpDown, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { formatDistanceToNow, format, parseISO } from "date-fns";
 import type { Mountain } from "@/lib/types";
 
@@ -84,8 +89,45 @@ export const columns: ColumnDef<Mountain>[] = [
       const confidence = row.getValue(
         "closingDateConfidence"
       ) as Mountain["closingDateConfidence"];
+      const reasoning = row.original.closingDateReasoning;
+      const source = row.original.closingDateSource;
+      const sourceIsUrl = source && source.startsWith("http");
+
+      if (!reasoning && !sourceIsUrl) {
+        return (
+          <Badge variant={confidenceVariant[confidence]}>{confidence}</Badge>
+        );
+      }
+
       return (
-        <Badge variant={confidenceVariant[confidence]}>{confidence}</Badge>
+        <div className="flex items-center gap-1.5">
+          <Badge variant={confidenceVariant[confidence]}>{confidence}</Badge>
+          <Popover>
+            <PopoverTrigger
+              onClick={(e) => e.stopPropagation()}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="View source info"
+            >
+              <Info className="h-3.5 w-3.5" />
+            </PopoverTrigger>
+            <PopoverContent side="left" className="w-80">
+              {reasoning && (
+                <p className="text-sm text-popover-foreground">{reasoning}</p>
+              )}
+              {sourceIsUrl && (
+                <a
+                  href={source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="text-xs text-primary underline underline-offset-2 hover:text-primary/80 block truncate mt-1"
+                >
+                  {source}
+                </a>
+              )}
+            </PopoverContent>
+          </Popover>
+        </div>
       );
     },
   },
