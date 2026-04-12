@@ -280,7 +280,7 @@
     "state": "CA",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.bearvalleyxc.com/conditions",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The official Bear Valley Adventure Company grooming report and operational status page indicates that today, April 12, 2026, is the final day of operations for the Nordic season.",
     "lastUpdated": "2026-04-12T03:09:25.501Z",
     "websiteUrl": "https://www.bvadventures.com/webcam"
@@ -292,7 +292,7 @@
     "state": "BC",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.bigwhite.com/mountain-conditions/daily-snow-report",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The page states, 'Our 2025/26 winter season has come to a close', and the page is accessed on 2026-04-12, indicating the season concluded on or before this date.",
     "lastUpdated": "2026-04-12T03:09:48.351Z",
     "websiteUrl": "https://www.bigwhite.com"
@@ -316,7 +316,7 @@
     "state": "MA",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://bousquetmountain.com/lift-trail-status/",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The page content explicitly states '4/12 Closed for Winter Season' at the top and confirms throughout the page that the mountain is 'CLOSED FOR THE SEASON'. Given today's date is 2026-04-12, this indicates the season concluded on this date.",
     "lastUpdated": "2026-04-12T03:10:06.198Z",
     "websiteUrl": "https://bousquetmountain.com/"
@@ -396,7 +396,7 @@
     "state": "CO",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://echomtn.com/mountain-conditions",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The 'Mountain Stats' section displays 'Open Lift Count 0 of 3' and 'Runs Open 0 of 7', indicating the resort has ceased operations as of the current date, 2026-04-12.",
     "lastUpdated": "2026-04-12T03:11:18.977Z",
     "websiteUrl": "https://echomtn.com"
@@ -408,7 +408,7 @@
     "state": "CO",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://granbyranch.com",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "Granby Ranch officially announced that April 12, 2026, serves as the final day of the 2025-2026 ski season.",
     "lastUpdated": "2026-04-12T03:11:46.014Z",
     "websiteUrl": "https://granbyranch.com"
@@ -420,7 +420,7 @@
     "state": "WI",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.skigranitepeak.com",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "Granite Peak officially announced their season closing date as April 12, 2026, via their social media channels and official website landing page, marking the end of the 2025-2026 ski season.",
     "lastUpdated": "2026-04-12T03:11:48.893Z",
     "websiteUrl": "https://www.skigranitepeak.com"
@@ -467,7 +467,7 @@
     "state": "BC",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.manningpark.com/weather-webcams-and-trail-status/",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The page explicitly states 'Alpine & Nordic CLOSED for the season' and provides a current condition report dated April 12, 2026, indicating the season has ended by this date.",
     "lastUpdated": "2026-04-12T03:13:06.455Z",
     "websiteUrl": "https://www.manningpark.com"
@@ -513,7 +513,7 @@
     "state": "CO",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.powderhorn.com",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "Powderhorn Mountain Resort officially announced that today, April 12, 2026, marks the final day of operations for the 2025-2026 ski season.",
     "lastUpdated": "2026-04-12T03:15:06.403Z",
     "websiteUrl": "https://powderhorn.com/"
@@ -525,7 +525,7 @@
     "state": "NH",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.raggedmountainresort.com/mountain-report-cams/#conditions",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The page states 'We are now closed for the 2025-26 winter season' and all lift statuses are listed as 'closed'. Given today's date is 2026-04-12 and the page is currently serving a 'closed' report, April 12, 2026, is identified as the effective closing date.",
     "lastUpdated": "2026-04-12T03:15:13.019Z",
     "websiteUrl": "https://www.raggedmountainresort.com/"
@@ -606,7 +606,7 @@
     "state": "SD",
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.terrypeak.com",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The official Terry Peak Ski Area website homepage and social media channels indicate that Sunday, April 12, 2026, is the final day of operations for the 2025-2026 ski season.",
     "lastUpdated": "2026-04-12T03:16:21.226Z",
     "websiteUrl": "https://terrypeak.com"
@@ -1513,6 +1513,18 @@
     "websiteUrl": "https://payettelakesskiclub.org/"
   },
   {
+    "id": "little-switzerland",
+    "name": "Little Switzerland",
+    "region": "Midwest",
+    "state": "WI",
+    "closingDate": "2026-03-29",
+    "closingDateSource": "https://www.littleswitz.com",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "Little Switzerland officially announced on their social media and website that March 29, 2026, was their final day of the 2025-2026 ski season.",
+    "lastUpdated": "2026-04-12T11:16:58.271Z",
+    "websiteUrl": "https://www.littleswitz.com"
+  },
+  {
     "id": "lost-valley",
     "name": "Lost Valley",
     "region": "East",
@@ -2376,7 +2388,8 @@
     "closingDate": null,
     "closingDateSource": "https://caledonianordic.com/trails-facilities/webcams",
     "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T12:46:47.938Z",
+    "closingDateReasoning": "The provided page content is empty and contains no information regarding the 2025-2026 ski season closing date.",
+    "lastUpdated": "2026-04-12T11:16:35.317Z",
     "websiteUrl": "https://caledonianordic.com/trails-facilities/webcams"
   },
   {
@@ -2649,17 +2662,6 @@
     "websiteUrl": "https://skileavenworth.com/webcams"
   },
   {
-    "id": "little-switzerland",
-    "name": "Little Switzerland",
-    "region": "Midwest",
-    "state": "WI",
-    "closingDate": null,
-    "closingDateSource": "https://www.littleswitz.com/",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T00:12:29.305Z",
-    "websiteUrl": "https://www.littleswitz.com/"
-  },
-  {
     "id": "loge-glacier",
     "name": "LOGE Glacier",
     "region": "Rockies",
@@ -2929,7 +2931,8 @@
     "closingDate": null,
     "closingDateSource": "https://skisawmill.com/ski-report-2/",
     "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T13:00:32.373Z",
+    "closingDateReasoning": "The provided page content is empty, offering no specific information or indicators regarding the 2025-2026 ski season closing date for Ski Sawmill.",
+    "lastUpdated": "2026-04-12T11:17:13.723Z",
     "websiteUrl": "https://skisawmill.com"
   },
   {
