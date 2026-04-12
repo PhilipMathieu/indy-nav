@@ -8,10 +8,11 @@ Unofficial closing date tracker for [Indy Pass](https://www.indyskipass.com/) sk
 
 ## Features
 
-- **Closing dates for 169 Indy Pass resorts** across the US and Canada
+- **Interactive map:** Positron-backed MapLibre map showing all resorts — red squares for open, gray for closed. Click a marker to jump to that resort in the table.
+- **Closing dates for 169 Indy Pass resorts** across the US, Canada, Europe, Japan, and South America
 - **Smart grouping:** open mountains first (soonest closing at top), then unknown, then already closed (dimmed)
 - **"As of" date filter:** pick a future date to see what will still be open that weekend
-- **Region filter:** toggle Northeast, Mid-Atlantic, Midwest, Rockies, West, Canada
+- **Region filter:** toggle regions — the map auto-zooms to fit the selected region
 - **Sortable columns:** click any column header to sort
 - **Confidence indicators:** high/medium/low badges show how certain each closing date is
 - **Daily auto-updates:** GitHub Action runs each morning to check for newly announced dates
@@ -32,6 +33,7 @@ Closing dates are gathered by an automated pipeline:
 - **Next.js** (App Router, static export)
 - **TypeScript**
 - **Tailwind CSS** + **shadcn/ui** with an IBM Carbon-inspired theme
+- **MapLibre GL JS** with Positron basemap for the interactive resort map
 - **TanStack Table** for sorting and data display
 - **Vercel AI SDK** + **Google Gemini Flash Lite** for closing date extraction
 - **GitHub Pages** for hosting
@@ -99,6 +101,7 @@ indy-nav/
 │   │   ├── page.tsx            # Home page
 │   │   └── globals.css         # IBM Carbon-inspired theme
 │   ├── components/
+│   │   ├── resort-map.tsx           # MapLibre interactive map
 │   │   ├── closing-dates-table.tsx  # Main data table
 │   │   ├── columns.tsx              # Column definitions
 │   │   ├── date-filter.tsx          # "As of" date picker

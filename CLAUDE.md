@@ -10,13 +10,14 @@ Two independent subsystems:
 
 1. **Data pipeline** (`scripts/fetch-closing-dates.ts`) — A standalone TypeScript script that fetches mountain websites, sends content to Google Gemini Flash Lite to extract closing dates, and writes structured JSON. Falls back to Google Search when scraping fails. High-confidence results are locked in and not re-checked.
 
-2. **Web app** (`src/`) — A Next.js app (static export) that imports `data/closing-dates.json` and renders a sortable, filterable data table. No server-side logic at runtime.
+2. **Web app** (`src/`) — A Next.js app (static export) that imports `data/closing-dates.json` and renders an interactive map and sortable, filterable data table. No server-side logic at runtime.
 
 ## Tech Stack
 
 - Next.js 16 (App Router, `output: "export"` for GitHub Pages)
 - TypeScript
 - Tailwind CSS v4 + shadcn/ui (Base UI, not Radix — `asChild` is not available)
+- MapLibre GL JS with Positron basemap for the interactive resort map
 - TanStack Table for data table logic
 - Vercel AI SDK + `@ai-sdk/google` with `gemini-3.1-flash-lite-preview`
 - GitHub Actions for daily pipeline runs and deployment
@@ -42,6 +43,7 @@ npx tsx scripts/cross-check-closing-dates.ts --fix # Apply corrections
 - **Data files live in `data/`**, not `src/`. `mountains.json` is hand-maintained seed data; `closing-dates.json` is pipeline-generated.
 - **GitHub Actions are pinned by full SHA** with version comments. Use Node.js 24 versions (v5/v6) of all actions.
 - **Static export** — the app uses `import closingDates from "../../data/closing-dates.json"`, not `readFileSync`. No Node.js APIs at runtime.
+- **Map + table shared state** — filter state (date, regions) and selection state are lifted to `page.tsx` (client component) and passed down to both `ResortMap` and `ClosingDatesTable`. The map merges lat/lon from `mountains.json` at the component level.
 
 ## Data Flow
 
@@ -52,7 +54,7 @@ scripts/fetch-closing-dates.ts (Gemini extraction + Google Search fallback)
         ↓
 data/closing-dates.json (enriched with dates, confidence, timestamps)
         ↓
-src/app/page.tsx (imports JSON, renders table)
+src/app/page.tsx (merges JSON data, renders map + table)
         ↓
 out/ (static HTML via `next build`)
         ↓
