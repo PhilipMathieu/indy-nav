@@ -33,7 +33,8 @@ export const columns: ColumnDef<Mountain>[] = [
         href={row.original.websiteUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="underline underline-offset-4 hover:text-primary/80"
+        className="underline underline-offset-4 hover:text-primary/80 block max-w-[200px] truncate"
+        title={row.getValue("name") as string}
       >
         {row.getValue("name")}
       </a>

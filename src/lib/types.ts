@@ -23,4 +23,6 @@ export interface Mountain {
   closingDateConfidence: "high" | "medium" | "low";
   lastUpdated: string;
   websiteUrl: string;
+  lat: number | null;
+  lon: number | null;
 }

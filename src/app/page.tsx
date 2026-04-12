@@ -1,9 +1,25 @@
+"use client";
+
+import { useState } from "react";
 import { ClosingDatesTable } from "@/components/closing-dates-table";
-import type { Mountain } from "@/lib/types";
-import closingDates from "../../data/closing-dates.json";
+import { ResortMap } from "@/components/resort-map";
+import type { Mountain, MountainSeed } from "@/lib/types";
+import closingDatesRaw from "../../data/closing-dates.json";
+import mountainSeedsRaw from "../../data/mountains.json";
+
+const seedLookup = new Map(
+  (mountainSeedsRaw as MountainSeed[]).map((s) => [s.id, s])
+);
+
+const mountains: Mountain[] = (closingDatesRaw as Omit<Mountain, "lat" | "lon">[]).map((m) => {
+  const seed = seedLookup.get(m.id);
+  return { ...m, lat: seed?.lat ?? null, lon: seed?.lon ?? null };
+});
 
 export default function Home() {
-  const mountains = closingDates as Mountain[];
+  const [selectedMountainId, setSelectedMountainId] = useState<string | null>(null);
+  const [asOfDate, setAsOfDate] = useState<Date | undefined>(undefined);
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8">
@@ -11,11 +27,23 @@ export default function Home() {
         <h1 className="text-2xl font-semibold tracking-tight">
           Indy Nav
         </h1>
-        <p className="text-sm text-muted-foreground">
-          Indy Pass closing dates — 2025/2026 season
-        </p>
       </div>
-      <ClosingDatesTable mountains={mountains} />
+      <ResortMap
+        mountains={mountains}
+        asOfDate={asOfDate}
+        selectedRegions={selectedRegions}
+        selectedMountainId={selectedMountainId}
+        onSelectMountain={setSelectedMountainId}
+      />
+      <ClosingDatesTable
+        mountains={mountains}
+        asOfDate={asOfDate}
+        onAsOfDateChange={setAsOfDate}
+        selectedRegions={selectedRegions}
+        onSelectedRegionsChange={setSelectedRegions}
+        selectedMountainId={selectedMountainId}
+        onSelectMountain={setSelectedMountainId}
+      />
       <footer className="mt-12 border-t pt-6 text-xs text-muted-foreground space-y-2">
         <p className="font-medium text-foreground">How it works</p>
         <p>

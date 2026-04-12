@@ -21,7 +21,7 @@ interface DateFilterProps {
 export function DateFilter({ date, onDateChange }: DateFilterProps) {
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm text-muted-foreground">As of:</span>
+      <span className="text-sm text-muted-foreground">Open as of:</span>
       <Popover>
         <PopoverTrigger
           className={cn(
