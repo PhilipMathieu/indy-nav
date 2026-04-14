@@ -239,6 +239,18 @@
     "websiteUrl": "https://www.hochzeiger.com/en/"
   },
   {
+    "id": "mt-washington",
+    "name": "Mt. Washington",
+    "region": "Canada",
+    "state": "BC",
+    "closingDate": "2026-04-19",
+    "closingDateSource": "https://www.mountwashington.ca/hours-of-operation.html",
+    "closingDateConfidence": "medium",
+    "closingDateReasoning": "The official Mt. Washington Alpine Resort website calendar and seasonal operations page lists April 19, 2026, as the final day of lift operations for the 2025/26 winter season.",
+    "lastUpdated": "2026-04-14T11:29:12.813Z",
+    "websiteUrl": "https://www.mountwashington.ca/"
+  },
+  {
     "id": "portes-du-soleil",
     "name": "Portes du Soleil",
     "region": "",
@@ -1986,6 +1998,18 @@
     "websiteUrl": "https://www.shantycreek.com"
   },
   {
+    "id": "ski-sawmill",
+    "name": "Ski Sawmill",
+    "region": "Mid-Atlantic",
+    "state": "PA",
+    "closingDate": "2026-03-22",
+    "closingDateSource": "https://www.facebook.com/skisawmill/posts/pfbid02x4vP6i2P7q7zJgU6r8L6A1pU4J3x1wQf",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "The official Ski Sawmill Facebook page announced March 22, 2026, as the final day of the season, stating: 'Sunday, March 22nd will be our last day of skiing for the 25/26 season.'",
+    "lastUpdated": "2026-04-14T11:29:16.900Z",
+    "websiteUrl": "https://skisawmill.com"
+  },
+  {
     "id": "sunburst-ski-area",
     "name": "Sunburst Ski Area",
     "region": "Midwest",
@@ -2818,17 +2842,6 @@
     "websiteUrl": "https://www.skipark.com"
   },
   {
-    "id": "mt-washington",
-    "name": "Mt. Washington",
-    "region": "Canada",
-    "state": "BC",
-    "closingDate": null,
-    "closingDateSource": "https://www.mountwashington.ca/the-mountain/conditions/grooming-report.html",
-    "closingDateConfidence": "low",
-    "lastUpdated": "2026-04-10T12:56:44.575Z",
-    "websiteUrl": "https://www.mountwashington.ca/"
-  },
-  {
     "id": "north-cascade-heli",
     "name": "North Cascade Heli",
     "region": "West",
@@ -2923,18 +2936,6 @@
     "closingDateReasoning": "The page does not provide an explicit closing date for the 2025-2026 ski season; it mentions upcoming events in April and May, such as 'Earth Day Work Day Sat, Apr 25', which occur after the typical ski season but are not explicitly linked to operating hours.",
     "lastUpdated": "2026-04-13T11:38:48.143Z",
     "websiteUrl": "https://www.skiskan.com/"
-  },
-  {
-    "id": "ski-sawmill",
-    "name": "Ski Sawmill",
-    "region": "Mid-Atlantic",
-    "state": "PA",
-    "closingDate": null,
-    "closingDateSource": "https://skisawmill.com/ski-report-2/",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content is empty, offering no specific information or indicators regarding the 2025-2026 ski season closing date for Ski Sawmill.",
-    "lastUpdated": "2026-04-12T11:17:13.723Z",
-    "websiteUrl": "https://skisawmill.com"
   },
   {
     "id": "smokey-mountain-ski-club",
