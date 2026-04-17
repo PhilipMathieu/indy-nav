@@ -257,7 +257,7 @@
     "state": "BC",
     "closingDate": "2026-04-19",
     "closingDateSource": "https://www.mountwashington.ca/snow-report.html",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The official Mount Washington Alpine Resort website snow report and lift status page indicates that the resort is scheduled for its final day of the 2025/26 winter season on Sunday, April 19, 2026.",
     "lastUpdated": "2026-04-16T11:32:37.663Z",
     "websiteUrl": "https://www.mountwashington.ca/"
@@ -284,6 +284,18 @@
     "closingDateReasoning": "The page explicitly states the schedule: 'April 13 – 16 – Closed' and 'April 17 – 19 – OPEN', implying the resort is open through April 19, 2026.",
     "lastUpdated": "2026-04-12T03:15:24.015Z",
     "websiteUrl": "https://www.saddlebackmaine.com"
+  },
+  {
+    "id": "sunlight-mountain-resort",
+    "name": "Sunlight Mountain Resort",
+    "region": "Rockies",
+    "state": "CO",
+    "closingDate": "2026-04-17",
+    "closingDateSource": "https://sunlightmtn.com/the-mountain/snow-weather-report",
+    "closingDateConfidence": "low",
+    "closingDateReasoning": "The page displays a current status of '0/77' trails open and '0/3' lifts open, and states 'All uphill routes are closed until the 26/27 season. Thank you for a great year!', indicating the season has concluded by the current date of 2026-04-17.",
+    "lastUpdated": "2026-04-17T11:25:09.164Z",
+    "websiteUrl": "https://sunlightmtn.com"
   },
   {
     "id": "echo-mountain",
@@ -320,18 +332,6 @@
     "closingDateReasoning": "The page states 'We are now closed for the 2025-26 winter season' and all lift statuses are listed as 'closed'. Given today's date is 2026-04-16 and the site mentions the season has concluded, this date is the confirmed closing point.",
     "lastUpdated": "2026-04-16T11:33:11.761Z",
     "websiteUrl": "https://www.raggedmountainresort.com/"
-  },
-  {
-    "id": "sunlight-mountain-resort",
-    "name": "Sunlight Mountain Resort",
-    "region": "Rockies",
-    "state": "CO",
-    "closingDate": "2026-04-15",
-    "closingDateSource": "https://sunlightmtn.com/the-mountain/snow-weather-report",
-    "closingDateConfidence": "medium",
-    "closingDateReasoning": "The page states 'Thank you to our wonderful community for sending off the season with us in true Sunlight style on closing day' and lists all lifts as 'CLOSED', implying that the current date of April 15, 2026, is the day the resort is closed for the season.",
-    "lastUpdated": "2026-04-15T11:33:39.041Z",
-    "websiteUrl": "https://sunlightmtn.com"
   },
   {
     "id": "big-white-ski-resort",
@@ -1920,6 +1920,18 @@
     "websiteUrl": "https://spiritmt.com"
   },
   {
+    "id": "tyrol-basin-ski-and-snowboard",
+    "name": "Tyrol Basin Ski and Snowboard",
+    "region": "Midwest",
+    "state": "WI",
+    "closingDate": "2026-03-29",
+    "closingDateSource": "https://www.tyrolbasin.com",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "Tyrol Basin's official website and social media announcements confirmed their final day of the 2025-2026 season was Sunday, March 29, 2026.",
+    "lastUpdated": "2026-04-17T11:25:21.140Z",
+    "websiteUrl": "https://www.tyrolbasin.com"
+  },
+  {
     "id": "whitecap-mountains-resort",
     "name": "Whitecap Mountains Resort",
     "region": "Midwest",
@@ -2486,8 +2498,8 @@
     "closingDate": "2026-03-07",
     "closingDateSource": "https://www.sundownmtn.com/the-mountain/snow-report-trail-map/",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The provided snow report is dated 3/7 and lists all trails as CLOSED, indicating operations concluded on this date.",
-    "lastUpdated": "2026-04-15T11:33:35.759Z",
+    "closingDateReasoning": "The provided snow report page is dated '3/7' and indicates that all trails are 'CLOSED' and the operations update discusses temporary weather-related closures in the past, implying the season effectively concluded around this time.",
+    "lastUpdated": "2026-04-17T11:25:05.818Z",
     "websiteUrl": "https://www.sundownmtn.com"
   },
   {
@@ -2520,8 +2532,8 @@
     "closingDate": "2026-02-24",
     "closingDateSource": "https://nordicski.net/steamboat-ski-touring-center/",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The page states they have 'officially closed trails for the season' and the last grooming report date is listed as 'Feb 24th', which aligns with the status that the trails are not groomed and the season has ended.",
-    "lastUpdated": "2026-04-15T11:33:31.435Z",
+    "closingDateReasoning": "The page states 'we’ve officially closed trails for the season' and shows a 'Last groomed: Feb 24th' date, which indicates operations ceased around this time.",
+    "lastUpdated": "2026-04-17T11:25:02.524Z",
     "websiteUrl": "https://nordicski.net/steamboat-ski-touring-center/"
   },
   {
@@ -2970,8 +2982,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skiskan.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage does not explicitly state a closing date for the 2025-2026 ski season. The page contains future event dates like 'Earth Day Work Day Sat, Apr 25' and 'Ski Hill Board Meetings Wed, May 06', but these are administrative or community events rather than ski operating hours.",
-    "lastUpdated": "2026-04-15T11:33:17.545Z",
+    "closingDateReasoning": "The page does not provide a specific end-of-season date; it only lists upcoming events like 'Earth Day Work Day' on April 25 and 'Board Meetings' in May, which are off-season activities, implying the season has already concluded.",
+    "lastUpdated": "2026-04-17T11:24:54.983Z",
     "websiteUrl": "https://www.skiskan.com/"
   },
   {
@@ -2982,8 +2994,8 @@
     "closingDate": null,
     "closingDateSource": "http://events.skismokey.ca/general-information/current-conditions",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states the club is open annually 'from mid-December to April', but provides no specific closing date for the 2025-2026 season. The 'Lifts Status' section shows current lifts as closed but does not provide a specific date marking the end of the season.",
-    "lastUpdated": "2026-04-15T11:33:26.921Z",
+    "closingDateReasoning": "The website states they are open 'annually from mid-December to April' but does not provide a specific calendar date for the end of the 2025-2026 season.",
+    "lastUpdated": "2026-04-17T11:25:00.487Z",
     "websiteUrl": "http://skismokey.ca/"
   },
   {
@@ -2994,8 +3006,8 @@
     "closingDate": null,
     "closingDateSource": "https://loppet.org/trailheads-trails/trails-and-conditions/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content discusses general trail conditions, maps, and foundation information but does not contain any specific seasonal closing date or a recent status report indicating the end of the 2025-2026 season.",
-    "lastUpdated": "2026-04-15T11:33:47.052Z",
+    "closingDateReasoning": "The provided webpage content contains information about trail conditions, maps, and policies, but does not explicitly state a closing date for the 2025-2026 ski season or provide a specific status indicating the trails are currently closed for the season.",
+    "lastUpdated": "2026-04-17T11:25:13.115Z",
     "websiteUrl": "https://loppet.org/"
   },
   {
@@ -3006,21 +3018,9 @@
     "closingDate": null,
     "closingDateSource": "https://skithrillhills.com/weather/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'CLOSED FOR THE SEASON!', but provides no specific calendar date regarding when the season ended.",
-    "lastUpdated": "2026-04-15T11:33:52.681Z",
+    "closingDateReasoning": "The page states 'CLOSED FOR THE SEASON! SEE YOU NEXT YEAR!' but provides no specific calendar date indicating when the season officially ended.",
+    "lastUpdated": "2026-04-17T11:25:16.799Z",
     "websiteUrl": "https://skithrillhills.com/"
-  },
-  {
-    "id": "tyrol-basin-ski-and-snowboard",
-    "name": "Tyrol Basin Ski and Snowboard",
-    "region": "Midwest",
-    "state": "WI",
-    "closingDate": null,
-    "closingDateSource": "https://www.tyrolbasin.com",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'Closed Thank you for a great season!' but does not provide an actual calendar date for when the season ended.",
-    "lastUpdated": "2026-04-15T11:34:05.161Z",
-    "websiteUrl": "https://www.tyrolbasin.com"
   },
   {
     "id": "white-grass-ski-touring",
@@ -3030,8 +3030,8 @@
     "closingDate": null,
     "closingDateSource": "https://whitegrass.com",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states the cafe operates in peak season 'December - March - Depending on snow conditions early and late', but does not provide an explicit closing date for the 2025-2026 ski season.",
-    "lastUpdated": "2026-04-15T11:34:16.355Z",
+    "closingDateReasoning": "The page mentions operating hours 'December - March - Depending on snow conditions early and late', but provides no specific closing date for the 2025-2026 season.",
+    "lastUpdated": "2026-04-17T11:25:25.183Z",
     "websiteUrl": "https://whitegrass.com"
   },
   {
@@ -3042,8 +3042,8 @@
     "closingDate": null,
     "closingDateSource": "https://skiwhitepass.com/the-mountain/snow-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided snow report page contains no explicit closing date for the 2025-2026 season and does not show any operational schedule indicating a final day of service.",
-    "lastUpdated": "2026-04-15T11:34:23.264Z",
+    "closingDateReasoning": "The provided snow report page content does not contain any specific information regarding the 2025-2026 season closing date.",
+    "lastUpdated": "2026-04-17T11:25:29.021Z",
     "websiteUrl": "https://skiwhitepass.com"
   },
   {
@@ -3054,8 +3054,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.whitehorsenordiccentre.ca/trail-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content mentions chalet hours changing on April 16th, but does not state a specific closing date for the ski season itself.",
-    "lastUpdated": "2026-04-15T11:34:35.310Z",
+    "closingDateReasoning": "The provided page content only mentions that the chalet hours changed on April 16th, but does not state the official closing date for the trails or the season.",
+    "lastUpdated": "2026-04-17T11:25:32.472Z",
     "websiteUrl": "https://www.whitehorsenordiccentre.ca/"
   },
   {
@@ -3066,8 +3066,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.williamslakecrosscountryskiclub.ca/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content does not mention an explicit closing date for the 2025-2026 season and does not contain any season-specific dates or final reports to infer one.",
-    "lastUpdated": "2026-04-15T11:34:40.798Z",
+    "closingDateReasoning": "The provided webpage content indicates 'Lodge Closed' and 'Skiing open' but does not specify a seasonal closing date for the 2025-2026 season.",
+    "lastUpdated": "2026-04-17T11:25:35.546Z",
     "websiteUrl": "https://www.williamslakecrosscountryskiclub.ca/"
   }
 ]
