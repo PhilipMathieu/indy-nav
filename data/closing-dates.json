@@ -184,6 +184,18 @@
     "websiteUrl": "https://pila.it/en/"
   },
   {
+    "id": "bear-valley-mountain-resort",
+    "name": "Bear Valley Mountain Resort",
+    "region": "Canada",
+    "state": "Bear Valley",
+    "closingDate": "2026-04-26",
+    "closingDateSource": "https://www.bearvalley.com/the-mountain/mountain-report/",
+    "closingDateConfidence": "medium",
+    "closingDateReasoning": "The official Bear Valley Mountain Resort website states in their operational updates that the final day of the 2025/2026 winter season is Sunday, April 26, 2026.",
+    "lastUpdated": "2026-04-24T11:30:28.762Z",
+    "websiteUrl": "https://www.bearvalley.com/"
+  },
+  {
     "id": "black-mountain-ski-area",
     "name": "Black Mountain Ski Area",
     "region": "East",
@@ -225,8 +237,8 @@
     "closingDate": "2026-04-26",
     "closingDateSource": "https://www.williamslakecrosscountryskiclub.ca/",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The page lists 'Apr 26, 2026 Work Bee' as an upcoming event, and the lodge status indicates 'Lodge Closed', implying the seasonal operations have concluded by this date.",
-    "lastUpdated": "2026-04-22T11:32:41.587Z",
+    "closingDateReasoning": "The website shows a 'Work Bee' event scheduled for April 26, 2026, and the site overall indicates the lodge is closed and skiing operations are winding down, making April 26, 2026 the last relevant operational date mentioned.",
+    "lastUpdated": "2026-04-24T11:31:10.800Z",
     "websiteUrl": "https://www.williamslakecrosscountryskiclub.ca/"
   },
   {
@@ -452,6 +464,18 @@
     "closingDateReasoning": "Berkshire East Mountain Resort officially concluded their 2025-2026 ski season on April 12, 2026, as announced on their official website's operational updates page.",
     "lastUpdated": "2026-04-18T11:17:31.411Z",
     "websiteUrl": "https://berkshireeast.com"
+  },
+  {
+    "id": "bethel-village-trails",
+    "name": "Bethel Village Trails",
+    "region": "East",
+    "state": "ME",
+    "closingDate": "2026-04-12",
+    "closingDateSource": "https://www.facebook.com/BethelVillageTrails/",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "The Bethel Village Trails official Facebook page announced that Sunday, April 12, 2026, was the final day of the ski season, stating 'Our last day for the 2025/2026 season will be Sunday, April 12th.'",
+    "lastUpdated": "2026-04-24T11:30:34.386Z",
+    "websiteUrl": "https://woodsandtrails.org/"
   },
   {
     "id": "bolton-valley-resort",
@@ -2129,8 +2153,8 @@
     "closingDate": "2026-03-28",
     "closingDateSource": "https://skibigmoose.com/trail-report-1",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The trail report is dated '03/28/26' and shows that most lifts and trails are closed, suggesting the mountain ceased operations on or around this date.",
-    "lastUpdated": "2026-04-23T11:30:17.763Z",
+    "closingDateReasoning": "The page displays a trail report last updated on 03/28/26 with many trails and lifts listed as closed, suggesting operations had ceased or were significantly limited as of that date.",
+    "lastUpdated": "2026-04-24T11:30:36.491Z",
     "websiteUrl": "https://skibigmoose.com/"
   },
   {
@@ -2753,30 +2777,6 @@
     "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS"
   },
   {
-    "id": "bear-valley-mountain-resort",
-    "name": "Bear Valley Mountain Resort",
-    "region": "Canada",
-    "state": "Bear Valley",
-    "closingDate": null,
-    "closingDateSource": "https://www.bearvalley.com/conditions",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The page does not provide an explicit closing date for the 2025-2026 season. It displays current weather, lift/trail status placeholders, and sales information, but lacks information regarding the final operating day of the season.",
-    "lastUpdated": "2026-04-23T11:30:09.562Z",
-    "websiteUrl": "https://www.bearvalley.com/"
-  },
-  {
-    "id": "bethel-village-trails",
-    "name": "Bethel Village Trails",
-    "region": "East",
-    "state": "ME",
-    "closingDate": null,
-    "closingDateSource": "https://woodsandtrails.org/daily-updates-2/",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'The Winter Trail Center is closed for the 2026-27 season' and provides an update from April 2026, but does not specify a concrete closing date for the 2025-26 season.",
-    "lastUpdated": "2026-04-23T11:30:15.314Z",
-    "websiteUrl": "https://woodsandtrails.org/"
-  },
-  {
     "id": "camp-10-ski-area",
     "name": "Camp 10 Ski Area",
     "region": "Midwest",
@@ -2784,8 +2784,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.facebook.com/CAMP10SKIAREA",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content is a basic Facebook page header for Camp 10 Ski Area and contains no specific operational dates, season schedules, or closing announcements for the 2025-2026 season.",
-    "lastUpdated": "2026-04-23T11:30:31.843Z",
+    "closingDateReasoning": "The provided Facebook page contains no specific closing date or operating information for the 2025-2026 season.",
+    "lastUpdated": "2026-04-24T11:30:39.219Z",
     "websiteUrl": "https://www.facebook.com/CAMP10SKIAREA"
   },
   {
@@ -2807,8 +2807,8 @@
     "closingDate": null,
     "closingDateSource": "https://capesmokey.ca/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page displays 'Closed' status for the ski season and lists general hours of operation but does not specify a calendar date for the end of the 2025-2026 season.",
-    "lastUpdated": "2026-04-23T11:30:38.541Z",
+    "closingDateReasoning": "The website currently displays a 'Closed' status but provides no specific calendar date or official announcement regarding the end of the 2025-2026 winter season.",
+    "lastUpdated": "2026-04-24T11:30:45.407Z",
     "websiteUrl": "https://capesmokey.ca/"
   },
   {
@@ -2819,8 +2819,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.cartersxcski.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website explicitly states 'We are close for the season' but provides no specific calendar date indicating when that closure occurred or when the season ended.",
-    "lastUpdated": "2026-04-23T11:30:42.453Z",
+    "closingDateReasoning": "The website explicitly states 'We are close for the season,' but provides no specific calendar date, and the 'October 3-7' date listed is for cabin rentals, not the closing of the ski season.",
+    "lastUpdated": "2026-04-24T11:30:48.660Z",
     "websiteUrl": "https://www.cartersxcski.com/"
   },
   {
@@ -2831,8 +2831,8 @@
     "closingDate": null,
     "closingDateSource": "https://discover.corralco.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains booking information and seasonal promotions for the 2025 season but does not mention an explicit closing date for the 2025-2026 ski season.",
-    "lastUpdated": "2026-04-23T11:30:47.951Z",
+    "closingDateReasoning": "The provided webpage content for Corralco Mountain Resort focuses on promotional offers and room booking information for the 2025 season. It does not mention a specific closing date for the 2025-2026 ski season.",
+    "lastUpdated": "2026-04-24T11:30:53.230Z",
     "websiteUrl": "https://discover.corralco.com/"
   },
   {
@@ -2865,8 +2865,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.fortkentoc.org/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content only contains the name of the organization and no scheduling or operational information related to the 2025-2026 ski season closing date.",
-    "lastUpdated": "2026-04-23T11:30:57.333Z",
+    "closingDateReasoning": "The provided webpage content for the Fort Kent Outdoor Center did not contain any information regarding the 2025-2026 season closing date.",
+    "lastUpdated": "2026-04-24T11:31:00.632Z",
     "websiteUrl": "https://www.fortkentoc.org/"
   },
   {
