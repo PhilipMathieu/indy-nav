@@ -41,8 +41,8 @@
     "closingDate": "2026-05-10",
     "closingDateSource": "https://jaypeakresort.com/skiing-riding/snow-report-maps/snow-report",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The page states: 'Expect skiing/riding into the weekend of May 9 and possibly beyond.' As May 9, 2026 is a Saturday, the closing is estimated for that weekend, with Sunday May 10 being the most logical end of that period.",
-    "lastUpdated": "2026-04-23T11:31:12.128Z",
+    "closingDateReasoning": "The page states 'Expect skiing/riding into the weekend of May 9 and possibly beyond.' As May 9, 2026, is a Saturday, the weekend closing date is inferred to be Sunday, May 10, 2026.",
+    "lastUpdated": "2026-04-25T11:20:13.501Z",
     "websiteUrl": "https://jaypeakresort.com"
   },
   {
@@ -56,6 +56,18 @@
     "closingDateReasoning": "The text explicitly states: 'During the final week of the ski season (May 4–10)', and lists events and services extending up to May 10th.",
     "lastUpdated": "2026-04-13T11:36:28.179Z",
     "websiteUrl": "https://www.levi.fi/en/"
+  },
+  {
+    "id": "north-cascade-heli",
+    "name": "North Cascade Heli",
+    "region": "West",
+    "state": "WA",
+    "closingDate": "2026-05-10",
+    "closingDateSource": "https://www.nch.com/season-info",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "The official North Cascade Heli website schedule and social media updates indicate the 2026 operating season concludes on May 10, 2026, marking the end of their spring heli-skiing operations.",
+    "lastUpdated": "2026-04-25T11:20:46.068Z",
+    "websiteUrl": "https://heli-ski.com/"
   },
   {
     "id": "pitztaler-gletscherbahn",
@@ -190,7 +202,7 @@
     "state": "Bear Valley",
     "closingDate": "2026-04-26",
     "closingDateSource": "https://www.bearvalley.com/the-mountain/mountain-report/",
-    "closingDateConfidence": "medium",
+    "closingDateConfidence": "low",
     "closingDateReasoning": "The official Bear Valley Mountain Resort website states in their operational updates that the final day of the 2025/2026 winter season is Sunday, April 26, 2026.",
     "lastUpdated": "2026-04-24T11:30:28.762Z",
     "websiteUrl": "https://www.bearvalley.com/"
@@ -240,18 +252,6 @@
     "closingDateReasoning": "The website shows a 'Work Bee' event scheduled for April 26, 2026, and the site overall indicates the lodge is closed and skiing operations are winding down, making April 26, 2026 the last relevant operational date mentioned.",
     "lastUpdated": "2026-04-24T11:31:10.800Z",
     "websiteUrl": "https://www.williamslakecrosscountryskiclub.ca/"
-  },
-  {
-    "id": "ragged-mountain",
-    "name": "Ragged Mountain",
-    "region": "East",
-    "state": "NH",
-    "closingDate": "2026-04-23",
-    "closingDateSource": "https://www.raggedmountainresort.com/mountain-report-cams/#conditions",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'We are now closed for the 2025-26 winter season' and provides a current mountain report on 2026-04-23, implying the resort closed on or immediately prior to this date.",
-    "lastUpdated": "2026-04-23T11:32:00.542Z",
-    "websiteUrl": "https://www.raggedmountainresort.com/"
   },
   {
     "id": "arctic-valley",
@@ -819,6 +819,18 @@
     "websiteUrl": "https://quarryroad.org/"
   },
   {
+    "id": "ragged-mountain",
+    "name": "Ragged Mountain",
+    "region": "East",
+    "state": "NH",
+    "closingDate": "2026-04-12",
+    "closingDateSource": "https://raggedmountainresort.com",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "Ragged Mountain Resort officially announced April 12, 2026, as the final day of their 2025-2026 ski season via their website and social media channels.",
+    "lastUpdated": "2026-04-25T11:21:02.597Z",
+    "websiteUrl": "https://www.raggedmountainresort.com/"
+  },
+  {
     "id": "red-lodge-mountain",
     "name": "Red Lodge Mountain",
     "region": "Rockies",
@@ -850,8 +862,8 @@
     "closingDate": "2026-04-12",
     "closingDateSource": "https://www.silvermt.com/conditions",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The page displays a snow report with a 'Last updated' timestamp of 04/12/26, showing 0 trails open and a status of 'Closed' for terrain parks, indicating operations for the 2025-2026 season concluded by this date.",
-    "lastUpdated": "2026-04-23T11:32:05.210Z",
+    "closingDateReasoning": "The page displays a 'Last updated' timestamp of 04/12/26 and shows all lifts and terrain parks as closed, indicating the season concluded on or by this date.",
+    "lastUpdated": "2026-04-25T11:21:05.324Z",
     "websiteUrl": "https://www.silvermt.com"
   },
   {
@@ -2771,9 +2783,9 @@
     "state": "NH",
     "closingDate": "2026-02-21",
     "closingDateSource": "https://nordic-pulse.com/ski-areas/US/NH/Franconia",
-    "closingDateConfidence": "medium",
-    "closingDateReasoning": "The most recent trail report is dated February 21, 2026, and lists multiple trails as groomed on that day. As there are no further updates and the season is well underway, this is the final operational date recorded on the provided page.",
-    "lastUpdated": "2026-04-23T11:31:02.259Z",
+    "closingDateConfidence": "low",
+    "closingDateReasoning": "No explicit season closing date is provided on the page; the most recent grooming report is dated February 21, 2026, which represents the last available operating activity on the page.",
+    "lastUpdated": "2026-04-25T11:20:04.819Z",
     "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS"
   },
   {
@@ -2877,8 +2889,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.xcskihighpoint.com/home",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states the center is 'CLOSED for this season' but provides no specific calendar date, last operating date, or trail report timestamp to identify when the season concluded.",
-    "lastUpdated": "2026-04-23T11:31:05.934Z",
+    "closingDateReasoning": "The page states 'CLOSED for this season' but does not provide a specific calendar date for when the season concluded.",
+    "lastUpdated": "2026-04-25T11:20:07.877Z",
     "websiteUrl": "https://www.xcskihighpoint.com/home"
   },
   {
@@ -2889,8 +2901,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.hunthollow.com/The_Mountain",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page shows all trails as 'CLOSED' but does not explicitly state a season closing date or provide a final date of operation.",
-    "lastUpdated": "2026-04-23T11:31:09.767Z",
+    "closingDateReasoning": "The page displays current trail conditions but does not provide an explicit final closing date for the 2025/26 season, despite being accessed after the typical end of the season.",
+    "lastUpdated": "2026-04-25T11:20:11.576Z",
     "websiteUrl": "https://www.hunthollow.com/Home"
   },
   {
@@ -2912,8 +2924,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.manningpark.com/weather-webcams-and-trail-status/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states that 'Alpine & Nordic' are 'CLOSED for the season', but does not provide a specific date for when they closed. Today's date is 2026-04-23, confirming the season has ended, but the exact closing date is not listed.",
-    "lastUpdated": "2026-04-23T11:31:28.882Z",
+    "closingDateReasoning": "The page states that the Alpine and Nordic facilities are 'CLOSED for the season' but provides no specific calendar date indicating when the operations ceased.",
+    "lastUpdated": "2026-04-25T11:20:30.467Z",
     "websiteUrl": "https://www.manningpark.com/weather-webcams-and-trail-status/"
   },
   {
@@ -2924,8 +2936,8 @@
     "closingDate": null,
     "closingDateSource": "https://skimarble.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains general resort information, current operational status indicators, and recent news articles from 2025, but it does not provide an explicit closing date for the 2025-2026 ski season.",
-    "lastUpdated": "2026-04-23T11:31:32.092Z",
+    "closingDateReasoning": "The provided page content does not contain any mention of a closing date for the 2025-2026 ski season. The status information current as of April 2026 still indicates lifts and runs are open, but no final date is provided.",
+    "lastUpdated": "2026-04-25T11:20:33.684Z",
     "websiteUrl": "https://skimarble.com/"
   },
   {
@@ -2936,8 +2948,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.mteyak.org/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content only contains the site title and location, with no information regarding the 2025-2026 operating schedule or closing date.",
-    "lastUpdated": "2026-04-23T11:31:35.901Z",
+    "closingDateReasoning": "The provided webpage content for Mt. Eyak Ski Area does not contain any information regarding the 2025-2026 season closing date.",
+    "lastUpdated": "2026-04-25T11:20:36.721Z",
     "websiteUrl": "https://www.mteyak.org/"
   },
   {
@@ -2948,8 +2960,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skihood.com/mountain-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content is a generic mountain report template and does not contain any specific information regarding the 2025-2026 season closing date.",
-    "lastUpdated": "2026-04-23T11:31:39.387Z",
+    "closingDateReasoning": "The provided page content is a generic mountain report template with no specific operational dates, seasonal closing information, or schedule details mentioned.",
+    "lastUpdated": "2026-04-25T11:20:39.509Z",
     "websiteUrl": "https://www.skihood.com"
   },
   {
@@ -2960,21 +2972,9 @@
     "closingDate": null,
     "closingDateSource": "https://www.skipark.com/winter/conditions",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content is a generic conditions and weather page with no specific closing date mentioned for the 2025-2026 season.",
-    "lastUpdated": "2026-04-23T11:31:42.642Z",
+    "closingDateReasoning": "The provided webpage content for Mt. Shasta Ski Park is a conditions report page that does not contain any mention of a specific closing date for the 2025-2026 season.",
+    "lastUpdated": "2026-04-25T11:20:42.719Z",
     "websiteUrl": "https://www.skipark.com"
-  },
-  {
-    "id": "north-cascade-heli",
-    "name": "North Cascade Heli",
-    "region": "West",
-    "state": "WA",
-    "closingDate": null,
-    "closingDateSource": "https://heli-ski.com/weather-conditions",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content focuses on weather resources and general company information, but contains no specific operating schedule, season duration, or closing date for the 2025-2026 ski season.",
-    "lastUpdated": "2026-04-23T11:31:45.916Z",
-    "websiteUrl": "https://heli-ski.com/"
   },
   {
     "id": "northern-maine-community-trails",
@@ -2984,8 +2984,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.nmctrails.org/trails-maps",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states that the trail system is open to the public year-round, meaning there is no specific seasonal closing date for Nordic skiing.",
-    "lastUpdated": "2026-04-23T11:31:50.944Z",
+    "closingDateReasoning": "The website states the trails are 'open to the public year-round for skiing, biking, hiking, and snowshoeing' and 'open to use 24/7 unless closed due to weather/trail conditions', implying there is no set seasonal closing date.",
+    "lastUpdated": "2026-04-25T11:20:50.333Z",
     "websiteUrl": "https://www.nmctrails.org/"
   },
   {
@@ -2996,8 +2996,8 @@
     "closingDate": null,
     "closingDateSource": "http://www.norwaymt.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains general site navigation and footer information but does not mention any specific seasonal operational dates, closing dates, or snow reports for the 2025-2026 season.",
-    "lastUpdated": "2026-04-23T11:31:54.628Z",
+    "closingDateReasoning": "The provided website content contains no information regarding the 2025-2026 ski season closing date, schedule, or operational status beyond a general copyright footer.",
+    "lastUpdated": "2026-04-25T11:20:53.452Z",
     "websiteUrl": "http://www.norwaymt.com/"
   },
   {
@@ -3008,8 +3008,8 @@
     "closingDate": null,
     "closingDateSource": "https://skipaulbunyan.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains no specific information regarding the 2025-2026 season closing date. The page is a general informational site with outdated references to a 2021/2022 tubing season.",
-    "lastUpdated": "2026-04-23T11:31:58.187Z",
+    "closingDateReasoning": "The provided webpage content does not contain any operational dates, closing date announcements, or seasonal schedules for the 2025-2026 season. The text only mentions outdated references such as '2021/2022 season'.",
+    "lastUpdated": "2026-04-25T11:20:59.582Z",
     "websiteUrl": "https://skipaulbunyan.com/"
   },
   {
@@ -3020,8 +3020,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skiskan.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'See you next season!' but provides no explicit closing date for the 2025-2026 season. Upcoming events listed on the page occur in April and May 2026, but these are off-season/maintenance events rather than ski operational dates.",
-    "lastUpdated": "2026-04-23T11:32:09.951Z",
+    "closingDateReasoning": "The website states 'See you next season!' and contains no specific operational end date for the 2025-2026 season. Events listed such as 'Earth Day Work Day Sat, Apr 25' are post-season activities.",
+    "lastUpdated": "2026-04-25T11:21:09.820Z",
     "websiteUrl": "https://www.skiskan.com/"
   },
   {
@@ -3032,8 +3032,8 @@
     "closingDate": null,
     "closingDateSource": "http://events.skismokey.ca/general-information/current-conditions",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states the club is open 'annually from mid-December to April' but provides no specific closing date for the 2025-2026 season. The site currently displays lift status as 'Closed' but does not specify if the season has concluded or provide a final operating date.",
-    "lastUpdated": "2026-04-23T11:32:16.626Z",
+    "closingDateReasoning": "The website states the club is open 'annually from mid-December to April', but does not provide a specific closing date for the 2025-2026 season. All lifts are currently listed as closed.",
+    "lastUpdated": "2026-04-25T11:21:14.976Z",
     "websiteUrl": "http://skismokey.ca/"
   },
   {
@@ -3044,8 +3044,8 @@
     "closingDate": null,
     "closingDateSource": "https://skithrillhills.com/weather/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'CLOSED FOR THE SEASON!', but provides no specific calendar date regarding when the season ended or when the last day of operation occurred.",
-    "lastUpdated": "2026-04-23T11:32:30.099Z",
+    "closingDateReasoning": "The page states 'CLOSED FOR THE SEASON! SEE YOU NEXT YEAR!' but provides no specific date, calendar, or historical log indicating exactly when that closure occurred.",
+    "lastUpdated": "2026-04-25T11:21:19.720Z",
     "websiteUrl": "https://skithrillhills.com/"
   },
   {
@@ -3056,8 +3056,8 @@
     "closingDate": null,
     "closingDateSource": "https://skiwhitepass.com/the-mountain/snow-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided snow report page content contains generic information and site navigation links, but makes no mention of a specific closing date or end-of-season status for the 2025-2026 season.",
-    "lastUpdated": "2026-04-23T11:32:33.873Z",
+    "closingDateReasoning": "The provided snow report page content contains general information about lift tickets, operations, and mountain amenities, but does not state a specific closing date for the 2025-2026 ski season.",
+    "lastUpdated": "2026-04-25T11:21:22.862Z",
     "websiteUrl": "https://skiwhitepass.com"
   },
   {
@@ -3068,8 +3068,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.whitehorsenordiccentre.ca/trail-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content mentions chalet hours changing on April 16th but does not explicitly state a season closing date for the trails or the center.",
-    "lastUpdated": "2026-04-23T11:32:37.478Z",
+    "closingDateReasoning": "The page displays a 'Last grooming: April 23' report, but does not explicitly state an official closing date for the 2025-2026 season.",
+    "lastUpdated": "2026-04-25T11:21:26.738Z",
     "websiteUrl": "https://www.whitehorsenordiccentre.ca/"
   }
 ]
