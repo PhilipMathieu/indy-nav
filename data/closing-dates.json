@@ -3058,8 +3058,8 @@
     "closingDate": null,
     "closingDateSource": "https://skithrillhills.com/weather/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'CLOSED FOR THE SEASON! SEE YOU NEXT YEAR!' but does not provide a specific calendar date for the end of the season.",
-    "lastUpdated": "2026-05-06T11:39:45.198Z",
+    "closingDateReasoning": "The page states 'CLOSED FOR THE SEASON!' but does not provide a specific date for when operations concluded.",
+    "lastUpdated": "2026-05-08T11:36:19.988Z",
     "websiteUrl": "https://skithrillhills.com/"
   },
   {
@@ -3070,8 +3070,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.williamslakecrosscountryskiclub.ca/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states 'Skiing Closed for the season', but does not provide a specific calendar date for when that closure occurred or when the season officially ended.",
-    "lastUpdated": "2026-05-06T11:39:52.070Z",
+    "closingDateReasoning": "The website currently displays 'Skiing Closed for the season' but provides no specific calendar date, and there is no date associated with the current trail status reports.",
+    "lastUpdated": "2026-05-08T11:36:24.161Z",
     "websiteUrl": "https://www.williamslakecrosscountryskiclub.ca/"
   }
 ]
