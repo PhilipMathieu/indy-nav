@@ -2321,8 +2321,8 @@
     "closingDate": "2026-03-28",
     "closingDateSource": "https://skibigmoose.com/trail-report-1",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "The trail report provided is dated 'Last Updated : 03/28/26' and shows the majority of trails and lifts closed, which indicates the season effectively ended on or around that date.",
-    "lastUpdated": "2026-06-08T12:33:42.326Z",
+    "closingDateReasoning": "The page displays a trail report last updated on 03/28/26 with a mix of open and closed lifts, implying the season ended on or around that date.",
+    "lastUpdated": "2026-06-10T12:08:12.884Z",
     "websiteUrl": "https://skibigmoose.com/"
   },
   {
@@ -2952,8 +2952,8 @@
     "closingDate": "2026-02-21",
     "closingDateSource": "https://nordic-pulse.com/ski-areas/US/NH/Franconia",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided grooming report page lists the last update/grooming date for several trails as February 21, 2026, which is the most recent activity date provided for the season.",
-    "lastUpdated": "2026-06-09T12:04:13.979Z",
+    "closingDateReasoning": "No explicit closing date was provided, but Feb 21, 2026, is the date of the most recent report on the page indicating active grooming, making it the final recorded operational date.",
+    "lastUpdated": "2026-06-10T12:08:38.260Z",
     "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS"
   },
   {
@@ -2964,8 +2964,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.facebook.com/CAMP10SKIAREA",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided Facebook page contains no specific mentions of the 2025-2026 season closing date or operating hours.",
-    "lastUpdated": "2026-06-08T12:33:46.265Z",
+    "closingDateReasoning": "The provided page content is minimal and only contains the name and location of the ski area; no specific dates or closing information were found.",
+    "lastUpdated": "2026-06-10T12:08:15.996Z",
     "websiteUrl": "https://www.facebook.com/CAMP10SKIAREA"
   },
   {
@@ -2987,8 +2987,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.cartersxcski.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website explicitly states 'We are close for the season' but provides no specific date or reference to the last day of operation.",
-    "lastUpdated": "2026-06-08T12:33:51.395Z",
+    "closingDateReasoning": "The website explicitly states 'We are close for the season,' but it does not provide a specific date for when that closure occurred or when the season ended.",
+    "lastUpdated": "2026-06-10T12:08:21.372Z",
     "websiteUrl": "https://www.cartersxcski.com/"
   },
   {
@@ -3010,8 +3010,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.xcskihighpoint.com/home",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states 'CLOSED for this season' but does not provide a specific calendar date regarding when the season ended.",
-    "lastUpdated": "2026-06-08T12:34:14.665Z",
+    "closingDateReasoning": "The website states 'CLOSED for this season' but does not provide a specific calendar date for the 2025-2026 season closure.",
+    "lastUpdated": "2026-06-10T12:08:41.343Z",
     "websiteUrl": "https://www.xcskihighpoint.com/home"
   },
   {
@@ -3022,8 +3022,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.nmctrails.org/trails-maps",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states that the trail system is open to the public year-round for skiing, biking, hiking, and snowshoeing, and does not provide specific closing dates for the Nordic skiing season.",
-    "lastUpdated": "2026-06-08T12:34:17.691Z",
+    "closingDateReasoning": "The website states that trails are open to use 24/7 year-round, meaning there is no specific seasonal closing date for the trails.",
+    "lastUpdated": "2026-06-10T12:08:46.025Z",
     "websiteUrl": "https://www.nmctrails.org/"
   },
   {
@@ -3034,8 +3034,8 @@
     "closingDate": null,
     "closingDateSource": "http://www.norwaymt.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains general navigation, footer information, and a copyright date of 2026, but does not specify an operating schedule or a seasonal closing date for the 2025-2026 ski season.",
-    "lastUpdated": "2026-06-08T12:34:20.879Z",
+    "closingDateReasoning": "The provided webpage content contains generic site navigation and a copyright notice for 2026, but does not specify any operating hours, lift schedules, or end-of-season announcements.",
+    "lastUpdated": "2026-06-10T12:08:49.592Z",
     "websiteUrl": "http://www.norwaymt.com/"
   },
   {
@@ -3058,8 +3058,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skiskan.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states 'See you next season!' and confirms the season is over, but provides no specific calendar date for when the hill closed.",
-    "lastUpdated": "2026-06-08T12:34:26.165Z",
+    "closingDateReasoning": "The website states 'See you next season!' but provides no specific calendar dates regarding the end of the 2025-2026 operations.",
+    "lastUpdated": "2026-06-10T12:08:55.007Z",
     "websiteUrl": "https://www.skiskan.com/"
   },
   {
