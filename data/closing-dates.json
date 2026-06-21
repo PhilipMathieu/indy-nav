@@ -2952,8 +2952,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.facebook.com/CAMP10SKIAREA",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content is minimal and contains no references to a specific closing date or operating schedule for the 2025-2026 season.",
-    "lastUpdated": "2026-06-19T12:23:50.782Z",
+    "closingDateReasoning": "The provided page content is only the header 'Camp 10 Ski Area | Rhinelander WI' and does not contain any specific information regarding the 2025-2026 operating season or closing date.",
+    "lastUpdated": "2026-06-21T11:55:40.910Z",
     "websiteUrl": "https://www.facebook.com/CAMP10SKIAREA"
   },
   {
@@ -2975,8 +2975,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.cartersxcski.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states 'We are close for the season' but does not provide a specific date, and the only other dates mentioned relate to cabin rental pricing (October 3-7) or generic program information.",
-    "lastUpdated": "2026-06-19T12:23:56.133Z",
+    "closingDateReasoning": "The website states 'We are close for the season' but provides no specific calendar date, and the only date listed on the page is 'October 3-7' related to cabin rentals, which is outside the ski season timeframe.",
+    "lastUpdated": "2026-06-21T11:55:46.258Z",
     "websiteUrl": "https://www.cartersxcski.com/"
   },
   {
@@ -2998,8 +2998,8 @@
     "closingDate": null,
     "closingDateSource": "https://nordic-pulse.com/ski-areas/US/NH/Franconia",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page displays a report from February 21, 2026, but does not provide an explicit closing date for the season. No information regarding the end of the season is present.",
-    "lastUpdated": "2026-06-19T12:24:04.269Z",
+    "closingDateReasoning": "The provided page contains a grooming report from February 21, 2026, but does not explicitly state a closing date for the season, nor does it indicate that the season has ended.",
+    "lastUpdated": "2026-06-21T11:55:54.204Z",
     "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS"
   },
   {
@@ -3010,8 +3010,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.xcskihighpoint.com/home",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website explicitly states it is 'CLOSED for this season' but does not provide a specific calendar date for the end of the 2025-2026 season.",
-    "lastUpdated": "2026-06-19T12:24:06.937Z",
+    "closingDateReasoning": "The website explicitly states the center is 'CLOSED for this season' but provides no specific calendar date, end-of-season date, or recent operational date to determine exactly when the season concluded.",
+    "lastUpdated": "2026-06-21T11:55:57.477Z",
     "websiteUrl": "https://www.xcskihighpoint.com/home"
   },
   {
@@ -3022,8 +3022,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.nmctrails.org/trails-maps",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states the trail system is open 'year-round' and '24/7' for various activities, meaning there is no specific closing date for the Nordic ski season.",
-    "lastUpdated": "2026-06-19T12:24:10.956Z",
+    "closingDateReasoning": "The website states that the trail system is open to the public year-round and operates 24/7, meaning there is no specific seasonal closing date for Nordic skiing.",
+    "lastUpdated": "2026-06-21T11:56:02.742Z",
     "websiteUrl": "https://www.nmctrails.org/"
   },
   {
@@ -3034,8 +3034,8 @@
     "closingDate": null,
     "closingDateSource": "http://www.norwaymt.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains no specific operating dates or information regarding the end of the 2025-2026 ski season.",
-    "lastUpdated": "2026-06-19T12:24:13.716Z",
+    "closingDateReasoning": "The provided webpage content contains no information regarding the 2025-2026 ski season operating schedule or closing date.",
+    "lastUpdated": "2026-06-21T11:56:06.237Z",
     "websiteUrl": "http://www.norwaymt.com/"
   },
   {
@@ -3058,8 +3058,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skiskan.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'See you next season!' but provides no specific date, report, or schedule information to determine when the 2025-2026 season concluded.",
-    "lastUpdated": "2026-06-19T12:24:20.279Z",
+    "closingDateReasoning": "The website content indicates the season has ended with the phrase 'See you next season!' but provides no specific calendar date regarding when the facility closed for the 2025-2026 season.",
+    "lastUpdated": "2026-06-21T11:56:11.770Z",
     "websiteUrl": "https://www.skiskan.com/"
   },
   {
