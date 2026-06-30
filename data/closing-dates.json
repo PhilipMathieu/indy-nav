@@ -3070,8 +3070,8 @@
     "closingDate": null,
     "closingDateSource": "https://skithrillhills.com/weather/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content was empty, therefore no closing date information could be extracted.",
-    "lastUpdated": "2026-06-26T11:55:19.215Z",
+    "closingDateReasoning": "The provided page content is empty, providing no information regarding the ski season closing date.",
+    "lastUpdated": "2026-06-30T11:54:29.326Z",
     "websiteUrl": "https://skithrillhills.com/"
   }
 ]
