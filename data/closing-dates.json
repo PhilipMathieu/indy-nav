@@ -2945,18 +2945,6 @@
     "websiteUrl": "https://nordicski.net/haymaker-nordic-center/"
   },
   {
-    "id": "franconia-village-xc-ski-area",
-    "name": "Franconia Village XC Ski Area",
-    "region": "East",
-    "state": "NH",
-    "closingDate": "2026-02-21",
-    "closingDateSource": "https://nordic-pulse.com/ski-areas/US/NH/Franconia",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The page provides a grooming report dated Feb 21, 2026, as the most recent record, which is typical for a ski area that has concluded operations.",
-    "lastUpdated": "2026-07-11T11:55:11.294Z",
-    "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS"
-  },
-  {
     "id": "camp-10-ski-area",
     "name": "Camp 10 Ski Area",
     "region": "Midwest",
@@ -2964,8 +2952,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.facebook.com/CAMP10SKIAREA",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided Facebook page contains general business information for Camp 10 Ski Area but does not contain any specific operational schedule, closing dates, or end-of-season announcements for the 2025-2026 season.",
-    "lastUpdated": "2026-07-11T11:54:59.929Z",
+    "closingDateReasoning": "The provided Facebook page content for Camp 10 Ski Area only contains the name and location; there are no specific posts, dates, or mentions of the 2025-2026 ski season closing.",
+    "lastUpdated": "2026-07-12T12:02:39.166Z",
     "websiteUrl": "https://www.facebook.com/CAMP10SKIAREA"
   },
   {
@@ -2987,8 +2975,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.cartersxcski.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states 'We are close for the season' but provides no specific calendar date, and the only date listed is 'October 3-7' which refers to cabin rentals and is outside the typical ski season window.",
-    "lastUpdated": "2026-07-11T11:55:05.074Z",
+    "closingDateReasoning": "The website states 'We are close for the season' but provides no specific calendar date, nor does it list any snow report or event dates that would indicate when the season ended.",
+    "lastUpdated": "2026-07-12T12:02:43.914Z",
     "websiteUrl": "https://www.cartersxcski.com/"
   },
   {
@@ -3003,6 +2991,18 @@
     "websiteUrl": "https://cucharamountainpark.org/"
   },
   {
+    "id": "franconia-village-xc-ski-area",
+    "name": "Franconia Village XC Ski Area",
+    "region": "East",
+    "state": "NH",
+    "closingDate": null,
+    "closingDateSource": "https://nordic-pulse.com/ski-areas/US/NH/Franconia",
+    "closingDateConfidence": "low",
+    "closingDateReasoning": "The provided grooming report from February 21, 2026, is the most recent date available on the page, but it does not indicate the official closing date for the season.",
+    "lastUpdated": "2026-07-12T12:02:50.998Z",
+    "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS"
+  },
+  {
     "id": "high-point-xc-ski-center",
     "name": "High Point XC Ski Center",
     "region": "East",
@@ -3010,8 +3010,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.xcskihighpoint.com/home",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states 'CLOSED for this season' but does not provide a specific calendar date regarding when that closure occurred or when the season ended.",
-    "lastUpdated": "2026-07-11T11:55:13.953Z",
+    "closingDateReasoning": "The page displays 'CLOSED for this season' multiple times but does not specify a calendar date for when the season concluded.",
+    "lastUpdated": "2026-07-12T12:02:53.667Z",
     "websiteUrl": "https://www.xcskihighpoint.com/home"
   },
   {
@@ -3022,8 +3022,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.nmctrails.org/trails-maps",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The website states that the trail system is open to the public year-round for various activities including Nordic skiing, meaning there is no official closing date for the ski season.",
-    "lastUpdated": "2026-07-11T11:55:17.745Z",
+    "closingDateReasoning": "The website states that the trail system is open to the public year-round and does not provide a specific closing date for the Nordic ski season.",
+    "lastUpdated": "2026-07-12T12:02:57.990Z",
     "websiteUrl": "https://www.nmctrails.org/"
   },
   {
@@ -3034,8 +3034,8 @@
     "closingDate": null,
     "closingDateSource": "http://www.norwaymt.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided webpage content contains no information regarding the 2025-2026 ski season closing date; it only contains navigation links, a copyright notice, and a cookie disclaimer.",
-    "lastUpdated": "2026-07-11T11:55:20.686Z",
+    "closingDateReasoning": "The provided webpage content contains no information regarding ski season operations, schedules, or closing dates for the 2025-2026 season.",
+    "lastUpdated": "2026-07-12T12:03:01.329Z",
     "websiteUrl": "http://www.norwaymt.com/"
   },
   {
@@ -3058,8 +3058,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skiskan.com/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The page states 'See you next season!' and contains no specific dates indicating when the 2025-2026 season concluded.",
-    "lastUpdated": "2026-07-11T11:55:25.476Z",
+    "closingDateReasoning": "The website states 'See you next season!' but provides no specific calendar dates or operational schedules for the 2025-2026 season.",
+    "lastUpdated": "2026-07-12T12:03:05.848Z",
     "websiteUrl": "https://www.skiskan.com/"
   },
   {
