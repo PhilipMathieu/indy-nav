@@ -3070,8 +3070,8 @@
     "closingDate": null,
     "closingDateSource": "https://skithrillhills.com/weather/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page content was empty, providing no information regarding the 2025-2026 ski season closing date for Thrill Hills.",
-    "lastUpdated": "2026-07-09T13:51:49.142Z",
+    "closingDateReasoning": "The provided page content is empty and does not contain any information regarding the ski season schedule or closing date.",
+    "lastUpdated": "2026-07-23T12:24:51.754Z",
     "websiteUrl": "https://skithrillhills.com/"
   }
 ]
