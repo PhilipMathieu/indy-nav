@@ -19,7 +19,7 @@ Two independent subsystems:
 - Tailwind CSS v4 + shadcn/ui (Base UI, not Radix — `asChild` is not available)
 - MapLibre GL JS with Positron basemap for the interactive resort map
 - TanStack Table for data table logic
-- Vercel AI SDK + `@ai-sdk/google` with `gemini-3.1-flash-lite-preview`
+- Vercel AI SDK + `@ai-sdk/google` with `gemini-3.1-flash-lite`
 - GitHub Actions for daily pipeline runs and deployment
 
 ## Key Commands
