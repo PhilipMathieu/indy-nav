@@ -45,7 +45,7 @@ async function lookupResortUrl(
   resort: RawResort
 ): Promise<{ websiteUrl: string | null; closingDateUrl: string | null }> {
   const { object } = await generateObject({
-    model: google("gemini-3.1-flash-lite-preview"),
+    model: google("gemini-3.1-flash-lite"),
     schema: resortUrlSchema,
     tools: {
       googleSearch: google.tools.googleSearch,

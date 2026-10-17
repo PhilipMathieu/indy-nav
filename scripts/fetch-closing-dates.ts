@@ -70,7 +70,7 @@ async function extractClosingDate(
   pageContent: string
 ): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low"; reasoning: string }> {
   const { object } = await generateObject({
-    model: google("gemini-3.1-flash-lite-preview"),
+    model: google("gemini-3.1-flash-lite"),
     schema: closingDateSchema,
     prompt: `You are extracting the closing date for the 2025-2026 ski season.
 
@@ -104,7 +104,7 @@ async function searchClosingDate(
   mountain: MountainSeed
 ): Promise<{ closingDate: string | null; confidence: "high" | "medium" | "low"; source: string; reasoning: string }> {
   const { object } = await generateObject({
-    model: google("gemini-3.1-flash-lite-preview"),
+    model: google("gemini-3.1-flash-lite"),
     schema: closingDateSchema,
     tools: {
       googleSearch: google.tools.googleSearch,
