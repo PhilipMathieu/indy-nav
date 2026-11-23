@@ -1,7 +1,17 @@
 name: Update Resort List
 
 on:
-  workflow_dispatch: # Manual trigger only
+  schedule:
+    # Mondays at 10:00 UTC, an hour before the daily dates run. Indy Pass adds
+    # resorts in a few waves a year (Feb, Mar, Sep); weekly is plenty.
+    - cron: "0 10 * * 1"
+  workflow_dispatch: # Allow manual trigger
+
+# Both data workflows commit to main; run them one at a time so neither
+# pushes onto a branch the other just moved.
+concurrency:
+  group: data-updates
+  cancel-in-progress: false
 
 permissions:
   contents: write

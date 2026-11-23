@@ -16,11 +16,11 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { columns } from "@/components/columns";
+import { columns, type MountainRow } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
 import type { Mountain } from "@/lib/types";
-import { parseISO, isBefore, startOfDay } from "date-fns";
+import { getMountainStatus, groupAndSort } from "@/lib/status";
 
 interface ClosingDatesTableProps {
   mountains: Mountain[];
@@ -30,42 +30,6 @@ interface ClosingDatesTableProps {
   onSelectedRegionsChange: (regions: string[]) => void;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
-}
-
-type MountainStatus = "open" | "unknown" | "closed";
-
-function getMountainStatus(
-  mountain: Mountain,
-  asOfDate: Date
-): MountainStatus {
-  if (!mountain.closingDate) return "unknown";
-  const closing = parseISO(mountain.closingDate);
-  if (isBefore(closing, startOfDay(asOfDate))) return "closed";
-  return "open";
-}
-
-function groupAndSort(
-  mountains: Mountain[],
-  asOfDate: Date | undefined
-): Mountain[] {
-  const referenceDate = asOfDate ?? new Date();
-
-  const open: Mountain[] = [];
-  const unknown: Mountain[] = [];
-  const closed: Mountain[] = [];
-
-  for (const m of mountains) {
-    const status = getMountainStatus(m, referenceDate);
-    if (status === "open") open.push(m);
-    else if (status === "unknown") unknown.push(m);
-    else closed.push(m);
-  }
-
-  open.sort((a, b) => a.closingDate!.localeCompare(b.closingDate!));
-  unknown.sort((a, b) => a.name.localeCompare(b.name));
-  closed.sort((a, b) => b.closingDate!.localeCompare(a.closingDate!));
-
-  return [...open, ...unknown, ...closed];
 }
 
 export function ClosingDatesTable({
@@ -80,15 +44,20 @@ export function ClosingDatesTable({
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const rowRefs = React.useRef<Map<string, HTMLTableRowElement>>(new Map());
 
-  const filteredData = React.useMemo(() => {
-    if (selectedRegions.length === 0) return mountains;
-    return mountains.filter((m) => selectedRegions.includes(m.region));
-  }, [mountains, selectedRegions]);
+  const referenceDate = React.useMemo(() => asOfDate ?? new Date(), [asOfDate]);
+
+  const filteredData = React.useMemo<MountainRow[]>(() => {
+    const inRegion =
+      selectedRegions.length === 0
+        ? mountains
+        : mountains.filter((m) => selectedRegions.includes(m.region));
+    return inRegion.map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
+  }, [mountains, selectedRegions, referenceDate]);
 
   const sortedData = React.useMemo(() => {
     if (sorting.length > 0) return filteredData;
-    return groupAndSort(filteredData, asOfDate);
-  }, [filteredData, asOfDate, sorting]);
+    return groupAndSort(filteredData, referenceDate);
+  }, [filteredData, referenceDate, sorting]);
 
   const table = useReactTable({
     data: sortedData,
@@ -98,8 +67,6 @@ export function ClosingDatesTable({
     getSortedRowModel: getSortedRowModel(),
     state: { sorting },
   });
-
-  const referenceDate = asOfDate ?? new Date();
 
   // Scroll to selected mountain when it changes
   React.useEffect(() => {
@@ -137,10 +104,7 @@ export function ClosingDatesTable({
           <TableBody>
             {table.getRowModel().rows.length ? (
               table.getRowModel().rows.map((row) => {
-                const status = getMountainStatus(
-                  row.original,
-                  referenceDate
-                );
+                const status = row.original.status;
                 const isSelected = row.original.id === selectedMountainId;
                 return (
                   <TableRow

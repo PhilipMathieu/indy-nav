@@ -6,6 +6,12 @@ on:
     - cron: "0 11 * * *"
   workflow_dispatch: # Allow manual trigger
 
+# Both data workflows commit to main; run them one at a time so neither
+# pushes onto a branch the other just moved.
+concurrency:
+  group: data-updates
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pages: write
@@ -32,10 +38,12 @@ jobs:
       - name: Cross-check against OnTheSnow
         run: npx tsx scripts/cross-check-closing-dates.ts --fix
 
+      # Pipeline and cross-check write closing-dates.json, onthesnow-map.json,
+      # and data/archive/ (at season rollover).
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet data/closing-dates.json; then
+          if [ -z "$(git status --porcelain data/)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -46,8 +54,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/closing-dates.json
-          git commit -m "chore: update closing dates $(date -u +%Y-%m-%d)"
+          git add data/
+          git commit -m "chore: update season dates $(date -u +%Y-%m-%d)"
           git push
 
   build:
