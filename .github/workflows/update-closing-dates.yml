@@ -50,12 +50,9 @@ jobs:
           git commit -m "chore: update closing dates $(date -u +%Y-%m-%d)"
           git push
 
-  deploy:
+  build:
     needs: update-data
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
@@ -79,6 +76,18 @@ jobs:
         with:
           path: out
 
+  # Deploy runs in its own job, as in GitHub's Pages starter workflows.
+  # Calling deploy-pages in the same job right after upload-pages-artifact
+  # races the artifact service: the upload finalizes, but ListArtifacts can
+  # still return 0 a few hundred ms later, and deploy-pages does not retry
+  # ("No artifacts named github-pages were found for this workflow run").
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5
