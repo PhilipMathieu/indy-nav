@@ -42,20 +42,6 @@
     "closingDateUrl": ""
   },
   {
-    "id": "ani-ski-resort",
-    "name": "Ani Ski Resort",
-    "state": "Tohoku",
-    "region": "Japan",
-    "lat": 39.9573111,
-    "lon": 140.4950898,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.aniski.jp/",
-    "closingDateUrl": "https://www.aniski.jp/"
-  },
-  {
     "id": "antelope-butte",
     "name": "Antelope Butte",
     "state": "WY",
@@ -110,6 +96,20 @@
     "isAllied": false,
     "websiteUrl": "https://arcticvalley.org",
     "closingDateUrl": "https://arcticvalley.org/conditions"
+  },
+  {
+    "id": "bad-kleinkirchheim",
+    "name": "Bad Kleinkirchheim",
+    "state": "Austria",
+    "region": "Europe",
+    "lat": 46.8141012,
+    "lon": 13.7944022,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.badkleinkirchheim.com",
+    "closingDateUrl": "https://www.badkleinkirchheim.com/en/skiing-area/slopes-lifts/"
   },
   {
     "id": "baldy-mountain-resort",
@@ -210,6 +210,34 @@
     "closingDateUrl": "https://www.skithebeav.com/mountain/conditions/"
   },
   {
+    "id": "beito-resort",
+    "name": "Beito Resort",
+    "state": "Norway",
+    "region": "Europe",
+    "lat": 61.2492968,
+    "lon": 8.9008942,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://beito.com/en/frontpage/",
+    "closingDateUrl": "https://beito.com/en/weather-trails/"
+  },
+  {
+    "id": "belleayre-mountain",
+    "name": "Belleayre Mountain",
+    "state": "NY",
+    "region": "East",
+    "lat": 42.1425154,
+    "lon": -74.5037785,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": true,
+    "websiteUrl": "https://www.belleayre.com",
+    "closingDateUrl": "https://www.belleayre.com/mountain/conditions/"
+  },
+  {
     "id": "bergbahnen-hohsaas",
     "name": "Bergbahnen Hohsaas",
     "state": "Switzerland",
@@ -246,7 +274,7 @@
     "lon": -70.790433284656,
     "isNordic": true,
     "isAlpineXc": false,
-    "isXcOnly": true,
+    "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://woodsandtrails.org/",
     "closingDateUrl": "https://woodsandtrails.org/daily-updates-2/"
@@ -362,20 +390,6 @@
     "isAllied": false,
     "websiteUrl": "https://www.blackmt.com",
     "closingDateUrl": "https://www.blackmt.com/conditions"
-  },
-  {
-    "id": "blacktail-mountain-resort",
-    "name": "Blacktail Mountain Resort",
-    "state": "MT",
-    "region": "Rockies",
-    "lat": 48.0148365,
-    "lon": -114.3721471,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://blacktailmountain.com",
-    "closingDateUrl": "https://blacktailmountain.com/snow-report/"
   },
   {
     "id": "blue-knob-all-season-resort",
@@ -494,28 +508,14 @@
     "name": "Burke Mountain",
     "state": "VT",
     "region": "East",
-    "lat": 44.62870605,
-    "lon": -71.91029195,
+    "lat": 44.582,
+    "lon": -71.9059,
     "isNordic": false,
     "isAlpineXc": false,
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skiburke.com",
     "closingDateUrl": "https://www.skiburke.com/skiing-and-riding/the-mountain/weather-and-conditions/"
-  },
-  {
-    "id": "caberfae-peaks",
-    "name": "Caberfae Peaks",
-    "state": "MI",
-    "region": "Midwest",
-    "lat": 44.2447088,
-    "lon": -85.7231528,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://caberfaepeaks.com",
-    "closingDateUrl": "https://caberfaepeaks.com/themountain/snow-report/"
   },
   {
     "id": "calabogie-peaks-resort",
@@ -630,20 +630,6 @@
     "closingDateUrl": "https://www.cannonmt.com/mountain-report"
   },
   {
-    "id": "cape-smokey",
-    "name": "Cape Smokey",
-    "state": "Nova Scotia",
-    "region": "Canada",
-    "lat": 46.627615294095,
-    "lon": -60.421888642657,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://capesmokey.ca/",
-    "closingDateUrl": "https://capesmokey.ca/"
-  },
-  {
     "id": "carters-xc-ski-center",
     "name": "Carters XC Ski Center",
     "state": "Maine",
@@ -746,12 +732,12 @@
     "name": "Cherry Peak",
     "state": "UT",
     "region": "Rockies",
-    "lat": 41.636244851822,
-    "lon": -112.01267522305,
+    "lat": 41.63624,
+    "lon": 112.01268,
     "isNordic": false,
     "isAlpineXc": false,
     "isXcOnly": false,
-    "isAllied": true,
+    "isAllied": false,
     "websiteUrl": "https://www.skicherrypeak.us/",
     "closingDateUrl": "https://www.skicherrypeak.us/"
   },
@@ -826,8 +812,8 @@
     "closingDateUrl": "https://www.cooperspur.com/conditions-report/"
   },
   {
-    "id": "corralco-mountain-resort",
-    "name": "Corralco Mountain Resort",
+    "id": "corralco-resort-de-montana",
+    "name": "Corralco Resort de Montaña",
     "state": "Curacautin",
     "region": "South America",
     "lat": -38.4136519,
@@ -836,8 +822,8 @@
     "isAlpineXc": false,
     "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://discover.corralco.com/",
-    "closingDateUrl": "https://discover.corralco.com/"
+    "websiteUrl": "https://www.corralco.com",
+    "closingDateUrl": "https://www.corralco.com"
   },
   {
     "id": "crosscut-mountain-sports-center",
@@ -866,20 +852,6 @@
     "isAllied": false,
     "websiteUrl": "https://www.crystalmountain.com",
     "closingDateUrl": "https://www.crystalmountain.com/snow"
-  },
-  {
-    "id": "crystal-ridge",
-    "name": "Crystal Ridge",
-    "state": "WI",
-    "region": "Midwest",
-    "lat": 42.9208017,
-    "lon": -88.0172624,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://crystalridge.com/",
-    "closingDateUrl": "https://crystalridge.com/"
   },
   {
     "id": "cuchara",
@@ -950,6 +922,20 @@
     "isAllied": false,
     "websiteUrl": "https://detroitmountain.com",
     "closingDateUrl": "https://detroitmountain.com/"
+  },
+  {
+    "id": "devils-thumb-ranch",
+    "name": "Devil's Thumb Ranch",
+    "state": "CO",
+    "region": "Rockies",
+    "lat": 39.9669718,
+    "lon": -105.7858703,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://www.devilsthumbranch.com/adventure/cross-country-skiing/",
+    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/CO/Devils-Thumb-Ranch"
   },
   {
     "id": "dodge-ridge",
@@ -1064,6 +1050,20 @@
     "closingDateUrl": "https://skieaglecrest.com/conditions/"
   },
   {
+    "id": "eastman-cross-country",
+    "name": "Eastman Cross Country",
+    "state": "NH",
+    "region": "East",
+    "lat": 43.5148401,
+    "lon": -72.115632,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://www.eastmannh.org/",
+    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NH/Eastman-Cross-Country?embed=true&amp;header=false&amp;footer=false"
+  },
+  {
     "id": "echo-mountain",
     "name": "Echo Mountain",
     "state": "CO",
@@ -1078,18 +1078,18 @@
     "closingDateUrl": "https://echomtn.com/mountain-conditions"
   },
   {
-    "id": "ejder3200-palandoken",
-    "name": "Ejder3200 Palandoken",
-    "state": "Türkiye",
-    "region": "Europe",
-    "lat": 39.7828035,
-    "lon": 41.1995297,
-    "isNordic": false,
-    "isAlpineXc": false,
+    "id": "elm-creek-park-reserve",
+    "name": "Elm Creek Park Reserve",
+    "state": "MN",
+    "region": "Midwest",
+    "lat": 45.1385172,
+    "lon": -93.4406417,
+    "isNordic": true,
+    "isAlpineXc": true,
     "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://www.ejder3200.com/Main/Index",
-    "closingDateUrl": "https://www.ejder3200.com/Main/Index"
+    "websiteUrl": "https://www.threeriversparks.org/location/elm-creek-winter-recreation-area",
+    "closingDateUrl": "https://www.threeriversparks.org/location/elm-creek-winter-recreation-area"
   },
   {
     "id": "enchanted-forest-xc",
@@ -1106,18 +1106,18 @@
     "closingDateUrl": "https://enchantedforestxc.com/"
   },
   {
-    "id": "erciyes-ski-resort",
-    "name": "Ercİyes Ski Resort",
-    "state": "38220 Melikgazi/Kayseri",
+    "id": "engstligenalp",
+    "name": "Engstligenalp",
+    "state": "Switzerland",
     "region": "Europe",
-    "lat": 37.8781927,
-    "lon": 34.014505,
+    "lat": 46.4592216,
+    "lon": 7.5664537,
     "isNordic": false,
     "isAlpineXc": false,
     "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://www.kayserierciyes.com.tr/",
-    "closingDateUrl": "https://www-kayserierciyes-com-tr.translate.goog/hava-durumu?_x_tr_sl=tr&amp;_x_tr_tl=en&amp;_x_tr_hl=tr&amp;_x_tr_pto=wapp"
+    "websiteUrl": "https://engstligenalp.ch/en/",
+    "closingDateUrl": "https://engstligenalp.ch/en/winter/operating-info-2/"
   },
   {
     "id": "fairmont-hot-springs",
@@ -1158,8 +1158,22 @@
     "isAlpineXc": false,
     "isXcOnly": true,
     "isAllied": false,
-    "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1%2Ax38lyk%2A_up%2AMQ..%2A_ga%2ANDkyNTk4NzA3LjE3NzE4NjgxNzg.%2A_ga_JJJ2MYL08H%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_gs%2AMQ..%2A_ga_46TC8C9QG1%2AczE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw%2A_ga_GHTCZD51QN%2AczE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS",
+    "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1*x38lyk*_up*MQ..*_ga*NDkyNTk4NzA3LjE3NzE4NjgxNzg.*_ga_JJJ2MYL08H*czE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw*_gs*MQ..*_ga_46TC8C9QG1*czE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw*_ga_GHTCZD51QN*czE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS",
     "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NH/Franconia"
+  },
+  {
+    "id": "frost-fire-park",
+    "name": "Frost Fire Park",
+    "state": "ND",
+    "region": "Rockies",
+    "lat": 48.9120009,
+    "lon": -98.0715564,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.frostfirepark.org/",
+    "closingDateUrl": "https://www.frostfirepark.org/"
   },
   {
     "id": "garnet-hill-xc",
@@ -1218,32 +1232,32 @@
     "closingDateUrl": "https://www.ski-glenshee.co.uk/Glenshee-Lift-Status"
   },
   {
+    "id": "gore-mountain",
+    "name": "Gore Mountain",
+    "state": "NY",
+    "region": "East",
+    "lat": 43.6732782,
+    "lon": -74.0068455,
+    "isNordic": true,
+    "isAlpineXc": true,
+    "isXcOnly": false,
+    "isAllied": true,
+    "websiteUrl": "https://goremountain.com",
+    "closingDateUrl": "https://goremountain.com/the-mountain/conditions/"
+  },
+  {
     "id": "granby-ranch",
     "name": "Granby Ranch",
     "state": "CO",
     "region": "Rockies",
     "lat": 40.0446489,
     "lon": -105.9089128,
-    "isNordic": false,
-    "isAlpineXc": false,
+    "isNordic": true,
+    "isAlpineXc": true,
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://granbyranch.com",
     "closingDateUrl": "https://granbyranch.com"
-  },
-  {
-    "id": "granite-peak",
-    "name": "Granite Peak",
-    "state": "WI",
-    "region": "Midwest",
-    "lat": 44.9253444,
-    "lon": -89.6958047,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.skigranitepeak.com",
-    "closingDateUrl": "https://www.skigranitepeak.com/on-mountain/mountain-information/snow-report"
   },
   {
     "id": "great-bear-ski-valley",
@@ -1268,9 +1282,9 @@
     "lon": -71.224139801848,
     "isNordic": true,
     "isAlpineXc": false,
-    "isXcOnly": true,
+    "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://greatglentrails.com/cross-country-skiing/?_gl=1%2Aqitcvz%2A_up%2AMQ..%2A_gs%2AMQ..&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BZ6kNL4vegv6BQD_C82hd7pI8lI1ty6BH6gkk6SHvR7OfZLV-E40MBoCbe4QAvD_BwE&amp;gbraid=0AAAAApFtTRt_XANX2BB0O-CyvlwPep5xO",
+    "websiteUrl": "https://greatglentrails.com/cross-country-skiing/?_gl=1*qitcvz*_up*MQ..*_gs*MQ..&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BZ6kNL4vegv6BQD_C82hd7pI8lI1ty6BH6gkk6SHvR7OfZLV-E40MBoCbe4QAvD_BwE&amp;gbraid=0AAAAApFtTRt_XANX2BB0O-CyvlwPep5xO",
     "closingDateUrl": "https://greatglentrails.com/snow-report/"
   },
   {
@@ -1286,6 +1300,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.greekpeak.net",
     "closingDateUrl": "https://www.greekpeak.net/ski-ride/current-conditions/"
+  },
+  {
+    "id": "hafjell",
+    "name": "Hafjell",
+    "state": "Norway",
+    "region": "Europe",
+    "lat": 61.2335899,
+    "lon": 10.4457115,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.alpinco.com/en/hafjell",
+    "closingDateUrl": "https://www.alpinco.com/en/hafjell/snow-report"
   },
   {
     "id": "hardwood-ski-and-bike",
@@ -1327,7 +1355,7 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://nordicski.net/haymaker-nordic-center/",
-    "closingDateUrl": "https://nordicski.net/haymaker-nordic-center/"
+    "closingDateUrl": "https://nordicski.net/haymaker-nordic-center/#"
   },
   {
     "id": "high-point-xc-ski-center",
@@ -1414,20 +1442,6 @@
     "closingDateUrl": "https://en.hodaigi.jp/"
   },
   {
-    "id": "hoedown-hill",
-    "name": "Hoedown Hill",
-    "state": "Colorado",
-    "region": "Europe",
-    "lat": 40.4520656,
-    "lon": -104.9338958,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://hoedownhill.com/",
-    "closingDateUrl": "https://hoedownhill.com/webcam/"
-  },
-  {
     "id": "homestake-lodge",
     "name": "Homestake Lodge",
     "state": "MT",
@@ -1436,7 +1450,7 @@
     "lon": -112.3834782,
     "isNordic": true,
     "isAlpineXc": false,
-    "isXcOnly": true,
+    "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
     "closingDateUrl": ""
@@ -1540,8 +1554,8 @@
     "closingDateUrl": "https://www.threeriversparks.org/location/hyland-hills-ski-area"
   },
   {
-    "id": "innsbruck-ski-city-network",
-    "name": "Innsbruck Ski & City Network",
+    "id": "innsbruck-region",
+    "name": "Innsbruck Region",
     "state": "Austria",
     "region": "Europe",
     "lat": 47.1953877,
@@ -1550,8 +1564,8 @@
     "isAlpineXc": false,
     "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://www.ski-plus-city.com/en/",
-    "closingDateUrl": "https://www.ski-plus-city.com/en/home/live-info/weather/"
+    "websiteUrl": "https://www.innsbruck.info/en/skiing/ski-plus-city-pass.html",
+    "closingDateUrl": "https://www.innsbruck.info/en/skiing/ski-plus-city-pass.html"
   },
   {
     "id": "jackson-xc",
@@ -1574,8 +1588,8 @@
     "region": "East",
     "lat": 44.9379013,
     "lon": -72.5073526,
-    "isNordic": false,
-    "isAlpineXc": false,
+    "isNordic": true,
+    "isAlpineXc": true,
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://jaypeakresort.com",
@@ -1596,8 +1610,22 @@
     "closingDateUrl": "https://www.kamui-skilinks.com/today/#coursemap"
   },
   {
-    "id": "kaunertaler-gletscher",
-    "name": "Kaunertaler Gletscher",
+    "id": "kandatsu-snow-resort",
+    "name": "Kandatsu Snow Resort",
+    "state": "",
+    "region": "Japan",
+    "lat": 36.9283612,
+    "lon": 138.8036927,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "",
+    "closingDateUrl": ""
+  },
+  {
+    "id": "kaunertal-glacier",
+    "name": "Kaunertal Glacier",
     "state": "Austria",
     "region": "Europe",
     "lat": 46.8644443,
@@ -1608,20 +1636,6 @@
     "isAllied": false,
     "websiteUrl": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/winter/ski-area.html",
     "closingDateUrl": "https://www.snowpark-kaunertal.tirol/"
-  },
-  {
-    "id": "kaya-palazzo-kartalkaya-ski-mountain-resort",
-    "name": "Kaya Palazzo Kartalkaya Ski & Mountain Resort",
-    "state": "Türkiye",
-    "region": "Europe",
-    "lat": 40.5919522,
-    "lon": 31.8039221,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "",
-    "closingDateUrl": ""
   },
   {
     "id": "kelly-canyon",
@@ -1636,6 +1650,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.kellycanyonresort.com",
     "closingDateUrl": "https://www.kellycanyonresort.com/"
+  },
+  {
+    "id": "kendall-mountain-ski-area",
+    "name": "Kendall Mountain Ski Area",
+    "state": "CO",
+    "region": "Rockies",
+    "lat": 37.8112094,
+    "lon": -107.6594836,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.skikendall.com/",
+    "closingDateUrl": "https://www.skikendall.com/hours-events"
   },
   {
     "id": "kimberley-nordic-club",
@@ -1661,23 +1689,37 @@
     "isNordic": false,
     "isAlpineXc": false,
     "isXcOnly": false,
-    "isAllied": true,
+    "isAllied": false,
     "websiteUrl": "https://www.kingpine.com/",
     "closingDateUrl": "https://www.kingpine.com/the-mountain/snow-report/"
   },
   {
-    "id": "kiroro-snow-world",
-    "name": "Kiroro Snow World",
-    "state": "Hokkaido",
-    "region": "Japan",
-    "lat": 43.0663934,
-    "lon": 140.9833059,
+    "id": "kvitfjell",
+    "name": "Kvitfjell",
+    "state": "Norway",
+    "region": "Europe",
+    "lat": 61.4708347,
+    "lon": 10.1343913,
     "isNordic": false,
     "isAlpineXc": false,
     "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://www.kiroro.co.jp/",
-    "closingDateUrl": "https://www.kiroro.co.jp/dashboard/"
+    "websiteUrl": "https://www.alpinco.com/en/kvitfjell",
+    "closingDateUrl": "https://www.alpinco.com/en/kvitfjell/snow-report"
+  },
+  {
+    "id": "le-relais",
+    "name": "Le Relais",
+    "state": "QC",
+    "region": "Canada",
+    "lat": 46.9399481,
+    "lon": -71.3036685,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.skirelais.com/en/",
+    "closingDateUrl": "https://www.skirelais.com/en/winter/trails-snow-conditions/"
   },
   {
     "id": "leavenworth-winter-sports-club",
@@ -1750,20 +1792,6 @@
     "closingDateUrl": "https://payettelakesskiclub.org/little-ski-hill/"
   },
   {
-    "id": "little-switzerland",
-    "name": "Little Switzerland",
-    "state": "WI",
-    "region": "Midwest",
-    "lat": 43.3379806,
-    "lon": -88.2815214,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.littleswitz.com",
-    "closingDateUrl": "https://www.littleswitz.com/snow-report"
-  },
-  {
     "id": "loch-lomond",
     "name": "Loch Lomond",
     "state": "ON",
@@ -1776,20 +1804,6 @@
     "isAllied": false,
     "websiteUrl": "https://www.lochlomond.ca/",
     "closingDateUrl": "https://www.lochlomond.ca/conditions"
-  },
-  {
-    "id": "loge-glacier",
-    "name": "LOGE Glacier",
-    "state": "MT",
-    "region": "Rockies",
-    "lat": 48.278635,
-    "lon": -113.611863,
-    "isNordic": true,
-    "isAlpineXc": false,
-    "isXcOnly": true,
-    "isAllied": false,
-    "websiteUrl": "https://www.logecamps.com/property/glacier-natl-park",
-    "closingDateUrl": "https://www.logecamps.com/property/glacier-natl-park"
   },
   {
     "id": "lost-trail-powder-mountain",
@@ -1846,20 +1860,6 @@
     "isAllied": false,
     "websiteUrl": "https://skiloveland.com/",
     "closingDateUrl": "https://skiloveland.com/snow-report/"
-  },
-  {
-    "id": "lutsen-mountains",
-    "name": "Lutsen Mountains",
-    "state": "MN",
-    "region": "Midwest",
-    "lat": 47.663713,
-    "lon": -90.716136,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.lutsen.com",
-    "closingDateUrl": "https://www.lutsen.com/winter/mountain-information/cams-conditions"
   },
   {
     "id": "magic-mountain",
@@ -2044,20 +2044,6 @@
     "closingDateUrl": "https://www.mcintyreskiarea.com/mountain-report/"
   },
   {
-    "id": "meadowlark-ski-resort",
-    "name": "Meadowlark Ski Resort",
-    "state": "WY",
-    "region": "Rockies",
-    "lat": 44.1636263,
-    "lon": -107.2238357,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://snoflo.org/ski-area/big-horn-ski-resort",
-    "closingDateUrl": "https://snoflo.org/ski-area/big-horn-ski-resort"
-  },
-  {
     "id": "middlebury-snowbowl",
     "name": "Middlebury Snowbowl",
     "state": "VT",
@@ -2086,20 +2072,6 @@
     "closingDateUrl": ""
   },
   {
-    "id": "mission-ridge",
-    "name": "Mission Ridge",
-    "state": "WA",
-    "region": "West",
-    "lat": 47.2924657,
-    "lon": -120.4024513,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.missionridge.com",
-    "closingDateUrl": "https://www.missionridge.com/mountain-report"
-  },
-  {
     "id": "mohawk-mountain",
     "name": "Mohawk Mountain",
     "state": "CT",
@@ -2126,20 +2098,6 @@
     "isAllied": false,
     "websiteUrl": "https://www.montedouard.com/",
     "closingDateUrl": "https://www.montedouard.com/"
-  },
-  {
-    "id": "mont-habitant",
-    "name": "Mont Habitant",
-    "state": "QC",
-    "region": "Canada",
-    "lat": 45.8830545,
-    "lon": -74.1772441,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.monthabitant.com/en/",
-    "closingDateUrl": "https://maneige.ski/en/stations/ski-mont-habitant/#snow-conditions"
   },
   {
     "id": "mont-rigaud",
@@ -2182,6 +2140,20 @@
     "isAllied": false,
     "websiteUrl": "https://montsutton.com/en/",
     "closingDateUrl": "https://montsutton.com/en/the-mountain/ski-conditions-2/"
+  },
+  {
+    "id": "mont-kanasuta",
+    "name": "Mont-Kanasuta",
+    "state": "QC",
+    "region": "Canada",
+    "lat": 48.1850054,
+    "lon": -79.4010267,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://kanasuta.com/en/",
+    "closingDateUrl": "https://maneige.ski/stations/centre-plein-air-mont-kanasuta/"
   },
   {
     "id": "montage-mountain",
@@ -2240,6 +2212,20 @@
     "closingDateUrl": "https://www.skimountbaldy.ca/"
   },
   {
+    "id": "mount-cain",
+    "name": "Mount Cain",
+    "state": "BC",
+    "region": "Canada",
+    "lat": 50.2273273,
+    "lon": -126.3422812,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.mountcain.com/",
+    "closingDateUrl": "https://www.mountcain.com/"
+  },
+  {
     "id": "mount-kato",
     "name": "Mount Kato",
     "state": "MN",
@@ -2266,20 +2252,6 @@
     "isAllied": false,
     "websiteUrl": "",
     "closingDateUrl": ""
-  },
-  {
-    "id": "mount-washington-alpine-resort-nordic-centre-at-raven-lodge",
-    "name": "Mount Washington Alpine Resort Nordic Centre at Raven Lodge",
-    "state": "BC",
-    "region": "Canada",
-    "lat": 49.7413207,
-    "lon": -125.3056544,
-    "isNordic": true,
-    "isAlpineXc": false,
-    "isXcOnly": true,
-    "isAllied": false,
-    "websiteUrl": "https://www.mountwashington.ca/play/nordic-centre.html",
-    "closingDateUrl": "https://www.mountwashington.ca/play/nordic-centre/nordic-report"
   },
   {
     "id": "mountain-high",
@@ -2324,6 +2296,20 @@
     "closingDateUrl": "https://mtlacrosse.com/trail-map-conditions/"
   },
   {
+    "id": "mt-van-hoevenberg",
+    "name": "Mt Van Hoevenberg",
+    "state": "NY",
+    "region": "East",
+    "lat": 44.2187343,
+    "lon": -73.9253551,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://mtvanhoevenberg.com/",
+    "closingDateUrl": "https://mtvanhoevenberg.com/"
+  },
+  {
     "id": "mt-abram",
     "name": "Mt. Abram",
     "state": "Maine",
@@ -2366,6 +2352,20 @@
     "closingDateUrl": "https://www.skihood.com/mountain-report"
   },
   {
+    "id": "mt-pisgah",
+    "name": "Mt. Pisgah",
+    "state": "NY",
+    "region": "East",
+    "lat": 44.3456105,
+    "lon": -74.128274,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.saranaclake.com/alpine-skiing/mt-pisgah-recreation-center",
+    "closingDateUrl": "https://www.saranaclake.com/alpine-skiing/mt-pisgah-recreation-center"
+  },
+  {
     "id": "mt-shasta",
     "name": "Mt. Shasta",
     "state": "CA",
@@ -2386,8 +2386,8 @@
     "region": "Canada",
     "lat": 49.804509751028,
     "lon": -125.26140942545,
-    "isNordic": false,
-    "isAlpineXc": false,
+    "isNordic": true,
+    "isAlpineXc": true,
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mountwashington.ca/",
@@ -2478,20 +2478,6 @@
     "closingDateUrl": "https://www.ninox.co.jp/"
   },
   {
-    "id": "nordic-mountain",
-    "name": "Nordic Mountain",
-    "state": "WI",
-    "region": "Midwest",
-    "lat": 44.1214576,
-    "lon": -89.1838618,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://nordicmountain.com",
-    "closingDateUrl": "https://nordicmountain.com/snow-report"
-  },
-  {
     "id": "norefjell-ski-resort",
     "name": "Norefjell Ski Resort",
     "state": "Norway",
@@ -2562,6 +2548,34 @@
     "closingDateUrl": "https://www.nubsnob.com/conditions-tables/"
   },
   {
+    "id": "nutt-hill",
+    "name": "Nutt Hill",
+    "state": "WI",
+    "region": "Midwest",
+    "lat": 43.750574,
+    "lon": -87.9906008,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://nutthillwinterpark.com/",
+    "closingDateUrl": "https://nutthillwinterpark.com/"
+  },
+  {
+    "id": "oak-hill-outdoor-center",
+    "name": "Oak Hill Outdoor Center",
+    "state": "NH",
+    "region": "East",
+    "lat": 43.7228206,
+    "lon": -72.2653305,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://www.oakhilloutdoorcenter.org",
+    "closingDateUrl": "https://www.oakhilloutdoorcenter.org/trail-conditions"
+  },
+  {
     "id": "ober-mountain",
     "name": "Ober Mountain",
     "state": "TN",
@@ -2590,6 +2604,20 @@
     "closingDateUrl": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/"
   },
   {
+    "id": "obertauern",
+    "name": "Obertauern",
+    "state": "Austria",
+    "region": "Europe",
+    "lat": 47.2485002,
+    "lon": 13.5595376,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.ski-obertauern.at/",
+    "closingDateUrl": "https://www.ski-obertauern.at/"
+  },
+  {
     "id": "okunakayama-kogen",
     "name": "Okunakayama Kogen",
     "state": "Tohoku",
@@ -2616,6 +2644,48 @@
     "isAllied": false,
     "websiteUrl": "https://www.onikoube.com/snow/",
     "closingDateUrl": "https://www.onikoube.com/snow/ski-slope/"
+  },
+  {
+    "id": "oppdal",
+    "name": "Oppdal",
+    "state": "Norway",
+    "region": "Europe",
+    "lat": 62.6098074,
+    "lon": 9.6494855,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.alpinco.com/en/oppdal",
+    "closingDateUrl": "https://www.alpinco.com/en/oppdal/snow-report"
+  },
+  {
+    "id": "orcieres-merlette-1850",
+    "name": "Orcières Merlette 1850",
+    "state": "France",
+    "region": "Europe",
+    "lat": 44.6972477,
+    "lon": 6.3205163,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.orcieres.com/en/",
+    "closingDateUrl": "https://www.orcieres.com/en/live/resort-openings/"
+  },
+  {
+    "id": "osceola-tug-hill-xc-ski-center",
+    "name": "Osceola Tug Hill XC Ski Center",
+    "state": "NY",
+    "region": "East",
+    "lat": 43.4991781,
+    "lon": -75.7148977,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "",
+    "closingDateUrl": ""
   },
   {
     "id": "palcall-tsumagoi-resort",
@@ -2674,6 +2744,20 @@
     "closingDateUrl": "https://skipaulbunyan.com/"
   },
   {
+    "id": "paul-smiths-college-visitor-interpretive-center",
+    "name": "Paul Smith's College Visitor Interpretive Center",
+    "state": "NY",
+    "region": "East",
+    "lat": 44.4484095,
+    "lon": -74.2620347,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://www.paulsmiths.edu/vic/ski-snowshoe/",
+    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NY/Paul-Smiths-VIC"
+  },
+  {
     "id": "pebble-creek-ski-area",
     "name": "Pebble Creek Ski Area",
     "state": "ID",
@@ -2700,6 +2784,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.pknpk.com",
     "closingDateUrl": "https://www.pknpk.com/conditions-report/"
+  },
+  {
+    "id": "petzen",
+    "name": "Petzen",
+    "state": "Austria",
+    "region": "Europe",
+    "lat": 46.5405314,
+    "lon": 14.7715212,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.petzen.net/en",
+    "closingDateUrl": "https://www.petzen.net/en"
   },
   {
     "id": "phoenix-mountain",
@@ -2758,8 +2856,8 @@
     "closingDateUrl": "http://yuyupippu.com/"
   },
   {
-    "id": "pitztaler-gletscherbahn",
-    "name": "Pitztaler Gletscherbahn",
+    "id": "pitztal-glacier",
+    "name": "Pitztal Glacier",
     "state": "Austria",
     "region": "Europe",
     "lat": 46.9583654,
@@ -2828,6 +2926,20 @@
     "closingDateUrl": "https://en.portesdusoleil.com/in-winter/slope-and-lift-openings/"
   },
   {
+    "id": "powder-ridge-0",
+    "name": "Powder Ridge",
+    "state": "Connecticut",
+    "region": "Europe",
+    "lat": 41.501645,
+    "lon": -72.7390292,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://powderridgepark.com/",
+    "closingDateUrl": "https://powderridgepark.com/trail-report/"
+  },
+  {
     "id": "powder-ridge",
     "name": "Powder Ridge",
     "state": "MN",
@@ -2854,6 +2966,20 @@
     "isAllied": false,
     "websiteUrl": "https://powderhorn.com/",
     "closingDateUrl": "https://powderhorn.com/explore/conditions/grooming-report.html"
+  },
+  {
+    "id": "pyha-ski-resort",
+    "name": "Pyhä Ski Resort",
+    "state": "Finland",
+    "region": "Europe",
+    "lat": 67.0223491,
+    "lon": 27.2389092,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.pyha.fi/en/skiresort-winter",
+    "closingDateUrl": "https://www.pyha.fi/en/skiresort/slopes"
   },
   {
     "id": "quarry-road-trails",
@@ -2954,6 +3080,20 @@
     "closingDateUrl": "https://riksgransen.se/en/skidakning/snowreport-and-piste-map/"
   },
   {
+    "id": "ruka-ski-resort",
+    "name": "Ruka Ski Resort",
+    "state": "Finland",
+    "region": "Europe",
+    "lat": 66.1681976,
+    "lon": 29.1358443,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.ruka.fi/en",
+    "closingDateUrl": "https://www.ruka.fi/en/skiresort/slopes"
+  },
+  {
     "id": "saddleback-mountain",
     "name": "Saddleback Mountain",
     "state": "ME",
@@ -3010,6 +3150,20 @@
     "closingDateUrl": "https://www.shantycreek.com/ski/conditions-cams/"
   },
   {
+    "id": "scotts-cobble-nordic-center",
+    "name": "Scotts Cobble Nordic Center",
+    "state": "NY",
+    "region": "East",
+    "lat": 44.2483773,
+    "lon": -73.952221,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://www.scottscobblenordic.com/home",
+    "closingDateUrl": "https://www.scottscobblenordic.com/trail-map-conditions"
+  },
+  {
     "id": "shames-mountain",
     "name": "Shames Mountain",
     "state": "BC",
@@ -3052,6 +3206,20 @@
     "closingDateUrl": "https://www.hachimantai.co.jp/shimokura/lift/"
   },
   {
+    "id": "showdown-montana",
+    "name": "Showdown Montana",
+    "state": "",
+    "region": "",
+    "lat": 46.8384109,
+    "lon": -110.7027078,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.showdownmontana.com/",
+    "closingDateUrl": "https://www.showdownmontana.com/grooming-report-trail-status"
+  },
+  {
     "id": "silver-mountain",
     "name": "Silver Mountain",
     "state": "ID",
@@ -3078,6 +3246,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.skiskan.com/",
     "closingDateUrl": "https://www.skiskan.com/"
+  },
+  {
+    "id": "skeetawk",
+    "name": "Skeetawk",
+    "state": "Alaska",
+    "region": "Europe",
+    "lat": 61.74357,
+    "lon": -149.2369731,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://skeetawk.com/",
+    "closingDateUrl": "https://skeetawk.com/snow-report"
   },
   {
     "id": "ski-big-bear",
@@ -3108,6 +3290,34 @@
     "closingDateUrl": "https://bluewood.com/conditions"
   },
   {
+    "id": "ski-land",
+    "name": "Ski Land",
+    "state": "AK",
+    "region": "West",
+    "lat": 65.0456845,
+    "lon": -147.4085681,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://skilandfairbanks.com/",
+    "closingDateUrl": "https://skilandfairbanks.com/"
+  },
+  {
+    "id": "ski-saint-bruno",
+    "name": "Ski Saint-Bruno",
+    "state": "QC",
+    "region": "Canada",
+    "lat": 45.5626658,
+    "lon": -73.3358389,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://skisaintbruno.ca/en/",
+    "closingDateUrl": "https://skisaintbruno.ca/en/sliding-conditions"
+  },
+  {
     "id": "ski-sawmill",
     "name": "Ski Sawmill",
     "state": "PA",
@@ -3136,6 +3346,20 @@
     "closingDateUrl": "https://www.valleebleue.com/english/ski-et-planche-a-neige-en-famille-station-familiale-vallee-bleue/conditions-ski-pistes-neige/"
   },
   {
+    "id": "skigebiet-heiligenblut-grossglockner",
+    "name": "Skigebiet Heiligenblut-Großglockner",
+    "state": "Austria",
+    "region": "Europe",
+    "lat": 47.0405002,
+    "lon": 12.8383713,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://skisport.com/grossglockner/en",
+    "closingDateUrl": "https://skisport.com/grossglockner/en/live-info/weather"
+  },
+  {
     "id": "skiwelt",
     "name": "SkiWelt",
     "state": "Austria",
@@ -3148,6 +3372,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.skiwelt.at/",
     "closingDateUrl": "https://www.skiwelt.at/snowreport"
+  },
+  {
+    "id": "sleepy-hollow",
+    "name": "Sleepy Hollow",
+    "state": "VT",
+    "region": "East",
+    "lat": 44.3521575,
+    "lon": -73.031623,
+    "isNordic": true,
+    "isAlpineXc": false,
+    "isXcOnly": true,
+    "isAllied": false,
+    "websiteUrl": "https://skisleepyhollow.com/",
+    "closingDateUrl": "https://skisleepyhollow.com/snow-conditions-trail-cam/"
   },
   {
     "id": "smokey-mountain-ski-club",
@@ -3164,6 +3402,20 @@
     "closingDateUrl": "http://events.skismokey.ca/general-information/current-conditions"
   },
   {
+    "id": "smugglers-notch-resort",
+    "name": "Smugglers' Notch Resort",
+    "state": "JEFFERSONVILLE",
+    "region": "Europe",
+    "lat": 44.5904656,
+    "lon": -72.7890019,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.smuggs.com/",
+    "closingDateUrl": "https://www.smuggs.com/conditions/winter-report/"
+  },
+  {
     "id": "snow-king-mountain-resort",
     "name": "Snow King Mountain Resort",
     "state": "WY",
@@ -3178,6 +3430,20 @@
     "closingDateUrl": "https://snowkingmountain.com/mountain/conditions/"
   },
   {
+    "id": "snow-resort-the-cupid-of-romance",
+    "name": "Snow Resort The Cupid of Romance",
+    "state": "",
+    "region": "Japan",
+    "lat": 36.8198686,
+    "lon": 138.4008047,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "",
+    "closingDateUrl": ""
+  },
+  {
     "id": "snow-ridge",
     "name": "Snow Ridge",
     "state": "NY",
@@ -3190,20 +3456,6 @@
     "isAllied": false,
     "websiteUrl": "https://snowridge.com",
     "closingDateUrl": "https://snowridge.com/trail-conditions/"
-  },
-  {
-    "id": "snowriver",
-    "name": "Snowriver",
-    "state": "MI",
-    "region": "Midwest",
-    "lat": 46.500921527786,
-    "lon": -89.966801281413,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://www.snowriver.com",
-    "closingDateUrl": "https://www.snowriver.com/winter/on-the-mountains/cams-conditions"
   },
   {
     "id": "snowstar",
@@ -3262,6 +3514,34 @@
     "closingDateUrl": "https://spiritmt.com/winter/snow-report/"
   },
   {
+    "id": "spring-mountain-adventures",
+    "name": "Spring Mountain Adventures",
+    "state": "PA",
+    "region": "Mid-Atlantic",
+    "lat": 40.2725545,
+    "lon": -75.4526832,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://springmountainadventures.com/",
+    "closingDateUrl": "https://springmountainadventures.com/trail-map/"
+  },
+  {
+    "id": "st-johann-in-tirol",
+    "name": "St Johann in Tirol",
+    "state": "Austria",
+    "region": "Europe",
+    "lat": 47.5167833,
+    "lon": 12.4268241,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.bergbahnen-stjohann.at/",
+    "closingDateUrl": "https://www.bergbahnen-stjohann.at/de/lifte-und-pisten.html"
+  },
+  {
     "id": "steamboat-ski-touring-center",
     "name": "Steamboat Ski Touring Center",
     "state": "CO",
@@ -3273,7 +3553,7 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://nordicski.net/steamboat-ski-touring-center/",
-    "closingDateUrl": "https://nordicski.net/steamboat-ski-touring-center/"
+    "closingDateUrl": "https://nordicski.net/steamboat-ski-touring-center/#"
   },
   {
     "id": "steinplatte",
@@ -3288,6 +3568,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.steinplatte.tirol/en/",
     "closingDateUrl": "https://www.steinplatte.tirol/en/"
+  },
+  {
+    "id": "stoke-mountain",
+    "name": "Stoke Mountain",
+    "state": "WA",
+    "region": "West",
+    "lat": 47.447577,
+    "lon": -122.2565179,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.stokemountain.com/",
+    "closingDateUrl": "https://www.stokemountain.com/"
   },
   {
     "id": "stoten-i-salen",
@@ -3400,20 +3694,6 @@
     "isAllied": false,
     "websiteUrl": "https://tamarackidaho.com",
     "closingDateUrl": "https://tamarackidaho.com/about/snow-report"
-  },
-  {
-    "id": "tangram-ski-circus",
-    "name": "Tangram Ski Circus",
-    "state": "Nagano",
-    "region": "Japan",
-    "lat": 36.8533811,
-    "lon": 138.2604231,
-    "isNordic": false,
-    "isAlpineXc": false,
-    "isXcOnly": false,
-    "isAllied": false,
-    "websiteUrl": "https://japan-skiguide.com/guide/htm/r0016ens.htm",
-    "closingDateUrl": "https://japan-skiguide.com/guide/htm/r0016enwe.htm"
   },
   {
     "id": "tazawako",
@@ -3542,6 +3822,20 @@
     "closingDateUrl": "https://www.togakusi.com/ski/course/#lift"
   },
   {
+    "id": "togari-onsen-snow-resort",
+    "name": "Togari Onsen Snow Resort",
+    "state": "",
+    "region": "Japan",
+    "lat": 36.9322769,
+    "lon": 138.385218,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://togari.jp/winter/en/",
+    "closingDateUrl": "https://togari.jp/winter/en/course_map/"
+  },
+  {
     "id": "trapp-family-lodge",
     "name": "Trapp Family Lodge",
     "state": "VT",
@@ -3582,6 +3876,20 @@
     "isAllied": false,
     "websiteUrl": "https://trollhaugen.com",
     "closingDateUrl": "https://trollhaugen.com/snow-report"
+  },
+  {
+    "id": "tschiertschen-chur",
+    "name": "Tschiertschen - Chur",
+    "state": "Switzerland",
+    "region": "Europe",
+    "lat": 46.8153212,
+    "lon": 9.6047696,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.tschiertschen.ch/de/aktivitaeten/winteraktivitaeten",
+    "closingDateUrl": "https://www.tschiertschen.ch/de/wintersportbericht"
   },
   {
     "id": "turpin-meadow-ranch",
@@ -3640,18 +3948,18 @@
     "closingDateUrl": "https://valdi.ski/en/home.html"
   },
   {
-    "id": "valmorel-ski-resort",
-    "name": "Valmorel Ski Resort",
-    "state": "France",
-    "region": "Europe",
-    "lat": 45.462299198862,
-    "lon": 6.4448444957838,
+    "id": "veterans-memorial-recreation-area",
+    "name": "Veterans Memorial Recreation Area",
+    "state": "NH",
+    "region": "East",
+    "lat": 43.4450556,
+    "lon": -71.6946611,
     "isNordic": false,
     "isAlpineXc": false,
     "isXcOnly": false,
     "isAllied": false,
-    "websiteUrl": "https://www.valmorel.com/en/",
-    "closingDateUrl": "https://skipass.valmorel.com/en/meteo"
+    "websiteUrl": "",
+    "closingDateUrl": ""
   },
   {
     "id": "washigatake-ski-resort",
@@ -3718,7 +4026,7 @@
     "lon": -79.4242803,
     "isNordic": true,
     "isAlpineXc": false,
-    "isXcOnly": true,
+    "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://whitegrass.com",
     "closingDateUrl": "https://whitegrass.com"
@@ -3780,6 +4088,20 @@
     "closingDateUrl": "https://whitecapresort.com/winter/snow-report"
   },
   {
+    "id": "whiteface-mountain",
+    "name": "Whiteface Mountain",
+    "state": "NY",
+    "region": "East",
+    "lat": 44.354323,
+    "lon": -73.860557,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": true,
+    "websiteUrl": "https://whiteface.com",
+    "closingDateUrl": "https://whiteface.com/mountain/conditions/"
+  },
+  {
     "id": "whitehorse-nordic-centre",
     "name": "Whitehorse Nordic Centre",
     "state": "Yukon",
@@ -3820,6 +4142,20 @@
     "isAllied": false,
     "websiteUrl": "https://www.williamslakecrosscountryskiclub.ca/",
     "closingDateUrl": "https://www.williamslakecrosscountryskiclub.ca/"
+  },
+  {
+    "id": "winter4kids",
+    "name": "Winter4Kids",
+    "state": "NJ",
+    "region": "East",
+    "lat": 41.1871439,
+    "lon": -74.4841242,
+    "isNordic": false,
+    "isAlpineXc": false,
+    "isXcOnly": false,
+    "isAllied": false,
+    "websiteUrl": "https://www.winter4kids.org/",
+    "closingDateUrl": "https://www.winter4kids.org/"
   },
   {
     "id": "wintergreen",
@@ -3872,7 +4208,7 @@
     "lon": -72.5187081,
     "isNordic": true,
     "isAlpineXc": false,
-    "isXcOnly": true,
+    "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
     "closingDateUrl": ""
