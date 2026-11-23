@@ -233,7 +233,7 @@ function checkConflicts(
       add(`OTS says CLOSED on ${closingThisSeason}, we say open until ${mountain.closingDate}`, {
         closingDate: closingThisSeason,
         closingDateConfidence: "medium",
-        closingDateSource: `cross-checked: ${mountain.closingDateSource}`,
+        closingDateSource: otsUrl,
       });
     } else {
       // "Closed" before opening day, or a midwinter midweek/weather closure,
@@ -258,7 +258,7 @@ function checkConflicts(
     add(`Closing date mismatch (google-search): ours=${mountain.closingDate}, OTS=${closingThisSeason}`, {
       closingDate: closingThisSeason,
       closingDateConfidence: "medium",
-      closingDateSource: `cross-checked: ${mountain.closingDateSource}`,
+      closingDateSource: otsUrl,
     });
   }
 
