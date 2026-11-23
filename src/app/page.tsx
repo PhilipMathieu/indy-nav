@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ClosingDatesTable } from "@/components/closing-dates-table";
 import { ResortMap } from "@/components/resort-map";
 import type { Mountain, MountainSeed } from "@/lib/types";
+import { getSeason, LEGACY_SEASON_LABEL } from "@/lib/season";
 import closingDatesRaw from "../../data/closing-dates.json";
 import mountainSeedsRaw from "../../data/mountains.json";
 
@@ -11,9 +12,15 @@ const seedLookup = new Map(
   (mountainSeedsRaw as MountainSeed[]).map((s) => [s.id, s])
 );
 
+const season = getSeason();
+
+// Rows from an earlier season (before the pipeline has caught up after the
+// August rollover) keep the resort on the map but show its dates as unknown.
 const mountains: Mountain[] = (closingDatesRaw as Omit<Mountain, "lat" | "lon">[]).map((m) => {
   const seed = seedLookup.get(m.id);
-  return { ...m, lat: seed?.lat ?? null, lon: seed?.lon ?? null };
+  const located = { ...m, lat: seed?.lat ?? null, lon: seed?.lon ?? null };
+  if ((m.season ?? LEGACY_SEASON_LABEL) === season.label) return located;
+  return { ...located, openingDate: null, closingDate: null, closingDateConfidence: "low" };
 });
 
 export default function Home() {
@@ -27,6 +34,9 @@ export default function Home() {
         <h1 className="text-2xl font-semibold tracking-tight">
           Indy Nav
         </h1>
+        <p className="text-sm text-muted-foreground">
+          Opening and closing dates for Indy Pass mountains, {season.label} season
+        </p>
       </div>
       <ResortMap
         mountains={mountains}
@@ -47,12 +57,13 @@ export default function Home() {
       <footer className="mt-12 border-t pt-6 text-xs text-muted-foreground space-y-2">
         <p className="font-medium text-foreground">How it works</p>
         <p>
-          Closing dates are gathered automatically each morning by fetching
-          mountain websites and using AI (Gemini Flash Lite) to extract season
-          end dates. Dates with high confidence come from official announcements;
-          medium and low confidence dates are inferred from schedules, snow
-          reports, or web searches. High-confidence dates are locked in and not
-          re-checked.
+          Opening and closing dates are gathered automatically each morning by
+          fetching mountain websites and using AI (Gemini Flash Lite) to extract
+          season dates, then cross-checked against OnTheSnow. Dates with high
+          confidence come from official announcements; medium and low confidence
+          dates (shown in gray italics) are inferred from schedules, snow
+          reports, or web searches. High-confidence dates are locked in for the
+          season and not re-checked.
         </p>
         <p>
           This is an unofficial community tool and is not affiliated with Indy

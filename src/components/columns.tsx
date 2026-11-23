@@ -1,6 +1,6 @@
 "use client";
 
-import { ColumnDef } from "@tanstack/react-table";
+import { ColumnDef, type Row } from "@tanstack/react-table";
 import { ArrowUpDown, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,29 +10,114 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { formatDistanceToNow, format, parseISO } from "date-fns";
-import type { Mountain } from "@/lib/types";
+import type { Confidence, Mountain } from "@/lib/types";
+import { STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
-const confidenceVariant: Record<
-  Mountain["closingDateConfidence"],
-  "default" | "secondary" | "destructive"
-> = {
+/** A table row: a mountain plus its status on the "as of" date. */
+export type MountainRow = Mountain & { status: MountainStatus };
+
+const confidenceVariant: Record<Confidence, "default" | "secondary" | "destructive"> = {
   high: "default",
   medium: "secondary",
   low: "destructive",
 };
 
-export const columns: ColumnDef<Mountain>[] = [
+const statusClass: Record<MountainStatus, string> = {
+  open: "bg-[#da1e28] text-white",
+  "opening-soon": "bg-[#0f62fe] text-white",
+  unknown: "bg-secondary text-secondary-foreground",
+  closed: "bg-muted text-muted-foreground",
+};
+
+function SortHeader({
+  label,
+  column,
+}: {
+  label: string;
+  column: { toggleSorting: (desc?: boolean) => void; getIsSorted: () => false | "asc" | "desc" };
+}) {
+  return (
+    <Button
+      variant="ghost"
+      onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+    >
+      {label}
+      <ArrowUpDown className="ml-2 h-4 w-4" />
+    </Button>
+  );
+}
+
+/** Sort by a nullable YYYY-MM-DD field, unknown dates last either way. */
+function dateSort(key: "openingDate" | "closingDate") {
+  return (a: Row<MountainRow>, b: Row<MountainRow>) => {
+    const x = a.original[key];
+    const y = b.original[key];
+    if (!x && !y) return 0;
+    if (!x) return 1;
+    if (!y) return -1;
+    return x.localeCompare(y);
+  };
+}
+
+/** A date with a popover showing how sure we are and where it came from. */
+function DateCell({
+  date,
+  confidence,
+  reasoning,
+  source,
+}: {
+  date: string | null | undefined;
+  confidence: Confidence | undefined;
+  reasoning: string | undefined;
+  source: string | undefined;
+}) {
+  if (!date) return <span className="text-muted-foreground">Unknown</span>;
+
+  const sourceIsUrl = !!source && source.startsWith("http");
+  const tentative = confidence !== "high";
+
+  return (
+    <div className="flex items-center gap-1.5 whitespace-nowrap">
+      <span
+        className={tentative ? "text-muted-foreground italic" : undefined}
+        title={tentative ? `${confidence ?? "low"} confidence` : undefined}
+      >
+        {format(parseISO(date), "MMM d, yyyy")}
+      </span>
+      <Popover>
+        <PopoverTrigger
+          onClick={(e) => e.stopPropagation()}
+          className="text-muted-foreground hover:text-foreground transition-colors"
+          aria-label="View source info"
+        >
+          <Info className="h-3.5 w-3.5" />
+        </PopoverTrigger>
+        <PopoverContent side="left" className="w-80 space-y-1.5">
+          {confidence && (
+            <Badge variant={confidenceVariant[confidence]}>{confidence} confidence</Badge>
+          )}
+          {reasoning && <p className="text-sm text-popover-foreground">{reasoning}</p>}
+          {sourceIsUrl && (
+            <a
+              href={source}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="text-xs text-primary underline underline-offset-2 hover:text-primary/80 block truncate"
+            >
+              {source}
+            </a>
+          )}
+        </PopoverContent>
+      </Popover>
+    </div>
+  );
+}
+
+export const columns: ColumnDef<MountainRow>[] = [
   {
     accessorKey: "name",
-    header: ({ column }) => (
-      <Button
-        variant="ghost"
-        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-      >
-        Mountain
-        <ArrowUpDown className="ml-2 h-4 w-4" />
-      </Button>
-    ),
+    header: ({ column }) => <SortHeader label="Mountain" column={column} />,
     cell: ({ row }) => (
       <a
         href={row.original.websiteUrl}
@@ -47,89 +132,42 @@ export const columns: ColumnDef<Mountain>[] = [
   },
   {
     accessorKey: "state",
-    header: ({ column }) => (
-      <Button
-        variant="ghost"
-        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-      >
-        State
-        <ArrowUpDown className="ml-2 h-4 w-4" />
-      </Button>
+    header: ({ column }) => <SortHeader label="State" column={column} />,
+  },
+  {
+    accessorKey: "status",
+    header: "Status",
+    cell: ({ row }) => {
+      const status = row.original.status;
+      return <Badge className={statusClass[status]}>{STATUS_LABEL[status]}</Badge>;
+    },
+    enableSorting: false,
+  },
+  {
+    accessorKey: "openingDate",
+    header: ({ column }) => <SortHeader label="Opens" column={column} />,
+    cell: ({ row }) => (
+      <DateCell
+        date={row.original.openingDate}
+        confidence={row.original.openingDateConfidence}
+        reasoning={row.original.openingDateReasoning}
+        source={row.original.openingDateSource}
+      />
     ),
+    sortingFn: dateSort("openingDate"),
   },
   {
     accessorKey: "closingDate",
-    header: ({ column }) => (
-      <Button
-        variant="ghost"
-        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-      >
-        Closing Date
-        <ArrowUpDown className="ml-2 h-4 w-4" />
-      </Button>
+    header: ({ column }) => <SortHeader label="Closes" column={column} />,
+    cell: ({ row }) => (
+      <DateCell
+        date={row.original.closingDate}
+        confidence={row.original.closingDateConfidence}
+        reasoning={row.original.closingDateReasoning}
+        source={row.original.closingDateSource}
+      />
     ),
-    cell: ({ row }) => {
-      const date = row.getValue("closingDate") as string | null;
-      if (!date) return <span className="text-muted-foreground">Unknown</span>;
-      return format(parseISO(date), "MMM d, yyyy");
-    },
-    sortingFn: (rowA, rowB) => {
-      const a = rowA.original.closingDate;
-      const b = rowB.original.closingDate;
-      if (!a && !b) return 0;
-      if (!a) return 1;
-      if (!b) return -1;
-      return a.localeCompare(b);
-    },
-  },
-  {
-    accessorKey: "closingDateConfidence",
-    header: "Confidence",
-    cell: ({ row }) => {
-      const confidence = row.getValue(
-        "closingDateConfidence"
-      ) as Mountain["closingDateConfidence"];
-      const reasoning = row.original.closingDateReasoning;
-      const source = row.original.closingDateSource;
-      const sourceIsUrl = source && source.startsWith("http");
-
-      if (!reasoning && !sourceIsUrl) {
-        return (
-          <Badge variant={confidenceVariant[confidence]}>{confidence}</Badge>
-        );
-      }
-
-      return (
-        <div className="flex items-center gap-1.5">
-          <Badge variant={confidenceVariant[confidence]}>{confidence}</Badge>
-          <Popover>
-            <PopoverTrigger
-              onClick={(e) => e.stopPropagation()}
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="View source info"
-            >
-              <Info className="h-3.5 w-3.5" />
-            </PopoverTrigger>
-            <PopoverContent side="left" className="w-80">
-              {reasoning && (
-                <p className="text-sm text-popover-foreground">{reasoning}</p>
-              )}
-              {sourceIsUrl && (
-                <a
-                  href={source}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="text-xs text-primary underline underline-offset-2 hover:text-primary/80 block truncate mt-1"
-                >
-                  {source}
-                </a>
-              )}
-            </PopoverContent>
-          </Popover>
-        </div>
-      );
-    },
+    sortingFn: dateSort("closingDate"),
   },
   {
     accessorKey: "lastUpdated",

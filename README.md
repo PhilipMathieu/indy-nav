@@ -2,31 +2,34 @@
 
 [![Buy Me a Brewski](https://img.shields.io/badge/%F0%9F%8D%BB_BUY_ME_A_BREWSKI-E4312B?style=for-the-badge)](https://buymeacoffee.com/philipmathieu)
 
-Unofficial closing date tracker for [Indy Pass](https://www.indyskipass.com/) ski mountains. Helps you plan spring skiing by showing which mountains are still open, closing soon, or already done for the season.
+Unofficial opening and closing date tracker for [Indy Pass](https://www.indyskipass.com/) ski mountains. Helps you plan trips all season by showing which mountains are open, opening soon, closing soon, or already done for the season.
 
 **Live site:** [philipmathieu.github.io/indy-nav](https://philipmathieu.github.io/indy-nav/)
 
 ## Features
 
-- **Interactive map:** Positron-backed MapLibre map showing all resorts — red squares for open, gray for closed. Click a marker to jump to that resort in the table.
-- **Closing dates for 169 Indy Pass resorts** across the US, Canada, Europe, Japan, and South America
-- **Smart grouping:** open mountains first (soonest closing at top), then unknown, then already closed (dimmed)
-- **"As of" date filter:** pick a future date to see what will still be open that weekend
+- **Interactive map:** Positron-backed MapLibre map showing all resorts — red squares for open, blue for opening soon, gray for closed or unknown. Click a marker to jump to that resort in the table.
+- **Opening and closing dates for every Indy Pass resort** across the US, Canada, Europe, Japan, and South America
+- **Smart grouping:** open mountains first (soonest closing at top), then opening soon (soonest opening first), then unknown, then already closed (dimmed)
+- **"As of" date filter:** pick a future date to see what will be open that weekend
+- **Automatic season rollover:** the season is worked out from today's date (it rolls over on August 1), and last season's data is archived
 - **Region filter:** toggle regions — the map auto-zooms to fit the selected region
 - **Sortable columns:** click any column header to sort
-- **Confidence indicators:** high/medium/low badges show how certain each closing date is
+- **Confidence indicators:** tentative dates are shown in gray italics; the info popover shows the confidence, reasoning and source for each date
 - **Daily auto-updates:** GitHub Action runs each morning to check for newly announced dates
 
 ## How It Works
 
-Closing dates are gathered by an automated pipeline:
+Season dates are gathered by an automated pipeline:
 
-1. For each mountain, the script fetches the resort's website (conditions page, hours page, or homepage)
-2. The page content is sent to **Google Gemini Flash Lite** via the Vercel AI SDK, which extracts closing date information using structured output (Zod schema)
-3. If the website scrape doesn't find a date, a **Google Search fallback** asks Gemini to search the web for the closing date
-4. Results are written to `data/closing-dates.json` with a confidence level
-5. **High-confidence dates are locked in** and not re-checked on subsequent runs, saving API costs
-6. A GitHub Action runs this pipeline daily at 6am ET, commits any changes, and redeploys to GitHub Pages
+1. The current season (e.g. `2026-27`) is worked out from today's date. Rows from an earlier season are moved to `data/archive/closing-dates-<season>.json` and re-checked from scratch.
+2. For each mountain, the script fetches the resort's website (conditions page, hours page, or homepage)
+3. The page content is sent to **Google Gemini Flash Lite** via the Vercel AI SDK, which extracts the opening and closing dates in one structured-output call (Zod schema). Dates outside the current season are discarded.
+4. If the scrape misses a date, a **Google Search fallback** asks Gemini to search the web. Searches for a missing opening date run until New Year; searches for a missing closing date start in February. Searches are capped at 100 per run (`MAX_SEARCHES_PER_RUN`).
+5. Results are written to `data/closing-dates.json` with a confidence level per date
+6. An **OnTheSnow cross-check** fills in opening dates, records when a mountain is first seen open, and corrects closing dates that conflict
+7. **High-confidence dates are locked in** for the season. A mountain is skipped once its closing date is high confidence and its opening date is high confidence or has passed. Other mountains are re-checked every 3 days, or daily when a known date is within two weeks.
+8. A GitHub Action runs this pipeline daily at 6am ET, commits any changes, and redeploys to GitHub Pages. A second Action refreshes the resort list from indyskipass.com every Monday.
 
 ## Tech Stack
 
@@ -35,7 +38,7 @@ Closing dates are gathered by an automated pipeline:
 - **Tailwind CSS** + **shadcn/ui** with an IBM Carbon-inspired theme
 - **MapLibre GL JS** with Positron basemap for the interactive resort map
 - **TanStack Table** for sorting and data display
-- **Vercel AI SDK** + **Google Gemini Flash Lite** for closing date extraction
+- **Vercel AI SDK** + **Google Gemini Flash Lite** for season date extraction
 - **GitHub Pages** for hosting
 - **GitHub Actions** for daily data updates and deployment
 
@@ -71,7 +74,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ### Run the data pipeline
 
 ```bash
-# Fetch closing dates (skips high-confidence and recently updated)
+# Fetch season dates (skips settled and recently checked mountains)
 npx tsx scripts/fetch-closing-dates.ts
 
 # Force re-check everything
@@ -90,10 +93,14 @@ npx next build
 ```
 indy-nav/
 ├── data/
-│   ├── mountains.json          # Hand-maintained seed data (169 resorts)
-│   └── closing-dates.json      # Generated by pipeline
+│   ├── mountains.json          # Resort list scraped from indyskipass.com
+│   ├── closing-dates.json      # Current season, generated by pipeline
+│   ├── onthesnow-map.json      # Resort → OnTheSnow page mapping
+│   └── archive/                # Earlier seasons
 ├── scripts/
 │   ├── fetch-closing-dates.ts  # Gemini-powered extraction pipeline
+│   ├── cross-check-closing-dates.ts # OnTheSnow cross-check
+│   ├── fetch-resorts.ts        # Resort list scraper
 │   └── build-seed-data.ts      # URL lookup helper for adding new resorts
 ├── src/
 │   ├── app/
@@ -109,10 +116,13 @@ indy-nav/
 │   │   └── ui/                      # shadcn/ui components
 │   └── lib/
 │       ├── types.ts            # TypeScript interfaces
+│       ├── season.ts           # Season helpers (rollover on Aug 1)
+│       ├── status.ts           # Open / opening soon / closed logic
 │       └── utils.ts            # Utilities
 └── .github/
     └── workflows/
-        └── update-closing-dates.yml  # Daily pipeline + deploy
+        ├── update-closing-dates.yml  # Daily pipeline + deploy
+        └── update-resort-list.yml    # Weekly resort list refresh
 ```
 
 ## Data Model
@@ -125,12 +135,18 @@ Each mountain in `closing-dates.json`:
 | `name` | string | Display name |
 | `region` | string | Indy Pass region |
 | `state` | string | Two-letter state/province code |
+| `season` | string | Season the dates belong to, e.g. `"2026-27"` |
+| `openingDate` | string \| null | `YYYY-MM-DD` or null if unknown |
+| `openingDateSource` | string | URL or `"google-search"` |
+| `openingDateConfidence` | `"high"` \| `"medium"` \| `"low"` | How certain the date is |
+| `openingDateReasoning` | string? | Quote or explanation behind the date |
 | `closingDate` | string \| null | `YYYY-MM-DD` or null if unknown |
 | `closingDateSource` | string | URL or `"google-search"` / `"manual-research"` |
 | `closingDateConfidence` | `"high"` \| `"medium"` \| `"low"` | How certain the date is |
+| `closingDateReasoning` | string? | Quote or explanation behind the date |
 | `lastUpdated` | string | ISO timestamp of last pipeline run |
 | `websiteUrl` | string | Official resort website |
 
 ## Disclaimer
 
-This is an unofficial community tool and is not affiliated with Indy Pass. Closing dates are extracted automatically and may be inaccurate. Always confirm with the mountain before making travel plans.
+This is an unofficial community tool and is not affiliated with Indy Pass. Dates are extracted automatically and may be inaccurate. Always confirm with the mountain before making travel plans.

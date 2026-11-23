@@ -5,20 +5,34 @@
  *   npx tsx scripts/cross-check-closing-dates.ts          # Report conflicts
  *   npx tsx scripts/cross-check-closing-dates.ts --fix     # Apply corrections
  *
- * For each resort that matches an OnTheSnow listing, fetches the openFlag
- * and closingDate from the page's embedded JSON. When our data conflicts
- * with OnTheSnow (e.g., we say "open" but OTS says closed), the script
- * either reports the conflict or fixes it (with --fix).
+ * For each resort that matches an OnTheSnow listing, fetches the openFlag,
+ * openingDate and closingDate from the page's embedded JSON. When our data
+ * conflicts with OnTheSnow (e.g., we say "open" but OTS says closed), the
+ * script either reports the conflict or fixes it (with --fix).
+ *
+ * Only OTS dates inside the current season count, since OTS keeps showing
+ * last season's dates until a resort publishes new ones.
  *
  * Corrections applied:
- *   - If OTS openFlag=2 (closed) and our closingDate is in the future → mark closed
- *   - If OTS has a different closingDate and ours came from google-search → adopt OTS date
- *   - Confidence is capped at "medium" for google-search sources when OTS disagrees
+ *   - OTS says closed for the season (closing date this season, already past)
+ *     and our closingDate is still ahead → adopt the OTS date
+ *   - OTS says closed with no usable date, after March 1, once our opening
+ *     date has passed → lower our closing confidence
+ *   - OTS has a different closingDate and ours came from google-search → adopt OTS date
+ *   - We have no opening date, or a low-confidence one that differs → adopt
+ *     the OTS openingDate
+ *   - OTS says open now but our opening date is missing or still ahead (and
+ *     not high confidence) → set it to the OTS opening date, or to today as a
+ *     low-confidence upper bound
+ *
+ * The OnTheSnow mapping in data/onthesnow-map.json is extended for resorts
+ * that don't have one yet and pruned of resorts no longer on the list.
  */
 
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
 import type { Mountain } from "../src/lib/types";
+import { getSeason, isInSeason, LEGACY_SEASON_LABEL } from "../src/lib/season";
 
 const DATA_DIR = join(process.cwd(), "data");
 const CLOSING_DATES_PATH = join(DATA_DIR, "closing-dates.json");
@@ -94,7 +108,11 @@ async function buildOtsMapping(mountains: Mountain[]): Promise<OtsMapping[]> {
     let found = false;
     for (const [otsSlug, otsPath] of otsResorts) {
       const otsBase = stripSuffixes(otsSlug);
-      if (ourBase === otsBase || id.includes(otsSlug) || otsSlug.includes(id)) {
+      // Substring matches only for slugs long enough not to match by accident
+      const contains =
+        (otsSlug.length >= 6 && id.includes(otsSlug)) ||
+        (id.length >= 6 && otsSlug.includes(id));
+      if (ourBase === otsBase || contains) {
         mappings.push({ id: m.id, otsPath });
         found = true;
         break;
@@ -116,7 +134,7 @@ async function buildOtsMapping(mountains: Mountain[]): Promise<OtsMapping[]> {
     }
   }
 
-  console.log(`Mapped ${mappings.length}/${mountains.length} resorts to OnTheSnow\n`);
+  console.log(`Mapped ${mappings.length}/${mountains.length} new resorts to OnTheSnow\n`);
   return mappings;
 }
 
@@ -175,67 +193,112 @@ interface Conflict {
   fix?: Partial<Mountain>;
 }
 
+const season = getSeason();
+const DAY_MS = 86400000;
+
+const daysApart = (a: string, b: string) =>
+  Math.abs(new Date(a).getTime() - new Date(b).getTime()) / DAY_MS;
+
+/** Normalize an OTS date to YYYY-MM-DD, or null if it isn't one. */
+function otsDate(raw: string | null): string | null {
+  const d = raw?.slice(0, 10) ?? null;
+  return d && /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : null;
+}
+
 function checkConflicts(
   mountain: Mountain,
   otsData: OtsData,
   otsPath: string,
   today: string
-): Conflict | null {
+): Conflict[] {
+  const conflicts: Conflict[] = [];
+  const add = (reason: string, fix?: Partial<Mountain>) =>
+    conflicts.push({ mountain, otsPath, otsData, reason, fix });
+
+  // Rows still from an earlier season are the pipeline's job, not ours
+  if ((mountain.season ?? LEGACY_SEASON_LABEL) !== season.label) return conflicts;
+
+  const otsUrl = `${OTS_BASE}/${otsPath}/ski-resort`;
+  const otsClosing = otsDate(otsData.closingDate);
+  const otsOpening = otsDate(otsData.openingDate);
+  const closingThisSeason = otsClosing && isInSeason(otsClosing, season) ? otsClosing : null;
+  const openingThisSeason = otsOpening && isInSeason(otsOpening, season) ? otsOpening : null;
+
+  // ── Closing date ──
+
   // OTS says closed but we have a future closing date
-  if (
-    otsData.openFlag === 2 &&
-    mountain.closingDate &&
-    mountain.closingDate >= today
-  ) {
-    // OTS closing date for current season (before today) is the real close date
-    // If OTS closingDate is next season (> today), we can't use it as correction
-    const otsIsCurrentSeason =
-      otsData.closingDate && otsData.closingDate < today;
-
-    return {
-      mountain,
-      otsPath,
-      otsData,
-      reason: `OTS says CLOSED (openFlag=2), we say open until ${mountain.closingDate}`,
-      fix: otsIsCurrentSeason
-        ? {
-            closingDate: otsData.closingDate,
-            closingDateConfidence: "medium",
-            closingDateSource: `cross-checked: ${mountain.closingDateSource}`,
-          }
-        : {
-            closingDateConfidence:
-              mountain.closingDateConfidence === "high" ? "medium" : "low",
-          },
-    };
-  }
-
-  // Different closing dates (>1 day apart) when ours came from google-search
-  if (
-    otsData.openFlag === 1 &&
-    otsData.closingDate &&
-    mountain.closingDate &&
-    mountain.closingDateSource === "google-search" &&
-    Math.abs(
-      new Date(otsData.closingDate).getTime() -
-        new Date(mountain.closingDate).getTime()
-    ) >
-      86400000 // >1 day difference
-  ) {
-    return {
-      mountain,
-      otsPath,
-      otsData,
-      reason: `Date mismatch (google-search): ours=${mountain.closingDate}, OTS=${otsData.closingDate}`,
-      fix: {
-        closingDate: otsData.closingDate,
+  if (otsData.openFlag === 2 && mountain.closingDate && mountain.closingDate >= today) {
+    if (closingThisSeason && closingThisSeason < today) {
+      // Closed for the season, and OTS has this season's closing date
+      add(`OTS says CLOSED on ${closingThisSeason}, we say open until ${mountain.closingDate}`, {
+        closingDate: closingThisSeason,
         closingDateConfidence: "medium",
         closingDateSource: `cross-checked: ${mountain.closingDateSource}`,
-      },
-    };
+      });
+    } else {
+      // "Closed" before opening day, or a midwinter midweek/weather closure,
+      // says nothing about the season ending. Only trust it late in the
+      // season once the mountain has actually opened.
+      const lateSeason = today >= `${season.endYear}-03-01`;
+      const hasOpened = !!mountain.openingDate && mountain.openingDate <= today;
+      if (lateSeason && hasOpened) {
+        add(`OTS says CLOSED (openFlag=2), we say open until ${mountain.closingDate}`, {
+          closingDateConfidence: mountain.closingDateConfidence === "high" ? "medium" : "low",
+        });
+      }
+    }
+  } else if (
+    // Different closing dates (>1 day apart) when ours came from google-search
+    otsData.openFlag === 1 &&
+    closingThisSeason &&
+    mountain.closingDate &&
+    mountain.closingDateSource === "google-search" &&
+    daysApart(closingThisSeason, mountain.closingDate) > 1
+  ) {
+    add(`Closing date mismatch (google-search): ours=${mountain.closingDate}, OTS=${closingThisSeason}`, {
+      closingDate: closingThisSeason,
+      closingDateConfidence: "medium",
+      closingDateSource: `cross-checked: ${mountain.closingDateSource}`,
+    });
   }
 
-  return null;
+  // ── Opening date ──
+
+  const ours = mountain.openingDate ?? null;
+  const oursConfidence = mountain.openingDateConfidence ?? "low";
+
+  if (otsData.openFlag === 1 && (!ours || ours > today)) {
+    // OTS says open now, but we think it hasn't opened yet
+    if (oursConfidence === "high" && ours) {
+      add(`OTS says OPEN, we say opening ${ours} (high confidence, not changed)`);
+    } else if (openingThisSeason && openingThisSeason <= today) {
+      add(`OTS says OPEN since ${openingThisSeason}, we say ${ours ?? "unknown"}`, {
+        openingDate: openingThisSeason,
+        openingDateConfidence: "medium",
+        openingDateSource: otsUrl,
+        openingDateReasoning: `OnTheSnow lists ${openingThisSeason} as opening day and shows the mountain open.`,
+      });
+    } else {
+      add(`OTS says OPEN, we say ${ours ?? "unknown"}; using today as opening upper bound`, {
+        openingDate: today,
+        openingDateConfidence: "low",
+        openingDateSource: otsUrl,
+        openingDateReasoning: `OnTheSnow showed the mountain open on ${today}; it may have opened earlier.`,
+      });
+    }
+  } else if (
+    openingThisSeason &&
+    (!ours || (oursConfidence === "low" && daysApart(openingThisSeason, ours) > 1))
+  ) {
+    add(`Opening date from OTS: ours=${ours ?? "unknown"}, OTS=${openingThisSeason}`, {
+      openingDate: openingThisSeason,
+      openingDateConfidence: "medium",
+      openingDateSource: otsUrl,
+      openingDateReasoning: `OnTheSnow lists ${openingThisSeason} as opening day.`,
+    });
+  }
+
+  return conflicts;
 }
 
 // ── Main ────────────────────────────────────────────────────────────────────
@@ -250,16 +313,28 @@ async function main() {
     readFileSync(CLOSING_DATES_PATH, "utf-8")
   );
 
-  // Build or load OTS mapping
-  let mappings: OtsMapping[];
-  if (existsSync(OTS_MAP_PATH)) {
-    console.log("Loading cached OnTheSnow mapping...");
-    mappings = JSON.parse(readFileSync(OTS_MAP_PATH, "utf-8"));
-    console.log(`${mappings.length} cached mappings\n`);
-  } else {
-    mappings = await buildOtsMapping(mountains);
+  // Load the cached OTS mapping, map any resorts that aren't in it yet, and
+  // drop resorts that are no longer on the list.
+  const cached: OtsMapping[] = existsSync(OTS_MAP_PATH)
+    ? JSON.parse(readFileSync(OTS_MAP_PATH, "utf-8"))
+    : [];
+  console.log(`${cached.length} cached OnTheSnow mappings`);
+  const ids = new Set(mountains.map((m) => m.id));
+  let mappings = cached.filter((m) => ids.has(m.id));
+  const mappedIds = new Set(mappings.map((m) => m.id));
+  const unmapped = mountains.filter((m) => !mappedIds.has(m.id));
+  if (unmapped.length > 0) {
+    try {
+      console.log(`Looking up ${unmapped.length} unmapped resorts...`);
+      mappings = [...mappings, ...(await buildOtsMapping(unmapped))];
+    } catch (err) {
+      // The sitemap is a nice-to-have; keep checking the resorts we can
+      console.warn(`⚠ Could not extend OnTheSnow mapping: ${err instanceof Error ? err.message : err}\n`);
+    }
+  }
+  if (JSON.stringify(mappings) !== JSON.stringify(cached)) {
     writeFileSync(OTS_MAP_PATH, JSON.stringify(mappings, null, 2));
-    console.log(`Saved mapping to ${OTS_MAP_PATH}\n`);
+    console.log(`Saved ${mappings.length} mappings to ${OTS_MAP_PATH}\n`);
   }
 
   const mountainMap = new Map(mountains.map((m) => [m.id, m]));
@@ -282,8 +357,8 @@ async function main() {
       })
     );
 
-    for (const conflict of results) {
-      if (conflict) conflicts.push(conflict);
+    for (const found of results) {
+      if (found) conflicts.push(...found);
     }
 
     if (i + CONCURRENCY < mappings.length) {
@@ -307,13 +382,12 @@ async function main() {
   }
 
   // Apply fixes
-  if (FIX_MODE && conflicts.length > 0) {
+  const fixes = conflicts.filter((c) => c.fix);
+  if (FIX_MODE && fixes.length > 0) {
     console.log("Applying fixes...");
-    for (const c of conflicts) {
-      if (c.fix) {
-        const m = mountainMap.get(c.mountain.id);
-        if (m) Object.assign(m, c.fix);
-      }
+    for (const c of fixes) {
+      const m = mountainMap.get(c.mountain.id);
+      if (m) Object.assign(m, c.fix);
     }
 
     const updated = Array.from(mountainMap.values());
@@ -326,11 +400,11 @@ async function main() {
     });
 
     writeFileSync(CLOSING_DATES_PATH, JSON.stringify(updated, null, 2));
-    console.log(`\nWrote ${conflicts.length} fixes to ${CLOSING_DATES_PATH}`);
-  } else if (conflicts.length > 0 && !FIX_MODE) {
+    console.log(`\nWrote ${fixes.length} fixes to ${CLOSING_DATES_PATH}`);
+  } else if (fixes.length > 0 && !FIX_MODE) {
     console.log("Run with --fix to apply corrections.");
   } else {
-    console.log("No conflicts found.");
+    console.log("No fixes to apply.");
   }
 }
 

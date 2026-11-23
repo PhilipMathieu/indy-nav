@@ -2,7 +2,8 @@
  * Scrapes the Indy Pass resort directory to generate data/mountains.json.
  *
  * Usage:
- *   npx tsx scripts/fetch-resorts.ts
+ *   npx tsx scripts/fetch-resorts.ts          # Refuses to shrink the list by >20%
+ *   npx tsx scripts/fetch-resorts.ts --force  # Write whatever was scraped
  *
  * Phase 1 — listing page: fetches https://www.indyskipass.com/our-resorts and
  *   parses every resort card to extract slug, name, location string,
@@ -14,7 +15,7 @@
  * Writes the merged result to data/mountains.json, sorted alphabetically by name.
  */
 
-import { writeFileSync } from "fs";
+import { existsSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const BASE = "https://www.indyskipass.com";
@@ -22,6 +23,10 @@ const LISTING_URL = `${BASE}/our-resorts`;
 const OUTPUT_PATH = join(process.cwd(), "data", "mountains.json");
 const DELAY_MS = 1000;
 const CONCURRENCY = 5;
+// Refuse to write a list much shorter than the current one: a redesign of
+// the Indy Pass site would otherwise silently wipe most resorts.
+const MIN_KEEP_RATIO = 0.8;
+const forceWrite = process.argv.includes("--force");
 
 // Region slugs used as nav categories — not actual resorts
 const REGION_SLUGS = new Set([
@@ -370,6 +375,24 @@ async function main() {
   const details = await fetchAllDetails(cards);
 
   const seeds = buildMountainSeeds(cards, details);
+
+  if (existsSync(OUTPUT_PATH)) {
+    const previous: MountainSeed[] = JSON.parse(readFileSync(OUTPUT_PATH, "utf-8"));
+    const prevIds = new Set(previous.map((s) => s.id));
+    const newIds = new Set(seeds.map((s) => s.id));
+    const added = seeds.filter((s) => !prevIds.has(s.id)).map((s) => s.name);
+    const removed = previous.filter((s) => !newIds.has(s.id)).map((s) => s.name);
+    console.log(`\nAdded (${added.length}): ${added.join(", ") || "none"}`);
+    console.log(`Removed (${removed.length}): ${removed.join(", ") || "none"}`);
+
+    if (!forceWrite && seeds.length < previous.length * MIN_KEEP_RATIO) {
+      throw new Error(
+        `Scraped ${seeds.length} resorts, fewer than ${Math.round(MIN_KEEP_RATIO * 100)}% of the current ${previous.length}. ` +
+          "The listing page may have changed; not writing. Re-run with --force to override."
+      );
+    }
+  }
+
   writeFileSync(OUTPUT_PATH, JSON.stringify(seeds, null, 2) + "\n");
 
   const withWebsite = seeds.filter((s) => s.websiteUrl).length;

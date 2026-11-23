@@ -4,7 +4,7 @@ import { useRef, useEffect, useMemo, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Mountain } from "@/lib/types";
-import { parseISO, isBefore, startOfDay } from "date-fns";
+import { getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
 interface ResortMapProps {
   mountains: Mountain[];
@@ -12,11 +12,6 @@ interface ResortMapProps {
   selectedRegions: string[];
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
-}
-
-function isOpen(mountain: Mountain, asOfDate: Date): boolean {
-  if (!mountain.closingDate) return false;
-  return !isBefore(parseISO(mountain.closingDate), startOfDay(asOfDate));
 }
 
 function buildGeoJSON(
@@ -36,8 +31,9 @@ function buildGeoJSON(
       properties: {
         id: m.id,
         name: m.name,
+        openingDate: m.openingDate ?? null,
         closingDate: m.closingDate,
-        isOpen: isOpen(m, referenceDate),
+        status: getMountainStatus(m, referenceDate),
       },
       geometry: {
         type: "Point" as const,
@@ -59,8 +55,29 @@ function createSquareImage(size: number): ImageData {
   return ctx.getImageData(0, 0, size, size);
 }
 
-const OPEN_COLOR = "#da1e28";
-const CLOSED_COLOR = "#a8a8a8";
+const STATUS_COLOR: Record<MountainStatus, string> = {
+  open: "#da1e28",
+  "opening-soon": "#0f62fe",
+  unknown: "#a8a8a8",
+  closed: "#a8a8a8",
+};
+
+/** Draw order: open on top, then opening soon, then the rest. */
+const STATUS_SORT_KEY: Record<MountainStatus, number> = {
+  open: 0,
+  "opening-soon": 1,
+  unknown: 2,
+  closed: 3,
+};
+
+const formatDate = (iso: string | null) =>
+  iso
+    ? new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      })
+    : "Unknown";
 
 export function ResortMap({
   mountains,
@@ -118,16 +135,30 @@ export function ResortMap({
           "icon-image": "square",
           "icon-size": 0.625,
           "icon-allow-overlap": true,
-          "symbol-sort-key": ["case", ["get", "isOpen"], 0, 1],
+          "symbol-sort-key": [
+            "match",
+            ["get", "status"],
+            "open", STATUS_SORT_KEY.open,
+            "opening-soon", STATUS_SORT_KEY["opening-soon"],
+            "unknown", STATUS_SORT_KEY.unknown,
+            STATUS_SORT_KEY.closed,
+          ],
         },
         paint: {
           "icon-color": [
-            "case",
-            ["get", "isOpen"],
-            OPEN_COLOR,
-            CLOSED_COLOR,
+            "match",
+            ["get", "status"],
+            "open", STATUS_COLOR.open,
+            "opening-soon", STATUS_COLOR["opening-soon"],
+            STATUS_COLOR.closed,
           ],
-          "icon-opacity": ["case", ["get", "isOpen"], 1, 0.6],
+          "icon-opacity": [
+            "match",
+            ["get", "status"],
+            ["open", "opening-soon"],
+            1,
+            0.6,
+          ],
         },
       });
 
@@ -138,20 +169,22 @@ export function ResortMap({
         if (!feature || feature.geometry.type !== "Point") return;
         const coords = feature.geometry.coordinates.slice() as [number, number];
         const props = feature.properties;
-        const dateStr = props.closingDate
-          ? new Date(props.closingDate).toLocaleDateString("en-US", {
-              month: "short",
-              day: "numeric",
-              year: "numeric",
-            })
-          : "Unknown";
-        const status = props.isOpen ? "Open" : "Closed";
+        const status = props.status as MountainStatus;
+        // GeoJSON properties come back from MapLibre with nulls as "null"
+        const opening = props.openingDate && props.openingDate !== "null" ? props.openingDate : null;
+        const closing = props.closingDate && props.closingDate !== "null" ? props.closingDate : null;
+        const detail =
+          status === "opening-soon"
+            ? `opens ${formatDate(opening)}`
+            : status === "closed"
+              ? `closed ${formatDate(closing)}`
+              : `closes ${formatDate(closing)}`;
         popup
           .setLngLat(coords)
           .setHTML(
             `<strong style="font-size:13px">${props.name}</strong><br/>` +
-              `<span style="font-size:12px;color:${props.isOpen ? OPEN_COLOR : CLOSED_COLOR}">${status}</span>` +
-              `<span style="font-size:12px"> · ${dateStr}</span>`
+              `<span style="font-size:12px;color:${STATUS_COLOR[status]}">${STATUS_LABEL[status]}</span>` +
+              `<span style="font-size:12px"> · ${detail}</span>`
           )
           .addTo(map);
       });
