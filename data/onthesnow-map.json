@@ -1,9 +1,5 @@
 [
   {
-    "id": "lutsen-mountains",
-    "otsPath": "minnesota/lutsen-mountains"
-  },
-  {
     "id": "loveland-ski-area",
     "otsPath": "colorado/loveland"
   },
@@ -32,10 +28,6 @@
     "otsPath": "colorado/echo-mountain"
   },
   {
-    "id": "granite-peak",
-    "otsPath": "wisconsin/granite-peak-ski-area"
-  },
-  {
     "id": "massif-du-sud",
     "otsPath": "quebec/massif-du-sud"
   },
@@ -50,10 +42,6 @@
   {
     "id": "red-lodge-mountain",
     "otsPath": "montana/red-lodge-mountain"
-  },
-  {
-    "id": "snowriver",
-    "otsPath": "michigan/snowriver-mountain-resort"
   },
   {
     "id": "tenney-mountain",
@@ -82,10 +70,6 @@
   {
     "id": "granby-ranch",
     "otsPath": "colorado/ski-granby-ranch"
-  },
-  {
-    "id": "kiroro-snow-world",
-    "otsPath": "hokkaido/kiroro"
   },
   {
     "id": "manning-park",
@@ -148,10 +132,6 @@
     "otsPath": "vermont/magic-mountain"
   },
   {
-    "id": "mission-ridge",
-    "otsPath": "washington/mission-ridge"
-  },
-  {
     "id": "snow-ridge",
     "otsPath": "new-york/snow-ridge"
   },
@@ -192,16 +172,8 @@
     "otsPath": "new-hampshire/black-mountain"
   },
   {
-    "id": "blacktail-mountain-resort",
-    "otsPath": "montana/blacktail-mountain-ski-area"
-  },
-  {
     "id": "blue-knob-all-season-resort",
     "otsPath": "pennsylvania/blue-knob"
-  },
-  {
-    "id": "caberfae-peaks",
-    "otsPath": "michigan/caberfae-peaks-ski-golf-resort"
   },
   {
     "id": "cataloochee-ski-area",
@@ -264,10 +236,6 @@
     "otsPath": "connecticut/mohawk-mountain"
   },
   {
-    "id": "nordic-mountain",
-    "otsPath": "wisconsin/nordic-mountain"
-  },
-  {
     "id": "howelsen-hill",
     "otsPath": "colorado/howelsen-hill"
   },
@@ -326,10 +294,6 @@
   {
     "id": "bear-creek",
     "otsPath": "pennsylvania/bear-creek-mountain-resort"
-  },
-  {
-    "id": "andes-tower-hills",
-    "otsPath": "minnesota/andes-tower-hills-ski-area"
   },
   {
     "id": "bryce-resort",
@@ -432,10 +396,6 @@
     "otsPath": "new-hampshire/king-pine"
   },
   {
-    "id": "little-switzerland",
-    "otsPath": "wisconsin/little-switzerland"
-  },
-  {
     "id": "maple-ski-ridge",
     "otsPath": "new-york/maple-ski-ridge"
   },
@@ -498,5 +458,33 @@
   {
     "id": "white-pine-resort",
     "otsPath": "wyoming/white-pine-ski-area"
+  },
+  {
+    "id": "belleayre-mountain",
+    "otsPath": "new-york/belleayre"
+  },
+  {
+    "id": "elm-creek-park-reserve",
+    "otsPath": "minnesota/elm-creek"
+  },
+  {
+    "id": "gore-mountain",
+    "otsPath": "new-york/gore-mountain"
+  },
+  {
+    "id": "powder-ridge-0",
+    "otsPath": "minnesota/powder-ridge-ski-area"
+  },
+  {
+    "id": "smugglers-notch-resort",
+    "otsPath": "vermont/smugglers-notch-resort"
+  },
+  {
+    "id": "stoke-mountain",
+    "otsPath": "british-columbia/revelstoke-mountain"
+  },
+  {
+    "id": "whiteface-mountain",
+    "otsPath": "new-york/whiteface-mountain-resort"
   }
 ]
