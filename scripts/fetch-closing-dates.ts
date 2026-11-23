@@ -22,6 +22,7 @@ const SOON_DAYS = 14;
 // row checked at 18:20 yesterday would be skipped by a run at 18:00 today.
 const RECHECK_SLACK_MS = 4 * 60 * 60 * 1000;
 const DELAY_MS = 1000; // 1 second between requests
+const MAX_LINKED_PAGES = 2;
 const MODEL = "gemini-3.5-flash-lite";
 
 // Google Search grounding is free up to a monthly allowance and billed per
@@ -72,24 +73,23 @@ const findingSchema = (what: string) =>
     reasoning: z
       .string()
       .describe("Brief explanation of how the date was determined, quoting key phrases from the source"),
+    sourceUrl: z
+      .string()
+      .nullable()
+      .describe("The exact URL of the page where this date was found, or null if not available"),
   });
 
 const seasonDatesSchema = z.object({
   opening: findingSchema("opening date (first day of operation)"),
   closing: findingSchema("closing date (last day of operation)"),
-  sourceUrl: z
-    .string()
-    .nullable()
-    .describe(
-      "The specific URL of the page or article where the date information was found, or null if not available"
-    ),
 });
 
 const seasonContext = `The ${season.startYear}-${season.endYear} season runs roughly November ${season.startYear} through May ${season.endYear}. Opening dates are usually between October ${season.startYear} and January ${season.endYear}. Closing dates are usually between February and May ${season.endYear}. Ignore dates from the ${season.startYear - 1}-${season.startYear} season or earlier.`;
 
 async function extractSeasonDates(
   mountain: MountainSeed,
-  pageContent: string
+  pageContent: string,
+  sourceUrls: string[]
 ): Promise<SeasonFindings> {
   const { object } = await generateObject({
     model: google(MODEL),
@@ -102,6 +102,8 @@ Today's date: ${today}
 
 Page content:
 ${pageContent}
+
+The content may include multiple pages. Each page starts with its exact source URL.
 
 Instructions for the opening date:
 1. Look for explicit opening dates: "opening day December 6", "we open 12/13", "season starts Nov 28", "target opening date".
@@ -119,12 +121,14 @@ ${seasonContext}
 
 Return dates in YYYY-MM-DD format. Return null for a date only if the page has no information about it.
 For reasoning, quote the key phrase(s) from the page that led to each date, e.g. 'Page says "Season ends May 3"'.
-For sourceUrl, return null (the source is already known as ${mountain.closingDateUrl}).`,
+For each sourceUrl, return the exact URL of the page containing that date, or null if unavailable.`,
   });
 
+  const sourceFor = (url: string | null) =>
+    url && sourceUrls.includes(url) ? url : mountain.closingDateUrl;
   return {
-    opening: { ...object.opening, source: mountain.closingDateUrl },
-    closing: { ...object.closing, source: mountain.closingDateUrl },
+    opening: { ...object.opening, source: sourceFor(object.opening.sourceUrl) },
+    closing: { ...object.closing, source: sourceFor(object.closing.sourceUrl) },
   };
 }
 
@@ -148,20 +152,59 @@ Today's date is ${today}.
 ${seasonContext}
 
 Return dates in YYYY-MM-DD format if found, otherwise null.
-For sourceUrl, return the URL of the specific page or article where you found the date information.
+For each date, return the URL of the specific page or article where you found it, or null if unavailable.
 For reasoning, quote or paraphrase the key text from that source that confirmed each date.`,
   });
 
-  const source = object.sourceUrl ?? "google-search";
   return {
-    opening: { ...object.opening, source },
-    closing: { ...object.closing, source },
+    opening: { ...object.opening, source: object.opening.sourceUrl ?? "google-search" },
+    closing: { ...object.closing, source: object.closing.sourceUrl ?? "google-search" },
   };
 }
 
 // ── Fetching ────────────────────────────────────────────────────────────────
 
-async function fetchPageContent(url: string): Promise<string> {
+interface FetchedPage {
+  url: string;
+  text: string;
+  links: { url: string; score: number }[];
+}
+
+function linkedAnnouncementPages(html: string, pageUrl: string): FetchedPage["links"] {
+  const pageOrigin = new URL(pageUrl).origin;
+  const links = new Map<string, number>();
+  const anchors = /<a\b([^>]*)>([\s\S]*?)<\/a\s*>/gi;
+  const relevant = /\b(open(?:ing)?|clos(?:e|ing)|season|announcement|news|blog|post|article|letter|update|gm)\b/i;
+  const strongMatch =
+    /\b(open(?:ing)?|clos(?:e|ing)|season|announcement|letter|gm)\b/i;
+  let match: RegExpExecArray | null;
+
+  while ((match = anchors.exec(html)) !== null) {
+    const hrefMatch = match[1].match(/\bhref\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
+    const href = hrefMatch?.[1] ?? hrefMatch?.[2] ?? hrefMatch?.[3];
+    if (!href) continue;
+
+    try {
+      const url = new URL(href.replace(/&amp;/gi, "&"), pageUrl);
+      if (url.origin !== pageOrigin || !/^https?:$/.test(url.protocol)) continue;
+      url.hash = "";
+      const normalizedUrl = url.toString();
+      if (normalizedUrl === pageUrl) continue;
+
+      const text = match[2].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+      const searchText = `${text} ${url.pathname}`;
+      if (!relevant.test(searchText)) continue;
+      const score = strongMatch.test(searchText) ? 2 : 1;
+      links.set(normalizedUrl, Math.max(score, links.get(normalizedUrl) ?? 0));
+    } catch {
+      // Ignore malformed or non-URL links.
+    }
+  }
+
+  return [...links].map(([url, score]) => ({ url, score }));
+}
+
+async function fetchPageContent(url: string): Promise<FetchedPage> {
   const response = await fetch(url, {
     headers: {
       "User-Agent": "Mozilla/5.0 (compatible; IndyNav/1.0; season-date-research)",
@@ -183,8 +226,57 @@ async function fetchPageContent(url: string): Promise<string> {
     .replace(/\s+/g, " ")
     .trim();
 
-  // Truncate to avoid token limits — 8000 chars is plenty for finding season dates
-  return text.slice(0, 8000);
+  return { url, text: text.slice(0, 8000), links: linkedAnnouncementPages(html, url) };
+}
+
+async function fetchMountainContent(mountain: MountainSeed): Promise<{
+  content: string;
+  sourceUrls: string[];
+}> {
+  const baseUrls = [...new Set([mountain.closingDateUrl, mountain.websiteUrl].filter(Boolean))];
+  const pages: FetchedPage[] = [];
+
+  for (const [index, url] of baseUrls.entries()) {
+    if (index > 0) await sleep(DELAY_MS);
+    try {
+      pages.push(await fetchPageContent(url));
+    } catch (error) {
+      console.warn(
+        `⚠ ${mountain.name} — page fetch failed for ${url}: ${error instanceof Error ? error.message : error}`
+      );
+    }
+  }
+
+  const linkedPages = new Map<string, number>();
+  for (const page of pages) {
+    for (const link of page.links) {
+      linkedPages.set(link.url, Math.max(link.score, linkedPages.get(link.url) ?? 0));
+    }
+  }
+
+  const candidates = [...linkedPages]
+    .map(([url, score]) => ({ url, score }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, MAX_LINKED_PAGES);
+  for (const { url } of candidates) {
+    try {
+      await sleep(DELAY_MS);
+      pages.push(await fetchPageContent(url));
+    } catch (error) {
+      console.warn(
+        `⚠ ${mountain.name} — linked page fetch failed for ${url}: ${error instanceof Error ? error.message : error}`
+      );
+    }
+  }
+
+  if (pages.length === 0) {
+    throw new Error(`Could not fetch a page for ${mountain.name}`);
+  }
+
+  return {
+    content: pages.map((page) => `Source URL: ${page.url}\n${page.text}`).join("\n\n").slice(0, 36000),
+    sourceUrls: pages.map((page) => page.url),
+  };
 }
 
 // ── Merging ─────────────────────────────────────────────────────────────────
@@ -381,9 +473,9 @@ async function main() {
 
     try {
       console.log(`🔍 ${seed.name} — fetching ${seed.closingDateUrl}`);
-      const pageContent = await fetchPageContent(seed.closingDateUrl);
+      const { content, sourceUrls } = await fetchMountainContent(seed);
       console.log(`🤖 ${seed.name} — extracting season dates with Gemini...`);
-      const scraped = await extractSeasonDates(seed, pageContent);
+      const scraped = await extractSeasonDates(seed, content, sourceUrls);
       found = { opening: sanitize(scraped.opening), closing: sanitize(scraped.closing) };
     } catch (error) {
       console.error(
