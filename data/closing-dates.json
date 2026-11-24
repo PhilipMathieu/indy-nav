@@ -136,6 +136,23 @@
     "websiteUrl": "https://beito.com/en/frontpage/"
   },
   {
+    "id": "kvitfjell",
+    "name": "Kvitfjell",
+    "region": "Europe",
+    "state": "Norway",
+    "season": "2026-27",
+    "openingDate": "2026-11-27",
+    "openingDateSource": "https://www.alpinco.com/en/kvitfjell",
+    "openingDateConfidence": "high",
+    "openingDateReasoning": "Page says \"Kvitfjell opens on november 27th!\"",
+    "closingDate": "2027-04-21",
+    "closingDateSource": "https://www.alpinco.com/en/kvitfjell/opening-hours",
+    "closingDateConfidence": "high",
+    "closingDateReasoning": "Opening hours schedule lists the final date as \"11 April - 21 April Every day 09.30 - 16.00\"",
+    "lastUpdated": "2026-11-24T21:03:16.159Z",
+    "websiteUrl": "https://www.alpinco.com/en/kvitfjell"
+  },
+  {
     "id": "stranda-ski-resort",
     "name": "Stranda Ski Resort",
     "region": "Europe",
@@ -151,6 +168,23 @@
     "closingDateReasoning": "Page lists 'Last opening day for season April 18th' under Opening hours winter 2026/27",
     "lastUpdated": "2026-11-23T18:50:01.437Z",
     "websiteUrl": "https://www.strandafjellet.no/en"
+  },
+  {
+    "id": "camp-fortune",
+    "name": "Camp Fortune",
+    "region": "Canada",
+    "state": "Quebec",
+    "season": "2026-27",
+    "openingDate": "2026-12-05",
+    "openingDateSource": "https://campfortune.com/en/investing-in-ski-season-2026-2027/",
+    "openingDateConfidence": "medium",
+    "openingDateReasoning": "Blog post states 'Only 11 weeks until our estimated opening day of December 5, 2026.'",
+    "closingDate": "2027-04-15",
+    "closingDateSource": "https://campfortune.com/winter/",
+    "closingDateConfidence": "medium",
+    "closingDateReasoning": "Winter schedule table shows April 15 as the latest spring skiing date ('April 15,16 SKYLINE ONLY 9 am to 3 pm *weather permitting')",
+    "lastUpdated": "2026-11-24T21:02:03.163Z",
+    "websiteUrl": "https://campfortune.com/winter/"
   },
   {
     "id": "hafjell",
@@ -229,12 +263,12 @@
     "openingDate": "2026-12-05",
     "openingDateSource": "https://www.skikendall.com/",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page says 'Tentative Opening Date is December 5th, 2026.'",
+    "openingDateReasoning": "Page says \"Tentative Opening Date is December 5th, 2026.\"",
     "closingDate": "2027-04-04",
     "closingDateSource": "https://www.skikendall.com/hours-events",
     "closingDateConfidence": "medium",
-    "closingDateReasoning": "Page says 'Expected closing day: 4/4/27 (closures may occur earlier due to ski conditions)'",
-    "lastUpdated": "2026-11-23T18:36:00.918Z",
+    "closingDateReasoning": "Page says \"Expected closing day: 4/4/27 (closures may occur earlier due to ski conditions)\"",
+    "lastUpdated": "2026-11-24T21:03:08.326Z",
     "websiteUrl": "https://www.skikendall.com/"
   },
   {
@@ -331,12 +365,12 @@
     "openingDate": "2026-12-04",
     "openingDateSource": "https://www.badkleinkirchheim.com",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page states 'Geplanter Ski-Saisonstart: 04. Dezember'",
+    "openingDateReasoning": "Page states \"Geplanter Ski-Saisonstart: 04. Dezember\" for the 2026-27 ski season.",
     "closingDate": "2027-03-29",
     "closingDateSource": "https://www.badkleinkirchheim.com/en/skiing-area/slopes-lifts/",
     "closingDateConfidence": "high",
     "closingDateReasoning": "Schedule table lists closing dates for lifts and slopes as '29.03.2027'",
-    "lastUpdated": "2026-11-23T18:24:32.814Z",
+    "lastUpdated": "2026-11-24T21:01:56.440Z",
     "websiteUrl": "https://www.badkleinkirchheim.com"
   },
   {
@@ -387,7 +421,7 @@
     "closingDateSource": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area",
     "closingDateConfidence": "medium",
     "closingDateReasoning": "Page says \"Season: November 28, 2026 - March 28, 2027 (Conditions Permitting)\"",
-    "lastUpdated": "2026-11-23T18:35:03.781Z",
+    "lastUpdated": "2026-11-24T21:02:53.255Z",
     "websiteUrl": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area"
   },
   {
@@ -1006,23 +1040,6 @@
     "websiteUrl": "https://www.facebook.com/CAMP10SKIAREA"
   },
   {
-    "id": "camp-fortune",
-    "name": "Camp Fortune",
-    "region": "Canada",
-    "state": "Quebec",
-    "season": "2026-27",
-    "openingDate": "2026-12-05",
-    "openingDateSource": "https://campfortune.com/en/investing-in-ski-season-2026-2027/",
-    "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page says 'Only 11 weeks until our estimated opening day of December 5, 2026.'",
-    "closingDate": null,
-    "closingDateSource": "https://campfortune.com/en/season-passes/",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "The page mentions general closing times like 'early April or as snow and weather conditions permit', but no specific closing date for the 2026-27 season is given.",
-    "lastUpdated": "2026-11-23T18:28:25.121Z",
-    "websiteUrl": "https://campfortune.com/winter/"
-  },
-  {
     "id": "canaan-valley",
     "name": "Canaan Valley",
     "region": "Mid-Atlantic",
@@ -1099,12 +1116,12 @@
     "openingDate": "2026-12-04",
     "openingDateSource": "https://www.skicastle.ca/event/openingday/",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page says 'TENTATIVE OPENING DAY (WINTER 26-27) December 4' and 'Pending some cooperation from Mother Nature, Castle Mountain Resort will be open on a 7 day / week basis starting on Friday, December 4, 2026.'",
+    "openingDateReasoning": "Page says \"TENTATIVE OPENING DAY (WINTER 26-27) December 4\" and \"Pending some cooperation from Mother Nature, Castle Mountain Resort will be open on a 7 day / week basis starting on Friday, December 4, 2026.\"",
     "closingDate": null,
     "closingDateSource": "https://www.skicastle.ca/snowreport/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-2027 season was found in the provided page contents.",
-    "lastUpdated": "2026-11-23T18:28:56.376Z",
+    "closingDateReasoning": "No closing date information could be found for the 2026-2027 season.",
+    "lastUpdated": "2026-11-24T21:02:10.276Z",
     "websiteUrl": "https://www.skicastle.ca/"
   },
   {
@@ -1235,12 +1252,12 @@
     "openingDate": "2026-12-05",
     "openingDateSource": "https://www.christiemountain.com/trail-map",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page lists 'Tentative Opening 12/05/26'",
+    "openingDateReasoning": "Page explicitly states 'Tentative Opening 12/05/26'",
     "closingDate": null,
     "closingDateSource": "https://www.christiemountain.com/trail-map",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date mentioned on the source pages.",
-    "lastUpdated": "2026-11-23T18:29:51.946Z",
+    "closingDateReasoning": "No closing date information could be found in the provided sources.",
+    "lastUpdated": "2026-11-24T21:02:18.271Z",
     "websiteUrl": "https://www.christiemountain.com/"
   },
   {
@@ -1490,8 +1507,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.donnerskiranch.com/liftstatus",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date found for the 2026-27 ski season",
-    "lastUpdated": "2026-11-23T18:31:25.689Z",
+    "closingDateReasoning": "No closing date mentioned for the 2026-2027 season",
+    "lastUpdated": "2026-11-24T21:02:24.300Z",
     "websiteUrl": "https://www.donnerskiranch.com/"
   },
   {
@@ -1524,8 +1541,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.dynaland.co.jp/condition/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the pages.",
-    "lastUpdated": "2026-11-23T18:31:51.511Z",
+    "closingDateReasoning": "No closing date for the 2026-27 ski season was found on the pages.",
+    "lastUpdated": "2026-11-24T21:02:43.581Z",
     "websiteUrl": "https://www.dynaland.co.jp/"
   },
   {
@@ -1792,8 +1809,8 @@
     "closingDate": null,
     "closingDateSource": "https://granbyranch.com",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "The provided page contents do not mention a closing date for the 2026-27 ski season.",
-    "lastUpdated": "2026-11-23T18:33:34.296Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the page.",
+    "lastUpdated": "2026-11-24T21:02:47.942Z",
     "websiteUrl": "https://granbyranch.com"
   },
   {
@@ -2045,8 +2062,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.hunthollow.com/The_Mountain",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date mentioned in the text",
-    "lastUpdated": "2026-11-23T18:35:17.653Z",
+    "closingDateReasoning": "No closing date information found on the page",
+    "lastUpdated": "2026-11-24T21:02:56.561Z",
     "websiteUrl": "https://www.hunthollow.com/Home"
   },
   {
@@ -2109,8 +2126,8 @@
     "closingDate": null,
     "closingDateSource": "https://jaypeakresort.com/skiing-riding/snow-report-maps/snow-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-2027 ski season is provided in the source text.",
-    "lastUpdated": "2026-11-23T18:35:34.235Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the page.",
+    "lastUpdated": "2026-11-24T21:03:01.896Z",
     "websiteUrl": "https://jaypeakresort.com"
   },
   {
@@ -2197,23 +2214,6 @@
     "websiteUrl": "https://www.kingpine.com/"
   },
   {
-    "id": "kvitfjell",
-    "name": "Kvitfjell",
-    "region": "Europe",
-    "state": "Norway",
-    "season": "2026-27",
-    "openingDate": "2026-11-27",
-    "openingDateSource": "https://www.alpinco.com/en/kvitfjell",
-    "openingDateConfidence": "high",
-    "openingDateReasoning": "Page says \"Kvitfjell opens on november 27th!\"",
-    "closingDate": null,
-    "closingDateSource": "https://www.alpinco.com/en/kvitfjell/snow-report",
-    "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-2027 season is mentioned on the provided pages.",
-    "lastUpdated": "2026-11-23T18:36:18.521Z",
-    "websiteUrl": "https://www.alpinco.com/en/kvitfjell"
-  },
-  {
     "id": "le-relais",
     "name": "Le Relais",
     "region": "Canada",
@@ -2258,8 +2258,8 @@
     "closingDate": null,
     "closingDateSource": "https://leukerbad.ch/en/winter",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 ski season is mentioned on the page.",
-    "lastUpdated": "2026-11-23T18:36:47.678Z",
+    "closingDateReasoning": "No closing date for the 2026-27 ski season is mentioned in the provided text.",
+    "lastUpdated": "2026-11-24T21:03:26.710Z",
     "websiteUrl": "https://leukerbad.ch/en"
   },
   {
@@ -2822,8 +2822,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.mthigh.com/site/trails-and-conditions/conditions/snow-and-weather-report/snow-and-weather-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 season was found in the provided text.",
-    "lastUpdated": "2026-11-23T18:40:23.765Z",
+    "closingDateReasoning": "No closing date for the 2026-2027 season is mentioned on the page.",
+    "lastUpdated": "2026-11-24T21:03:34.358Z",
     "websiteUrl": "https://www.mthigh.com"
   },
   {
@@ -3203,8 +3203,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 ski season is mentioned on the provided pages.",
-    "lastUpdated": "2026-11-23T18:42:15.648Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the pages.",
+    "lastUpdated": "2026-11-24T21:03:42.794Z",
     "websiteUrl": "https://www.ok-bergbahnen.com/"
   },
   {
@@ -3254,8 +3254,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.alpinco.com/en/oppdal/snow-report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 season is provided in the source text.",
-    "lastUpdated": "2026-11-23T18:42:48.953Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the pages.",
+    "lastUpdated": "2026-11-24T21:03:49.924Z",
     "websiteUrl": "https://www.alpinco.com/en/oppdal"
   },
   {
@@ -3267,12 +3267,12 @@
     "openingDate": "2026-12-05",
     "openingDateSource": "https://tsumagoiskiresort.life/facility-guide/",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page says '【冬季シーズンオープン予定】 2026年12月5日'",
+    "openingDateReasoning": "Page says \"【冬季シーズンオープン予定】 2026年12月5日\" (Winter season opening scheduled: December 5, 2026).",
     "closingDate": null,
     "closingDateSource": "https://tsumagoiskiresort.life/facility-guide/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date was found in the provided content.",
-    "lastUpdated": "2026-11-23T18:42:59.416Z",
+    "closingDateReasoning": "No closing date for the 2026-2027 season is mentioned on the page.",
+    "lastUpdated": "2026-11-24T21:03:53.736Z",
     "websiteUrl": "https://tsumagoiskiresort.life/"
   },
   {
@@ -3288,8 +3288,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.passpowderkeg.com/home/snow-report/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date mentioned for the 2026-27 season.",
-    "lastUpdated": "2026-11-23T18:43:14.157Z",
+    "closingDateReasoning": "No closing date found for the 2026-2027 ski season",
+    "lastUpdated": "2026-11-24T21:04:09.882Z",
     "websiteUrl": "https://www.passpowderkeg.com"
   },
   {
@@ -3350,11 +3350,12 @@
     "openingDate": "2026-12-05",
     "openingDateSource": "https://www.petzen.net/en",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page says \"The anticipated start of the winter season is 5 December 2026.\"",
+    "openingDateReasoning": "The page states: 'The anticipated start of the winter season is 5 December 2026 .'",
     "closingDate": null,
     "closingDateSource": "https://www.petzen.net/en",
     "closingDateConfidence": "low",
-    "lastUpdated": "2026-11-23T18:43:49.454Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the page.",
+    "lastUpdated": "2026-11-24T21:04:16.108Z",
     "websiteUrl": "https://www.petzen.net/en"
   },
   {
@@ -3438,8 +3439,8 @@
     "closingDate": null,
     "closingDateSource": "https://pizol.com/en/winter/winter-sports-report/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-2027 season is mentioned on the pages.",
-    "lastUpdated": "2026-11-23T18:44:18.544Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season was found in the text.",
+    "lastUpdated": "2026-11-24T21:04:21.744Z",
     "websiteUrl": "https://pizol.com/en/"
   },
   {
@@ -3506,8 +3507,8 @@
     "closingDate": null,
     "closingDateSource": "https://powderridgepark.com/trail-report/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No explicit closing date for the 2026-2027 season was found in the provided text.",
-    "lastUpdated": "2026-11-23T18:45:13.554Z",
+    "closingDateReasoning": "No closing date for the 2026-27 ski season was found on the provided pages.",
+    "lastUpdated": "2026-11-24T21:04:29.806Z",
     "websiteUrl": "https://powderridgepark.com/"
   },
   {
@@ -3518,13 +3519,13 @@
     "season": "2026-27",
     "openingDate": "2026-11-27",
     "openingDateSource": "https://powderridge.com/ski-ride/trail-map/",
-    "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page says 'Tentative opening day for skiing/snowboarding is Friday, November 27th. Weather permitting.'",
+    "openingDateConfidence": "high",
+    "openingDateReasoning": "Page says \"Friday, 11/27 (Opening Day!): Season Pass Holders Only | 10:00 AM – 5:00 PM\"",
     "closingDate": null,
     "closingDateSource": "https://powderridge.com/ski-ride/trail-map/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date is mentioned in the provided text.",
-    "lastUpdated": "2026-11-23T18:45:19.034Z",
+    "closingDateReasoning": "The provided text contains no closing date information for the 2026-2027 season.",
+    "lastUpdated": "2026-11-24T21:04:35.328Z",
     "websiteUrl": "https://powderridge.com"
   },
   {
@@ -3553,12 +3554,12 @@
     "openingDate": "2026-12-05",
     "openingDateSource": "https://quarryroad.org/",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page lists an event titled 'Dec 5 Quarry Road Opener 2026', indicating the likely season opening date.",
+    "openingDateReasoning": "Page lists an event 'Dec 5 Quarry Road Opener 2026', indicating the start of the season.",
     "closingDate": null,
     "closingDateSource": "https://quarryroad.org/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 ski season is mentioned on the page.",
-    "lastUpdated": "2026-11-23T18:45:34.761Z",
+    "closingDateReasoning": "No closing date for the 2026-2027 season is mentioned on the page.",
+    "lastUpdated": "2026-11-24T21:04:38.731Z",
     "websiteUrl": "https://quarryroad.org/"
   },
   {
@@ -3609,7 +3610,7 @@
     "closingDateSource": "https://www.redlodgemountain.com/mountain/snow-report/",
     "closingDateConfidence": "low",
     "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the pages.",
-    "lastUpdated": "2026-11-23T18:45:56.418Z",
+    "lastUpdated": "2026-11-24T21:04:45.303Z",
     "websiteUrl": "https://www.redlodgemountain.com"
   },
   {
@@ -3640,8 +3641,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.saddlebackmaine.com/mountain-report/snow--weather/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date mentioned on the source pages",
-    "lastUpdated": "2026-11-23T18:46:20.740Z",
+    "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the pages.",
+    "lastUpdated": "2026-11-24T21:04:50.797Z",
     "websiteUrl": "https://www.saddlebackmaine.com"
   },
   {
@@ -3919,8 +3920,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.skiwelt.at/snowreport",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date was found in the provided sources.",
-    "lastUpdated": "2026-11-23T18:48:14.895Z",
+    "closingDateReasoning": "No closing date mentioned in the provided text.",
+    "lastUpdated": "2026-11-24T21:04:58.967Z",
     "websiteUrl": "https://www.skiwelt.at/"
   },
   {
@@ -3985,8 +3986,8 @@
     "closingDate": null,
     "closingDateSource": "https://snowkingmountain.com/mountain/conditions/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No specific closing date was found in the text for the 2026-2027 season.",
-    "lastUpdated": "2026-11-23T18:48:51.025Z",
+    "closingDateReasoning": "No closing date for the 2026-2027 winter season was found in the text.",
+    "lastUpdated": "2026-11-24T21:05:03.231Z",
     "websiteUrl": "https://snowkingmountain.com"
   },
   {
@@ -4029,15 +4030,15 @@
     "region": "Rockies",
     "state": "ID",
     "season": "2026-27",
-    "openingDate": "2026-11-27",
+    "openingDate": "2026-12-19",
     "openingDateSource": "https://opensnow.com/location/soldiermountain/snow-summary#report",
-    "openingDateConfidence": "low",
-    "openingDateReasoning": "The page states 'Opening Nov 27' next to the resort name, which appears to refer to November 27, 2026.",
+    "openingDateConfidence": "medium",
+    "openingDateReasoning": "Page shows 'Opening Dec 19' in the resort summary.",
     "closingDate": null,
     "closingDateSource": "https://opensnow.com/location/soldiermountain/snow-summary#report",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date information was found in the provided sources.",
-    "lastUpdated": "2026-11-23T18:49:08.830Z",
+    "closingDateReasoning": "No closing date mentioned in the source content.",
+    "lastUpdated": "2026-11-24T21:05:11.385Z",
     "websiteUrl": "https://soldiermountain.com/"
   },
   {
@@ -4064,14 +4065,14 @@
     "state": "MN",
     "season": "2026-27",
     "openingDate": "2026-11-27",
-    "openingDateSource": "https://spiritmt.com/mountain-message/",
+    "openingDateSource": "https://spiritmt.com/winter/snow-report/",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page states 'Our tentative opening day is still 11/27/26' and 'Our tentative opening day, weather permitting, is 11/27/26.'",
+    "openingDateReasoning": "Page says 'Tentative opening day is still 11/27/26' and 'Our tentative opening day, weather permitting, is 11/27/26.'",
     "closingDate": null,
     "closingDateSource": "https://spiritmt.com/winter/snow-report/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-2027 season is mentioned on the pages.",
-    "lastUpdated": "2026-11-23T18:49:22.603Z",
+    "closingDateReasoning": "No closing date for the 2026-2027 ski season was found on the provided pages.",
+    "lastUpdated": "2026-11-24T21:05:17.182Z",
     "websiteUrl": "https://spiritmt.com"
   },
   {
@@ -4136,8 +4137,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.steinplatte.tirol/en/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No explicit closing date for the 2026-27 season is mentioned on the pages.",
-    "lastUpdated": "2026-11-23T18:49:40.285Z",
+    "closingDateReasoning": "No explicit closing date for the 2026-27 ski season is provided on the pages.",
+    "lastUpdated": "2026-11-24T21:05:23.215Z",
     "websiteUrl": "https://www.steinplatte.tirol/en/"
   },
   {
@@ -4570,8 +4571,8 @@
     "closingDate": null,
     "closingDateSource": "https://www.waterville.com/snow-report-maps",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 season was mentioned in the provided sources.",
-    "lastUpdated": "2026-11-23T18:52:38.216Z",
+    "closingDateReasoning": "No closing date mentioned in the provided text.",
+    "lastUpdated": "2026-11-24T21:05:28.843Z",
     "websiteUrl": "https://www.waterville.com"
   },
   {
@@ -4711,14 +4712,14 @@
     "state": "Gifu",
     "season": "2026-27",
     "openingDate": "2026-11-28",
-    "openingDateSource": "https://whitepia.jp/",
+    "openingDateSource": "https://whitepia.jp/post-1666/",
     "openingDateConfidence": "medium",
-    "openingDateReasoning": "Page states '【26-27season】11/28(土)オープン予定！オープニングイベント開催！'",
+    "openingDateReasoning": "Page says '今週末11月28日（土）オープンを予定していましたが...週末のオープンを延期する可能性があります'",
     "closingDate": null,
     "closingDateSource": "https://whitepia.jp/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date information is available on the provided pages.",
-    "lastUpdated": "2026-11-23T18:53:49.480Z",
+    "closingDateReasoning": "No closing date information found in the provided sources.",
+    "lastUpdated": "2026-11-24T21:05:35.352Z",
     "websiteUrl": "https://whitepia.jp/"
   },
   {
