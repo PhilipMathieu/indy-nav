@@ -146,6 +146,12 @@ interface OtsData {
   openingDate: string | null;
 }
 
+// What each OTS page fetch returned, so a run's log shows whether the
+// cross-check is seeing real data (e.g. pages blocked or format changed).
+const fetchOutcomes = new Map<string, number>();
+const tally = (outcome: string) =>
+  fetchOutcomes.set(outcome, (fetchOutcomes.get(outcome) ?? 0) + 1);
+
 async function fetchOtsData(otsPath: string): Promise<OtsData> {
   const url = `${OTS_BASE}/${otsPath}/ski-resort`;
   const res = await fetch(url, {
@@ -156,6 +162,7 @@ async function fetchOtsData(otsPath: string): Promise<OtsData> {
   });
 
   if (!res.ok) {
+    tally(`HTTP ${res.status}`);
     return { openFlag: null, closingDate: null, openingDate: null };
   }
 
@@ -167,6 +174,7 @@ async function fetchOtsData(otsPath: string): Promise<OtsData> {
   );
 
   if (dataMatch) {
+    tally(`openFlag=${dataMatch[1]}${dataMatch[2] ? " +openingDate" : ""}`);
     return {
       openFlag: parseInt(dataMatch[1]),
       closingDate: dataMatch[3] || null,
@@ -176,6 +184,7 @@ async function fetchOtsData(otsPath: string): Promise<OtsData> {
 
   // Fallback: just openFlag
   const flagMatch = html.match(/"openFlag":(\d+)/);
+  tally(flagMatch ? `openFlag=${flagMatch[1]} (no dates)` : "page had no openFlag");
   return {
     openFlag: flagMatch ? parseInt(flagMatch[1]) : null,
     closingDate: null,
@@ -369,6 +378,9 @@ async function main() {
   // Report
   console.log(`\n=== Cross-check results ===`);
   console.log(`Checked: ${mappings.length} resorts`);
+  console.log(
+    `OTS pages: ${[...fetchOutcomes.entries()].sort().map(([k, v]) => `${k}: ${v}`).join(", ") || "none"}`
+  );
   console.log(`Conflicts: ${conflicts.length}\n`);
 
   for (const c of conflicts) {
