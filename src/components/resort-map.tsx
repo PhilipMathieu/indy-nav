@@ -4,7 +4,7 @@ import { useRef, useEffect, useMemo, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Mountain } from "@/lib/types";
-import { getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
+import { getDrawRank, getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
 interface ResortMapProps {
   mountains: Mountain[];
@@ -26,20 +26,24 @@ function buildGeoJSON(
 
   const features = filtered
     .filter((m) => m.lat != null && m.lon != null)
-    .map((m) => ({
-      type: "Feature" as const,
-      properties: {
-        id: m.id,
-        name: m.name,
-        openingDate: m.openingDate ?? null,
-        closingDate: m.closingDate,
-        status: getMountainStatus(m, referenceDate),
-      },
-      geometry: {
-        type: "Point" as const,
-        coordinates: [m.lon!, m.lat!],
-      },
-    }));
+    .map((m) => {
+      const status = getMountainStatus(m, referenceDate);
+      return {
+        type: "Feature" as const,
+        properties: {
+          id: m.id,
+          name: m.name,
+          openingDate: m.openingDate ?? null,
+          closingDate: m.closingDate,
+          status,
+          drawRank: getDrawRank(status, referenceDate),
+        },
+        geometry: {
+          type: "Point" as const,
+          coordinates: [m.lon!, m.lat!],
+        },
+      };
+    });
 
   return { type: "FeatureCollection" as const, features };
 }
@@ -60,14 +64,6 @@ const STATUS_COLOR: Record<MountainStatus, string> = {
   "opening-soon": "#0f62fe",
   unknown: "#a8a8a8",
   closed: "#a8a8a8",
-};
-
-/** Draw order: open on top, then opening soon, then the rest. */
-const STATUS_SORT_KEY: Record<MountainStatus, number> = {
-  open: 0,
-  "opening-soon": 1,
-  unknown: 2,
-  closed: 3,
 };
 
 const formatDate = (iso: string | null) =>
@@ -135,14 +131,9 @@ export function ResortMap({
           "icon-image": "square",
           "icon-size": 0.625,
           "icon-allow-overlap": true,
-          "symbol-sort-key": [
-            "match",
-            ["get", "status"],
-            "open", STATUS_SORT_KEY.open,
-            "opening-soon", STATUS_SORT_KEY["opening-soon"],
-            "unknown", STATUS_SORT_KEY.unknown,
-            STATUS_SORT_KEY.closed,
-          ],
+          // MapLibre draws lower sort keys first (underneath), so higher
+          // ranks land on top. See getDrawRank for the season-aware order.
+          "symbol-sort-key": ["get", "drawRank"],
         },
         paint: {
           "icon-color": [

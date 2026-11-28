@@ -71,3 +71,25 @@ export function groupAndSort<T extends Mountain>(
 
   return [...groups.open, ...groups["opening-soon"], ...groups.unknown, ...groups.closed];
 }
+
+/** True from January 1 of the season's second year: the closing half. */
+export function isLateSeason(asOfDate: Date): boolean {
+  const day = startOfDay(asOfDate);
+  return !isBefore(day, new Date(getSeason(day).endYear, 0, 1));
+}
+
+/**
+ * Map draw order. Where markers overlap, a higher rank draws on top.
+ *
+ * Open mountains always win, then opening soon (the other colored marker).
+ * The two gray markers swap with the season: before January 1, mountains
+ * with no dates yet (unknown) sit above leftovers already marked closed;
+ * from January 1, mountains that are done for the season sit above those
+ * still without dates.
+ */
+export function getDrawRank(status: MountainStatus, asOfDate: Date): number {
+  const bottomToTop: MountainStatus[] = isLateSeason(asOfDate)
+    ? ["unknown", "closed", "opening-soon", "open"]
+    : ["closed", "unknown", "opening-soon", "open"];
+  return bottomToTop.indexOf(status);
+}
