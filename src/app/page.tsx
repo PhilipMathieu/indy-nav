@@ -5,6 +5,7 @@ import { ClosingDatesTable } from "@/components/closing-dates-table";
 import { ResortMap } from "@/components/resort-map";
 import type { Mountain, MountainSeed } from "@/lib/types";
 import { getSeason, LEGACY_SEASON_LABEL } from "@/lib/season";
+import { getTerrain, type TerrainFilter } from "@/lib/terrain";
 import closingDatesRaw from "../../data/closing-dates.json";
 import mountainSeedsRaw from "../../data/mountains.json";
 
@@ -18,7 +19,12 @@ const season = getSeason();
 // August rollover) keep the resort on the map but show its dates as unknown.
 const mountains: Mountain[] = (closingDatesRaw as Omit<Mountain, "lat" | "lon">[]).map((m) => {
   const seed = seedLookup.get(m.id);
-  const located = { ...m, lat: seed?.lat ?? null, lon: seed?.lon ?? null };
+  const located = {
+    ...m,
+    lat: seed?.lat ?? null,
+    lon: seed?.lon ?? null,
+    terrain: getTerrain(seed),
+  };
   if ((m.season ?? LEGACY_SEASON_LABEL) === season.label) return located;
   return { ...located, openingDate: null, closingDate: null, closingDateConfidence: "low" };
 });
@@ -27,6 +33,7 @@ export default function Home() {
   const [selectedMountainId, setSelectedMountainId] = useState<string | null>(null);
   const [asOfDate, setAsOfDate] = useState<Date | undefined>(undefined);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [terrainFilter, setTerrainFilter] = useState<TerrainFilter>("all");
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-6 sm:py-8 lg:max-w-5xl">
@@ -42,6 +49,7 @@ export default function Home() {
         mountains={mountains}
         asOfDate={asOfDate}
         selectedRegions={selectedRegions}
+        terrainFilter={terrainFilter}
         selectedMountainId={selectedMountainId}
         onSelectMountain={setSelectedMountainId}
       />
@@ -51,6 +59,8 @@ export default function Home() {
         onAsOfDateChange={setAsOfDate}
         selectedRegions={selectedRegions}
         onSelectedRegionsChange={setSelectedRegions}
+        terrainFilter={terrainFilter}
+        onTerrainFilterChange={setTerrainFilter}
         selectedMountainId={selectedMountainId}
         onSelectMountain={setSelectedMountainId}
       />

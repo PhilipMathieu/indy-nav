@@ -4,12 +4,14 @@ import { useRef, useEffect, useMemo, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Mountain } from "@/lib/types";
-import { getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
+import { getDrawRank, getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
+import { matchesTerrain, TERRAIN_LABEL, type TerrainFilter } from "@/lib/terrain";
 
 interface ResortMapProps {
   mountains: Mountain[];
   asOfDate: Date | undefined;
   selectedRegions: string[];
+  terrainFilter: TerrainFilter;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
 }
@@ -17,29 +19,36 @@ interface ResortMapProps {
 function buildGeoJSON(
   mountains: Mountain[],
   referenceDate: Date,
-  selectedRegions: string[]
+  selectedRegions: string[],
+  terrainFilter: TerrainFilter
 ) {
-  const filtered =
-    selectedRegions.length === 0
-      ? mountains
-      : mountains.filter((m) => selectedRegions.includes(m.region));
+  const filtered = mountains.filter(
+    (m) =>
+      (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
+      matchesTerrain(m.terrain, terrainFilter)
+  );
 
   const features = filtered
     .filter((m) => m.lat != null && m.lon != null)
-    .map((m) => ({
-      type: "Feature" as const,
-      properties: {
-        id: m.id,
-        name: m.name,
-        openingDate: m.openingDate ?? null,
-        closingDate: m.closingDate,
-        status: getMountainStatus(m, referenceDate),
-      },
-      geometry: {
-        type: "Point" as const,
-        coordinates: [m.lon!, m.lat!],
-      },
-    }));
+    .map((m) => {
+      const status = getMountainStatus(m, referenceDate);
+      return {
+        type: "Feature" as const,
+        properties: {
+          id: m.id,
+          name: m.name,
+          openingDate: m.openingDate ?? null,
+          closingDate: m.closingDate,
+          status,
+          drawRank: getDrawRank(status, referenceDate),
+          terrain: m.terrain ?? "alpine",
+        },
+        geometry: {
+          type: "Point" as const,
+          coordinates: [m.lon!, m.lat!],
+        },
+      };
+    });
 
   return { type: "FeatureCollection" as const, features };
 }
@@ -55,19 +64,24 @@ function createSquareImage(size: number): ImageData {
   return ctx.getImageData(0, 0, size, size);
 }
 
+/** Create a round image: cross-country-only areas use circles. */
+function createCircleImage(size: number): ImageData {
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d")!;
+  ctx.fillStyle = "#ffffff";
+  ctx.beginPath();
+  ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+  ctx.fill();
+  return ctx.getImageData(0, 0, size, size);
+}
+
 const STATUS_COLOR: Record<MountainStatus, string> = {
   open: "#da1e28",
   "opening-soon": "#0f62fe",
   unknown: "#a8a8a8",
   closed: "#a8a8a8",
-};
-
-/** Draw order: open on top, then opening soon, then the rest. */
-const STATUS_SORT_KEY: Record<MountainStatus, number> = {
-  open: 0,
-  "opening-soon": 1,
-  unknown: 2,
-  closed: 3,
 };
 
 const formatDate = (iso: string | null) =>
@@ -83,6 +97,7 @@ export function ResortMap({
   mountains,
   asOfDate,
   selectedRegions,
+  terrainFilter,
   selectedMountainId,
   onSelectMountain,
 }: ResortMapProps) {
@@ -93,8 +108,8 @@ export function ResortMap({
   const referenceDate = asOfDate ?? new Date();
 
   const geojson = useMemo(
-    () => buildGeoJSON(mountains, referenceDate, selectedRegions),
-    [mountains, referenceDate, selectedRegions]
+    () => buildGeoJSON(mountains, referenceDate, selectedRegions, terrainFilter),
+    [mountains, referenceDate, selectedRegions, terrainFilter]
   );
 
   // Initialize map
@@ -121,6 +136,7 @@ export function ResortMap({
 
     map.on("load", () => {
       map.addImage("square", createSquareImage(16), { sdf: true });
+      map.addImage("circle", createCircleImage(18), { sdf: true });
 
       map.addSource("resorts", {
         type: "geojson",
@@ -132,17 +148,12 @@ export function ResortMap({
         type: "symbol",
         source: "resorts",
         layout: {
-          "icon-image": "square",
+          "icon-image": ["match", ["get", "terrain"], "xc", "circle", "square"],
           "icon-size": 0.625,
           "icon-allow-overlap": true,
-          "symbol-sort-key": [
-            "match",
-            ["get", "status"],
-            "open", STATUS_SORT_KEY.open,
-            "opening-soon", STATUS_SORT_KEY["opening-soon"],
-            "unknown", STATUS_SORT_KEY.unknown,
-            STATUS_SORT_KEY.closed,
-          ],
+          // MapLibre draws lower sort keys first (underneath), so higher
+          // ranks land on top. See getDrawRank for the season-aware order.
+          "symbol-sort-key": ["get", "drawRank"],
         },
         paint: {
           "icon-color": [
@@ -184,7 +195,10 @@ export function ResortMap({
           .setHTML(
             `<strong style="font-size:13px">${props.name}</strong><br/>` +
               `<span style="font-size:12px;color:${STATUS_COLOR[status]}">${STATUS_LABEL[status]}</span>` +
-              `<span style="font-size:12px"> · ${detail}</span>`
+              `<span style="font-size:12px"> · ${detail}</span>` +
+              (props.terrain !== "alpine"
+                ? `<br/><span style="font-size:11px;color:#6f6f6f">${TERRAIN_LABEL[props.terrain as keyof typeof TERRAIN_LABEL]}</span>`
+                : "")
           )
           .addTo(map);
       });
@@ -243,10 +257,52 @@ export function ResortMap({
   }, [geojson]);
 
   return (
-    <div
-      ref={containerRef}
-      className="mb-6 h-[300px] w-full rounded-md border sm:h-[400px]"
-      data-testid="resort-map"
+    <div className="mb-6">
+      <div
+        ref={containerRef}
+        className="h-[300px] w-full rounded-md border sm:h-[400px]"
+        data-testid="resort-map"
+      />
+      <MapLegend />
+    </div>
+  );
+}
+
+function LegendSwatch({ color, round = false }: { color: string; round?: boolean }) {
+  return (
+    <span
+      aria-hidden
+      className={`inline-block h-2.5 w-2.5 ${round ? "rounded-full" : ""}`}
+      style={{ backgroundColor: color }}
     />
+  );
+}
+
+function MapLegend() {
+  const item = "flex items-center gap-1.5";
+  return (
+    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+      <span className={item}>
+        <LegendSwatch color={STATUS_COLOR.open} />
+        {STATUS_LABEL.open}
+      </span>
+      <span className={item}>
+        <LegendSwatch color={STATUS_COLOR["opening-soon"]} />
+        {STATUS_LABEL["opening-soon"]}
+      </span>
+      <span className={item}>
+        <LegendSwatch color={STATUS_COLOR.closed} />
+        Closed or unknown
+      </span>
+      <span className="h-3 w-px bg-border" aria-hidden />
+      <span className={item}>
+        <LegendSwatch color="#6f6f6f" />
+        Downhill
+      </span>
+      <span className={item}>
+        <LegendSwatch color="#6f6f6f" round />
+        Cross-country only
+      </span>
+    </div>
   );
 }

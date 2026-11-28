@@ -20,9 +20,11 @@ import { Badge } from "@/components/ui/badge";
 import { columns, DateCell, statusClass, type MountainRow } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
+import { TerrainFilter } from "@/components/terrain-filter";
 import type { Mountain } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { getMountainStatus, groupAndSort, STATUS_LABEL } from "@/lib/status";
+import { matchesTerrain, TERRAIN_LABEL, type TerrainFilter as TerrainFilterValue } from "@/lib/terrain";
 
 /** Sort options for the small-screen list, which has no column headers. */
 const MOBILE_SORTS: { value: string; label: string; sorting: SortingState }[] = [
@@ -48,6 +50,8 @@ interface ClosingDatesTableProps {
   onAsOfDateChange: (date: Date | undefined) => void;
   selectedRegions: string[];
   onSelectedRegionsChange: (regions: string[]) => void;
+  terrainFilter: TerrainFilterValue;
+  onTerrainFilterChange: (value: TerrainFilterValue) => void;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
 }
@@ -58,6 +62,8 @@ export function ClosingDatesTable({
   onAsOfDateChange,
   selectedRegions,
   onSelectedRegionsChange,
+  terrainFilter,
+  onTerrainFilterChange,
   selectedMountainId,
   onSelectMountain,
 }: ClosingDatesTableProps) {
@@ -70,12 +76,14 @@ export function ClosingDatesTable({
   const referenceDate = React.useMemo(() => asOfDate ?? new Date(), [asOfDate]);
 
   const filteredData = React.useMemo<MountainRow[]>(() => {
-    const inRegion =
-      selectedRegions.length === 0
-        ? mountains
-        : mountains.filter((m) => selectedRegions.includes(m.region));
-    return inRegion.map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
-  }, [mountains, selectedRegions, referenceDate]);
+    return mountains
+      .filter(
+        (m) =>
+          (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
+          matchesTerrain(m.terrain, terrainFilter)
+      )
+      .map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
+  }, [mountains, selectedRegions, terrainFilter, referenceDate]);
 
   const sortedData = React.useMemo(() => {
     if (sorting.length > 0) return filteredData;
@@ -115,6 +123,7 @@ export function ClosingDatesTable({
     <div className="space-y-4">
       <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:gap-4">
         <DateFilter date={asOfDate} onDateChange={onAsOfDateChange} />
+        <TerrainFilter value={terrainFilter} onValueChange={onTerrainFilterChange} />
         <RegionFilter selected={selectedRegions} onSelectionChange={onSelectedRegionsChange} />
       </div>
       <div className="flex items-center gap-2 sm:hidden">
@@ -167,7 +176,18 @@ export function ClosingDatesTable({
                     >
                       {m.name}
                     </a>
-                    <p className="text-xs text-muted-foreground">{m.state}</p>
+                    <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                      {m.state}
+                      {m.terrain && m.terrain !== "alpine" && (
+                        <Badge
+                          variant="outline"
+                          className="h-4 rounded-sm px-1 text-[10px] font-semibold tracking-wide text-muted-foreground"
+                          title={TERRAIN_LABEL[m.terrain]}
+                        >
+                          {m.terrain === "xc" ? "XC" : "+XC"}
+                        </Badge>
+                      )}
+                    </p>
                   </div>
                   <Badge className={cn("shrink-0", statusClass[m.status])}>
                     {STATUS_LABEL[m.status]}
