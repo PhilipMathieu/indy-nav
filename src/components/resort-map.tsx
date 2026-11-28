@@ -245,7 +245,8 @@ export function ResortMap({
   return (
     <div
       ref={containerRef}
-      className="mb-6 h-[400px] w-full rounded-md border"
+      className="mb-6 h-[300px] w-full rounded-md border sm:h-[400px]"
+      data-testid="resort-map"
     />
   );
 }
