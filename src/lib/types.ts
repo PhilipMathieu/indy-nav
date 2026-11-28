@@ -14,6 +14,8 @@ export interface MountainSeed {
   closingDateUrl: string;
 }
 
+import type { Terrain } from "./terrain";
+
 export type Confidence = "high" | "medium" | "low";
 
 export interface Mountain {
@@ -39,4 +41,6 @@ export interface Mountain {
   websiteUrl: string;
   lat: number | null;
   lon: number | null;
+  /** Downhill, cross-country or both; merged from mountains.json. */
+  terrain?: Terrain;
 }
