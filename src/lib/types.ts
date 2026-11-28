@@ -12,6 +12,27 @@ export interface MountainSeed {
   websiteUrl: string;
   /** Page the pipeline reads for season dates (conditions, hours or homepage). */
   closingDateUrl: string;
+  /** Size and terrain figures from the resort's indyskipass.com page. */
+  stats?: ResortStats;
+}
+
+/**
+ * Figures listed on a resort's indyskipass.com page. Each is null when the
+ * page leaves it out (XC-only areas have no alpine figures, for example).
+ */
+export interface ResortStats {
+  verticalFt: number | null;
+  summitFt: number | null;
+  baseFt: number | null;
+  acres: number | null;
+  trails: number | null;
+  lifts: number | null;
+  /** Average annual snowfall, inches. */
+  snowfallIn: number | null;
+  terrainPark: boolean | null;
+  nightSkiing: boolean | null;
+  xcTrails: number | null;
+  xcKm: number | null;
 }
 
 export type Confidence = "high" | "medium" | "low";
@@ -39,4 +60,6 @@ export interface Mountain {
   websiteUrl: string;
   lat: number | null;
   lon: number | null;
+  /** Merged in from `mountains.json` by the page, like lat/lon. */
+  stats?: ResortStats;
 }
