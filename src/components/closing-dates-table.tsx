@@ -19,8 +19,10 @@ import {
 import { columns, type MountainRow } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
+import { TerrainFilter } from "@/components/terrain-filter";
 import type { Mountain } from "@/lib/types";
 import { getMountainStatus, groupAndSort } from "@/lib/status";
+import { matchesTerrain, type TerrainFilter as TerrainFilterValue } from "@/lib/terrain";
 
 interface ClosingDatesTableProps {
   mountains: Mountain[];
@@ -28,6 +30,8 @@ interface ClosingDatesTableProps {
   onAsOfDateChange: (date: Date | undefined) => void;
   selectedRegions: string[];
   onSelectedRegionsChange: (regions: string[]) => void;
+  terrainFilter: TerrainFilterValue;
+  onTerrainFilterChange: (value: TerrainFilterValue) => void;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
 }
@@ -38,6 +42,8 @@ export function ClosingDatesTable({
   onAsOfDateChange,
   selectedRegions,
   onSelectedRegionsChange,
+  terrainFilter,
+  onTerrainFilterChange,
   selectedMountainId,
   onSelectMountain,
 }: ClosingDatesTableProps) {
@@ -47,12 +53,14 @@ export function ClosingDatesTable({
   const referenceDate = React.useMemo(() => asOfDate ?? new Date(), [asOfDate]);
 
   const filteredData = React.useMemo<MountainRow[]>(() => {
-    const inRegion =
-      selectedRegions.length === 0
-        ? mountains
-        : mountains.filter((m) => selectedRegions.includes(m.region));
-    return inRegion.map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
-  }, [mountains, selectedRegions, referenceDate]);
+    return mountains
+      .filter(
+        (m) =>
+          (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
+          matchesTerrain(m.terrain, terrainFilter)
+      )
+      .map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
+  }, [mountains, selectedRegions, terrainFilter, referenceDate]);
 
   const sortedData = React.useMemo(() => {
     if (sorting.length > 0) return filteredData;
@@ -81,6 +89,7 @@ export function ClosingDatesTable({
     <div className="space-y-4">
       <div className="flex flex-wrap items-start gap-4">
         <DateFilter date={asOfDate} onDateChange={onAsOfDateChange} />
+        <TerrainFilter value={terrainFilter} onValueChange={onTerrainFilterChange} />
         <RegionFilter selected={selectedRegions} onSelectionChange={onSelectedRegionsChange} />
       </div>
       <div className="rounded-md border">
