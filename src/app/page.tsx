@@ -39,8 +39,8 @@ export default function Home() {
   const [terrainFilter, setTerrainFilter] = useState<TerrainFilter>("all");
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8">
-      <div className="mb-8">
+    <main className="mx-auto max-w-4xl px-4 py-6 sm:py-8 lg:max-w-5xl">
+      <div className="mb-6 sm:mb-8">
         <h1 className="text-2xl font-semibold tracking-tight">
           Indy Nav
         </h1>

@@ -24,20 +24,22 @@ interface RegionFilterProps {
 
 export function RegionFilter({ selected, onSelectionChange }: RegionFilterProps) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-sm text-muted-foreground">Region:</span>
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-start">
+      <span className="text-sm text-muted-foreground sm:leading-7">Region:</span>
       <ToggleGroup
         value={selected}
         onValueChange={onSelectionChange}
         variant="outline"
         size="sm"
         spacing={4}
+        aria-label="Filter by region"
+        className="w-full flex-wrap gap-2 sm:w-auto sm:flex-1 sm:gap-4"
       >
         {REGIONS.map((region) => (
           <ToggleGroupItem
             key={region}
             value={region}
-            className="text-xs px-2 py-1 h-7"
+            className="h-9 px-3 text-xs sm:h-7 sm:px-2 sm:py-1"
           >
             {region}
           </ToggleGroupItem>

@@ -20,13 +20,13 @@ interface DateFilterProps {
 
 export function DateFilter({ date, onDateChange }: DateFilterProps) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-sm text-muted-foreground">Open as of:</span>
+    <div className="flex w-full items-center gap-2 sm:w-auto">
+      <span className="shrink-0 text-sm text-muted-foreground">Open as of:</span>
       <Popover>
         <PopoverTrigger
           className={cn(
             buttonVariants({ variant: "outline" }),
-            "w-[200px] justify-start text-left font-normal",
+            "h-9 min-w-0 flex-1 justify-start text-left font-normal sm:h-8 sm:w-[200px] sm:flex-none",
             !date && "text-muted-foreground"
           )}
         >
@@ -47,7 +47,7 @@ export function DateFilter({ date, onDateChange }: DateFilterProps) {
           variant="ghost"
           size="icon"
           onClick={() => onDateChange(undefined)}
-          className="h-8 w-8"
+          className="h-9 w-9 shrink-0 sm:h-8 sm:w-8"
         >
           <X className="h-4 w-4" />
           <span className="sr-only">Clear date filter</span>
