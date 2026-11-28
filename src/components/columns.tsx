@@ -23,7 +23,7 @@ const confidenceVariant: Record<Confidence, "default" | "secondary" | "destructi
   low: "destructive",
 };
 
-const statusClass: Record<MountainStatus, string> = {
+export const statusClass: Record<MountainStatus, string> = {
   open: "bg-[#da1e28] text-white",
   "opening-soon": "bg-[#0f62fe] text-white",
   unknown: "bg-secondary text-secondary-foreground",
@@ -61,7 +61,7 @@ function dateSort(key: "openingDate" | "closingDate") {
 }
 
 /** A date with a popover showing how sure we are and where it came from. */
-function DateCell({
+export function DateCell({
   date,
   confidence,
   reasoning,
@@ -88,12 +88,12 @@ function DateCell({
       <Popover>
         <PopoverTrigger
           onClick={(e) => e.stopPropagation()}
-          className="text-muted-foreground hover:text-foreground transition-colors"
+          className="-m-1.5 p-1.5 text-muted-foreground hover:text-foreground transition-colors"
           aria-label="View source info"
         >
           <Info className="h-3.5 w-3.5" />
         </PopoverTrigger>
-        <PopoverContent side="left" className="w-80 space-y-1.5">
+        <PopoverContent side="left" className="w-[min(20rem,calc(100vw-2rem))] space-y-1.5">
           {confidence && (
             <Badge variant={confidenceVariant[confidence]}>{confidence} confidence</Badge>
           )}
@@ -187,6 +187,8 @@ export const columns: ColumnDef<MountainRow>[] = [
   {
     accessorKey: "lastUpdated",
     header: "Last Updated",
+    // Least important column; dropped on tablets so the table fits.
+    meta: { className: "hidden lg:table-cell" },
     cell: ({ row }) => {
       const date = row.getValue("lastUpdated") as string;
       if (!date) return "—";

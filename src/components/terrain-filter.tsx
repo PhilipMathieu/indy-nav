@@ -37,7 +37,7 @@ export function TerrainFilter({ value, onValueChange }: TerrainFilterProps) {
             key={option.value}
             value={option.value}
             title={option.title}
-            className="text-xs px-2 py-1 h-7"
+            className="h-9 px-3 text-xs sm:h-7 sm:px-2 sm:py-1"
           >
             {option.label}
           </ToggleGroupItem>

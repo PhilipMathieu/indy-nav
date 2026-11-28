@@ -258,7 +258,11 @@ export function ResortMap({
 
   return (
     <div className="mb-6">
-      <div ref={containerRef} className="h-[400px] w-full rounded-md border" />
+      <div
+        ref={containerRef}
+        className="h-[300px] w-full rounded-md border sm:h-[400px]"
+        data-testid="resort-map"
+      />
       <MapLegend />
     </div>
   );
