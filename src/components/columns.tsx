@@ -10,7 +10,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { formatDistanceToNow, format, parseISO } from "date-fns";
-import type { Confidence, Mountain } from "@/lib/types";
+import type { Confidence, Mountain, ResortStats } from "@/lib/types";
 import { STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
 /** A table row: a mountain plus its status on the "as of" date. */
@@ -129,6 +129,46 @@ function DateCell({
   );
 }
 
+/** "2,325 acres · 88 trails · 7 lifts · 301 in snow/yr" for the size tooltip. */
+function sizeSummary(stats: ResortStats | undefined): string | undefined {
+  if (!stats) return undefined;
+  const parts = (
+    [
+      [stats.acres, "acres"],
+      [stats.trails, "trails"],
+      [stats.lifts, "lifts"],
+      [stats.snowfallIn, "in snow/yr"],
+      [stats.xcKm, "km XC"],
+    ] as const
+  )
+    .filter(([n]) => n != null)
+    .map(([n, label]) => `${n!.toLocaleString("en-US")} ${label}`);
+  return parts.length ? parts.join(" · ") : undefined;
+}
+
+/**
+ * Vertical drop from indyskipass.com, right-aligned, with the other size
+ * figures on hover. A dash when the page lists none (most XC-only areas).
+ */
+function VerticalCell({ stats }: { stats: ResortStats | undefined }) {
+  const vertical = stats?.verticalFt;
+  return (
+    <span
+      className="block whitespace-nowrap text-right tabular-nums"
+      title={sizeSummary(stats)}
+    >
+      {vertical == null ? (
+        <span className="text-muted-foreground">—</span>
+      ) : (
+        <>
+          {vertical.toLocaleString("en-US")}
+          <span className="text-muted-foreground"> ft</span>
+        </>
+      )}
+    </span>
+  );
+}
+
 export const columns: ColumnDef<MountainRow>[] = [
   {
     accessorKey: "name",
@@ -183,6 +223,13 @@ export const columns: ColumnDef<MountainRow>[] = [
       />
     ),
     sortingFn: dateSort("closingDate"),
+  },
+  {
+    id: "vertical",
+    accessorFn: (row) => row.stats?.verticalFt ?? null,
+    header: ({ column }) => <SortHeader label="Vert" column={column} descFirst />,
+    cell: ({ row }) => <VerticalCell stats={row.original.stats} />,
+    meta: { statusSortValue: (row) => row.stats?.verticalFt },
   },
   {
     accessorKey: "lastUpdated",

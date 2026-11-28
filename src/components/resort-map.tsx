@@ -3,7 +3,7 @@
 import { useRef, useEffect, useMemo, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { Mountain } from "@/lib/types";
+import type { Mountain, ResortStats } from "@/lib/types";
 import { getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
 interface ResortMapProps {
@@ -34,6 +34,7 @@ function buildGeoJSON(
         openingDate: m.openingDate ?? null,
         closingDate: m.closingDate,
         status: getMountainStatus(m, referenceDate),
+        size: formatSize(m.stats),
       },
       geometry: {
         type: "Point" as const,
@@ -42,6 +43,20 @@ function buildGeoJSON(
     }));
 
   return { type: "FeatureCollection" as const, features };
+}
+
+/** "1,851 ft vert · 2,325 acres · 88 trails", or "" with no figures. */
+function formatSize(stats: ResortStats | undefined): string {
+  if (!stats) return "";
+  const parts: string[] = [];
+  const add = (n: number | null, label: string) => {
+    if (n != null) parts.push(`${n.toLocaleString("en-US")} ${label}`);
+  };
+  add(stats.verticalFt, "ft vert");
+  add(stats.acres, "acres");
+  add(stats.trails, "trails");
+  if (parts.length === 0) add(stats.xcKm, "km XC");
+  return parts.join(" · ");
 }
 
 /** Create a square image for use as a map marker. */
@@ -184,7 +199,10 @@ export function ResortMap({
           .setHTML(
             `<strong style="font-size:13px">${props.name}</strong><br/>` +
               `<span style="font-size:12px;color:${STATUS_COLOR[status]}">${STATUS_LABEL[status]}</span>` +
-              `<span style="font-size:12px"> · ${detail}</span>`
+              `<span style="font-size:12px"> · ${detail}</span>` +
+              (props.size
+                ? `<br/><span style="font-size:12px;color:#525252">${props.size}</span>`
+                : "")
           )
           .addTo(map);
       });

@@ -18,7 +18,7 @@ const season = getSeason();
 // August rollover) keep the resort on the map but show its dates as unknown.
 const mountains: Mountain[] = (closingDatesRaw as Omit<Mountain, "lat" | "lon">[]).map((m) => {
   const seed = seedLookup.get(m.id);
-  const located = { ...m, lat: seed?.lat ?? null, lon: seed?.lon ?? null };
+  const located = { ...m, lat: seed?.lat ?? null, lon: seed?.lon ?? null, stats: seed?.stats };
   if ((m.season ?? LEGACY_SEASON_LABEL) === season.label) return located;
   return { ...located, openingDate: null, closingDate: null, closingDateConfidence: "low" };
 });
