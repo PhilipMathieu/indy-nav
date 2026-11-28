@@ -1876,7 +1876,7 @@
     "closingDateSource": "https://granbyranch.com",
     "closingDateConfidence": "low",
     "closingDateReasoning": "No closing date for the 2026-27 season is mentioned on the page.",
-    "lastUpdated": "2026-11-25T20:25:57.629Z",
+    "lastUpdated": "2026-11-28T16:27:21.758Z",
     "websiteUrl": "https://granbyranch.com"
   },
   {
@@ -2674,6 +2674,23 @@
     "closingDateReasoning": "The provided pages mention the end of the previous season ('closed for the season' on March 23, 2026), but do not contain a closing date for the 2026-2027 season.",
     "lastUpdated": "2026-11-26T20:14:29.263Z",
     "websiteUrl": "https://www.mohawkmtn.com"
+  },
+  {
+    "id": "mont-blanc",
+    "name": "Mont Blanc",
+    "region": "Canada",
+    "state": "QC",
+    "season": "2026-27",
+    "openingDate": null,
+    "openingDateSource": "https://bulletinv3.lumiplan.pro/bulletin.php?station=mont-blanc&amp;lang=fr",
+    "openingDateConfidence": "low",
+    "openingDateReasoning": "The page shows current operations and status for 2026-11-28, but does not mention an explicit opening date for the 2026-27 season.",
+    "closingDate": null,
+    "closingDateSource": "https://bulletinv3.lumiplan.pro/bulletin.php?station=mont-blanc&amp;lang=fr",
+    "closingDateConfidence": "low",
+    "closingDateReasoning": "The page does not mention a closing date for the 2026-27 ski season.",
+    "lastUpdated": "2026-11-28T16:27:31.233Z",
+    "websiteUrl": "https://skimontblanc.com/en/"
   },
   {
     "id": "mont-edouard",
@@ -3491,8 +3508,8 @@
     "closingDate": null,
     "closingDateSource": "https://pizol.com/en/winter/winter-sports-report/",
     "closingDateConfidence": "low",
-    "closingDateReasoning": "No closing date for the 2026-27 season was found in the text.",
-    "lastUpdated": "2026-11-25T20:27:10.344Z",
+    "closingDateReasoning": "The page content only contains verification messages and provides no information about the 2026-27 ski season closing date.",
+    "lastUpdated": "2026-11-28T16:27:35.516Z",
     "websiteUrl": "https://pizol.com/en/"
   },
   {

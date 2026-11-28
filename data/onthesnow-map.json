@@ -486,5 +486,9 @@
   {
     "id": "whiteface-mountain",
     "otsPath": "new-york/whiteface-mountain-resort"
+  },
+  {
+    "id": "mont-blanc",
+    "otsPath": "quebec/mont-blanc"
   }
 ]
