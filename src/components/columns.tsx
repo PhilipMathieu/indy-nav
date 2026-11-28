@@ -12,6 +12,7 @@ import {
 import { formatDistanceToNow, format, parseISO } from "date-fns";
 import type { Confidence, Mountain, ResortStats } from "@/lib/types";
 import { STATUS_LABEL, type MountainStatus } from "@/lib/status";
+import { TERRAIN_LABEL } from "@/lib/terrain";
 
 /**
  * A table row: a mountain plus its status on the "as of" date and, once the
@@ -176,17 +177,31 @@ export const columns: ColumnDef<MountainRow>[] = [
   {
     accessorKey: "name",
     header: ({ column }) => <SortHeader label="Mountain" column={column} />,
-    cell: ({ row }) => (
-      <a
-        href={row.original.websiteUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="underline underline-offset-4 hover:text-primary/80 block max-w-[200px] truncate"
-        title={row.getValue("name") as string}
-      >
-        {row.getValue("name")}
-      </a>
-    ),
+    cell: ({ row }) => {
+      const terrain = row.original.terrain;
+      return (
+        <div className="flex items-center gap-1.5">
+          <a
+            href={row.original.websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:text-primary/80 block max-w-[200px] truncate"
+            title={row.getValue("name") as string}
+          >
+            {row.getValue("name")}
+          </a>
+          {terrain && terrain !== "alpine" && (
+            <Badge
+              variant="outline"
+              className="h-4 rounded-sm px-1 text-[10px] font-semibold tracking-wide text-muted-foreground"
+              title={TERRAIN_LABEL[terrain]}
+            >
+              {terrain === "xc" ? "XC" : "+XC"}
+            </Badge>
+          )}
+        </div>
+      );
+    },
   },
   {
     accessorKey: "state",

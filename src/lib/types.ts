@@ -35,6 +35,8 @@ export interface ResortStats {
   xcKm: number | null;
 }
 
+import type { Terrain } from "./terrain";
+
 export type Confidence = "high" | "medium" | "low";
 
 export interface Mountain {
@@ -62,4 +64,6 @@ export interface Mountain {
   lon: number | null;
   /** Merged in from `mountains.json` by the page, like lat/lon. */
   stats?: ResortStats;
+  /** Downhill, cross-country or both; merged from mountains.json. */
+  terrain?: Terrain;
 }

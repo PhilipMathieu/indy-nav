@@ -6,11 +6,13 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import type { Mountain, ResortStats } from "@/lib/types";
 import { getDrawRank, getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
 import type { LatLon } from "@/lib/geo";
+import { matchesTerrain, TERRAIN_LABEL, type TerrainFilter } from "@/lib/terrain";
 
 interface ResortMapProps {
   mountains: Mountain[];
   asOfDate: Date | undefined;
   selectedRegions: string[];
+  terrainFilter: TerrainFilter;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
   userLocation?: LatLon | null;
@@ -19,12 +21,14 @@ interface ResortMapProps {
 function buildGeoJSON(
   mountains: Mountain[],
   referenceDate: Date,
-  selectedRegions: string[]
+  selectedRegions: string[],
+  terrainFilter: TerrainFilter
 ) {
-  const filtered =
-    selectedRegions.length === 0
-      ? mountains
-      : mountains.filter((m) => selectedRegions.includes(m.region));
+  const filtered = mountains.filter(
+    (m) =>
+      (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
+      matchesTerrain(m.terrain, terrainFilter)
+  );
 
   const features = filtered
     .filter((m) => m.lat != null && m.lon != null)
@@ -40,6 +44,7 @@ function buildGeoJSON(
           status,
           drawRank: getDrawRank(status, referenceDate),
           size: formatSize(m.stats),
+          terrain: m.terrain ?? "alpine",
         },
         geometry: {
           type: "Point" as const,
@@ -76,6 +81,19 @@ function createSquareImage(size: number): ImageData {
   return ctx.getImageData(0, 0, size, size);
 }
 
+/** Create a round image: cross-country-only areas use circles. */
+function createCircleImage(size: number): ImageData {
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d")!;
+  ctx.fillStyle = "#ffffff";
+  ctx.beginPath();
+  ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+  ctx.fill();
+  return ctx.getImageData(0, 0, size, size);
+}
+
 const STATUS_COLOR: Record<MountainStatus, string> = {
   open: "#da1e28",
   "opening-soon": "#0f62fe",
@@ -96,6 +114,7 @@ export function ResortMap({
   mountains,
   asOfDate,
   selectedRegions,
+  terrainFilter,
   selectedMountainId,
   onSelectMountain,
   userLocation = null,
@@ -107,8 +126,8 @@ export function ResortMap({
   const referenceDate = asOfDate ?? new Date();
 
   const geojson = useMemo(
-    () => buildGeoJSON(mountains, referenceDate, selectedRegions),
-    [mountains, referenceDate, selectedRegions]
+    () => buildGeoJSON(mountains, referenceDate, selectedRegions, terrainFilter),
+    [mountains, referenceDate, selectedRegions, terrainFilter]
   );
 
   // Initialize map
@@ -135,6 +154,7 @@ export function ResortMap({
 
     map.on("load", () => {
       map.addImage("square", createSquareImage(16), { sdf: true });
+      map.addImage("circle", createCircleImage(18), { sdf: true });
 
       map.addSource("resorts", {
         type: "geojson",
@@ -146,7 +166,7 @@ export function ResortMap({
         type: "symbol",
         source: "resorts",
         layout: {
-          "icon-image": "square",
+          "icon-image": ["match", ["get", "terrain"], "xc", "circle", "square"],
           "icon-size": 0.625,
           "icon-allow-overlap": true,
           // MapLibre draws lower sort keys first (underneath), so higher
@@ -196,6 +216,9 @@ export function ResortMap({
               `<span style="font-size:12px"> · ${detail}</span>` +
               (props.size
                 ? `<br/><span style="font-size:12px;color:#525252">${props.size}</span>`
+                : "") +
+              (props.terrain !== "alpine"
+                ? `<br/><span style="font-size:11px;color:#6f6f6f">${TERRAIN_LABEL[props.terrain as keyof typeof TERRAIN_LABEL]}</span>`
                 : "")
           )
           .addTo(map);
@@ -274,9 +297,48 @@ export function ResortMap({
   }, [userLocation]);
 
   return (
-    <div
-      ref={containerRef}
-      className="mb-6 h-[400px] w-full rounded-md border"
+    <div className="mb-6">
+      <div ref={containerRef} className="h-[400px] w-full rounded-md border" />
+      <MapLegend />
+    </div>
+  );
+}
+
+function LegendSwatch({ color, round = false }: { color: string; round?: boolean }) {
+  return (
+    <span
+      aria-hidden
+      className={`inline-block h-2.5 w-2.5 ${round ? "rounded-full" : ""}`}
+      style={{ backgroundColor: color }}
     />
+  );
+}
+
+function MapLegend() {
+  const item = "flex items-center gap-1.5";
+  return (
+    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+      <span className={item}>
+        <LegendSwatch color={STATUS_COLOR.open} />
+        {STATUS_LABEL.open}
+      </span>
+      <span className={item}>
+        <LegendSwatch color={STATUS_COLOR["opening-soon"]} />
+        {STATUS_LABEL["opening-soon"]}
+      </span>
+      <span className={item}>
+        <LegendSwatch color={STATUS_COLOR.closed} />
+        Closed or unknown
+      </span>
+      <span className="h-3 w-px bg-border" aria-hidden />
+      <span className={item}>
+        <LegendSwatch color="#6f6f6f" />
+        Downhill
+      </span>
+      <span className={item}>
+        <LegendSwatch color="#6f6f6f" round />
+        Cross-country only
+      </span>
+    </div>
   );
 }

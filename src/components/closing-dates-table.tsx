@@ -19,10 +19,12 @@ import {
 import { columns, type MountainRow } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
+import { TerrainFilter } from "@/components/terrain-filter";
 import { NearMe } from "@/components/near-me";
 import { distanceMiles, type LatLon } from "@/lib/geo";
 import type { Mountain } from "@/lib/types";
 import { getMountainStatus, groupAndSort, sortWithinStatus } from "@/lib/status";
+import { matchesTerrain, type TerrainFilter as TerrainFilterValue } from "@/lib/terrain";
 
 interface ClosingDatesTableProps {
   mountains: Mountain[];
@@ -30,6 +32,8 @@ interface ClosingDatesTableProps {
   onAsOfDateChange: (date: Date | undefined) => void;
   selectedRegions: string[];
   onSelectedRegionsChange: (regions: string[]) => void;
+  terrainFilter: TerrainFilterValue;
+  onTerrainFilterChange: (value: TerrainFilterValue) => void;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
   userLocation: LatLon | null;
@@ -42,6 +46,8 @@ export function ClosingDatesTable({
   onAsOfDateChange,
   selectedRegions,
   onSelectedRegionsChange,
+  terrainFilter,
+  onTerrainFilterChange,
   selectedMountainId,
   onSelectMountain,
   userLocation,
@@ -53,10 +59,11 @@ export function ClosingDatesTable({
   const referenceDate = React.useMemo(() => asOfDate ?? new Date(), [asOfDate]);
 
   const filteredData = React.useMemo<MountainRow[]>(() => {
-    const inRegion =
-      selectedRegions.length === 0
-        ? mountains
-        : mountains.filter((m) => selectedRegions.includes(m.region));
+    const inRegion = mountains.filter(
+      (m) =>
+        (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
+        matchesTerrain(m.terrain, terrainFilter)
+    );
     return inRegion.map((m) => ({
       ...m,
       status: getMountainStatus(m, referenceDate),
@@ -65,7 +72,7 @@ export function ClosingDatesTable({
           ? distanceMiles(userLocation, { lat: m.lat, lon: m.lon })
           : null,
     }));
-  }, [mountains, selectedRegions, referenceDate, userLocation]);
+  }, [mountains, selectedRegions, terrainFilter, referenceDate, userLocation]);
 
   // Sharing a location sorts nearest first; clearing it drops that sort.
   const handleUserLocationChange = (location: LatLon | null) => {
@@ -117,6 +124,7 @@ export function ClosingDatesTable({
     <div className="space-y-4">
       <div className="flex flex-wrap items-start gap-4">
         <DateFilter date={asOfDate} onDateChange={onAsOfDateChange} />
+        <TerrainFilter value={terrainFilter} onValueChange={onTerrainFilterChange} />
         <RegionFilter selected={selectedRegions} onSelectionChange={onSelectedRegionsChange} />
         <NearMe location={userLocation} onLocationChange={handleUserLocationChange} />
       </div>
