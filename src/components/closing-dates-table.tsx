@@ -21,9 +21,11 @@ import { columns, DateCell, statusClass, type MountainRow } from "@/components/c
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
 import { TerrainFilter } from "@/components/terrain-filter";
+import { NearMe } from "@/components/near-me";
+import { distanceMiles, type LatLon } from "@/lib/geo";
 import type { Mountain } from "@/lib/types";
 import { cn } from "@/lib/utils";
-import { getMountainStatus, groupAndSort, STATUS_LABEL } from "@/lib/status";
+import { getMountainStatus, groupAndSort, sortWithinStatus, STATUS_LABEL } from "@/lib/status";
 import { matchesTerrain, TERRAIN_LABEL, type TerrainFilter as TerrainFilterValue } from "@/lib/terrain";
 
 /** Sort options for the small-screen list, which has no column headers. */
@@ -33,6 +35,8 @@ const MOBILE_SORTS: { value: string; label: string; sorting: SortingState }[] = 
   { value: "openingDate", label: "Opens (earliest)", sorting: [{ id: "openingDate", desc: false }] },
   { value: "closingDate-asc", label: "Closes (earliest)", sorting: [{ id: "closingDate", desc: false }] },
   { value: "closingDate", label: "Closes (latest)", sorting: [{ id: "closingDate", desc: true }] },
+  { value: "vertical", label: "Biggest (vertical)", sorting: [{ id: "vertical", desc: true }] },
+  { value: "distance", label: "Nearest", sorting: [{ id: "distance", desc: false }] },
 ];
 
 /** Per-column responsive classes, set via `meta.className` in columns.tsx. */
@@ -54,6 +58,8 @@ interface ClosingDatesTableProps {
   onTerrainFilterChange: (value: TerrainFilterValue) => void;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
+  userLocation: LatLon | null;
+  onUserLocationChange: (location: LatLon | null) => void;
 }
 
 export function ClosingDatesTable({
@@ -66,6 +72,8 @@ export function ClosingDatesTable({
   onTerrainFilterChange,
   selectedMountainId,
   onSelectMountain,
+  userLocation,
+  onUserLocationChange,
 }: ClosingDatesTableProps) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   // The table (sm and up) and the card list (below sm) are both rendered and
@@ -76,19 +84,42 @@ export function ClosingDatesTable({
   const referenceDate = React.useMemo(() => asOfDate ?? new Date(), [asOfDate]);
 
   const filteredData = React.useMemo<MountainRow[]>(() => {
-    return mountains
-      .filter(
-        (m) =>
-          (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
-          matchesTerrain(m.terrain, terrainFilter)
-      )
-      .map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
-  }, [mountains, selectedRegions, terrainFilter, referenceDate]);
+    const inRegion = mountains.filter(
+      (m) =>
+        (selectedRegions.length === 0 || selectedRegions.includes(m.region)) &&
+        matchesTerrain(m.terrain, terrainFilter)
+    );
+    return inRegion.map((m) => ({
+      ...m,
+      status: getMountainStatus(m, referenceDate),
+      distanceMi:
+        userLocation && m.lat != null && m.lon != null
+          ? distanceMiles(userLocation, { lat: m.lat, lon: m.lon })
+          : null,
+    }));
+  }, [mountains, selectedRegions, terrainFilter, referenceDate, userLocation]);
+
+  // Sharing a location sorts nearest first; clearing it drops that sort.
+  const handleUserLocationChange = (location: LatLon | null) => {
+    onUserLocationChange(location);
+    setSorting(location ? [{ id: "distance", desc: false }] : []);
+  };
+
+  // Numeric columns that declare `meta.statusSortValue` are sorted here,
+  // inside the status groups, rather than by TanStack across the table.
+  const statusSort = React.useMemo(() => {
+    const active = sorting[0];
+    if (!active) return null;
+    const column = columns.find((c) => c.id === active.id);
+    const value = column?.meta?.statusSortValue;
+    return value ? { value, desc: active.desc } : null;
+  }, [sorting]);
 
   const sortedData = React.useMemo(() => {
+    if (statusSort) return sortWithinStatus(filteredData, statusSort.value, statusSort.desc);
     if (sorting.length > 0) return filteredData;
     return groupAndSort(filteredData, referenceDate);
-  }, [filteredData, referenceDate, sorting]);
+  }, [filteredData, referenceDate, sorting, statusSort]);
 
   const table = useReactTable({
     data: sortedData,
@@ -96,7 +127,13 @@ export function ClosingDatesTable({
     getCoreRowModel: getCoreRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
-    state: { sorting },
+    manualSorting: statusSort !== null,
+    // "distance" is sort-only. Last Updated makes way for the miles shown
+    // beside the state so the table keeps its width.
+    state: {
+      sorting,
+      columnVisibility: { distance: false, lastUpdated: userLocation === null },
+    },
   });
 
   // Sorting set from a desktop column header may have no matching option.
@@ -125,6 +162,7 @@ export function ClosingDatesTable({
         <DateFilter date={asOfDate} onDateChange={onAsOfDateChange} />
         <TerrainFilter value={terrainFilter} onValueChange={onTerrainFilterChange} />
         <RegionFilter selected={selectedRegions} onSelectionChange={onSelectedRegionsChange} />
+        <NearMe location={userLocation} onLocationChange={handleUserLocationChange} />
       </div>
       <div className="flex items-center gap-2 sm:hidden">
         <label htmlFor="mobile-sort" className="shrink-0 text-sm text-muted-foreground">
@@ -139,7 +177,7 @@ export function ClosingDatesTable({
           }
         >
           {mobileSort === "" && <option value="">Custom</option>}
-          {MOBILE_SORTS.map((o) => (
+          {MOBILE_SORTS.filter((o) => o.value !== "distance" || userLocation).map((o) => (
             <option key={o.value} value={o.value}>
               {o.label}
             </option>
@@ -178,6 +216,14 @@ export function ClosingDatesTable({
                     </a>
                     <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
                       {m.state}
+                      {m.distanceMi != null && (
+                        <span className="tabular-nums">· {Math.round(m.distanceMi).toLocaleString("en-US")} mi</span>
+                      )}
+                      {m.stats?.verticalFt != null && (
+                        <span className="tabular-nums">
+                          · {m.stats.verticalFt.toLocaleString("en-US")} ft vert
+                        </span>
+                      )}
                       {m.terrain && m.terrain !== "alpine" && (
                         <Badge
                           variant="outline"

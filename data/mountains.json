@@ -11,7 +11,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://ski49n.com",
-    "closingDateUrl": "https://ski49n.com/mountain-info/expanded-conditions"
+    "closingDateUrl": "https://ski49n.com/mountain-info/expanded-conditions",
+    "stats": {
+      "verticalFt": 1851,
+      "summitFt": 5774,
+      "baseFt": 3923,
+      "acres": 2325,
+      "trails": 88,
+      "lifts": 7,
+      "snowfallIn": 301,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": 88,
+      "xcKm": 25
+    }
   },
   {
     "id": "amihari-onsen-ski-resort",
@@ -25,7 +38,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://qkamura.or.jp/iwate/ski/",
-    "closingDateUrl": "https://qkamura.or.jp/iwate/ski/"
+    "closingDateUrl": "https://qkamura.or.jp/iwate/ski/",
+    "stats": {
+      "verticalFt": 1969,
+      "summitFt": 4430,
+      "baseFt": 2461,
+      "acres": 143,
+      "trails": 7,
+      "lifts": 4,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "andes-tower-hills",
@@ -39,7 +65,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": 290,
+      "summitFt": 1330,
+      "baseFt": 1620,
+      "acres": 70,
+      "trails": 16,
+      "lifts": 6,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 14,
+      "xcKm": null
+    }
   },
   {
     "id": "antelope-butte",
@@ -53,7 +92,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.antelopebuttefoundation.org",
-    "closingDateUrl": "https://www.antelopebuttefoundation.org/"
+    "closingDateUrl": "https://www.antelopebuttefoundation.org/",
+    "stats": {
+      "verticalFt": 1000,
+      "summitFt": 9400,
+      "baseFt": 8400,
+      "acres": 500,
+      "trails": 40,
+      "lifts": 3,
+      "snowfallIn": 200,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "aomori-spring-ski-resort",
@@ -67,7 +119,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://aomorispringski.com",
-    "closingDateUrl": "https://aomorispringski.com/conditions-report/"
+    "closingDateUrl": "https://aomorispringski.com/conditions-report/",
+    "stats": {
+      "verticalFt": 1788,
+      "summitFt": 3025,
+      "baseFt": 1303,
+      "acres": null,
+      "trails": 14,
+      "lifts": 5,
+      "snowfallIn": 320,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "apex-mountain-resort",
@@ -81,7 +146,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://apexresort.com",
-    "closingDateUrl": "https://apexresort.com/the-mountain/snow-report/"
+    "closingDateUrl": "https://apexresort.com/the-mountain/snow-report/",
+    "stats": {
+      "verticalFt": 1979,
+      "summitFt": 7146,
+      "baseFt": 5167,
+      "acres": 1112,
+      "trails": 80,
+      "lifts": 4,
+      "snowfallIn": 224,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "arctic-valley",
@@ -95,7 +173,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://arcticvalley.org",
-    "closingDateUrl": "https://arcticvalley.org/conditions"
+    "closingDateUrl": "https://arcticvalley.org/conditions",
+    "stats": {
+      "verticalFt": 1400,
+      "summitFt": 3900,
+      "baseFt": 2500,
+      "acres": 500,
+      "trails": 15,
+      "lifts": 4,
+      "snowfallIn": 250,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bad-kleinkirchheim",
@@ -109,7 +200,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.badkleinkirchheim.com",
-    "closingDateUrl": "https://www.badkleinkirchheim.com/en/skiing-area/slopes-lifts/"
+    "closingDateUrl": "https://www.badkleinkirchheim.com/en/skiing-area/slopes-lifts/",
+    "stats": {
+      "verticalFt": 3176,
+      "summitFt": 6742,
+      "baseFt": 3566,
+      "acres": null,
+      "trails": 35,
+      "lifts": 24,
+      "snowfallIn": 58,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "baldy-mountain-resort",
@@ -123,7 +227,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://baldyresort.com",
-    "closingDateUrl": "https://baldyresort.com/mt-baldy-weather-report/"
+    "closingDateUrl": "https://baldyresort.com/mt-baldy-weather-report/",
+    "stats": {
+      "verticalFt": 1315,
+      "summitFt": 6965,
+      "baseFt": 5650,
+      "acres": 600,
+      "trails": 35,
+      "lifts": 3,
+      "snowfallIn": 275,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "baqueiraberet",
@@ -137,7 +254,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.baqueira.es/en",
-    "closingDateUrl": "https://www.baqueira.es/en"
+    "closingDateUrl": "https://www.baqueira.es/en",
+    "stats": {
+      "verticalFt": 3608,
+      "summitFt": 8560,
+      "baseFt": 4900,
+      "acres": 5616,
+      "trails": 122,
+      "lifts": 36,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bear-basin-nordic-center",
@@ -165,7 +295,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.bcmountainresort.com/",
-    "closingDateUrl": "https://www.bcmountainresort.com/activities/ski-snowboarding/ski-conditions/"
+    "closingDateUrl": "https://www.bcmountainresort.com/activities/ski-snowboarding/ski-conditions/",
+    "stats": {
+      "verticalFt": 510,
+      "summitFt": 1100,
+      "baseFt": 590,
+      "acres": 86,
+      "trails": 23,
+      "lifts": 6,
+      "snowfallIn": 45,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bear-valley-adventure-company",
@@ -179,7 +322,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.bvadventures.com/webcam",
-    "closingDateUrl": "https://www.bvadventures.com/webcam"
+    "closingDateUrl": "https://www.bvadventures.com/webcam",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 38,
+      "xcKm": 65
+    }
   },
   {
     "id": "bear-valley-mountain-resort",
@@ -193,7 +349,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.bearvalley.com/",
-    "closingDateUrl": "https://www.bearvalley.com/conditions"
+    "closingDateUrl": "https://www.bearvalley.com/conditions",
+    "stats": {
+      "verticalFt": 1900,
+      "summitFt": 8500,
+      "baseFt": 6600,
+      "acres": 1679,
+      "trails": 75,
+      "lifts": 9,
+      "snowfallIn": 288,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "beaver-mountain",
@@ -207,7 +376,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skithebeav.com",
-    "closingDateUrl": "https://www.skithebeav.com/mountain/conditions/"
+    "closingDateUrl": "https://www.skithebeav.com/mountain/conditions/",
+    "stats": {
+      "verticalFt": 1700,
+      "summitFt": 8860,
+      "baseFt": 7100,
+      "acres": 828,
+      "trails": 48,
+      "lifts": 6,
+      "snowfallIn": 400,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "beito-resort",
@@ -221,7 +403,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://beito.com/en/frontpage/",
-    "closingDateUrl": "https://beito.com/en/weather-trails/"
+    "closingDateUrl": "https://beito.com/en/weather-trails/",
+    "stats": {
+      "verticalFt": 659,
+      "summitFt": 3612,
+      "baseFt": 2952,
+      "acres": 371,
+      "trails": 23,
+      "lifts": 6,
+      "snowfallIn": 98,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "belleayre-mountain",
@@ -235,7 +430,20 @@
     "isXcOnly": false,
     "isAllied": true,
     "websiteUrl": "https://www.belleayre.com",
-    "closingDateUrl": "https://www.belleayre.com/mountain/conditions/"
+    "closingDateUrl": "https://www.belleayre.com/mountain/conditions/",
+    "stats": {
+      "verticalFt": 1404,
+      "summitFt": 3429,
+      "baseFt": 2025,
+      "acres": 171,
+      "trails": 62,
+      "lifts": 8,
+      "snowfallIn": 97,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bergbahnen-hohsaas",
@@ -249,7 +457,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.saas-fee.ch/de/bergbahnen-hohsaas-ag",
-    "closingDateUrl": "https://www.saas-fee.ch/de/bergbahnen-hohsaas-ag"
+    "closingDateUrl": "https://www.saas-fee.ch/de/bergbahnen-hohsaas-ag",
+    "stats": {
+      "verticalFt": 5577,
+      "summitFt": 11483,
+      "baseFt": 5906,
+      "acres": null,
+      "trails": 13,
+      "lifts": 8,
+      "snowfallIn": 210,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "berkshire-east-mountain-resort",
@@ -263,7 +484,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://berkshireeast.com",
-    "closingDateUrl": "https://berkshireeast.com/winter/mountain-conditions"
+    "closingDateUrl": "https://berkshireeast.com/winter/mountain-conditions",
+    "stats": {
+      "verticalFt": 1180,
+      "summitFt": 1840,
+      "baseFt": 640,
+      "acres": 180,
+      "trails": 45,
+      "lifts": 6,
+      "snowfallIn": 69,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bethel-village-trails",
@@ -277,7 +511,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://woodsandtrails.org/",
-    "closingDateUrl": "https://woodsandtrails.org/daily-updates-2/"
+    "closingDateUrl": "https://woodsandtrails.org/daily-updates-2/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": 80,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 33,
+      "xcKm": 24
+    }
   },
   {
     "id": "big-moose",
@@ -291,7 +538,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skibigmoose.com/",
-    "closingDateUrl": "https://skibigmoose.com/trail-report-1"
+    "closingDateUrl": "https://skibigmoose.com/trail-report-1",
+    "stats": {
+      "verticalFt": 600,
+      "summitFt": 3200,
+      "baseFt": 1750,
+      "acres": null,
+      "trails": 29,
+      "lifts": 2,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "big-powderhorn",
@@ -305,7 +565,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://bigpowderhorn.net",
-    "closingDateUrl": "https://bigpowderhorn.net/conditions-and-trail-map/"
+    "closingDateUrl": "https://bigpowderhorn.net/conditions-and-trail-map/",
+    "stats": {
+      "verticalFt": 622,
+      "summitFt": 1862,
+      "baseFt": 1240,
+      "acres": 253,
+      "trails": 45,
+      "lifts": 10,
+      "snowfallIn": 200,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "big-rock-mountain",
@@ -319,7 +592,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.bigrockmaine.com",
-    "closingDateUrl": "https://www.bigrockmaine.com/trails/"
+    "closingDateUrl": "https://www.bigrockmaine.com/trails/",
+    "stats": {
+      "verticalFt": 920,
+      "summitFt": 1590,
+      "baseFt": 670,
+      "acres": 90,
+      "trails": 29,
+      "lifts": 4,
+      "snowfallIn": 94,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "big-white-ski-resort",
@@ -333,7 +619,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.bigwhite.com",
-    "closingDateUrl": "https://www.bigwhite.com/mountain-conditions/daily-snow-report"
+    "closingDateUrl": "https://www.bigwhite.com/mountain-conditions/daily-snow-report",
+    "stats": {
+      "verticalFt": 2550,
+      "summitFt": 7606,
+      "baseFt": 5757,
+      "acres": 2765,
+      "trails": 119,
+      "lifts": 17,
+      "snowfallIn": 294,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bjorkliden",
@@ -347,7 +646,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://bjorkliden.com/en/winter/",
-    "closingDateUrl": "https://bjorkliden.com/en/"
+    "closingDateUrl": "https://bjorkliden.com/en/",
+    "stats": {
+      "verticalFt": 1640,
+      "summitFt": 3018,
+      "baseFt": 1377,
+      "acres": null,
+      "trails": null,
+      "lifts": 5,
+      "snowfallIn": 35,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "black-jack-cross-country-ski-club",
@@ -361,7 +673,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 30,
+      "xcKm": 50
+    }
   },
   {
     "id": "black-mountain-of-maine",
@@ -375,7 +700,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skiblackmountain.org",
-    "closingDateUrl": "https://skiblackmountain.org/mountain-report"
+    "closingDateUrl": "https://skiblackmountain.org/mountain-report",
+    "stats": {
+      "verticalFt": 1380,
+      "summitFt": 2280,
+      "baseFt": 900,
+      "acres": 600,
+      "trails": 31,
+      "lifts": 2,
+      "snowfallIn": 100,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 8,
+      "xcKm": 33
+    }
   },
   {
     "id": "black-mountain-ski-area",
@@ -389,7 +727,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.blackmt.com",
-    "closingDateUrl": "https://www.blackmt.com/conditions"
+    "closingDateUrl": "https://www.blackmt.com/conditions",
+    "stats": {
+      "verticalFt": 1100,
+      "summitFt": 2350,
+      "baseFt": 1250,
+      "acres": 140,
+      "trails": 45,
+      "lifts": 5,
+      "snowfallIn": 120,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "blue-knob-all-season-resort",
@@ -403,7 +754,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://blueknob.com",
-    "closingDateUrl": "https://blueknob.com/trail-map-conditions/"
+    "closingDateUrl": "https://blueknob.com/trail-map-conditions/",
+    "stats": {
+      "verticalFt": 1068,
+      "summitFt": 3142,
+      "baseFt": 2074,
+      "acres": 300,
+      "trails": 34,
+      "lifts": 6,
+      "snowfallIn": 124,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bolton-valley-resort",
@@ -417,7 +781,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.boltonvalley.com",
-    "closingDateUrl": "https://www.boltonvalley.com/winter/trail-maps-snow-reports/snow-reports/"
+    "closingDateUrl": "https://www.boltonvalley.com/winter/trail-maps-snow-reports/snow-reports/",
+    "stats": {
+      "verticalFt": 1704,
+      "summitFt": 3150,
+      "baseFt": 2100,
+      "acres": 300,
+      "trails": 71,
+      "lifts": 6,
+      "snowfallIn": 312,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bottineau-winter-park",
@@ -431,7 +808,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skibwp.com",
-    "closingDateUrl": "https://skibwp.com/29-2/"
+    "closingDateUrl": "https://skibwp.com/29-2/",
+    "stats": {
+      "verticalFt": 200,
+      "summitFt": 2460,
+      "baseFt": 2260,
+      "acres": 17,
+      "trails": 9,
+      "lifts": 6,
+      "snowfallIn": 70,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bousquet-mountain-0",
@@ -445,7 +835,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://bousquetmountain.com/",
-    "closingDateUrl": "https://bousquetmountain.com/lift-trail-status/"
+    "closingDateUrl": "https://bousquetmountain.com/lift-trail-status/",
+    "stats": {
+      "verticalFt": 750,
+      "summitFt": 1818,
+      "baseFt": 1068,
+      "acres": 200,
+      "trails": 22,
+      "lifts": 4,
+      "snowfallIn": 21,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bruce-mound-winter-sports-area",
@@ -459,7 +862,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.clarkcountywi.gov/brucemound?fbclid=IwY2xjawGGKnNleHRuA2FlbQIxMAABHVI0TRWfgUqgH2E-x8t200vmclOlQI6wlMJneID4P6hL7n2rBYvFIMewtg_aem___GnBCZLiGgScH-L8YrkfA",
-    "closingDateUrl": "https://www.clarkcountywi.gov/brucemound?fbclid=IwY2xjawGGKnNleHRuA2FlbQIxMAABHVI0TRWfgUqgH2E-x8t200vmclOlQI6wlMJneID4P6hL7n2rBYvFIMewtg_aem___GnBCZLiGgScH-L8YrkfA"
+    "closingDateUrl": "https://www.clarkcountywi.gov/brucemound?fbclid=IwY2xjawGGKnNleHRuA2FlbQIxMAABHVI0TRWfgUqgH2E-x8t200vmclOlQI6wlMJneID4P6hL7n2rBYvFIMewtg_aem___GnBCZLiGgScH-L8YrkfA",
+    "stats": {
+      "verticalFt": 375,
+      "summitFt": 1375,
+      "baseFt": 1000,
+      "acres": 40,
+      "trails": 10,
+      "lifts": 5,
+      "snowfallIn": 12,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "brundage-mountain-resort",
@@ -473,7 +889,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://brundage.com",
-    "closingDateUrl": "https://brundage.com/on-the-mountain/snow-report/"
+    "closingDateUrl": "https://brundage.com/on-the-mountain/snow-report/",
+    "stats": {
+      "verticalFt": 1921,
+      "summitFt": 7803,
+      "baseFt": 5882,
+      "acres": 1920,
+      "trails": 70,
+      "lifts": 7,
+      "snowfallIn": 320,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "bryce-resort",
@@ -487,7 +916,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://bryceresort.com",
-    "closingDateUrl": "https://bryceresort.com"
+    "closingDateUrl": "https://bryceresort.com",
+    "stats": {
+      "verticalFt": 500,
+      "summitFt": 1750,
+      "baseFt": 1250,
+      "acres": 32,
+      "trails": 8,
+      "lifts": 4,
+      "snowfallIn": 40,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "buffalo-ski-club",
@@ -501,7 +943,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.buffaloskicenter.com/",
-    "closingDateUrl": "https://www.buffaloskicenter.com/trail-conditions/"
+    "closingDateUrl": "https://www.buffaloskicenter.com/trail-conditions/",
+    "stats": {
+      "verticalFt": 464,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 175,
+      "trails": 38,
+      "lifts": 7,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "burke-mountain",
@@ -515,7 +970,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skiburke.com",
-    "closingDateUrl": "https://www.skiburke.com/skiing-and-riding/the-mountain/weather-and-conditions/"
+    "closingDateUrl": "https://www.skiburke.com/skiing-and-riding/the-mountain/weather-and-conditions/",
+    "stats": {
+      "verticalFt": 2011,
+      "summitFt": 3267,
+      "baseFt": 1210,
+      "acres": 178,
+      "trails": 54,
+      "lifts": 4,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "calabogie-peaks-resort",
@@ -529,7 +997,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.calabogie.com",
-    "closingDateUrl": "https://www.calabogie.com/mountain/trail-status/"
+    "closingDateUrl": "https://www.calabogie.com/mountain/trail-status/",
+    "stats": {
+      "verticalFt": 781,
+      "summitFt": 1285,
+      "baseFt": 505,
+      "acres": 80,
+      "trails": 25,
+      "lifts": 3,
+      "snowfallIn": 37,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "caledonia-nordic-ski-club",
@@ -543,7 +1024,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://caledonianordic.com/trails-facilities/webcams",
-    "closingDateUrl": "https://caledonianordic.com/trails-facilities/webcams"
+    "closingDateUrl": "https://caledonianordic.com/trails-facilities/webcams",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 55,
+      "xcKm": 55
+    }
   },
   {
     "id": "camden-snow-bowl",
@@ -557,7 +1051,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://camdensnowbowl.com/",
-    "closingDateUrl": "https://camdensnowbowl.com/current-conditions/"
+    "closingDateUrl": "https://camdensnowbowl.com/current-conditions/",
+    "stats": {
+      "verticalFt": 1070,
+      "summitFt": 1286,
+      "baseFt": 216,
+      "acres": 105,
+      "trails": 15,
+      "lifts": 3,
+      "snowfallIn": 41,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "camp-10-ski-area",
@@ -571,7 +1078,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.facebook.com/CAMP10SKIAREA",
-    "closingDateUrl": "https://www.facebook.com/CAMP10SKIAREA"
+    "closingDateUrl": "https://www.facebook.com/CAMP10SKIAREA",
+    "stats": {
+      "verticalFt": 230,
+      "summitFt": 1739,
+      "baseFt": 1509,
+      "acres": 120,
+      "trails": 15,
+      "lifts": 4,
+      "snowfallIn": 60,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "camp-fortune",
@@ -585,7 +1105,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://campfortune.com/winter/",
-    "closingDateUrl": "https://campfortune.com/conditions/"
+    "closingDateUrl": "https://campfortune.com/conditions/",
+    "stats": {
+      "verticalFt": 627,
+      "summitFt": 650,
+      "baseFt": 23,
+      "acres": 93,
+      "trails": 27,
+      "lifts": 8,
+      "snowfallIn": 71,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "canaan-valley",
@@ -599,7 +1132,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.canaanresort.com",
-    "closingDateUrl": "https://www.canaanresort.com/trailreport/"
+    "closingDateUrl": "https://www.canaanresort.com/trailreport/",
+    "stats": {
+      "verticalFt": 850,
+      "summitFt": 4280,
+      "baseFt": 3430,
+      "acres": 90,
+      "trails": 47,
+      "lifts": 6,
+      "snowfallIn": 117,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "canmore-ski-village",
@@ -613,7 +1159,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.canmore-ski.jp/",
-    "closingDateUrl": "https://skiday.app/ZV1tWz1WlToGZxO8f0sW/869223047443450/"
+    "closingDateUrl": "https://skiday.app/ZV1tWz1WlToGZxO8f0sW/869223047443450/",
+    "stats": {
+      "verticalFt": 820,
+      "summitFt": 1482,
+      "baseFt": 662,
+      "acres": null,
+      "trails": 8,
+      "lifts": 2,
+      "snowfallIn": 180,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "cannon-mountain",
@@ -627,7 +1186,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.cannonmt.com",
-    "closingDateUrl": "https://www.cannonmt.com/mountain-report"
+    "closingDateUrl": "https://www.cannonmt.com/mountain-report",
+    "stats": {
+      "verticalFt": 2180,
+      "summitFt": 4080,
+      "baseFt": 1900,
+      "acres": 285,
+      "trails": 97,
+      "lifts": 10,
+      "snowfallIn": 160,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "carters-xc-ski-center",
@@ -655,7 +1227,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skicastle.ca/",
-    "closingDateUrl": "https://www.skicastle.ca/snowreport/"
+    "closingDateUrl": "https://www.skicastle.ca/snowreport/",
+    "stats": {
+      "verticalFt": 2845,
+      "summitFt": 2295,
+      "baseFt": 1425,
+      "acres": 3592,
+      "trails": 95,
+      "lifts": 7,
+      "snowfallIn": 335,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "cataloochee-ski-area",
@@ -669,7 +1254,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://cataloochee.com",
-    "closingDateUrl": "https://cataloochee.com/the-mountain/snow-report/"
+    "closingDateUrl": "https://cataloochee.com/the-mountain/snow-report/",
+    "stats": {
+      "verticalFt": 740,
+      "summitFt": 5400,
+      "baseFt": 4660,
+      "acres": 260,
+      "trails": 18,
+      "lifts": 5,
+      "snowfallIn": 21,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "catamount-mountain-resort",
@@ -683,7 +1281,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://catamountski.com",
-    "closingDateUrl": "https://catamountski.com/winter/mountain-conditions"
+    "closingDateUrl": "https://catamountski.com/winter/mountain-conditions",
+    "stats": {
+      "verticalFt": 1000,
+      "summitFt": 2000,
+      "baseFt": 1000,
+      "acres": 150,
+      "trails": 44,
+      "lifts": 8,
+      "snowfallIn": 60,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "catamount-outdoor-family-center",
@@ -697,7 +1308,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://catamountoutdoor.org/",
-    "closingDateUrl": "https://catamountoutdoor.org/maps-conditions/"
+    "closingDateUrl": "https://catamountoutdoor.org/maps-conditions/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 100,
+      "xcKm": 40
+    }
   },
   {
     "id": "cazenovia-ski-club",
@@ -711,7 +1335,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skicaz.com/",
-    "closingDateUrl": "https://skicaz.com/"
+    "closingDateUrl": "https://skicaz.com/",
+    "stats": {
+      "verticalFt": 500,
+      "summitFt": 1460,
+      "baseFt": 960,
+      "acres": 98,
+      "trails": 14,
+      "lifts": 2,
+      "snowfallIn": 99,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "centre-vorlage",
@@ -725,7 +1362,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://centrevorlage.ca/en/winter/",
-    "closingDateUrl": "https://conditions.centrevorlage.ca/"
+    "closingDateUrl": "https://conditions.centrevorlage.ca/",
+    "stats": {
+      "verticalFt": 466,
+      "summitFt": 1198,
+      "baseFt": 728,
+      "acres": 100,
+      "trails": 29,
+      "lifts": 4,
+      "snowfallIn": 59,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "cherry-peak",
@@ -739,7 +1389,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skicherrypeak.us/",
-    "closingDateUrl": "https://www.skicherrypeak.us/"
+    "closingDateUrl": "https://www.skicherrypeak.us/",
+    "stats": {
+      "verticalFt": 1265,
+      "summitFt": 7040,
+      "baseFt": 5775,
+      "acres": 400,
+      "trails": 38,
+      "lifts": 4,
+      "snowfallIn": 320,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "chestnut-mountain-resort",
@@ -753,7 +1416,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.chestnutmtn.com",
-    "closingDateUrl": "https://www.chestnutmtn.com/slope-report/"
+    "closingDateUrl": "https://www.chestnutmtn.com/slope-report/",
+    "stats": {
+      "verticalFt": 475,
+      "summitFt": 1020,
+      "baseFt": 545,
+      "acres": 59,
+      "trails": 19,
+      "lifts": 9,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "china-peak",
@@ -767,7 +1443,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skichinapeak.com",
-    "closingDateUrl": "https://www.skichinapeak.com/conditions"
+    "closingDateUrl": "https://www.skichinapeak.com/conditions",
+    "stats": {
+      "verticalFt": 1700,
+      "summitFt": 8700,
+      "baseFt": 7000,
+      "acres": 500,
+      "trails": 55,
+      "lifts": 9,
+      "snowfallIn": 183,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "christie-mountain",
@@ -781,7 +1470,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.christiemountain.com/",
-    "closingDateUrl": "https://www.christiemountain.com/trail-map"
+    "closingDateUrl": "https://www.christiemountain.com/trail-map",
+    "stats": {
+      "verticalFt": 350,
+      "summitFt": 1650,
+      "baseFt": 1300,
+      "acres": 100,
+      "trails": 33,
+      "lifts": 5,
+      "snowfallIn": 33,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "coffee-mill-ski-area",
@@ -795,7 +1497,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://cmskiarea.com/",
-    "closingDateUrl": "https://cmskiarea.com/"
+    "closingDateUrl": "https://cmskiarea.com/",
+    "stats": {
+      "verticalFt": 425,
+      "summitFt": 1150,
+      "baseFt": 725,
+      "acres": 28,
+      "trails": 14,
+      "lifts": 3,
+      "snowfallIn": 48,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "cooper-spur-ski-area",
@@ -809,7 +1524,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.cooperspur.com",
-    "closingDateUrl": "https://www.cooperspur.com/conditions-report/"
+    "closingDateUrl": "https://www.cooperspur.com/conditions-report/",
+    "stats": {
+      "verticalFt": 400,
+      "summitFt": 4400,
+      "baseFt": 3969,
+      "acres": 50,
+      "trails": 9,
+      "lifts": 2,
+      "snowfallIn": 46,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "corralco-resort-de-montana",
@@ -823,7 +1551,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.corralco.com",
-    "closingDateUrl": "https://www.corralco.com"
+    "closingDateUrl": "https://www.corralco.com",
+    "stats": {
+      "verticalFt": 4052,
+      "summitFt": 9400,
+      "baseFt": 5348,
+      "acres": 500,
+      "trails": 34,
+      "lifts": 8,
+      "snowfallIn": 350,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "crosscut-mountain-sports-center",
@@ -837,7 +1578,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.crosscutmt.org/",
-    "closingDateUrl": "https://www.crosscutmt.org/"
+    "closingDateUrl": "https://www.crosscutmt.org/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 45
+    }
   },
   {
     "id": "crystal-mountain",
@@ -851,7 +1605,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.crystalmountain.com",
-    "closingDateUrl": "https://www.crystalmountain.com/snow"
+    "closingDateUrl": "https://www.crystalmountain.com/snow",
+    "stats": {
+      "verticalFt": 375,
+      "summitFt": 1132,
+      "baseFt": 757,
+      "acres": 103,
+      "trails": 59,
+      "lifts": 8,
+      "snowfallIn": 132,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "cuchara",
@@ -865,7 +1632,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.cucharamountainpark.org/",
-    "closingDateUrl": "https://www.cucharamountainpark.org/conditions-and-webcam"
+    "closingDateUrl": "https://www.cucharamountainpark.org/conditions-and-webcam",
+    "stats": {
+      "verticalFt": 300,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 43,
+      "trails": 9,
+      "lifts": 1,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "cupid-valley",
@@ -879,7 +1659,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.yukidaruma-kogen.com/winter.html",
-    "closingDateUrl": "https://www.yukidaruma-kogen.com/winter.html"
+    "closingDateUrl": "https://www.yukidaruma-kogen.com/winter.html",
+    "stats": {
+      "verticalFt": 1607,
+      "summitFt": 3018,
+      "baseFt": 1411,
+      "acres": 77,
+      "trails": 12,
+      "lifts": 3,
+      "snowfallIn": 49,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "dartmouth-skiway",
@@ -893,7 +1686,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://sites.dartmouth.edu/skiway/",
-    "closingDateUrl": "https://sites.dartmouth.edu/skiway/mountain/"
+    "closingDateUrl": "https://sites.dartmouth.edu/skiway/mountain/",
+    "stats": {
+      "verticalFt": 986,
+      "summitFt": 1680,
+      "baseFt": 700,
+      "acres": 100,
+      "trails": 28,
+      "lifts": 4,
+      "snowfallIn": 100,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "destination-owls-head",
@@ -907,7 +1713,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://owlshead.com/en/",
-    "closingDateUrl": "https://owlshead.com/en/ski-conditions/"
+    "closingDateUrl": "https://owlshead.com/en/ski-conditions/",
+    "stats": {
+      "verticalFt": 1770,
+      "summitFt": 2480,
+      "baseFt": 709,
+      "acres": 125,
+      "trails": 50,
+      "lifts": 6,
+      "snowfallIn": 130,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "detroit-mountain",
@@ -921,7 +1740,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://detroitmountain.com",
-    "closingDateUrl": "https://detroitmountain.com/"
+    "closingDateUrl": "https://detroitmountain.com/",
+    "stats": {
+      "verticalFt": 210,
+      "summitFt": 1545,
+      "baseFt": 1335,
+      "acres": 45,
+      "trails": 21,
+      "lifts": 6,
+      "snowfallIn": 21,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "devils-thumb-ranch",
@@ -935,7 +1767,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.devilsthumbranch.com/adventure/cross-country-skiing/",
-    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/CO/Devils-Thumb-Ranch"
+    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/CO/Devils-Thumb-Ranch",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 37,
+      "xcKm": 152
+    }
   },
   {
     "id": "dodge-ridge",
@@ -949,7 +1794,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://dodgeridge.com",
-    "closingDateUrl": "https://dodgeridge.com/snow-report/"
+    "closingDateUrl": "https://dodgeridge.com/snow-report/",
+    "stats": {
+      "verticalFt": 1600,
+      "summitFt": 8200,
+      "baseFt": 6600,
+      "acres": 862,
+      "trails": 67,
+      "lifts": 11,
+      "snowfallIn": 350,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "dog-creek-lodge-nordic-center",
@@ -963,7 +1821,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "http://www.dogcreeklodge.com",
-    "closingDateUrl": "http://www.dogcreeklodge.com"
+    "closingDateUrl": "http://www.dogcreeklodge.com",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 25,
+      "xcKm": 36
+    }
   },
   {
     "id": "domaine-skiable-des-contamines",
@@ -977,7 +1848,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.lescontamines.com/winter",
-    "closingDateUrl": "https://www.lescontamines.com/winter"
+    "closingDateUrl": "https://www.lescontamines.com/winter",
+    "stats": {
+      "verticalFt": 4265,
+      "summitFt": 8159,
+      "baseFt": 3894,
+      "acres": null,
+      "trails": 120,
+      "lifts": 25,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "donner-ski-ranch",
@@ -991,7 +1875,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.donnerskiranch.com/",
-    "closingDateUrl": "https://www.donnerskiranch.com/liftstatus"
+    "closingDateUrl": "https://www.donnerskiranch.com/liftstatus",
+    "stats": {
+      "verticalFt": 800,
+      "summitFt": 7781,
+      "baseFt": 6981,
+      "acres": 500,
+      "trails": 52,
+      "lifts": 8,
+      "snowfallIn": 400,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "dry-hill-ski-area",
@@ -1005,7 +1902,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skidryhill.com/",
-    "closingDateUrl": "https://www.skidryhill.com/"
+    "closingDateUrl": "https://www.skidryhill.com/",
+    "stats": {
+      "verticalFt": 300,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 42,
+      "trails": 13,
+      "lifts": 3,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "dynaland",
@@ -1019,7 +1929,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.dynaland.co.jp/",
-    "closingDateUrl": "https://www.dynaland.co.jp/condition/"
+    "closingDateUrl": "https://www.dynaland.co.jp/condition/",
+    "stats": {
+      "verticalFt": 1467,
+      "summitFt": 4695,
+      "baseFt": 3228,
+      "acres": 198,
+      "trails": 18,
+      "lifts": 5,
+      "snowfallIn": 67,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "eagle-point",
@@ -1033,7 +1956,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.eaglepointresort.com",
-    "closingDateUrl": "https://www.eaglepointresort.com/snow-report"
+    "closingDateUrl": "https://www.eaglepointresort.com/snow-report",
+    "stats": {
+      "verticalFt": 1500,
+      "summitFt": 10600,
+      "baseFt": 9100,
+      "acres": 650,
+      "trails": 40,
+      "lifts": 5,
+      "snowfallIn": 350,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "eaglecrest",
@@ -1047,7 +1983,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skieaglecrest.com",
-    "closingDateUrl": "https://skieaglecrest.com/conditions/"
+    "closingDateUrl": "https://skieaglecrest.com/conditions/",
+    "stats": {
+      "verticalFt": 1620,
+      "summitFt": 2750,
+      "baseFt": 1130,
+      "acres": 640,
+      "trails": 36,
+      "lifts": 4,
+      "snowfallIn": 360,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "eastman-cross-country",
@@ -1061,7 +2010,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.eastmannh.org/",
-    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NH/Eastman-Cross-Country?embed=true&amp;header=false&amp;footer=false"
+    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NH/Eastman-Cross-Country?embed=true&amp;header=false&amp;footer=false",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 23,
+      "xcKm": 39
+    }
   },
   {
     "id": "echo-mountain",
@@ -1075,7 +2037,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://echomtn.com",
-    "closingDateUrl": "https://echomtn.com/mountain-conditions"
+    "closingDateUrl": "https://echomtn.com/mountain-conditions",
+    "stats": {
+      "verticalFt": 600,
+      "summitFt": 10650,
+      "baseFt": 10550,
+      "acres": 60,
+      "trails": 8,
+      "lifts": 2,
+      "snowfallIn": 85,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "elm-creek-park-reserve",
@@ -1089,7 +2064,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.threeriversparks.org/location/elm-creek-winter-recreation-area",
-    "closingDateUrl": "https://www.threeriversparks.org/location/elm-creek-winter-recreation-area"
+    "closingDateUrl": "https://www.threeriversparks.org/location/elm-creek-winter-recreation-area",
+    "stats": {
+      "verticalFt": 80,
+      "summitFt": 948,
+      "baseFt": 868,
+      "acres": 15,
+      "trails": 6,
+      "lifts": 3,
+      "snowfallIn": 22,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": 18
+    }
   },
   {
     "id": "enchanted-forest-xc",
@@ -1103,7 +2091,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://enchantedforestxc.com/",
-    "closingDateUrl": "https://enchantedforestxc.com/"
+    "closingDateUrl": "https://enchantedforestxc.com/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 30
+    }
   },
   {
     "id": "engstligenalp",
@@ -1117,7 +2118,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://engstligenalp.ch/en/",
-    "closingDateUrl": "https://engstligenalp.ch/en/winter/operating-info-2/"
+    "closingDateUrl": "https://engstligenalp.ch/en/winter/operating-info-2/",
+    "stats": {
+      "verticalFt": 1312,
+      "summitFt": 7720,
+      "baseFt": 6447,
+      "acres": 3000,
+      "trails": 11,
+      "lifts": 9,
+      "snowfallIn": 225,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "fairmont-hot-springs",
@@ -1131,7 +2145,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.fairmonthotsprings.com",
-    "closingDateUrl": "https://www.fairmonthotsprings.com"
+    "closingDateUrl": "https://www.fairmonthotsprings.com",
+    "stats": {
+      "verticalFt": 1000,
+      "summitFt": 5200,
+      "baseFt": 4200,
+      "acres": 88,
+      "trails": 14,
+      "lifts": 3,
+      "snowfallIn": 100,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "fort-kent-outdoor-center",
@@ -1159,7 +2186,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.franconiainn.com/xc-ski?_gl=1*x38lyk*_up*MQ..*_ga*NDkyNTk4NzA3LjE3NzE4NjgxNzg.*_ga_JJJ2MYL08H*czE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw*_gs*MQ..*_ga_46TC8C9QG1*czE3NzE4NjgxNzckbzEkZzAkdDE3NzE4Njg2MjEkajUwJGwwJGgw*_ga_GHTCZD51QN*czE3NzE4NjgxNzckbzEkZzEkdDE3NzE4Njg2MjEkajUwJGwwJGgw&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BRh1ssFpmvh_5RU37IVnwaOOmiRc4XPs1H1vqSpgO_KOlAiiLuEf-RoCXu8QAvD_BwE&amp;gbraid=0AAAAAoSUQgGz6jre7ZbKctx5sQvgIJhjS",
-    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NH/Franconia"
+    "closingDateUrl": "https://nordic-pulse.com/ski-areas/US/NH/Franconia",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 12,
+      "xcKm": 30
+    }
   },
   {
     "id": "frost-fire-park",
@@ -1173,7 +2213,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.frostfirepark.org/",
-    "closingDateUrl": "https://www.frostfirepark.org/"
+    "closingDateUrl": "https://www.frostfirepark.org/",
+    "stats": {
+      "verticalFt": 350,
+      "summitFt": 1443,
+      "baseFt": 1099,
+      "acres": 50,
+      "trails": 12,
+      "lifts": 2,
+      "snowfallIn": 35,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "garnet-hill-xc",
@@ -1187,7 +2240,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.garnet-hill.com/outdoor-center/webcam/",
-    "closingDateUrl": "https://www.garnet-hill.com/outdoor-center/webcam/"
+    "closingDateUrl": "https://www.garnet-hill.com/outdoor-center/webcam/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 55
+    }
   },
   {
     "id": "geto-kogen",
@@ -1201,7 +2267,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.getokogen.com/",
-    "closingDateUrl": "https://www.getokogen.com/"
+    "closingDateUrl": "https://www.getokogen.com/",
+    "stats": {
+      "verticalFt": 1410,
+      "summitFt": 3511,
+      "baseFt": 2100,
+      "acres": null,
+      "trails": 14,
+      "lifts": 5,
+      "snowfallIn": 880,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "glencoe-mountain-resort",
@@ -1215,7 +2294,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.glencoemountain.co.uk/",
-    "closingDateUrl": "https://www.glencoemountain.co.uk/snow-report/"
+    "closingDateUrl": "https://www.glencoemountain.co.uk/snow-report/",
+    "stats": {
+      "verticalFt": 2388,
+      "summitFt": 3635,
+      "baseFt": 1247,
+      "acres": 3953,
+      "trails": 20,
+      "lifts": 8,
+      "snowfallIn": 35,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "glenshee-ski-centre",
@@ -1229,7 +2321,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.ski-glenshee.co.uk/Winter",
-    "closingDateUrl": "https://www.ski-glenshee.co.uk/Glenshee-Lift-Status"
+    "closingDateUrl": "https://www.ski-glenshee.co.uk/Glenshee-Lift-Status",
+    "stats": {
+      "verticalFt": 1272,
+      "summitFt": 3404,
+      "baseFt": 2132,
+      "acres": 2000,
+      "trails": 36,
+      "lifts": 21,
+      "snowfallIn": 25,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "gore-mountain",
@@ -1243,7 +2348,20 @@
     "isXcOnly": false,
     "isAllied": true,
     "websiteUrl": "https://goremountain.com",
-    "closingDateUrl": "https://goremountain.com/the-mountain/conditions/"
+    "closingDateUrl": "https://goremountain.com/the-mountain/conditions/",
+    "stats": {
+      "verticalFt": 2537,
+      "summitFt": 3600,
+      "baseFt": 3600,
+      "acres": 453,
+      "trails": 92,
+      "lifts": 14,
+      "snowfallIn": 125,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 7,
+      "xcKm": 4
+    }
   },
   {
     "id": "granby-ranch",
@@ -1257,7 +2375,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://granbyranch.com",
-    "closingDateUrl": "https://granbyranch.com"
+    "closingDateUrl": "https://granbyranch.com",
+    "stats": {
+      "verticalFt": 1000,
+      "summitFt": 9202,
+      "baseFt": 8202,
+      "acres": 436,
+      "trails": 45,
+      "lifts": 6,
+      "snowfallIn": 85,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "great-bear-ski-valley",
@@ -1271,7 +2402,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.greatbearpark.com",
-    "closingDateUrl": "https://www.greatbearpark.com/trail-status/"
+    "closingDateUrl": "https://www.greatbearpark.com/trail-status/",
+    "stats": {
+      "verticalFt": 182,
+      "summitFt": 1645,
+      "baseFt": 1463,
+      "acres": 21,
+      "trails": 14,
+      "lifts": 3,
+      "snowfallIn": 41,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "great-glen-trails-outdoor-center",
@@ -1285,7 +2429,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://greatglentrails.com/cross-country-skiing/?_gl=1*qitcvz*_up*MQ..*_gs*MQ..&amp;gclid=CjwKCAiAkvDMBhBMEiwAnUA9BZ6kNL4vegv6BQD_C82hd7pI8lI1ty6BH6gkk6SHvR7OfZLV-E40MBoCbe4QAvD_BwE&amp;gbraid=0AAAAApFtTRt_XANX2BB0O-CyvlwPep5xO",
-    "closingDateUrl": "https://greatglentrails.com/snow-report/"
+    "closingDateUrl": "https://greatglentrails.com/snow-report/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": 90,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 22,
+      "xcKm": 45
+    }
   },
   {
     "id": "greek-peak-mountain-resort",
@@ -1299,7 +2456,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.greekpeak.net",
-    "closingDateUrl": "https://www.greekpeak.net/ski-ride/current-conditions/"
+    "closingDateUrl": "https://www.greekpeak.net/ski-ride/current-conditions/",
+    "stats": {
+      "verticalFt": 952,
+      "summitFt": 2100,
+      "baseFt": 1148,
+      "acres": 220,
+      "trails": 55,
+      "lifts": 8,
+      "snowfallIn": 122,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hafjell",
@@ -1313,7 +2483,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.alpinco.com/en/hafjell",
-    "closingDateUrl": "https://www.alpinco.com/en/hafjell/snow-report"
+    "closingDateUrl": "https://www.alpinco.com/en/hafjell/snow-report",
+    "stats": {
+      "verticalFt": 2740,
+      "summitFt": 3445,
+      "baseFt": 705,
+      "acres": 247,
+      "trails": 30,
+      "lifts": 18,
+      "snowfallIn": 72,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hardwood-ski-and-bike",
@@ -1327,7 +2510,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.hardwoodskiandbike.ca/trail-conditions/",
-    "closingDateUrl": "https://www.hardwoodskiandbike.ca/trail-conditions/"
+    "closingDateUrl": "https://www.hardwoodskiandbike.ca/trail-conditions/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 6,
+      "xcKm": 50
+    }
   },
   {
     "id": "hatley-pointe",
@@ -1341,7 +2537,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hatleypointe.com/",
-    "closingDateUrl": "https://www.hatleypointe.com/"
+    "closingDateUrl": "https://www.hatleypointe.com/",
+    "stats": {
+      "verticalFt": 700,
+      "summitFt": 4700,
+      "baseFt": 4000,
+      "acres": 52,
+      "trails": 17,
+      "lifts": 4,
+      "snowfallIn": 65,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "haymaker-nordic-center",
@@ -1355,7 +2564,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://nordicski.net/haymaker-nordic-center/",
-    "closingDateUrl": "https://nordicski.net/haymaker-nordic-center/#"
+    "closingDateUrl": "https://nordicski.net/haymaker-nordic-center/#",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 4,
+      "xcKm": 13
+    }
   },
   {
     "id": "high-point-xc-ski-center",
@@ -1369,7 +2591,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.xcskihighpoint.com/home",
-    "closingDateUrl": "https://www.xcskihighpoint.com/home"
+    "closingDateUrl": "https://www.xcskihighpoint.com/home",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 6,
+      "xcKm": 25
+    }
   },
   {
     "id": "hilltop-ski-area",
@@ -1383,7 +2618,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hilltopskiarea.org/",
-    "closingDateUrl": "https://www.hilltopskiarea.org/webcam-1"
+    "closingDateUrl": "https://www.hilltopskiarea.org/webcam-1",
+    "stats": {
+      "verticalFt": 294,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 35,
+      "trails": 11,
+      "lifts": 3,
+      "snowfallIn": 200,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hirugano-kogen-ski-resort",
@@ -1397,7 +2645,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hiruganokogen.com/",
-    "closingDateUrl": "https://www.hiruganokogen.com/condition/"
+    "closingDateUrl": "https://www.hiruganokogen.com/condition/",
+    "stats": {
+      "verticalFt": 492,
+      "summitFt": 3415,
+      "baseFt": 2923,
+      "acres": 75,
+      "trails": 8,
+      "lifts": 3,
+      "snowfallIn": 165,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hochzeiger-bergbahnen-pitztal-ag",
@@ -1411,7 +2672,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hochzeiger.com/en/",
-    "closingDateUrl": "https://www.hochzeiger.com/en/"
+    "closingDateUrl": "https://www.hochzeiger.com/en/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 19136,
+      "trails": null,
+      "lifts": 9,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hockley-valley-resort",
@@ -1425,7 +2699,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://hockley.com/",
-    "closingDateUrl": "https://hockley.com/ski-snowboarding/"
+    "closingDateUrl": "https://hockley.com/ski-snowboarding/",
+    "stats": {
+      "verticalFt": 374,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 30,
+      "trails": 13,
+      "lifts": 4,
+      "snowfallIn": 98,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hodaigi-mountain-resort",
@@ -1439,7 +2726,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://en.hodaigi.jp/",
-    "closingDateUrl": "https://en.hodaigi.jp/"
+    "closingDateUrl": "https://en.hodaigi.jp/",
+    "stats": {
+      "verticalFt": 1869,
+      "summitFt": 4592,
+      "baseFt": 2723,
+      "acres": 2600,
+      "trails": 16,
+      "lifts": 7,
+      "snowfallIn": 170,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "homestake-lodge",
@@ -1453,7 +2753,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": 6200,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": 50,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 21,
+      "xcKm": 35
+    }
   },
   {
     "id": "hoodoo",
@@ -1467,7 +2780,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "http://skihoodoo.com",
-    "closingDateUrl": "http://skihoodoo.com/the-mountain/mountain-conditions/"
+    "closingDateUrl": "http://skihoodoo.com/the-mountain/mountain-conditions/",
+    "stats": {
+      "verticalFt": 1035,
+      "summitFt": 5703,
+      "baseFt": 4668,
+      "acres": 805,
+      "trails": 36,
+      "lifts": 6,
+      "snowfallIn": 250,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "howelsen-hill",
@@ -1481,7 +2807,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area",
-    "closingDateUrl": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area"
+    "closingDateUrl": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area",
+    "stats": {
+      "verticalFt": 440,
+      "summitFt": 7136,
+      "baseFt": 6696,
+      "acres": 50,
+      "trails": 19,
+      "lifts": 4,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 9,
+      "xcKm": null
+    }
   },
   {
     "id": "hudson-bay-mountain",
@@ -1495,7 +2834,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://hudsonbaymountain.ca",
-    "closingDateUrl": "https://hudsonbaymountain.ca/conditions/"
+    "closingDateUrl": "https://hudsonbaymountain.ca/conditions/",
+    "stats": {
+      "verticalFt": 1750,
+      "summitFt": 5413,
+      "baseFt": 3747,
+      "acres": 700,
+      "trails": 44,
+      "lifts": 3,
+      "snowfallIn": 160,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "huff-hills-ski-area",
@@ -1509,7 +2861,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.huffhills.com",
-    "closingDateUrl": "https://www.huffhills.com/snowreport"
+    "closingDateUrl": "https://www.huffhills.com/snowreport",
+    "stats": {
+      "verticalFt": 400,
+      "summitFt": 2257,
+      "baseFt": 1875,
+      "acres": 70,
+      "trails": 16,
+      "lifts": 4,
+      "snowfallIn": 55,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hunt-hollow-ski-club",
@@ -1523,7 +2888,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hunthollow.com/Home",
-    "closingDateUrl": "https://www.hunthollow.com/The_Mountain"
+    "closingDateUrl": "https://www.hunthollow.com/The_Mountain",
+    "stats": {
+      "verticalFt": 875,
+      "summitFt": 2030,
+      "baseFt": 1000,
+      "acres": 100,
+      "trails": 21,
+      "lifts": 4,
+      "snowfallIn": 46,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hurricane-ridge",
@@ -1537,7 +2915,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.olympicnationalparks.com/things-to-do/hurricane-ridge/winter-at-hurricane-ridge/",
-    "closingDateUrl": "https://forecast.weather.gov/MapClick.php?lon=-123.49614962461355&amp;lat=47.970204045637956"
+    "closingDateUrl": "https://forecast.weather.gov/MapClick.php?lon=-123.49614962461355&amp;lat=47.970204045637956",
+    "stats": {
+      "verticalFt": 700,
+      "summitFt": 5500,
+      "baseFt": 4800,
+      "acres": 50,
+      "trails": 12,
+      "lifts": 3,
+      "snowfallIn": 400,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "hyland-hills",
@@ -1551,7 +2942,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.threeriversparks.org/location/hyland-hills-ski-area",
-    "closingDateUrl": "https://www.threeriversparks.org/location/hyland-hills-ski-area"
+    "closingDateUrl": "https://www.threeriversparks.org/location/hyland-hills-ski-area",
+    "stats": {
+      "verticalFt": 175,
+      "summitFt": 1075,
+      "baseFt": 900,
+      "acres": 29,
+      "trails": 13,
+      "lifts": 9,
+      "snowfallIn": 60,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "innsbruck-region",
@@ -1565,7 +2969,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.innsbruck.info/en/skiing/ski-plus-city-pass.html",
-    "closingDateUrl": "https://www.innsbruck.info/en/skiing/ski-plus-city-pass.html"
+    "closingDateUrl": "https://www.innsbruck.info/en/skiing/ski-plus-city-pass.html",
+    "stats": {
+      "verticalFt": 5282,
+      "summitFt": 11023,
+      "baseFt": 5741,
+      "acres": 11614,
+      "trails": null,
+      "lifts": 111,
+      "snowfallIn": 248,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "jackson-xc",
@@ -1579,7 +2996,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 60,
+      "xcKm": 100
+    }
   },
   {
     "id": "jay-peak-resort",
@@ -1593,7 +3023,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://jaypeakresort.com",
-    "closingDateUrl": "https://jaypeakresort.com/skiing-riding/snow-report-maps/snow-report"
+    "closingDateUrl": "https://jaypeakresort.com/skiing-riding/snow-report-maps/snow-report",
+    "stats": {
+      "verticalFt": 2153,
+      "summitFt": 3968,
+      "baseFt": 1815,
+      "acres": 385,
+      "trails": 81,
+      "lifts": 9,
+      "snowfallIn": 347,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kamui-ski-links",
@@ -1607,7 +3050,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.kamui-skilinks.com",
-    "closingDateUrl": "https://www.kamui-skilinks.com/today/#coursemap"
+    "closingDateUrl": "https://www.kamui-skilinks.com/today/#coursemap",
+    "stats": {
+      "verticalFt": 1968,
+      "summitFt": 2463,
+      "baseFt": 492,
+      "acres": null,
+      "trails": 25,
+      "lifts": 6,
+      "snowfallIn": 275,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kandatsu-snow-resort",
@@ -1621,7 +3077,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": 1772,
+      "summitFt": 3281,
+      "baseFt": 1509,
+      "acres": 321,
+      "trails": 16,
+      "lifts": 5,
+      "snowfallIn": 396,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kaunertal-glacier",
@@ -1635,7 +3104,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/winter/ski-area.html",
-    "closingDateUrl": "https://www.snowpark-kaunertal.tirol/"
+    "closingDateUrl": "https://www.snowpark-kaunertal.tirol/",
+    "stats": {
+      "verticalFt": 3160,
+      "summitFt": 10213,
+      "baseFt": 7053,
+      "acres": null,
+      "trails": 55,
+      "lifts": 10,
+      "snowfallIn": 110,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kelly-canyon",
@@ -1649,7 +3131,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.kellycanyonresort.com",
-    "closingDateUrl": "https://www.kellycanyonresort.com/"
+    "closingDateUrl": "https://www.kellycanyonresort.com/",
+    "stats": {
+      "verticalFt": 1200,
+      "summitFt": 6800,
+      "baseFt": 5600,
+      "acres": 640,
+      "trails": 27,
+      "lifts": 5,
+      "snowfallIn": 250,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kendall-mountain-ski-area",
@@ -1663,7 +3158,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skikendall.com/",
-    "closingDateUrl": "https://www.skikendall.com/hours-events"
+    "closingDateUrl": "https://www.skikendall.com/hours-events",
+    "stats": {
+      "verticalFt": 283,
+      "summitFt": 9596,
+      "baseFt": 9313,
+      "acres": 23,
+      "trails": 5,
+      "lifts": 1,
+      "snowfallIn": 200,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kimberley-nordic-club",
@@ -1677,7 +3185,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://video.nest.com/live/TFdxOw34MU",
-    "closingDateUrl": "https://video.nest.com/live/TFdxOw34MU"
+    "closingDateUrl": "https://video.nest.com/live/TFdxOw34MU",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 36
+    }
   },
   {
     "id": "king-pine",
@@ -1691,7 +3212,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.kingpine.com/",
-    "closingDateUrl": "https://www.kingpine.com/the-mountain/snow-report/"
+    "closingDateUrl": "https://www.kingpine.com/the-mountain/snow-report/",
+    "stats": {
+      "verticalFt": 350,
+      "summitFt": 850,
+      "baseFt": 500,
+      "acres": 48,
+      "trails": 23,
+      "lifts": 6,
+      "snowfallIn": 68,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "kvitfjell",
@@ -1705,7 +3239,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.alpinco.com/en/kvitfjell",
-    "closingDateUrl": "https://www.alpinco.com/en/kvitfjell/snow-report"
+    "closingDateUrl": "https://www.alpinco.com/en/kvitfjell/snow-report",
+    "stats": {
+      "verticalFt": 2802,
+      "summitFt": 3409,
+      "baseFt": 607,
+      "acres": 768,
+      "trails": 36,
+      "lifts": 14,
+      "snowfallIn": 94,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "le-relais",
@@ -1719,7 +3266,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skirelais.com/en/",
-    "closingDateUrl": "https://www.skirelais.com/en/winter/trails-snow-conditions/"
+    "closingDateUrl": "https://www.skirelais.com/en/winter/trails-snow-conditions/",
+    "stats": {
+      "verticalFt": 735,
+      "summitFt": 1407,
+      "baseFt": 672,
+      "acres": 173,
+      "trails": 33,
+      "lifts": 7,
+      "snowfallIn": 135,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "leavenworth-winter-sports-club",
@@ -1733,7 +3293,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skileavenworth.com/webcams",
-    "closingDateUrl": "https://skileavenworth.com/webcams"
+    "closingDateUrl": "https://skileavenworth.com/webcams",
+    "stats": {
+      "verticalFt": 300,
+      "summitFt": 1685,
+      "baseFt": 1385,
+      "acres": 20,
+      "trails": 3,
+      "lifts": 3,
+      "snowfallIn": 89,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 6,
+      "xcKm": 26
+    }
   },
   {
     "id": "les-7-laux",
@@ -1747,7 +3320,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.les7laux.com/hiver/",
-    "closingDateUrl": "https://www.les7laux.com/hiver/ski-alpin-nordique-autres-glisses/ski/meteo/"
+    "closingDateUrl": "https://www.les7laux.com/hiver/ski-alpin-nordique-autres-glisses/ski/meteo/",
+    "stats": {
+      "verticalFt": 3444,
+      "summitFt": 7874,
+      "baseFt": 4430,
+      "acres": null,
+      "trails": 53,
+      "lifts": 22,
+      "snowfallIn": 120,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "leukerbad-torrent-ski-resort-gemmi-resort",
@@ -1761,7 +3347,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://leukerbad.ch/en",
-    "closingDateUrl": "https://leukerbad.ch/en/winter"
+    "closingDateUrl": "https://leukerbad.ch/en/winter",
+    "stats": {
+      "verticalFt": 3937,
+      "summitFt": 8202,
+      "baseFt": 4265,
+      "acres": 8000,
+      "trails": 50,
+      "lifts": 14,
+      "snowfallIn": 125,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "levi-finland",
@@ -1775,7 +3374,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.levi.fi/en/",
-    "closingDateUrl": "https://www.levi.fi/en/ski/ski-resort-today/"
+    "closingDateUrl": "https://www.levi.fi/en/ski/ski-resort-today/",
+    "stats": {
+      "verticalFt": 1066,
+      "summitFt": 1742,
+      "baseFt": 676,
+      "acres": 370,
+      "trails": 44,
+      "lifts": 26,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "little-ski-hill",
@@ -1789,7 +3401,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://payettelakesskiclub.org/little-ski-hill/",
-    "closingDateUrl": "https://payettelakesskiclub.org/little-ski-hill/"
+    "closingDateUrl": "https://payettelakesskiclub.org/little-ski-hill/",
+    "stats": {
+      "verticalFt": 374,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 40,
+      "trails": 14,
+      "lifts": 4,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "loch-lomond",
@@ -1803,7 +3428,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.lochlomond.ca/",
-    "closingDateUrl": "https://www.lochlomond.ca/conditions"
+    "closingDateUrl": "https://www.lochlomond.ca/conditions",
+    "stats": {
+      "verticalFt": 751,
+      "summitFt": 1450,
+      "baseFt": 699,
+      "acres": 70,
+      "trails": 18,
+      "lifts": 3,
+      "snowfallIn": 80,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "lost-trail-powder-mountain",
@@ -1817,7 +3455,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://losttrail.com",
-    "closingDateUrl": "https://losttrail.com/snow-report/"
+    "closingDateUrl": "https://losttrail.com/snow-report/",
+    "stats": {
+      "verticalFt": 1800,
+      "summitFt": 8200,
+      "baseFt": 6400,
+      "acres": 1800,
+      "trails": 69,
+      "lifts": 8,
+      "snowfallIn": 350,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "lost-valley",
@@ -1831,7 +3482,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.lostvalleyski.com/",
-    "closingDateUrl": "https://www.lostvalleyski.com/"
+    "closingDateUrl": "https://www.lostvalleyski.com/",
+    "stats": {
+      "verticalFt": 233,
+      "summitFt": 495,
+      "baseFt": 255,
+      "acres": 45,
+      "trails": 22,
+      "lifts": 3,
+      "snowfallIn": 12,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "loup-loup-ski-bowl",
@@ -1845,7 +3509,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skitheloup.com",
-    "closingDateUrl": "https://www.skitheloup.com/the-mountain"
+    "closingDateUrl": "https://www.skitheloup.com/the-mountain",
+    "stats": {
+      "verticalFt": 1240,
+      "summitFt": 5260,
+      "baseFt": 4020,
+      "acres": 300,
+      "trails": 14,
+      "lifts": 3,
+      "snowfallIn": 86,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": 10,
+      "xcKm": 50
+    }
   },
   {
     "id": "loveland-ski-area",
@@ -1859,7 +3536,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skiloveland.com/",
-    "closingDateUrl": "https://skiloveland.com/snow-report/"
+    "closingDateUrl": "https://skiloveland.com/snow-report/",
+    "stats": {
+      "verticalFt": 2210,
+      "summitFt": 13010,
+      "baseFt": 10800,
+      "acres": 1800,
+      "trails": 94,
+      "lifts": 12,
+      "snowfallIn": 324,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "magic-mountain",
@@ -1873,7 +3563,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.magicmtn.com",
-    "closingDateUrl": "https://www.magicmtn.com/snow-report"
+    "closingDateUrl": "https://www.magicmtn.com/snow-report",
+    "stats": {
+      "verticalFt": 1500,
+      "summitFt": 2850,
+      "baseFt": 1350,
+      "acres": 205,
+      "trails": 50,
+      "lifts": 5,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "magic-mountain-idaho",
@@ -1887,7 +3590,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://magicmountainresort.com/",
-    "closingDateUrl": "https://magicmountainresort.com/"
+    "closingDateUrl": "https://magicmountainresort.com/",
+    "stats": {
+      "verticalFt": 800,
+      "summitFt": 7240,
+      "baseFt": 6440,
+      "acres": 150,
+      "trails": 22,
+      "lifts": 4,
+      "snowfallIn": 230,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "maiko-resort",
@@ -1901,7 +3617,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.snowjapan.com/listings/resort-spotlights/maiko-snow-resort",
-    "closingDateUrl": "https://www.snowjapan.com/listings/resort-spotlights/maiko-snow-resort"
+    "closingDateUrl": "https://www.snowjapan.com/listings/resort-spotlights/maiko-snow-resort",
+    "stats": {
+      "verticalFt": 2166,
+      "summitFt": 3019,
+      "baseFt": 853,
+      "acres": null,
+      "trails": 26,
+      "lifts": 10,
+      "snowfallIn": 350,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mala-upa",
@@ -1915,7 +3644,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skimu.cz/zima",
-    "closingDateUrl": "https://www.skimu.cz/zima/webkamery"
+    "closingDateUrl": "https://www.skimu.cz/zima/webkamery",
+    "stats": {
+      "verticalFt": 853,
+      "summitFt": 4134,
+      "baseFt": 3264,
+      "acres": 1680,
+      "trails": 8,
+      "lifts": 9,
+      "snowfallIn": 26,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "manning-park",
@@ -1929,7 +3671,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.manningpark.com",
-    "closingDateUrl": "https://www.manningpark.com/weather-webcams-and-trail-status/"
+    "closingDateUrl": "https://www.manningpark.com/weather-webcams-and-trail-status/",
+    "stats": {
+      "verticalFt": 1417,
+      "summitFt": 5868,
+      "baseFt": 4451,
+      "acres": 140,
+      "trails": 35,
+      "lifts": 4,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": 35,
+      "xcKm": 64
+    }
   },
   {
     "id": "manning-park-xc",
@@ -1943,7 +3698,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.manningpark.com/weather-webcams-and-trail-status/",
-    "closingDateUrl": "https://www.manningpark.com/weather-webcams-and-trail-status/"
+    "closingDateUrl": "https://www.manningpark.com/weather-webcams-and-trail-status/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 64
+    }
   },
   {
     "id": "maple-ski-ridge",
@@ -1957,7 +3725,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mapleskiridge.com/",
-    "closingDateUrl": "https://www.mapleskiridge.com/"
+    "closingDateUrl": "https://www.mapleskiridge.com/",
+    "stats": {
+      "verticalFt": 270,
+      "summitFt": 720,
+      "baseFt": 450,
+      "acres": 60,
+      "trails": 8,
+      "lifts": 4,
+      "snowfallIn": 65,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "maplelag-resort",
@@ -1971,7 +3752,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.maplelag.com/",
-    "closingDateUrl": "https://www.maplelag.com/"
+    "closingDateUrl": "https://www.maplelag.com/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 17,
+      "xcKm": 76
+    }
   },
   {
     "id": "marble-mountain",
@@ -1985,7 +3779,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skimarble.com/",
-    "closingDateUrl": "https://skimarble.com/"
+    "closingDateUrl": "https://skimarble.com/",
+    "stats": {
+      "verticalFt": 1700,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 230,
+      "trails": 43,
+      "lifts": 5,
+      "snowfallIn": 192,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "marquette-mountain",
@@ -1999,7 +3806,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://marquettemountain.com",
-    "closingDateUrl": "https://marquettemountain.com/"
+    "closingDateUrl": "https://marquettemountain.com/",
+    "stats": {
+      "verticalFt": 540,
+      "summitFt": 1297,
+      "baseFt": 757,
+      "acres": 170,
+      "trails": 29,
+      "lifts": 4,
+      "snowfallIn": 210,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "massanutten-resort",
@@ -2013,7 +3833,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.massresort.com",
-    "closingDateUrl": "https://www.massresort.com/play/snow-sports/snow-conditions/"
+    "closingDateUrl": "https://www.massresort.com/play/snow-sports/snow-conditions/",
+    "stats": {
+      "verticalFt": 1100,
+      "summitFt": 2850,
+      "baseFt": 1740,
+      "acres": 82,
+      "trails": 23,
+      "lifts": 7,
+      "snowfallIn": 36,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "massif-du-sud",
@@ -2027,7 +3860,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://massifdusud.net/en/",
-    "closingDateUrl": "https://massifdusud.net/en/discover/ski-conditions/"
+    "closingDateUrl": "https://massifdusud.net/en/discover/ski-conditions/",
+    "stats": {
+      "verticalFt": 1686,
+      "summitFt": 3002,
+      "baseFt": 1316,
+      "acres": 420,
+      "trails": 37,
+      "lifts": 2,
+      "snowfallIn": 144,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mcintyre-ski-area",
@@ -2041,7 +3887,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mcintyreskiarea.com",
-    "closingDateUrl": "https://www.mcintyreskiarea.com/mountain-report/"
+    "closingDateUrl": "https://www.mcintyreskiarea.com/mountain-report/",
+    "stats": {
+      "verticalFt": 200,
+      "summitFt": 510,
+      "baseFt": 340,
+      "acres": 26,
+      "trails": 11,
+      "lifts": 5,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "middlebury-snowbowl",
@@ -2055,7 +3914,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.middleburysnowbowl.com/",
-    "closingDateUrl": "https://www.middleburysnowbowl.com/conditions/"
+    "closingDateUrl": "https://www.middleburysnowbowl.com/conditions/",
+    "stats": {
+      "verticalFt": 1020,
+      "summitFt": 2720,
+      "baseFt": 1700,
+      "acres": 200,
+      "trails": 17,
+      "lifts": 4,
+      "snowfallIn": 200,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "minocqua-winter-park",
@@ -2069,7 +3941,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 30,
+      "xcKm": 86
+    }
   },
   {
     "id": "mohawk-mountain",
@@ -2083,7 +3968,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mohawkmtn.com",
-    "closingDateUrl": "https://www.mohawkmtn.com/snow-report/"
+    "closingDateUrl": "https://www.mohawkmtn.com/snow-report/",
+    "stats": {
+      "verticalFt": 650,
+      "summitFt": 1600,
+      "baseFt": 950,
+      "acres": 112,
+      "trails": 26,
+      "lifts": 8,
+      "snowfallIn": 62,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mont-edouard",
@@ -2097,7 +3995,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.montedouard.com/",
-    "closingDateUrl": "https://www.montedouard.com/"
+    "closingDateUrl": "https://www.montedouard.com/",
+    "stats": {
+      "verticalFt": 1480,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 123,
+      "trails": 44,
+      "lifts": 3,
+      "snowfallIn": 225,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mont-rigaud",
@@ -2111,7 +4022,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://ski.montrigaud.com/home",
-    "closingDateUrl": "https://ski.montrigaud.com/home"
+    "closingDateUrl": "https://ski.montrigaud.com/home",
+    "stats": {
+      "verticalFt": 394,
+      "summitFt": 728,
+      "baseFt": 331,
+      "acres": 40,
+      "trails": 15,
+      "lifts": 4,
+      "snowfallIn": 4,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mont-ripley-ski-area",
@@ -2125,7 +4049,20 @@
     "isXcOnly": false,
     "isAllied": true,
     "websiteUrl": "https://www.mtu.edu",
-    "closingDateUrl": "https://www.mtu.edu/mont-ripley/about/snow-report/"
+    "closingDateUrl": "https://www.mtu.edu/mont-ripley/about/snow-report/",
+    "stats": {
+      "verticalFt": 440,
+      "summitFt": 1100,
+      "baseFt": 650,
+      "acres": 115,
+      "trails": 24,
+      "lifts": 4,
+      "snowfallIn": 275,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mont-sutton",
@@ -2139,7 +4076,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://montsutton.com/en/",
-    "closingDateUrl": "https://montsutton.com/en/the-mountain/ski-conditions-2/"
+    "closingDateUrl": "https://montsutton.com/en/the-mountain/ski-conditions-2/",
+    "stats": {
+      "verticalFt": 1509,
+      "summitFt": 2821,
+      "baseFt": 1312,
+      "acres": 230,
+      "trails": 60,
+      "lifts": 10,
+      "snowfallIn": 140,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mont-kanasuta",
@@ -2153,7 +4103,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://kanasuta.com/en/",
-    "closingDateUrl": "https://maneige.ski/stations/centre-plein-air-mont-kanasuta/"
+    "closingDateUrl": "https://maneige.ski/stations/centre-plein-air-mont-kanasuta/",
+    "stats": {
+      "verticalFt": 482,
+      "summitFt": 1591,
+      "baseFt": 1109,
+      "acres": 45,
+      "trails": 22,
+      "lifts": 2,
+      "snowfallIn": 120,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "montage-mountain",
@@ -2167,7 +4130,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.montagemountainresorts.com",
-    "closingDateUrl": "https://www.montagemountainresorts.com/trails/#trailconditions"
+    "closingDateUrl": "https://www.montagemountainresorts.com/trails/#trailconditions",
+    "stats": {
+      "verticalFt": 1000,
+      "summitFt": 1960,
+      "baseFt": 960,
+      "acres": 140,
+      "trails": 27,
+      "lifts": 7,
+      "snowfallIn": 25,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "montana-snowbowl",
@@ -2181,7 +4157,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.montanasnowbowl.com",
-    "closingDateUrl": "https://www.montanasnowbowl.com/report.php"
+    "closingDateUrl": "https://www.montanasnowbowl.com/report.php",
+    "stats": {
+      "verticalFt": 2600,
+      "summitFt": 7600,
+      "baseFt": 4980,
+      "acres": 2000,
+      "trails": 68,
+      "lifts": 6,
+      "snowfallIn": 300,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "moose-mountain",
@@ -2195,7 +4184,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://shredthemoose.com/",
-    "closingDateUrl": "https://shredthemoose.com/"
+    "closingDateUrl": "https://shredthemoose.com/",
+    "stats": {
+      "verticalFt": 1300,
+      "summitFt": 1987,
+      "baseFt": 680,
+      "acres": 750,
+      "trails": 42,
+      "lifts": 1,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mount-baldy-ski-area",
@@ -2209,7 +4211,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skimountbaldy.ca/",
-    "closingDateUrl": "https://www.skimountbaldy.ca/"
+    "closingDateUrl": "https://www.skimountbaldy.ca/",
+    "stats": {
+      "verticalFt": 476,
+      "summitFt": 2076,
+      "baseFt": 1600,
+      "acres": 200,
+      "trails": 12,
+      "lifts": 3,
+      "snowfallIn": 47,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mount-cain",
@@ -2223,7 +4238,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mountcain.com/",
-    "closingDateUrl": "https://www.mountcain.com/"
+    "closingDateUrl": "https://www.mountcain.com/",
+    "stats": {
+      "verticalFt": 1411,
+      "summitFt": 5315,
+      "baseFt": 3904,
+      "acres": 225,
+      "trails": 39,
+      "lifts": 3,
+      "snowfallIn": 38,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mount-kato",
@@ -2237,7 +4265,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mountkato.com",
-    "closingDateUrl": "https://www.mountkato.com/mountain/lodging/"
+    "closingDateUrl": "https://www.mountkato.com/mountain/lodging/",
+    "stats": {
+      "verticalFt": 240,
+      "summitFt": 1030,
+      "baseFt": 790,
+      "acres": 55,
+      "trails": 19,
+      "lifts": 10,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mount-racey-ski-resort",
@@ -2251,7 +4292,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": 1326,
+      "summitFt": 2303,
+      "baseFt": 977,
+      "acres": null,
+      "trails": 18,
+      "lifts": 4,
+      "snowfallIn": 315,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mountain-high",
@@ -2265,7 +4319,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mthigh.com",
-    "closingDateUrl": "https://www.mthigh.com/site/trails-and-conditions/conditions/snow-and-weather-report/snow-and-weather-report"
+    "closingDateUrl": "https://www.mthigh.com/site/trails-and-conditions/conditions/snow-and-weather-report/snow-and-weather-report",
+    "stats": {
+      "verticalFt": 1600,
+      "summitFt": 8200,
+      "baseFt": 6600,
+      "acres": 220,
+      "trails": 50,
+      "lifts": 14,
+      "snowfallIn": 120,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-eyak",
@@ -2279,7 +4346,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mteyak.org/",
-    "closingDateUrl": "https://www.mteyak.org/"
+    "closingDateUrl": "https://www.mteyak.org/",
+    "stats": {
+      "verticalFt": 1200,
+      "summitFt": 400,
+      "baseFt": 800,
+      "acres": null,
+      "trails": 10,
+      "lifts": 2,
+      "snowfallIn": 350,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-la-crosse",
@@ -2293,7 +4373,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://mtlacrosse.com/",
-    "closingDateUrl": "https://mtlacrosse.com/trail-map-conditions/"
+    "closingDateUrl": "https://mtlacrosse.com/trail-map-conditions/",
+    "stats": {
+      "verticalFt": 516,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 100,
+      "trails": 20,
+      "lifts": 4,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-van-hoevenberg",
@@ -2307,7 +4400,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://mtvanhoevenberg.com/",
-    "closingDateUrl": "https://mtvanhoevenberg.com/"
+    "closingDateUrl": "https://mtvanhoevenberg.com/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 28,
+      "xcKm": 44
+    }
   },
   {
     "id": "mt-abram",
@@ -2321,7 +4427,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://mtabram.com/",
-    "closingDateUrl": "https://www.mtabram.com/winter/the-mountain-winter/mountain-report/"
+    "closingDateUrl": "https://www.mtabram.com/winter/the-mountain-winter/mountain-report/",
+    "stats": {
+      "verticalFt": 1050,
+      "summitFt": 2000,
+      "baseFt": 950,
+      "acres": 450,
+      "trails": 43,
+      "lifts": 4,
+      "snowfallIn": 115,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-holiday",
@@ -2335,7 +4454,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://mt-holiday.com/ski-and-snowboarding/",
-    "closingDateUrl": "https://mt-holiday.com/ski-and-snowboarding/"
+    "closingDateUrl": "https://mt-holiday.com/ski-and-snowboarding/",
+    "stats": {
+      "verticalFt": 200,
+      "summitFt": 440,
+      "baseFt": 240,
+      "acres": 45,
+      "trails": 12,
+      "lifts": 4,
+      "snowfallIn": 59,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-hood-meadows",
@@ -2349,7 +4481,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skihood.com",
-    "closingDateUrl": "https://www.skihood.com/mountain-report"
+    "closingDateUrl": "https://www.skihood.com/mountain-report",
+    "stats": {
+      "verticalFt": 1939,
+      "summitFt": 7305,
+      "baseFt": 5366,
+      "acres": 2150,
+      "trails": 142,
+      "lifts": 11,
+      "snowfallIn": 430,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 10,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-pisgah",
@@ -2363,7 +4508,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.saranaclake.com/alpine-skiing/mt-pisgah-recreation-center",
-    "closingDateUrl": "https://www.saranaclake.com/alpine-skiing/mt-pisgah-recreation-center"
+    "closingDateUrl": "https://www.saranaclake.com/alpine-skiing/mt-pisgah-recreation-center",
+    "stats": {
+      "verticalFt": 325,
+      "summitFt": 2090,
+      "baseFt": 1765,
+      "acres": 15,
+      "trails": 7,
+      "lifts": 1,
+      "snowfallIn": 100,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-shasta",
@@ -2377,7 +4535,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skipark.com",
-    "closingDateUrl": "https://www.skipark.com/winter/conditions"
+    "closingDateUrl": "https://www.skipark.com/winter/conditions",
+    "stats": {
+      "verticalFt": 2036,
+      "summitFt": 7536,
+      "baseFt": 5500,
+      "acres": 635,
+      "trails": 38,
+      "lifts": 6,
+      "snowfallIn": 157,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 16,
+      "xcKm": null
+    }
   },
   {
     "id": "mt-washington",
@@ -2391,7 +4562,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.mountwashington.ca/",
-    "closingDateUrl": "https://www.mountwashington.ca/the-mountain/conditions/grooming-report.html"
+    "closingDateUrl": "https://www.mountwashington.ca/the-mountain/conditions/grooming-report.html",
+    "stats": {
+      "verticalFt": 1657,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 1700,
+      "trails": 81,
+      "lifts": 11,
+      "snowfallIn": 457,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 28,
+      "xcKm": 55
+    }
   },
   {
     "id": "muica-snow-resort",
@@ -2405,7 +4589,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.muikamachi.com/ski/",
-    "closingDateUrl": "https://www.muikamachi.com/ski/"
+    "closingDateUrl": "https://www.muikamachi.com/ski/",
+    "stats": {
+      "verticalFt": 1312,
+      "summitFt": 2454,
+      "baseFt": 1142,
+      "acres": 244,
+      "trails": 12,
+      "lifts": 4,
+      "snowfallIn": 394,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "murray-ridge-ski-area",
@@ -2419,7 +4616,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.murrayridge.com",
-    "closingDateUrl": "https://www.murrayridge.com/conditions"
+    "closingDateUrl": "https://www.murrayridge.com/conditions",
+    "stats": {
+      "verticalFt": 1675,
+      "summitFt": 4610,
+      "baseFt": 2935,
+      "acres": null,
+      "trails": 23,
+      "lifts": 2,
+      "snowfallIn": 118,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "nayoro-piyashiri-ski-resort",
@@ -2433,7 +4643,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.nayoro.co.jp/piyashiri/",
-    "closingDateUrl": "https://www.nayoro.co.jp/piyashiri/status/"
+    "closingDateUrl": "https://www.nayoro.co.jp/piyashiri/status/",
+    "stats": {
+      "verticalFt": 1578,
+      "summitFt": 2211,
+      "baseFt": 633,
+      "acres": null,
+      "trails": 12,
+      "lifts": 3,
+      "snowfallIn": 47,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "nelson-nordic-ski-club",
@@ -2447,7 +4670,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://nelsonnordicski.ca/webcam/webcam.html",
-    "closingDateUrl": "https://nelsonnordicski.ca/webcam/webcam.html"
+    "closingDateUrl": "https://nelsonnordicski.ca/webcam/webcam.html",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 15,
+      "xcKm": 30
+    }
   },
   {
     "id": "nickel-plate-cross-country-ski-club",
@@ -2461,7 +4697,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://nickelplatenordic.org/livecam/",
-    "closingDateUrl": "https://nickelplatenordic.org/livecam/"
+    "closingDateUrl": "https://nickelplatenordic.org/livecam/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 28,
+      "xcKm": 50
+    }
   },
   {
     "id": "ninox-snow-park",
@@ -2475,7 +4724,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.ninox.co.jp/",
-    "closingDateUrl": "https://www.ninox.co.jp/"
+    "closingDateUrl": "https://www.ninox.co.jp/",
+    "stats": {
+      "verticalFt": 709,
+      "summitFt": 1748,
+      "baseFt": 1040,
+      "acres": 49,
+      "trails": 2,
+      "lifts": 2,
+      "snowfallIn": 71,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "norefjell-ski-resort",
@@ -2489,7 +4751,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.norefjell.com/en",
-    "closingDateUrl": "https://www.norefjell.com/en/skislopes"
+    "closingDateUrl": "https://www.norefjell.com/en/skislopes",
+    "stats": {
+      "verticalFt": 3313,
+      "summitFt": 3897,
+      "baseFt": 583,
+      "acres": null,
+      "trails": 30,
+      "lifts": 15,
+      "snowfallIn": 71,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "north-cascade-heli",
@@ -2503,7 +4778,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://heli-ski.com/",
-    "closingDateUrl": "https://heli-ski.com/weather-conditions"
+    "closingDateUrl": "https://heli-ski.com/weather-conditions",
+    "stats": {
+      "verticalFt": 5000,
+      "summitFt": 8500,
+      "baseFt": 3500,
+      "acres": 300000,
+      "trails": 100,
+      "lifts": null,
+      "snowfallIn": 500,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "northern-maine-community-trails",
@@ -2517,7 +4805,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.nmctrails.org/",
-    "closingDateUrl": "https://www.nmctrails.org/trails-maps"
+    "closingDateUrl": "https://www.nmctrails.org/trails-maps",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 16,
+      "xcKm": 24
+    }
   },
   {
     "id": "norway-mountain",
@@ -2531,7 +4832,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "http://www.norwaymt.com/",
-    "closingDateUrl": "http://www.norwaymt.com/"
+    "closingDateUrl": "http://www.norwaymt.com/",
+    "stats": {
+      "verticalFt": 500,
+      "summitFt": 1335,
+      "baseFt": 835,
+      "acres": 80,
+      "trails": 17,
+      "lifts": 6,
+      "snowfallIn": 33,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "nubs-nob-0",
@@ -2545,7 +4859,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.nubsnob.com",
-    "closingDateUrl": "https://www.nubsnob.com/conditions-tables/"
+    "closingDateUrl": "https://www.nubsnob.com/conditions-tables/",
+    "stats": {
+      "verticalFt": 425,
+      "summitFt": 1350,
+      "baseFt": 925,
+      "acres": 248,
+      "trails": 53,
+      "lifts": 10,
+      "snowfallIn": 125,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "nutt-hill",
@@ -2559,7 +4886,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://nutthillwinterpark.com/",
-    "closingDateUrl": "https://nutthillwinterpark.com/"
+    "closingDateUrl": "https://nutthillwinterpark.com/",
+    "stats": {
+      "verticalFt": 120,
+      "summitFt": 1015,
+      "baseFt": 895,
+      "acres": 3,
+      "trails": 2,
+      "lifts": 1,
+      "snowfallIn": 51,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "oak-hill-outdoor-center",
@@ -2573,7 +4913,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.oakhilloutdoorcenter.org",
-    "closingDateUrl": "https://www.oakhilloutdoorcenter.org/trail-conditions"
+    "closingDateUrl": "https://www.oakhilloutdoorcenter.org/trail-conditions",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 12,
+      "xcKm": 25
+    }
   },
   {
     "id": "ober-mountain",
@@ -2587,7 +4940,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://obergatlinburg.com",
-    "closingDateUrl": "https://obergatlinburg.com/slope-report/"
+    "closingDateUrl": "https://obergatlinburg.com/slope-report/",
+    "stats": {
+      "verticalFt": 660,
+      "summitFt": 3208,
+      "baseFt": 2682,
+      "acres": 50,
+      "trails": 10,
+      "lifts": 3,
+      "snowfallIn": 16,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "oberstdorf-kleinwalsertal-bergbahnen",
@@ -2601,7 +4967,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.ok-bergbahnen.com/",
-    "closingDateUrl": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/"
+    "closingDateUrl": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
+    "stats": {
+      "verticalFt": 4632,
+      "summitFt": 7296,
+      "baseFt": 2664,
+      "acres": 1200,
+      "trails": 70,
+      "lifts": 48,
+      "snowfallIn": 120,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "obertauern",
@@ -2615,7 +4994,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.ski-obertauern.at/",
-    "closingDateUrl": "https://www.ski-obertauern.at/"
+    "closingDateUrl": "https://www.ski-obertauern.at/",
+    "stats": {
+      "verticalFt": 2241,
+      "summitFt": 7588,
+      "baseFt": 5348,
+      "acres": 250,
+      "trails": 76,
+      "lifts": 26,
+      "snowfallIn": 225,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "okunakayama-kogen",
@@ -2629,7 +5021,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.okunakayamakogen.jp/",
-    "closingDateUrl": "https://www.okunakayamakogen.jp/en/lift-status-en/"
+    "closingDateUrl": "https://www.okunakayamakogen.jp/en/lift-status-en/",
+    "stats": {
+      "verticalFt": 1273,
+      "summitFt": 3339,
+      "baseFt": 2132,
+      "acres": null,
+      "trails": 11,
+      "lifts": 5,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "onikoube-ski-resort",
@@ -2643,7 +5048,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.onikoube.com/snow/",
-    "closingDateUrl": "https://www.onikoube.com/snow/ski-slope/"
+    "closingDateUrl": "https://www.onikoube.com/snow/ski-slope/",
+    "stats": {
+      "verticalFt": 2345,
+      "summitFt": 3461,
+      "baseFt": 1116,
+      "acres": 150,
+      "trails": 9,
+      "lifts": 7,
+      "snowfallIn": 80,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "oppdal",
@@ -2657,7 +5075,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.alpinco.com/en/oppdal",
-    "closingDateUrl": "https://www.alpinco.com/en/oppdal/snow-report"
+    "closingDateUrl": "https://www.alpinco.com/en/oppdal/snow-report",
+    "stats": {
+      "verticalFt": 2444,
+      "summitFt": 4364,
+      "baseFt": 1919,
+      "acres": 1038,
+      "trails": 35,
+      "lifts": 14,
+      "snowfallIn": 66,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "orcieres-merlette-1850",
@@ -2671,7 +5102,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.orcieres.com/en/",
-    "closingDateUrl": "https://www.orcieres.com/en/live/resort-openings/"
+    "closingDateUrl": "https://www.orcieres.com/en/live/resort-openings/",
+    "stats": {
+      "verticalFt": 2870,
+      "summitFt": 8940,
+      "baseFt": 6069,
+      "acres": 1500,
+      "trails": 61,
+      "lifts": 26,
+      "snowfallIn": 120,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "osceola-tug-hill-xc-ski-center",
@@ -2685,7 +5129,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 18,
+      "xcKm": 18
+    }
   },
   {
     "id": "palcall-tsumagoi-resort",
@@ -2699,7 +5156,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://tsumagoiskiresort.life/",
-    "closingDateUrl": "https://tsumagoiskiresort.life/facility-guide/"
+    "closingDateUrl": "https://tsumagoiskiresort.life/facility-guide/",
+    "stats": {
+      "verticalFt": 2395,
+      "summitFt": 6890,
+      "baseFt": 4495,
+      "acres": null,
+      "trails": 22,
+      "lifts": 5,
+      "snowfallIn": 35,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pass-powderkeg",
@@ -2713,7 +5183,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.passpowderkeg.com",
-    "closingDateUrl": "https://www.passpowderkeg.com/home/snow-report/"
+    "closingDateUrl": "https://www.passpowderkeg.com/home/snow-report/",
+    "stats": {
+      "verticalFt": 985,
+      "summitFt": 5380,
+      "baseFt": 4570,
+      "acres": 48,
+      "trails": 27,
+      "lifts": 3,
+      "snowfallIn": 75,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pats-peak",
@@ -2727,7 +5210,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.patspeak.com",
-    "closingDateUrl": "https://www.patspeak.com/the-mountain/mountain-info/snow-report/"
+    "closingDateUrl": "https://www.patspeak.com/the-mountain/mountain-info/snow-report/",
+    "stats": {
+      "verticalFt": 770,
+      "summitFt": 1460,
+      "baseFt": 690,
+      "acres": 115,
+      "trails": 28,
+      "lifts": 11,
+      "snowfallIn": 100,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "paul-bunyan-ski-hill",
@@ -2741,7 +5237,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skipaulbunyan.com/",
-    "closingDateUrl": "https://skipaulbunyan.com/"
+    "closingDateUrl": "https://skipaulbunyan.com/",
+    "stats": {
+      "verticalFt": 150,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 30,
+      "trails": 14,
+      "lifts": 6,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "paul-smiths-college-visitor-interpretive-center",
@@ -2769,7 +5278,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://pebblecreekskiarea.com/",
-    "closingDateUrl": "https://pebblecreekskiarea.com/snow-report/"
+    "closingDateUrl": "https://pebblecreekskiarea.com/snow-report/",
+    "stats": {
+      "verticalFt": 2200,
+      "summitFt": 8560,
+      "baseFt": 6360,
+      "acres": 1100,
+      "trails": 51,
+      "lifts": 4,
+      "snowfallIn": 225,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "peek-n-peak",
@@ -2783,7 +5305,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.pknpk.com",
-    "closingDateUrl": "https://www.pknpk.com/conditions-report/"
+    "closingDateUrl": "https://www.pknpk.com/conditions-report/",
+    "stats": {
+      "verticalFt": 400,
+      "summitFt": 1800,
+      "baseFt": 1400,
+      "acres": 105,
+      "trails": 27,
+      "lifts": 9,
+      "snowfallIn": 200,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "petzen",
@@ -2797,7 +5332,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.petzen.net/en",
-    "closingDateUrl": "https://www.petzen.net/en"
+    "closingDateUrl": "https://www.petzen.net/en",
+    "stats": {
+      "verticalFt": 4295,
+      "summitFt": 6427,
+      "baseFt": 2132,
+      "acres": 4151,
+      "trails": 21,
+      "lifts": 7,
+      "snowfallIn": 25,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "phoenix-mountain",
@@ -2811,7 +5359,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skiphoenix.ca",
-    "closingDateUrl": "https://www.skiphoenix.ca"
+    "closingDateUrl": "https://www.skiphoenix.ca",
+    "stats": {
+      "verticalFt": 705,
+      "summitFt": 4652,
+      "baseFt": 4147,
+      "acres": 9,
+      "trails": 22,
+      "lifts": 2,
+      "snowfallIn": 45,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pila",
@@ -2825,7 +5386,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://pila.it/en/",
-    "closingDateUrl": "https://pila.it/en/"
+    "closingDateUrl": "https://pila.it/en/",
+    "stats": {
+      "verticalFt": 3097,
+      "summitFt": 8887,
+      "baseFt": 5790,
+      "acres": 865,
+      "trails": 30,
+      "lifts": 14,
+      "snowfallIn": 97,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pine-mountain",
@@ -2839,7 +5413,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.pinemountainresort.com/",
-    "closingDateUrl": "https://www.pinemountainresort.com/"
+    "closingDateUrl": "https://www.pinemountainresort.com/",
+    "stats": {
+      "verticalFt": 364,
+      "summitFt": 1512,
+      "baseFt": 1148,
+      "acres": 40,
+      "trails": 35,
+      "lifts": 4,
+      "snowfallIn": 30,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pippu-ski-resort",
@@ -2853,7 +5440,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "http://yuyupippu.com/",
-    "closingDateUrl": "http://yuyupippu.com/"
+    "closingDateUrl": "http://yuyupippu.com/",
+    "stats": {
+      "verticalFt": 1053,
+      "summitFt": 1902,
+      "baseFt": 820,
+      "acres": null,
+      "trails": 9,
+      "lifts": 3,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pitztal-glacier",
@@ -2867,7 +5467,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.pitztaler-gletscher.at/bergbahnen",
-    "closingDateUrl": "https://www.pitztaler-gletscher.at/bergbahnen"
+    "closingDateUrl": "https://www.pitztaler-gletscher.at/bergbahnen",
+    "stats": {
+      "verticalFt": 8498,
+      "summitFt": 14206,
+      "baseFt": 5708,
+      "acres": null,
+      "trails": 28,
+      "lifts": 13,
+      "snowfallIn": 185,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pizol",
@@ -2881,7 +5494,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://pizol.com/en/",
-    "closingDateUrl": "https://pizol.com/en/winter/winter-sports-report/"
+    "closingDateUrl": "https://pizol.com/en/winter/winter-sports-report/",
+    "stats": {
+      "verticalFt": 7726,
+      "summitFt": 9330,
+      "baseFt": 1670,
+      "acres": 1720,
+      "trails": 36,
+      "lifts": 12,
+      "snowfallIn": 163,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "plain-valley-ski-trails",
@@ -2909,7 +5535,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.pomerelle.com",
-    "closingDateUrl": "https://www.pomerelle.com/conditions"
+    "closingDateUrl": "https://www.pomerelle.com/conditions",
+    "stats": {
+      "verticalFt": 998,
+      "summitFt": 9764,
+      "baseFt": 8762,
+      "acres": 500,
+      "trails": 22,
+      "lifts": 3,
+      "snowfallIn": 500,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "portes-du-soleil",
@@ -2923,7 +5562,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://en.portesdusoleil.com/",
-    "closingDateUrl": "https://en.portesdusoleil.com/in-winter/slope-and-lift-openings/"
+    "closingDateUrl": "https://en.portesdusoleil.com/in-winter/slope-and-lift-openings/",
+    "stats": {
+      "verticalFt": 5118,
+      "summitFt": 8070,
+      "baseFt": 2952,
+      "acres": 16018,
+      "trails": 307,
+      "lifts": 208,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "powder-ridge-0",
@@ -2937,7 +5589,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://powderridgepark.com/",
-    "closingDateUrl": "https://powderridgepark.com/trail-report/"
+    "closingDateUrl": "https://powderridgepark.com/trail-report/",
+    "stats": {
+      "verticalFt": 550,
+      "summitFt": 720,
+      "baseFt": 170,
+      "acres": 80,
+      "trails": 17,
+      "lifts": 8,
+      "snowfallIn": 195,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "powder-ridge",
@@ -2951,7 +5616,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://powderridge.com",
-    "closingDateUrl": "https://powderridge.com/ski-ride/trail-map/"
+    "closingDateUrl": "https://powderridge.com/ski-ride/trail-map/",
+    "stats": {
+      "verticalFt": 300,
+      "summitFt": 790,
+      "baseFt": 500,
+      "acres": 60,
+      "trails": 13,
+      "lifts": 6,
+      "snowfallIn": 60,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "powderhorn",
@@ -2965,7 +5643,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://powderhorn.com/",
-    "closingDateUrl": "https://powderhorn.com/explore/conditions/grooming-report.html"
+    "closingDateUrl": "https://powderhorn.com/explore/conditions/grooming-report.html",
+    "stats": {
+      "verticalFt": 1697,
+      "summitFt": 9850,
+      "baseFt": 8200,
+      "acres": 1600,
+      "trails": 40,
+      "lifts": 5,
+      "snowfallIn": 250,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "pyha-ski-resort",
@@ -2979,7 +5670,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.pyha.fi/en/skiresort-winter",
-    "closingDateUrl": "https://www.pyha.fi/en/skiresort/slopes"
+    "closingDateUrl": "https://www.pyha.fi/en/skiresort/slopes",
+    "stats": {
+      "verticalFt": 768,
+      "summitFt": 1621,
+      "baseFt": 702,
+      "acres": 130,
+      "trails": 15,
+      "lifts": 9,
+      "snowfallIn": 20,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "quarry-road-trails",
@@ -2993,7 +5697,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://quarryroad.org/",
-    "closingDateUrl": "https://quarryroad.org/"
+    "closingDateUrl": "https://quarryroad.org/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 22,
+      "xcKm": 13
+    }
   },
   {
     "id": "ragged-mountain",
@@ -3007,7 +5724,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.raggedmountainresort.com/",
-    "closingDateUrl": "https://www.raggedmountainresort.com/mountain-report-cams/#conditions"
+    "closingDateUrl": "https://www.raggedmountainresort.com/mountain-report-cams/#conditions",
+    "stats": {
+      "verticalFt": 1250,
+      "summitFt": 2286,
+      "baseFt": 1000,
+      "acres": 250,
+      "trails": 57,
+      "lifts": 5,
+      "snowfallIn": 105,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "rangeley-lakes-trail-center",
@@ -3021,7 +5751,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 55
+    }
   },
   {
     "id": "rauriser-hochalmbahnen",
@@ -3035,7 +5778,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hochalmbahnen.at/en/winter",
-    "closingDateUrl": "https://www.hochalmbahnen.at/en/summer/information/weather"
+    "closingDateUrl": "https://www.hochalmbahnen.at/en/summer/information/weather",
+    "stats": {
+      "verticalFt": 4019,
+      "summitFt": 7198,
+      "baseFt": 3179,
+      "acres": 32,
+      "trails": 14,
+      "lifts": 10,
+      "snowfallIn": 177,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "red-lodge-mountain",
@@ -3049,7 +5805,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.redlodgemountain.com",
-    "closingDateUrl": "https://www.redlodgemountain.com/mountain/snow-report/"
+    "closingDateUrl": "https://www.redlodgemountain.com/mountain/snow-report/",
+    "stats": {
+      "verticalFt": 2400,
+      "summitFt": 9416,
+      "baseFt": 7433,
+      "acres": 1600,
+      "trails": 70,
+      "lifts": 8,
+      "snowfallIn": 280,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "rikert-nordic-center",
@@ -3063,7 +5832,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.rikertoutdoor.com/",
-    "closingDateUrl": "https://www.rikertoutdoor.com/"
+    "closingDateUrl": "https://www.rikertoutdoor.com/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 35,
+      "xcKm": 55
+    }
   },
   {
     "id": "riksgransen",
@@ -3077,7 +5859,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://riksgransen.se/en/",
-    "closingDateUrl": "https://riksgransen.se/en/skidakning/snowreport-and-piste-map/"
+    "closingDateUrl": "https://riksgransen.se/en/skidakning/snowreport-and-piste-map/",
+    "stats": {
+      "verticalFt": 1276,
+      "summitFt": 2982,
+      "baseFt": 1706,
+      "acres": null,
+      "trails": null,
+      "lifts": 6,
+      "snowfallIn": 41,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ruka-ski-resort",
@@ -3091,7 +5886,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.ruka.fi/en",
-    "closingDateUrl": "https://www.ruka.fi/en/skiresort/slopes"
+    "closingDateUrl": "https://www.ruka.fi/en/skiresort/slopes",
+    "stats": {
+      "verticalFt": 659,
+      "summitFt": 1614,
+      "baseFt": 955,
+      "acres": 124,
+      "trails": 42,
+      "lifts": 23,
+      "snowfallIn": 40,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "saddleback-mountain",
@@ -3105,7 +5913,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.saddlebackmaine.com",
-    "closingDateUrl": "https://www.saddlebackmaine.com/mountain-report/snow--weather/"
+    "closingDateUrl": "https://www.saddlebackmaine.com/mountain-report/snow--weather/",
+    "stats": {
+      "verticalFt": 2000,
+      "summitFt": 4120,
+      "baseFt": 2460,
+      "acres": 600,
+      "trails": 68,
+      "lifts": 6,
+      "snowfallIn": 177,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "saskadena-six-ski-area",
@@ -3119,7 +5940,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.saskadenasix.com",
-    "closingDateUrl": "https://www.saskadenasix.com/the-mountain/conditions"
+    "closingDateUrl": "https://www.saskadenasix.com/the-mountain/conditions",
+    "stats": {
+      "verticalFt": 650,
+      "summitFt": 1200,
+      "baseFt": 550,
+      "acres": 100,
+      "trails": 28,
+      "lifts": 3,
+      "snowfallIn": 42,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "sasquatch-mountain-resort",
@@ -3133,7 +5967,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://sasquatchmountain.ca/",
-    "closingDateUrl": "https://sasquatchmountain.ca/weather-and-conditions/"
+    "closingDateUrl": "https://sasquatchmountain.ca/weather-and-conditions/",
+    "stats": {
+      "verticalFt": 1200,
+      "summitFt": 4500,
+      "baseFt": 3300,
+      "acres": 205,
+      "trails": 36,
+      "lifts": 4,
+      "snowfallIn": 184,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "schuss-mountain-at-shanty-creek",
@@ -3147,7 +5994,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.shantycreek.com",
-    "closingDateUrl": "https://www.shantycreek.com/ski/conditions-cams/"
+    "closingDateUrl": "https://www.shantycreek.com/ski/conditions-cams/",
+    "stats": {
+      "verticalFt": 450,
+      "summitFt": 1125,
+      "baseFt": 625,
+      "acres": 81,
+      "trails": 42,
+      "lifts": 7,
+      "snowfallIn": 160,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "scotts-cobble-nordic-center",
@@ -3161,7 +6021,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.scottscobblenordic.com/home",
-    "closingDateUrl": "https://www.scottscobblenordic.com/trail-map-conditions"
+    "closingDateUrl": "https://www.scottscobblenordic.com/trail-map-conditions",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 10,
+      "xcKm": 15
+    }
   },
   {
     "id": "shames-mountain",
@@ -3175,7 +6048,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://mymountaincoop.ca/",
-    "closingDateUrl": "https://mymountaincoop.ca/shames-mountain/our-mountain/snow-report/"
+    "closingDateUrl": "https://mymountaincoop.ca/shames-mountain/our-mountain/snow-report/",
+    "stats": {
+      "verticalFt": 1600,
+      "summitFt": 3900,
+      "baseFt": 2300,
+      "acres": 252,
+      "trails": 30,
+      "lifts": 3,
+      "snowfallIn": 480,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "shawnee-mountain-ski-area",
@@ -3189,7 +6075,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.shawneemt.com",
-    "closingDateUrl": "https://www.shawneemt.com/snow-report/"
+    "closingDateUrl": "https://www.shawneemt.com/snow-report/",
+    "stats": {
+      "verticalFt": 700,
+      "summitFt": 1350,
+      "baseFt": 650,
+      "acres": 125,
+      "trails": 23,
+      "lifts": 11,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "shimokura",
@@ -3203,7 +6102,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.hachimantai.co.jp/livecamera1/",
-    "closingDateUrl": "https://www.hachimantai.co.jp/shimokura/lift/"
+    "closingDateUrl": "https://www.hachimantai.co.jp/shimokura/lift/",
+    "stats": {
+      "verticalFt": 1804,
+      "summitFt": 3707,
+      "baseFt": 1902,
+      "acres": null,
+      "trails": 7,
+      "lifts": 3,
+      "snowfallIn": 320,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "showdown-montana",
@@ -3217,7 +6129,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.showdownmontana.com/",
-    "closingDateUrl": "https://www.showdownmontana.com/grooming-report-trail-status"
+    "closingDateUrl": "https://www.showdownmontana.com/grooming-report-trail-status",
+    "stats": {
+      "verticalFt": 1400,
+      "summitFt": 8200,
+      "baseFt": 6800,
+      "acres": 640,
+      "trails": 39,
+      "lifts": 4,
+      "snowfallIn": 280,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "silver-mountain",
@@ -3231,7 +6156,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.silvermt.com",
-    "closingDateUrl": "https://www.silvermt.com/conditions"
+    "closingDateUrl": "https://www.silvermt.com/conditions",
+    "stats": {
+      "verticalFt": 2200,
+      "summitFt": 6300,
+      "baseFt": 5800,
+      "acres": 1600,
+      "trails": 83,
+      "lifts": 7,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "skaneateles-ski-club",
@@ -3245,7 +6183,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skiskan.com/",
-    "closingDateUrl": "https://www.skiskan.com/"
+    "closingDateUrl": "https://www.skiskan.com/",
+    "stats": {
+      "verticalFt": 330,
+      "summitFt": 1200,
+      "baseFt": 800,
+      "acres": 33,
+      "trails": 7,
+      "lifts": 3,
+      "snowfallIn": 100,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "skeetawk",
@@ -3259,7 +6210,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skeetawk.com/",
-    "closingDateUrl": "https://skeetawk.com/snow-report"
+    "closingDateUrl": "https://skeetawk.com/snow-report",
+    "stats": {
+      "verticalFt": 1236,
+      "summitFt": 2657,
+      "baseFt": 1420,
+      "acres": 30,
+      "trails": 12,
+      "lifts": 2,
+      "snowfallIn": 144,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ski-big-bear",
@@ -3273,7 +6237,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.ski-bigbear.com",
-    "closingDateUrl": "https://www.ski-bigbear.com/conditions-trail-map"
+    "closingDateUrl": "https://www.ski-bigbear.com/conditions-trail-map",
+    "stats": {
+      "verticalFt": 650,
+      "summitFt": 1200,
+      "baseFt": 550,
+      "acres": 26,
+      "trails": 18,
+      "lifts": 7,
+      "snowfallIn": 45,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ski-bluewood",
@@ -3287,7 +6264,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://bluewood.com",
-    "closingDateUrl": "https://bluewood.com/conditions"
+    "closingDateUrl": "https://bluewood.com/conditions",
+    "stats": {
+      "verticalFt": 1120,
+      "summitFt": 5665,
+      "baseFt": 4545,
+      "acres": 450,
+      "trails": 25,
+      "lifts": 4,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ski-land",
@@ -3301,7 +6291,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skilandfairbanks.com/",
-    "closingDateUrl": "https://skilandfairbanks.com/"
+    "closingDateUrl": "https://skilandfairbanks.com/",
+    "stats": {
+      "verticalFt": 1027,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 550,
+      "trails": 58,
+      "lifts": 2,
+      "snowfallIn": 190,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ski-saint-bruno",
@@ -3315,7 +6318,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skisaintbruno.ca/en/",
-    "closingDateUrl": "https://skisaintbruno.ca/en/sliding-conditions"
+    "closingDateUrl": "https://skisaintbruno.ca/en/sliding-conditions",
+    "stats": {
+      "verticalFt": 427,
+      "summitFt": 574,
+      "baseFt": 148,
+      "acres": 35,
+      "trails": 18,
+      "lifts": 9,
+      "snowfallIn": 95,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ski-sawmill",
@@ -3329,7 +6345,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skisawmill.com",
-    "closingDateUrl": "https://skisawmill.com/ski-report-2/"
+    "closingDateUrl": "https://skisawmill.com/ski-report-2/",
+    "stats": {
+      "verticalFt": 515,
+      "summitFt": 2215,
+      "baseFt": 1700,
+      "acres": 40,
+      "trails": 13,
+      "lifts": 5,
+      "snowfallIn": 53,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "ski-vallee-bleue",
@@ -3343,7 +6372,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.valleebleue.com/english/",
-    "closingDateUrl": "https://www.valleebleue.com/english/ski-et-planche-a-neige-en-famille-station-familiale-vallee-bleue/conditions-ski-pistes-neige/"
+    "closingDateUrl": "https://www.valleebleue.com/english/ski-et-planche-a-neige-en-famille-station-familiale-vallee-bleue/conditions-ski-pistes-neige/",
+    "stats": {
+      "verticalFt": 350,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 42,
+      "trails": 52,
+      "lifts": 3,
+      "snowfallIn": null,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "skigebiet-heiligenblut-grossglockner",
@@ -3357,7 +6399,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skisport.com/grossglockner/en",
-    "closingDateUrl": "https://skisport.com/grossglockner/en/live-info/weather"
+    "closingDateUrl": "https://skisport.com/grossglockner/en/live-info/weather",
+    "stats": {
+      "verticalFt": 4274,
+      "summitFt": 9521,
+      "baseFt": 4268,
+      "acres": 3706,
+      "trails": 13,
+      "lifts": 11,
+      "snowfallIn": 100,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "skiwelt",
@@ -3371,7 +6426,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.skiwelt.at/",
-    "closingDateUrl": "https://www.skiwelt.at/snowreport"
+    "closingDateUrl": "https://www.skiwelt.at/snowreport",
+    "stats": {
+      "verticalFt": 4098,
+      "summitFt": 6132,
+      "baseFt": 2034,
+      "acres": 706,
+      "trails": 279,
+      "lifts": 83,
+      "snowfallIn": 157,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "sleepy-hollow",
@@ -3385,7 +6453,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://skisleepyhollow.com/",
-    "closingDateUrl": "https://skisleepyhollow.com/snow-conditions-trail-cam/"
+    "closingDateUrl": "https://skisleepyhollow.com/snow-conditions-trail-cam/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 30,
+      "xcKm": 32
+    }
   },
   {
     "id": "smokey-mountain-ski-club",
@@ -3399,7 +6480,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "http://skismokey.ca/",
-    "closingDateUrl": "http://events.skismokey.ca/general-information/current-conditions"
+    "closingDateUrl": "http://events.skismokey.ca/general-information/current-conditions",
+    "stats": {
+      "verticalFt": 960,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": 40,
+      "trails": 23,
+      "lifts": 4,
+      "snowfallIn": 177,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "smugglers-notch-resort",
@@ -3413,7 +6507,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.smuggs.com/",
-    "closingDateUrl": "https://www.smuggs.com/conditions/winter-report/"
+    "closingDateUrl": "https://www.smuggs.com/conditions/winter-report/",
+    "stats": {
+      "verticalFt": 2610,
+      "summitFt": 3640,
+      "baseFt": 1030,
+      "acres": 311,
+      "trails": 78,
+      "lifts": 8,
+      "snowfallIn": 248,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "snow-king-mountain-resort",
@@ -3427,7 +6534,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://snowkingmountain.com",
-    "closingDateUrl": "https://snowkingmountain.com/mountain/conditions/"
+    "closingDateUrl": "https://snowkingmountain.com/mountain/conditions/",
+    "stats": {
+      "verticalFt": 1560,
+      "summitFt": 7804,
+      "baseFt": 6244,
+      "acres": 500,
+      "trails": 46,
+      "lifts": 8,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "snow-resort-the-cupid-of-romance",
@@ -3441,7 +6561,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": 2505,
+      "summitFt": 4167,
+      "baseFt": 1662,
+      "acres": 198,
+      "trails": 10,
+      "lifts": 6,
+      "snowfallIn": 120,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "snow-ridge",
@@ -3455,7 +6588,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://snowridge.com",
-    "closingDateUrl": "https://snowridge.com/trail-conditions/"
+    "closingDateUrl": "https://snowridge.com/trail-conditions/",
+    "stats": {
+      "verticalFt": 500,
+      "summitFt": 1850,
+      "baseFt": 1350,
+      "acres": 150,
+      "trails": 33,
+      "lifts": 5,
+      "snowfallIn": 230,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "snowstar",
@@ -3469,7 +6615,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skisnowstar.com",
-    "closingDateUrl": "https://skisnowstar.com/weather.html"
+    "closingDateUrl": "https://skisnowstar.com/weather.html",
+    "stats": {
+      "verticalFt": 262,
+      "summitFt": 790,
+      "baseFt": 528,
+      "acres": 28,
+      "trails": 15,
+      "lifts": 6,
+      "snowfallIn": 38,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "soldier-mountain",
@@ -3483,7 +6642,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://soldiermountain.com/",
-    "closingDateUrl": "https://opensnow.com/location/soldiermountain/snow-summary#report"
+    "closingDateUrl": "https://opensnow.com/location/soldiermountain/snow-summary#report",
+    "stats": {
+      "verticalFt": 1421,
+      "summitFt": 7177,
+      "baseFt": 5756,
+      "acres": 1150,
+      "trails": 35,
+      "lifts": 3,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "sovereign-lake-nordic-club",
@@ -3497,7 +6669,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.sovereignlake.com/conditions/webcam/",
-    "closingDateUrl": "https://www.sovereignlake.com/conditions/webcam/"
+    "closingDateUrl": "https://www.sovereignlake.com/conditions/webcam/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 30,
+      "xcKm": 54
+    }
   },
   {
     "id": "spirit-mountain",
@@ -3511,7 +6696,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://spiritmt.com",
-    "closingDateUrl": "https://spiritmt.com/winter/snow-report/"
+    "closingDateUrl": "https://spiritmt.com/winter/snow-report/",
+    "stats": {
+      "verticalFt": 700,
+      "summitFt": 1390,
+      "baseFt": 690,
+      "acres": 175,
+      "trails": 22,
+      "lifts": 7,
+      "snowfallIn": 90,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "spring-mountain-adventures",
@@ -3525,7 +6723,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://springmountainadventures.com/",
-    "closingDateUrl": "https://springmountainadventures.com/trail-map/"
+    "closingDateUrl": "https://springmountainadventures.com/trail-map/",
+    "stats": {
+      "verticalFt": 450,
+      "summitFt": 529,
+      "baseFt": 78,
+      "acres": 45,
+      "trails": 9,
+      "lifts": 6,
+      "snowfallIn": 15,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "st-johann-in-tirol",
@@ -3539,7 +6750,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.bergbahnen-stjohann.at/",
-    "closingDateUrl": "https://www.bergbahnen-stjohann.at/de/lifte-und-pisten.html"
+    "closingDateUrl": "https://www.bergbahnen-stjohann.at/de/lifte-und-pisten.html",
+    "stats": {
+      "verticalFt": 3100,
+      "summitFt": 5263,
+      "baseFt": 2162,
+      "acres": null,
+      "trails": 19,
+      "lifts": 11,
+      "snowfallIn": 85,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "steamboat-ski-touring-center",
@@ -3553,7 +6777,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://nordicski.net/steamboat-ski-touring-center/",
-    "closingDateUrl": "https://nordicski.net/steamboat-ski-touring-center/#"
+    "closingDateUrl": "https://nordicski.net/steamboat-ski-touring-center/#",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 7,
+      "xcKm": 20
+    }
   },
   {
     "id": "steinplatte",
@@ -3567,7 +6804,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.steinplatte.tirol/en/",
-    "closingDateUrl": "https://www.steinplatte.tirol/en/"
+    "closingDateUrl": "https://www.steinplatte.tirol/en/",
+    "stats": {
+      "verticalFt": 3674,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": 16,
+      "snowfallIn": 40,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "stoke-mountain",
@@ -3581,7 +6831,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.stokemountain.com/",
-    "closingDateUrl": "https://www.stokemountain.com/"
+    "closingDateUrl": "https://www.stokemountain.com/",
+    "stats": {
+      "verticalFt": 24,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": 15,
+      "lifts": 1,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "stoten-i-salen",
@@ -3595,7 +6858,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.stoten.se/en/",
-    "closingDateUrl": "https://www.stoten.se/en/slopes-weather/"
+    "closingDateUrl": "https://www.stoten.se/en/slopes-weather/",
+    "stats": {
+      "verticalFt": 1329,
+      "summitFt": 2782,
+      "baseFt": 1453,
+      "acres": null,
+      "trails": 53,
+      "lifts": 23,
+      "snowfallIn": 80,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "stranda-ski-resort",
@@ -3609,7 +6885,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.strandafjellet.no/en",
-    "closingDateUrl": "https://fnugg.no/stranda/"
+    "closingDateUrl": "https://fnugg.no/stranda/",
+    "stats": {
+      "verticalFt": 2296,
+      "summitFt": 3772,
+      "baseFt": 1476,
+      "acres": null,
+      "trails": 20,
+      "lifts": 7,
+      "snowfallIn": 280,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "sunburst-ski-area",
@@ -3623,7 +6912,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skisunburst.com/",
-    "closingDateUrl": "https://skisunburst.com/our-hills/"
+    "closingDateUrl": "https://skisunburst.com/our-hills/",
+    "stats": {
+      "verticalFt": 196,
+      "summitFt": 1171,
+      "baseFt": 974,
+      "acres": 30,
+      "trails": 11,
+      "lifts": 9,
+      "snowfallIn": 11,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "sundown-mountain",
@@ -3637,7 +6939,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.sundownmtn.com",
-    "closingDateUrl": "https://www.sundownmtn.com/the-mountain/snow-report-trail-map/"
+    "closingDateUrl": "https://www.sundownmtn.com/the-mountain/snow-report-trail-map/",
+    "stats": {
+      "verticalFt": 475,
+      "summitFt": 1059,
+      "baseFt": 584,
+      "acres": 55,
+      "trails": 21,
+      "lifts": 6,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "sunlight-mountain-resort",
@@ -3651,7 +6966,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://sunlightmtn.com",
-    "closingDateUrl": "https://sunlightmtn.com/the-mountain/snow-weather-report"
+    "closingDateUrl": "https://sunlightmtn.com/the-mountain/snow-weather-report",
+    "stats": {
+      "verticalFt": 2010,
+      "summitFt": 9895,
+      "baseFt": 7885,
+      "acres": 730,
+      "trails": 72,
+      "lifts": 3,
+      "snowfallIn": 250,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "swain-resort",
@@ -3665,7 +6993,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://swain.com",
-    "closingDateUrl": "https://swain.com/swain-trail-report-2/"
+    "closingDateUrl": "https://swain.com/swain-trail-report-2/",
+    "stats": {
+      "verticalFt": 650,
+      "summitFt": 1970,
+      "baseFt": 1320,
+      "acres": 120,
+      "trails": 35,
+      "lifts": 5,
+      "snowfallIn": 130,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "takasu-snow-park",
@@ -3679,7 +7020,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.takasu.gr.jp/",
-    "closingDateUrl": "https://www.takasu.gr.jp/condition/"
+    "closingDateUrl": "https://www.takasu.gr.jp/condition/",
+    "stats": {
+      "verticalFt": 1968,
+      "summitFt": 5085,
+      "baseFt": 3117,
+      "acres": 247,
+      "trails": 13,
+      "lifts": 4,
+      "snowfallIn": 59,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "tamarack-mountain-resort",
@@ -3693,7 +7047,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://tamarackidaho.com",
-    "closingDateUrl": "https://tamarackidaho.com/about/snow-report"
+    "closingDateUrl": "https://tamarackidaho.com/about/snow-report",
+    "stats": {
+      "verticalFt": 2800,
+      "summitFt": 7700,
+      "baseFt": 4900,
+      "acres": 1385,
+      "trails": 57,
+      "lifts": 7,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "tazawako",
@@ -3707,7 +7074,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.tazawako-ski.com/",
-    "closingDateUrl": "https://www.tazawako-ski.com/"
+    "closingDateUrl": "https://www.tazawako-ski.com/",
+    "stats": {
+      "verticalFt": 1995,
+      "summitFt": 3891,
+      "baseFt": 1896,
+      "acres": null,
+      "trails": 13,
+      "lifts": 6,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "telemark-nordic-center",
@@ -3721,7 +7101,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://telemarknordic.com/current-trail-conditions/",
-    "closingDateUrl": "https://telemarknordic.com/current-trail-conditions/"
+    "closingDateUrl": "https://telemarknordic.com/current-trail-conditions/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 30,
+      "xcKm": 50
+    }
   },
   {
     "id": "tenney-mountain",
@@ -3735,7 +7128,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skitenney.com/",
-    "closingDateUrl": "https://skitenney.com/report/"
+    "closingDateUrl": "https://skitenney.com/report/",
+    "stats": {
+      "verticalFt": 1500,
+      "summitFt": 2149,
+      "baseFt": 649,
+      "acres": 130,
+      "trails": 53,
+      "lifts": 4,
+      "snowfallIn": 140,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "terry-peak",
@@ -3749,7 +7155,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://terrypeak.com",
-    "closingDateUrl": "https://terrypeak.com/the-mountain/weather-snow/"
+    "closingDateUrl": "https://terrypeak.com/the-mountain/weather-snow/",
+    "stats": {
+      "verticalFt": 1100,
+      "summitFt": 7100,
+      "baseFt": 5900,
+      "acres": 450,
+      "trails": 30,
+      "lifts": 5,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "the-krvavec-ski-resort",
@@ -3763,7 +7182,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.rtc-krvavec.si/skiing",
-    "closingDateUrl": "https://www.rtc-krvavec.si/skiing"
+    "closingDateUrl": "https://www.rtc-krvavec.si/skiing",
+    "stats": {
+      "verticalFt": 1709,
+      "summitFt": 6466,
+      "baseFt": 4757,
+      "acres": 7413,
+      "trails": null,
+      "lifts": 10,
+      "snowfallIn": 240,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "the-loppet",
@@ -3777,7 +7209,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://loppet.org/",
-    "closingDateUrl": "https://loppet.org/trailheads-trails/trails-and-conditions/"
+    "closingDateUrl": "https://loppet.org/trailheads-trails/trails-and-conditions/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 16,
+      "xcKm": 22
+    }
   },
   {
     "id": "thrill-hills",
@@ -3791,7 +7236,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skithrillhills.com/",
-    "closingDateUrl": "https://skithrillhills.com/weather/"
+    "closingDateUrl": "https://skithrillhills.com/weather/",
+    "stats": {
+      "verticalFt": 290,
+      "summitFt": 1190,
+      "baseFt": 900,
+      "acres": 30,
+      "trails": 10,
+      "lifts": 3,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "titus-mountain",
@@ -3805,7 +7263,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.titusmountain.com",
-    "closingDateUrl": "https://www.titusmountain.com/conditions"
+    "closingDateUrl": "https://www.titusmountain.com/conditions",
+    "stats": {
+      "verticalFt": 1200,
+      "summitFt": 2025,
+      "baseFt": 825,
+      "acres": 380,
+      "trails": 53,
+      "lifts": 9,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "togakushi-ski-resort",
@@ -3819,7 +7290,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.togakusi.com",
-    "closingDateUrl": "https://www.togakusi.com/ski/course/#lift"
+    "closingDateUrl": "https://www.togakusi.com/ski/course/#lift",
+    "stats": {
+      "verticalFt": 1732,
+      "summitFt": 5734,
+      "baseFt": 4002,
+      "acres": null,
+      "trails": 19,
+      "lifts": 7,
+      "snowfallIn": 300,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "togari-onsen-snow-resort",
@@ -3833,7 +7317,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://togari.jp/winter/en/",
-    "closingDateUrl": "https://togari.jp/winter/en/course_map/"
+    "closingDateUrl": "https://togari.jp/winter/en/course_map/",
+    "stats": {
+      "verticalFt": 2133,
+      "summitFt": 3445,
+      "baseFt": 1312,
+      "acres": 346,
+      "trails": 16,
+      "lifts": 4,
+      "snowfallIn": 315,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "trapp-family-lodge",
@@ -3847,7 +7344,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.trappfamily.com/skiing-snowshoeing.htm",
-    "closingDateUrl": "https://www.trappfamily.com/skiing-snowshoeing.htm"
+    "closingDateUrl": "https://www.trappfamily.com/skiing-snowshoeing.htm",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 24,
+      "xcKm": 110
+    }
   },
   {
     "id": "treetops-resort",
@@ -3861,7 +7371,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.treetops.com",
-    "closingDateUrl": "https://www.treetops.com/ski-snow/report/"
+    "closingDateUrl": "https://www.treetops.com/ski-snow/report/",
+    "stats": {
+      "verticalFt": 225,
+      "summitFt": 1333,
+      "baseFt": 1110,
+      "acres": 80,
+      "trails": 25,
+      "lifts": 5,
+      "snowfallIn": 150,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 5,
+      "xcKm": null
+    }
   },
   {
     "id": "trollhaugen",
@@ -3875,7 +7398,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://trollhaugen.com",
-    "closingDateUrl": "https://trollhaugen.com/snow-report"
+    "closingDateUrl": "https://trollhaugen.com/snow-report",
+    "stats": {
+      "verticalFt": 280,
+      "summitFt": 1200,
+      "baseFt": 928,
+      "acres": 80,
+      "trails": 30,
+      "lifts": 8,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "tschiertschen-chur",
@@ -3889,7 +7425,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.tschiertschen.ch/de/aktivitaeten/winteraktivitaeten",
-    "closingDateUrl": "https://www.tschiertschen.ch/de/wintersportbericht"
+    "closingDateUrl": "https://www.tschiertschen.ch/de/wintersportbericht",
+    "stats": {
+      "verticalFt": 3382,
+      "summitFt": 7874,
+      "baseFt": 4432,
+      "acres": null,
+      "trails": 12,
+      "lifts": 4,
+      "snowfallIn": 87,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "turpin-meadow-ranch",
@@ -3903,7 +7452,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://turpinmeadowranch.com/web-cam/",
-    "closingDateUrl": "https://turpinmeadowranch.com/web-cam/"
+    "closingDateUrl": "https://turpinmeadowranch.com/web-cam/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 7,
+      "xcKm": 20
+    }
   },
   {
     "id": "tussey-mountain",
@@ -3917,7 +7479,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://tusseymountain.com",
-    "closingDateUrl": "https://tusseymountain.com/mountain-info/mountain-stats/"
+    "closingDateUrl": "https://tusseymountain.com/mountain-info/mountain-stats/",
+    "stats": {
+      "verticalFt": 500,
+      "summitFt": 1811,
+      "baseFt": 1302,
+      "acres": 38,
+      "trails": 8,
+      "lifts": 5,
+      "snowfallIn": 45,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "tyrol-basin-ski-and-snowboard",
@@ -3931,7 +7506,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.tyrolbasin.com",
-    "closingDateUrl": "https://www.tyrolbasin.com"
+    "closingDateUrl": "https://www.tyrolbasin.com",
+    "stats": {
+      "verticalFt": 300,
+      "summitFt": 1160,
+      "baseFt": 860,
+      "acres": 40,
+      "trails": 24,
+      "lifts": 7,
+      "snowfallIn": 51,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "val-direne",
@@ -3945,7 +7533,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://valdi.ski/en/home.html",
-    "closingDateUrl": "https://valdi.ski/en/home.html"
+    "closingDateUrl": "https://valdi.ski/en/home.html",
+    "stats": {
+      "verticalFt": 898,
+      "summitFt": 2296,
+      "baseFt": 1397,
+      "acres": 92,
+      "trails": 35,
+      "lifts": 3,
+      "snowfallIn": 228,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "veterans-memorial-recreation-area",
@@ -3959,7 +7560,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": 230,
+      "summitFt": 1004,
+      "baseFt": 774,
+      "acres": 50,
+      "trails": 54,
+      "lifts": 3,
+      "snowfallIn": 80,
+      "terrainPark": false,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "washigatake-ski-resort",
@@ -3973,7 +7587,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://ski.washigatake.jp/",
-    "closingDateUrl": "https://ski.washigatake.jp/condition/"
+    "closingDateUrl": "https://ski.washigatake.jp/condition/",
+    "stats": {
+      "verticalFt": 1444,
+      "summitFt": 4429,
+      "baseFt": 2986,
+      "acres": 136,
+      "trails": 13,
+      "lifts": 4,
+      "snowfallIn": 71,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "waterville-valley-resort",
@@ -3987,7 +7614,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.waterville.com",
-    "closingDateUrl": "https://www.waterville.com/snow-report-maps"
+    "closingDateUrl": "https://www.waterville.com/snow-report-maps",
+    "stats": {
+      "verticalFt": 2020,
+      "summitFt": 3840,
+      "baseFt": 1820,
+      "acres": 265,
+      "trails": 62,
+      "lifts": 10,
+      "snowfallIn": 125,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": 42,
+      "xcKm": 71
+    }
   },
   {
     "id": "west-mountain",
@@ -4001,7 +7641,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://westmountain.com",
-    "closingDateUrl": "https://westmountain.com/safety"
+    "closingDateUrl": "https://westmountain.com/safety",
+    "stats": {
+      "verticalFt": 1000,
+      "summitFt": 1470,
+      "baseFt": 460,
+      "acres": 130,
+      "trails": 35,
+      "lifts": 6,
+      "snowfallIn": 70,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "whaleback-mountain",
@@ -4015,7 +7668,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.whaleback.com",
-    "closingDateUrl": "https://www.whaleback.com/conditions-trail-report"
+    "closingDateUrl": "https://www.whaleback.com/conditions-trail-report",
+    "stats": {
+      "verticalFt": 700,
+      "summitFt": 1800,
+      "baseFt": 1100,
+      "acres": 86,
+      "trails": 31,
+      "lifts": 4,
+      "snowfallIn": 50,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "white-grass-ski-touring",
@@ -4029,7 +7695,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://whitegrass.com",
-    "closingDateUrl": "https://whitegrass.com"
+    "closingDateUrl": "https://whitegrass.com",
+    "stats": {
+      "verticalFt": 1200,
+      "summitFt": 4463,
+      "baseFt": 3250,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": 130,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 44,
+      "xcKm": 50
+    }
   },
   {
     "id": "white-pass",
@@ -4043,7 +7722,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://skiwhitepass.com",
-    "closingDateUrl": "https://skiwhitepass.com/the-mountain/snow-report"
+    "closingDateUrl": "https://skiwhitepass.com/the-mountain/snow-report",
+    "stats": {
+      "verticalFt": 2050,
+      "summitFt": 6550,
+      "baseFt": 4500,
+      "acres": 1402,
+      "trails": 45,
+      "lifts": 8,
+      "snowfallIn": 415,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "white-pine-resort",
@@ -4057,7 +7749,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://whitepinewyoming.com",
-    "closingDateUrl": "https://www.whitepineresort.com/play"
+    "closingDateUrl": "https://www.whitepineresort.com/play",
+    "stats": {
+      "verticalFt": 1100,
+      "summitFt": 9600,
+      "baseFt": 8500,
+      "acres": 370,
+      "trails": 27,
+      "lifts": 2,
+      "snowfallIn": 180,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "white-pine-touring-nordic-center",
@@ -4071,7 +7776,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 5,
+      "xcKm": 20
+    }
   },
   {
     "id": "whitecap-mountains-resort",
@@ -4085,7 +7803,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://whitecapresort.com/",
-    "closingDateUrl": "https://whitecapresort.com/winter/snow-report"
+    "closingDateUrl": "https://whitecapresort.com/winter/snow-report",
+    "stats": {
+      "verticalFt": 400,
+      "summitFt": 1750,
+      "baseFt": 1350,
+      "acres": 300,
+      "trails": 48,
+      "lifts": 7,
+      "snowfallIn": 200,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "whiteface-mountain",
@@ -4099,7 +7830,20 @@
     "isXcOnly": false,
     "isAllied": true,
     "websiteUrl": "https://whiteface.com",
-    "closingDateUrl": "https://whiteface.com/mountain/conditions/"
+    "closingDateUrl": "https://whiteface.com/mountain/conditions/",
+    "stats": {
+      "verticalFt": 3430,
+      "summitFt": 4650,
+      "baseFt": 1220,
+      "acres": 299,
+      "trails": 94,
+      "lifts": 11,
+      "snowfallIn": 195,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "whitehorse-nordic-centre",
@@ -4127,7 +7871,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://whitepia.jp/",
-    "closingDateUrl": "https://whitepia.jp/"
+    "closingDateUrl": "https://whitepia.jp/",
+    "stats": {
+      "verticalFt": 1509,
+      "summitFt": 4610,
+      "baseFt": 3100,
+      "acres": 146,
+      "trails": 13,
+      "lifts": 4,
+      "snowfallIn": 47,
+      "terrainPark": true,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "williams-lake-cross-country-ski-club",
@@ -4141,7 +7898,20 @@
     "isXcOnly": true,
     "isAllied": false,
     "websiteUrl": "https://www.williamslakecrosscountryskiclub.ca/",
-    "closingDateUrl": "https://www.williamslakecrosscountryskiclub.ca/"
+    "closingDateUrl": "https://www.williamslakecrosscountryskiclub.ca/",
+    "stats": {
+      "verticalFt": null,
+      "summitFt": null,
+      "baseFt": null,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": null,
+      "terrainPark": null,
+      "nightSkiing": null,
+      "xcTrails": 30,
+      "xcKm": 35
+    }
   },
   {
     "id": "winter4kids",
@@ -4155,7 +7925,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.winter4kids.org/",
-    "closingDateUrl": "https://www.winter4kids.org/"
+    "closingDateUrl": "https://www.winter4kids.org/",
+    "stats": {
+      "verticalFt": 620,
+      "summitFt": 1434,
+      "baseFt": 814,
+      "acres": 36,
+      "trails": 7,
+      "lifts": 4,
+      "snowfallIn": 35,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "wintergreen",
@@ -4169,7 +7952,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.wintergreenresort.com",
-    "closingDateUrl": "https://www.wintergreenresort.com/mountain-report-cams/"
+    "closingDateUrl": "https://www.wintergreenresort.com/mountain-report-cams/",
+    "stats": {
+      "verticalFt": 1003,
+      "summitFt": 3515,
+      "baseFt": 2512,
+      "acres": null,
+      "trails": 26,
+      "lifts": 5,
+      "snowfallIn": null,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "winterplace-ski-resort",
@@ -4183,7 +7979,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.winterplace.com",
-    "closingDateUrl": "https://www.winterplace.com/snow-report"
+    "closingDateUrl": "https://www.winterplace.com/snow-report",
+    "stats": {
+      "verticalFt": 603,
+      "summitFt": 3600,
+      "baseFt": 2997,
+      "acres": 90,
+      "trails": 27,
+      "lifts": 10,
+      "snowfallIn": 55,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "wisp",
@@ -4197,7 +8006,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.wispresort.com/",
-    "closingDateUrl": "https://www.wispresort.com/mountain-report-cams/"
+    "closingDateUrl": "https://www.wispresort.com/mountain-report-cams/",
+    "stats": {
+      "verticalFt": 700,
+      "summitFt": 3115,
+      "baseFt": 2415,
+      "acres": 142,
+      "trails": 33,
+      "lifts": 13,
+      "snowfallIn": 154,
+      "terrainPark": true,
+      "nightSkiing": true,
+      "xcTrails": null,
+      "xcKm": null
+    }
   },
   {
     "id": "woodstock-nordic-center",
@@ -4211,7 +8033,20 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "",
-    "closingDateUrl": ""
+    "closingDateUrl": "",
+    "stats": {
+      "verticalFt": 570,
+      "summitFt": 1250,
+      "baseFt": 680,
+      "acres": null,
+      "trails": null,
+      "lifts": null,
+      "snowfallIn": 80,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": 48,
+      "xcKm": 45
+    }
   },
   {
     "id": "yuzawa-nakazato-snow-resort",
@@ -4225,6 +8060,19 @@
     "isXcOnly": false,
     "isAllied": false,
     "websiteUrl": "https://www.yuzawa-nakazato.com/winter/",
-    "closingDateUrl": "https://www.yuzawa-nakazato.com/winter/"
+    "closingDateUrl": "https://www.yuzawa-nakazato.com/winter/",
+    "stats": {
+      "verticalFt": 800,
+      "summitFt": 2303,
+      "baseFt": 1503,
+      "acres": 326,
+      "trails": 16,
+      "lifts": 6,
+      "snowfallIn": 531,
+      "terrainPark": false,
+      "nightSkiing": false,
+      "xcTrails": null,
+      "xcKm": null
+    }
   }
 ]

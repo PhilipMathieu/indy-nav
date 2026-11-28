@@ -3,8 +3,9 @@
 import { useRef, useEffect, useMemo, useCallback } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { Mountain } from "@/lib/types";
+import type { Mountain, ResortStats } from "@/lib/types";
 import { getDrawRank, getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
+import type { LatLon } from "@/lib/geo";
 import { matchesTerrain, TERRAIN_LABEL, type TerrainFilter } from "@/lib/terrain";
 
 interface ResortMapProps {
@@ -14,6 +15,7 @@ interface ResortMapProps {
   terrainFilter: TerrainFilter;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
+  userLocation?: LatLon | null;
 }
 
 function buildGeoJSON(
@@ -41,6 +43,7 @@ function buildGeoJSON(
           closingDate: m.closingDate,
           status,
           drawRank: getDrawRank(status, referenceDate),
+          size: formatSize(m.stats),
           terrain: m.terrain ?? "alpine",
         },
         geometry: {
@@ -51,6 +54,20 @@ function buildGeoJSON(
     });
 
   return { type: "FeatureCollection" as const, features };
+}
+
+/** "1,851 ft vert · 2,325 acres · 88 trails", or "" with no figures. */
+function formatSize(stats: ResortStats | undefined): string {
+  if (!stats) return "";
+  const parts: string[] = [];
+  const add = (n: number | null, label: string) => {
+    if (n != null) parts.push(`${n.toLocaleString("en-US")} ${label}`);
+  };
+  add(stats.verticalFt, "ft vert");
+  add(stats.acres, "acres");
+  add(stats.trails, "trails");
+  if (parts.length === 0) add(stats.xcKm, "km XC");
+  return parts.join(" · ");
 }
 
 /** Create a square image for use as a map marker. */
@@ -100,6 +117,7 @@ export function ResortMap({
   terrainFilter,
   selectedMountainId,
   onSelectMountain,
+  userLocation = null,
 }: ResortMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
@@ -196,6 +214,9 @@ export function ResortMap({
             `<strong style="font-size:13px">${props.name}</strong><br/>` +
               `<span style="font-size:12px;color:${STATUS_COLOR[status]}">${STATUS_LABEL[status]}</span>` +
               `<span style="font-size:12px"> · ${detail}</span>` +
+              (props.size
+                ? `<br/><span style="font-size:12px;color:#525252">${props.size}</span>`
+                : "") +
               (props.terrain !== "alpine"
                 ? `<br/><span style="font-size:11px;color:#6f6f6f">${TERRAIN_LABEL[props.terrain as keyof typeof TERRAIN_LABEL]}</span>`
                 : "")
@@ -243,7 +264,9 @@ export function ResortMap({
       source.setData(geojson);
     }
 
-    // Fit map to visible features
+    // Fit map to visible features, unless it is centred on the viewer
+    // ("Near me"); clearing the location fits again.
+    if (userLocation) return;
     const coords = geojson.features.map(
       (f) => f.geometry.coordinates as [number, number]
     );
@@ -254,7 +277,24 @@ export function ResortMap({
       bounds.extend(c);
     }
     map.fitBounds(bounds, { padding: 40, maxZoom: 10, duration: 1000 });
-  }, [geojson]);
+  }, [geojson, userLocation]);
+
+  // "You are here" dot for the Near me option; recentres on it.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !userLocation) return;
+    const el = document.createElement("div");
+    el.setAttribute("aria-label", "Your location");
+    el.style.cssText =
+      "width:14px;height:14px;border-radius:50%;background:#161616;border:3px solid #fff;box-shadow:0 0 0 1px #161616";
+    const marker = new maplibregl.Marker({ element: el })
+      .setLngLat([userLocation.lon, userLocation.lat])
+      .addTo(map);
+    map.flyTo({ center: [userLocation.lon, userLocation.lat], zoom: 5.5, duration: 1000 });
+    return () => {
+      marker.remove();
+    };
+  }, [userLocation]);
 
   return (
     <div className="mb-6">

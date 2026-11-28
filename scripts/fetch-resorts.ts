@@ -10,13 +10,15 @@
  *   coordinates, and nordic/alpine/xc flags.
  *
  * Phase 2 — detail pages: fetches each resort's individual page to extract the
- *   resort website URL and quick-links (conditions, webcams, etc.).
+ *   resort website URL, quick-links (conditions, webcams, etc.) and the size
+ *   figures it lists (vertical, acres, trails, lifts, snowfall, XC km).
  *
  * Writes the merged result to data/mountains.json, sorted alphabetically by name.
  */
 
 import { existsSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import type { ResortStats } from "../src/lib/types";
 
 const BASE = "https://www.indyskipass.com";
 const LISTING_URL = `${BASE}/our-resorts`;
@@ -59,6 +61,7 @@ interface ResortDetail {
   websiteUrl: string | null;
   conditionsUrl: string | null;
   webcamUrl: string | null;
+  stats: ResortStats | null;
 }
 
 interface MountainSeed {
@@ -74,6 +77,7 @@ interface MountainSeed {
   isAllied: boolean;
   websiteUrl: string;
   closingDateUrl: string;
+  stats?: ResortStats;
 }
 
 // ── Phase 1: parse listing page ────────────────────────────────────────────
@@ -166,7 +170,7 @@ async function fetchDetailPage(slug: string): Promise<ResortDetail> {
   });
   if (!res.ok) {
     console.warn(`  ⚠ ${slug}: HTTP ${res.status}`);
-    return { websiteUrl: null, conditionsUrl: null, webcamUrl: null };
+    return { websiteUrl: null, conditionsUrl: null, webcamUrl: null, stats: null };
   }
   const html = await res.text();
 
@@ -187,7 +191,60 @@ async function fetchDetailPage(slug: string): Promise<ResortDetail> {
     websiteUrl: websiteMatch ? websiteMatch[1] : null,
     conditionsUrl: conditionsMatch ? conditionsMatch[1] : null,
     webcamUrl: webcamMatch ? webcamMatch[1] : null,
+    stats: parseStats(html),
   };
+}
+
+/** Text of a Drupal field, e.g. `<div class="field field--name-field-acres ...">2325</div>`. */
+function fieldText(html: string, field: string): string | null {
+  const match = html.match(
+    new RegExp(`field--name-field-${field}\\s[^>]*>\\s*([^<]*?)\\s*<`)
+  );
+  return match && match[1] ? match[1] : null;
+}
+
+/** Leading integer of a value such as "2325", "25km" or "1,851ft". */
+function toInt(text: string | null): number | null {
+  const match = text?.replace(/,/g, "").match(/^-?\d+/);
+  return match ? parseInt(match[0], 10) : null;
+}
+
+function toBool(text: string | null): boolean | null {
+  if (text === "Yes") return true;
+  if (text === "No") return false;
+  return null;
+}
+
+/**
+ * Size figures from a detail page. Elevations sit in tags like
+ * `elevation__tag--vertical">Vertical: 1851ft`, snowfall under the
+ * "Average" chart label, and the rest in Drupal fields. A zero is treated
+ * as missing, since no resort really has 0 ft of vertical or 0 lifts.
+ */
+function parseStats(html: string): ResortStats | null {
+  const elevation = (kind: string) =>
+    toInt(
+      html.match(new RegExp(`elevation__tag--${kind}">[^:<]*:\\s*([\\d,]+)`))?.[1] ?? null
+    );
+  const snowfall = html.match(
+    /class="label average">\s*Average\s*<span[^>]*>\s*([\d,]+)\s*in/
+  );
+  const positive = (n: number | null) => (n != null && n > 0 ? n : null);
+
+  const stats: ResortStats = {
+    verticalFt: positive(elevation("vertical")),
+    summitFt: positive(elevation("summit")),
+    baseFt: positive(elevation("base")),
+    acres: positive(toInt(fieldText(html, "acres"))),
+    trails: positive(toInt(fieldText(html, "trails"))),
+    lifts: positive(toInt(fieldText(html, "lifts"))),
+    snowfallIn: positive(toInt(snowfall?.[1] ?? null)),
+    terrainPark: toBool(fieldText(html, "terrain-parks")),
+    nightSkiing: toBool(fieldText(html, "night-skiing")),
+    xcTrails: positive(toInt(fieldText(html, "trails-xc"))),
+    xcKm: positive(toInt(fieldText(html, "trail-length"))),
+  };
+  return Object.values(stats).some((v) => v != null) ? stats : null;
 }
 
 async function fetchAllDetails(
@@ -322,6 +379,7 @@ function buildMountainSeeds(
         websiteUrl: null,
         conditionsUrl: null,
         webcamUrl: null,
+        stats: null,
       };
       const { state, region } = deriveStateAndRegion(card.location);
       const websiteUrl = detail.websiteUrl || "";
@@ -339,6 +397,7 @@ function buildMountainSeeds(
         isAllied: card.isAllied,
         websiteUrl,
         closingDateUrl: detail.conditionsUrl || websiteUrl,
+        ...(detail.stats ? { stats: detail.stats } : {}),
       };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -403,6 +462,8 @@ async function main() {
   console.log(`\nWrote ${seeds.length} resorts to ${OUTPUT_PATH}`);
   console.log(`  ${withWebsite} have a website URL`);
   console.log(`  ${withConditions} have a dedicated conditions URL`);
+  console.log(`  ${seeds.filter((s) => s.stats?.verticalFt).length} have a vertical drop`);
+  console.log(`  ${seeds.filter((s) => s.stats?.acres).length} have skiable acres`);
 
   // Summarize by region
   const byRegion = new Map<string, number>();

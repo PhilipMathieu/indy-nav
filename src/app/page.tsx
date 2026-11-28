@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ClosingDatesTable } from "@/components/closing-dates-table";
 import { ResortMap } from "@/components/resort-map";
 import type { Mountain, MountainSeed } from "@/lib/types";
+import type { LatLon } from "@/lib/geo";
 import { getSeason, LEGACY_SEASON_LABEL } from "@/lib/season";
 import { getTerrain, type TerrainFilter } from "@/lib/terrain";
 import closingDatesRaw from "../../data/closing-dates.json";
@@ -24,6 +25,7 @@ const mountains: Mountain[] = (closingDatesRaw as Omit<Mountain, "lat" | "lon">[
     lat: seed?.lat ?? null,
     lon: seed?.lon ?? null,
     terrain: getTerrain(seed),
+    stats: seed?.stats,
   };
   if ((m.season ?? LEGACY_SEASON_LABEL) === season.label) return located;
   return { ...located, openingDate: null, closingDate: null, closingDateConfidence: "low" };
@@ -33,6 +35,7 @@ export default function Home() {
   const [selectedMountainId, setSelectedMountainId] = useState<string | null>(null);
   const [asOfDate, setAsOfDate] = useState<Date | undefined>(undefined);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [userLocation, setUserLocation] = useState<LatLon | null>(null);
   const [terrainFilter, setTerrainFilter] = useState<TerrainFilter>("all");
 
   return (
@@ -52,6 +55,7 @@ export default function Home() {
         terrainFilter={terrainFilter}
         selectedMountainId={selectedMountainId}
         onSelectMountain={setSelectedMountainId}
+        userLocation={userLocation}
       />
       <ClosingDatesTable
         mountains={mountains}
@@ -63,6 +67,8 @@ export default function Home() {
         onTerrainFilterChange={setTerrainFilter}
         selectedMountainId={selectedMountainId}
         onSelectMountain={setSelectedMountainId}
+        userLocation={userLocation}
+        onUserLocationChange={setUserLocation}
       />
       <footer className="mt-12 border-t pt-6 text-xs text-muted-foreground space-y-2">
         <p className="font-medium text-foreground">How it works</p>
