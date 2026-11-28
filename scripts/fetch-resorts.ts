@@ -19,6 +19,7 @@
 import { existsSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import type { ResortStats } from "../src/lib/types";
+import { parseLocation, type ParsedLocation } from "./parse-location";
 
 const BASE = "https://www.indyskipass.com";
 const LISTING_URL = `${BASE}/our-resorts`;
@@ -157,6 +158,56 @@ async function fetchListingPage(): Promise<ResortCard[]> {
   return cards;
 }
 
+// ── Phase 1b: region pages ─────────────────────────────────────────────────
+
+/** indyskipass.com/our-resorts/<slug> lists the resorts in each region. */
+const REGION_PAGES: Record<string, string> = {
+  west: "West",
+  rockies: "Rockies",
+  midwest: "Midwest",
+  east: "East",
+  "mid-atlantic": "Mid-Atlantic",
+  canada: "Canada",
+  japan: "Japan",
+  europe: "Europe",
+};
+
+/** Map resort slug → Indy Pass region, from the region listing pages. */
+async function fetchRegionMap(): Promise<Map<string, string>> {
+  const regionMap = new Map<string, string>();
+  for (const [slug, region] of Object.entries(REGION_PAGES)) {
+    try {
+      const res = await fetch(`${LISTING_URL}/${slug}`, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (compatible; IndyNav/1.0; resort-list-scraper)",
+        },
+        signal: AbortSignal.timeout(30000),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const html = await res.text();
+      const cardRegex = /<a\s+[^>]*class="[^"]*node--type-resort[^"]*"[^>]*href="\/our-resorts\/([^"]+)"/g;
+      let count = 0;
+      for (const m of html.matchAll(cardRegex)) {
+        if (REGION_SLUGS.has(m[1])) continue;
+        regionMap.set(m[1], region);
+        count++;
+      }
+      console.log(`  Region ${region}: ${count} resorts`);
+    } catch (err) {
+      console.warn(`  Region page ${slug} failed (${err}); falling back to location text`);
+    }
+    await delay(DELAY_MS);
+  }
+  return regionMap;
+}
+
+/** Cards whose location line is missing or names no place. */
+const LOCATION_OVERRIDES: Record<string, ParsedLocation> = {
+  wisp: { state: "MD", country: "USA" }, // McHenry, MD
+  "domaine-skiable-des-contamines": { state: "France", country: "France" },
+  "portes-du-soleil": { state: "France", country: "France" }, // "French Swiss Border"
+};
+
 // ── Phase 2: fetch detail pages ────────────────────────────────────────────
 
 async function fetchDetailPage(slug: string): Promise<ResortDetail> {
@@ -279,99 +330,49 @@ async function fetchAllDetails(
 
 // ── Merge & write ──────────────────────────────────────────────────────────
 
-function deriveStateAndRegion(location: string): {
-  state: string;
-  region: string;
-} {
-  // Location format varies:
-  //   "City, ST, USA"  |  "City, ST"  |  "City, Province, Canada"  |  "City, Country"
-  const parts = location.split(",").map((s) => s.trim());
+// US state → Indy Pass region. Only a fallback: the region pages on
+// indyskipass.com are authoritative (see fetchRegionMap).
+const US_REGIONS: Record<string, string> = {
+  WA: "West", OR: "West", CA: "West", AK: "West", HI: "West", NV: "West",
+  MT: "Rockies", ID: "Rockies", WY: "Rockies", CO: "Rockies", UT: "Rockies",
+  NM: "Rockies", AZ: "Rockies", SD: "Rockies", ND: "Rockies",
+  MN: "Midwest", WI: "Midwest", MI: "Midwest", IL: "Midwest", IA: "Midwest",
+  MO: "Midwest", IN: "Midwest", OH: "Midwest", NE: "Midwest", KS: "Midwest",
+  ME: "East", NH: "East", VT: "East", MA: "East", CT: "East", RI: "East",
+  NY: "East", NJ: "East",
+  PA: "Mid-Atlantic", MD: "Mid-Atlantic", DE: "Mid-Atlantic", VA: "Mid-Atlantic",
+  WV: "Mid-Atlantic", NC: "Mid-Atlantic", SC: "Mid-Atlantic", GA: "Mid-Atlantic",
+  TN: "Mid-Atlantic", KY: "Mid-Atlantic", AL: "Mid-Atlantic",
+};
 
-  if (parts.length < 2) return { state: "", region: "" };
+const SOUTH_AMERICA = new Set(["Chile", "Argentina"]);
 
-  // US states → Indy Pass region
-  const usRegions: Record<string, string> = {
-    // West
-    WA: "West", OR: "West", CA: "West", AK: "West", HI: "West", NV: "West",
-    // Rockies
-    MT: "Rockies", ID: "Rockies", WY: "Rockies", CO: "Rockies", UT: "Rockies",
-    NM: "Rockies", AZ: "Rockies", SD: "Rockies", ND: "Rockies",
-    // Midwest
-    MN: "Midwest", WI: "Midwest", MI: "Midwest", IL: "Midwest", IA: "Midwest",
-    MO: "Midwest", IN: "Midwest", OH: "Midwest", NE: "Midwest", KS: "Midwest",
-    // East
-    ME: "East", NH: "East", VT: "East", MA: "East", CT: "East", RI: "East",
-    NY: "East", NJ: "East",
-    // Mid-Atlantic
-    PA: "Mid-Atlantic", MD: "Mid-Atlantic", DE: "Mid-Atlantic", VA: "Mid-Atlantic",
-    WV: "Mid-Atlantic", NC: "Mid-Atlantic", SC: "Mid-Atlantic", GA: "Mid-Atlantic",
-    TN: "Mid-Atlantic", KY: "Mid-Atlantic", AL: "Mid-Atlantic",
-  };
+/** Region for a parsed location, used when a resort is on no region page. */
+function regionFromLocation({ state, country }: ParsedLocation): string {
+  if (country === "USA") return US_REGIONS[state] ?? "";
+  if (country === "Canada" || country === "Japan") return country;
+  if (SOUTH_AMERICA.has(country)) return "South America";
+  return country ? "Europe" : "";
+}
 
-  // Canadian provinces
-  const canadianProvinces = new Set([
-    "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT",
-  ]);
-
-  // Try to find a US state or Canadian province code in the parts
-  // Check from right to left, skipping country if present
-  const country = parts[parts.length - 1];
-
-  // Explicit country suffix
-  if (country === "USA" || country === "US") {
-    const state = parts.length >= 3 ? parts[parts.length - 2] : parts[0];
-    return { state, region: usRegions[state] || "USA" };
-  }
-  if (country === "Canada" || country === "CA") {
-    const province = parts.length >= 3 ? parts[parts.length - 2] : parts[0];
-    return { state: province, region: "Canada" };
-  }
-  if (country === "Japan" || country === "JP") {
-    const prefecture = parts.length >= 3 ? parts[parts.length - 2] : "";
-    return { state: prefecture, region: "Japan" };
-  }
-  if (["Chile", "Argentina", "CL", "AR"].includes(country)) {
-    const state = parts.length >= 3 ? parts[parts.length - 2] : "";
-    return { state, region: "South America" };
-  }
-
-  // No country suffix — try to identify by state/province code
-  // "City, ST" format: last part is a 2-letter code
-  const lastPart = parts[parts.length - 1];
-  if (lastPart.length === 2) {
-    const code = lastPart.toUpperCase();
-    if (usRegions[code]) {
-      return { state: code, region: usRegions[code] };
-    }
-    if (canadianProvinces.has(code)) {
-      return { state: code, region: "Canada" };
-    }
-  }
-
-  // Second-to-last part might be state code when last part is country name
-  if (parts.length >= 3) {
-    const secondLast = parts[parts.length - 2];
-    if (secondLast.length === 2) {
-      const code = secondLast.toUpperCase();
-      if (usRegions[code]) {
-        return { state: code, region: usRegions[code] };
-      }
-      if (canadianProvinces.has(code)) {
-        return { state: code, region: "Canada" };
-      }
-    }
-  }
-
-  // Everything else → Europe (covers France, Austria, Spain, Switzerland, etc.)
-  return {
-    state: parts.length >= 3 ? parts[parts.length - 2] : country,
-    region: "Europe",
-  };
+function deriveStateAndRegion(
+  card: ResortCard,
+  regionMap: Map<string, string>
+): { state: string; region: string } {
+  const parsed = LOCATION_OVERRIDES[card.id] ?? parseLocation(card.location);
+  // Indy Pass lists Chile under "West"; keep it in its own region here.
+  const region = SOUTH_AMERICA.has(parsed.country)
+    ? "South America"
+    : regionMap.get(card.id) ?? regionFromLocation(parsed);
+  if (!parsed.state) console.warn(`  No state for ${card.id}: "${card.location}"`);
+  if (!region) console.warn(`  No region for ${card.id}: "${card.location}"`);
+  return { state: parsed.state, region };
 }
 
 function buildMountainSeeds(
   cards: ResortCard[],
-  details: Map<string, ResortDetail>
+  details: Map<string, ResortDetail>,
+  regionMap: Map<string, string>
 ): MountainSeed[] {
   return cards
     .map((card) => {
@@ -381,7 +382,7 @@ function buildMountainSeeds(
         webcamUrl: null,
         stats: null,
       };
-      const { state, region } = deriveStateAndRegion(card.location);
+      const { state, region } = deriveStateAndRegion(card, regionMap);
       const websiteUrl = detail.websiteUrl || "";
 
       return {
@@ -433,7 +434,8 @@ async function main() {
   const cards = await fetchListingPage();
   const details = await fetchAllDetails(cards);
 
-  const seeds = buildMountainSeeds(cards, details);
+  const regionMap = await fetchRegionMap();
+  const seeds = buildMountainSeeds(cards, details, regionMap);
 
   if (existsSync(OUTPUT_PATH)) {
     const previous: MountainSeed[] = JSON.parse(readFileSync(OUTPUT_PATH, "utf-8"));

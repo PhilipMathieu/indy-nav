@@ -22,6 +22,10 @@ const mountains: Mountain[] = (closingDatesRaw as Omit<Mountain, "lat" | "lon">[
   const seed = seedLookup.get(m.id);
   const located = {
     ...m,
+    // mountains.json is re-scraped weekly; closing-dates.json rows keep the
+    // region/state from when the pipeline last checked them.
+    region: seed?.region || m.region,
+    state: seed?.state || m.state,
     lat: seed?.lat ?? null,
     lon: seed?.lon ?? null,
     terrain: getTerrain(seed),
