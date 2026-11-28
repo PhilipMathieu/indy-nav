@@ -32,6 +32,7 @@ npx tsx scripts/fetch-closing-dates.ts         # Run pipeline (incremental)
 npx tsx scripts/fetch-closing-dates.ts --force # Re-check all mountains
 npx tsx scripts/cross-check-closing-dates.ts   # Report conflicts vs OnTheSnow
 npx tsx scripts/cross-check-closing-dates.ts --fix # Apply corrections
+npm test                                       # Unit tests (scripts/*.test.ts, node:test via tsx)
 npm run test:e2e                               # Build, then run Playwright responsive tests (phone/tablet/desktop)
 npx playwright test --trace off                # Re-run e2e tests against an existing out/ build
 ```
@@ -42,7 +43,7 @@ npx playwright test --trace off                # Re-run e2e tests against an exi
 - **Scripts are excluded from tsconfig** (`"exclude": ["node_modules", "scripts"]`) because they use AI SDK features (`tools` on `generateObject`) that don't typecheck cleanly but work at runtime.
 - **`.env.local`** holds `GOOGLE_GENERATIVE_AI_API_KEY`. Scripts load it via `dotenv` (`config({ path: ".env.local" })`), not Next.js auto-loading.
 - **IBM Carbon-inspired theme** — neutral grays, minimal decoration, 14px body, subtle border radius. See `globals.css` for the full token set.
-- **Data files live in `data/`**, not `src/`. `mountains.json` is scraped from indyskipass.com (`scripts/fetch-resorts.ts`); `closing-dates.json` holds the current season and is pipeline-generated; `archive/` holds earlier seasons.
+- **Data files live in `data/`**, not `src/`. `mountains.json` is scraped from indyskipass.com (`scripts/fetch-resorts.ts`): `region` comes from the site's per-region listing pages (Chile is moved to South America), and `state` is parsed from the card's free-form location line by `scripts/parse-location.ts` (US/Canada code, Japanese prefecture, else country; `LOCATION_OVERRIDES` covers cards with no usable location). The page prefers these over the copies in `closing-dates.json`; `closing-dates.json` holds the current season and is pipeline-generated; `archive/` holds earlier seasons.
 - **Seasons are never hard-coded.** Use `getSeason()` from `src/lib/season.ts` (rolls over on August 1). Every row in `closing-dates.json` carries a `season`; rows without one are 2025-26. Status (open / opening soon / closed / unknown) comes from `src/lib/status.ts`, shared by the table and map.
 - **GitHub Actions are pinned by full SHA** with version comments. Use Node.js 24 versions (v5/v6) of all actions.
 - **Static export** — the app uses `import closingDates from "../../data/closing-dates.json"`, not `readFileSync`. No Node.js APIs at runtime.

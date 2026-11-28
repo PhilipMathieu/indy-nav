@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Indy Nav — Closing Dates",
   description:
     "Unofficial closing date tracker for Indy Pass mountains. Plan your spring skiing.",
+  // Stop iOS Safari turning numbers in the table (dates, vertical, distances)
+  // into phone or address links.
+  formatDetection: { telephone: false, address: false, email: false },
 };
 
 export default function RootLayout({

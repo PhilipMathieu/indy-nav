@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "fetch-resorts": "tsx scripts/fetch-resorts.ts",
-    "test:e2e": "next build && playwright test"
+    "test:e2e": "next build && playwright test",
+    "test": "tsx --test scripts/*.test.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.60",
