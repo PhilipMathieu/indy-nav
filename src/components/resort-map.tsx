@@ -5,6 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Mountain, ResortStats } from "@/lib/types";
 import { getMountainStatus, STATUS_LABEL, type MountainStatus } from "@/lib/status";
+import type { LatLon } from "@/lib/geo";
 
 interface ResortMapProps {
   mountains: Mountain[];
@@ -12,6 +13,7 @@ interface ResortMapProps {
   selectedRegions: string[];
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
+  userLocation?: LatLon | null;
 }
 
 function buildGeoJSON(
@@ -100,6 +102,7 @@ export function ResortMap({
   selectedRegions,
   selectedMountainId,
   onSelectMountain,
+  userLocation = null,
 }: ResortMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
@@ -247,7 +250,9 @@ export function ResortMap({
       source.setData(geojson);
     }
 
-    // Fit map to visible features
+    // Fit map to visible features, unless it is centred on the viewer
+    // ("Near me"); clearing the location fits again.
+    if (userLocation) return;
     const coords = geojson.features.map(
       (f) => f.geometry.coordinates as [number, number]
     );
@@ -258,7 +263,24 @@ export function ResortMap({
       bounds.extend(c);
     }
     map.fitBounds(bounds, { padding: 40, maxZoom: 10, duration: 1000 });
-  }, [geojson]);
+  }, [geojson, userLocation]);
+
+  // "You are here" dot for the Near me option; recentres on it.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !userLocation) return;
+    const el = document.createElement("div");
+    el.setAttribute("aria-label", "Your location");
+    el.style.cssText =
+      "width:14px;height:14px;border-radius:50%;background:#161616;border:3px solid #fff;box-shadow:0 0 0 1px #161616";
+    const marker = new maplibregl.Marker({ element: el })
+      .setLngLat([userLocation.lon, userLocation.lat])
+      .addTo(map);
+    map.flyTo({ center: [userLocation.lon, userLocation.lat], zoom: 5.5, duration: 1000 });
+    return () => {
+      marker.remove();
+    };
+  }, [userLocation]);
 
   return (
     <div

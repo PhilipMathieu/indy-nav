@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ClosingDatesTable } from "@/components/closing-dates-table";
 import { ResortMap } from "@/components/resort-map";
 import type { Mountain, MountainSeed } from "@/lib/types";
+import type { LatLon } from "@/lib/geo";
 import { getSeason, LEGACY_SEASON_LABEL } from "@/lib/season";
 import closingDatesRaw from "../../data/closing-dates.json";
 import mountainSeedsRaw from "../../data/mountains.json";
@@ -27,6 +28,7 @@ export default function Home() {
   const [selectedMountainId, setSelectedMountainId] = useState<string | null>(null);
   const [asOfDate, setAsOfDate] = useState<Date | undefined>(undefined);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [userLocation, setUserLocation] = useState<LatLon | null>(null);
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8">
@@ -44,6 +46,7 @@ export default function Home() {
         selectedRegions={selectedRegions}
         selectedMountainId={selectedMountainId}
         onSelectMountain={setSelectedMountainId}
+        userLocation={userLocation}
       />
       <ClosingDatesTable
         mountains={mountains}
@@ -53,6 +56,8 @@ export default function Home() {
         onSelectedRegionsChange={setSelectedRegions}
         selectedMountainId={selectedMountainId}
         onSelectMountain={setSelectedMountainId}
+        userLocation={userLocation}
+        onUserLocationChange={setUserLocation}
       />
       <footer className="mt-12 border-t pt-6 text-xs text-muted-foreground space-y-2">
         <p className="font-medium text-foreground">How it works</p>

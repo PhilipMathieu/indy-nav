@@ -19,6 +19,8 @@ import {
 import { columns, type MountainRow } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
+import { NearMe } from "@/components/near-me";
+import { distanceMiles, type LatLon } from "@/lib/geo";
 import type { Mountain } from "@/lib/types";
 import { getMountainStatus, groupAndSort, sortWithinStatus } from "@/lib/status";
 
@@ -30,6 +32,8 @@ interface ClosingDatesTableProps {
   onSelectedRegionsChange: (regions: string[]) => void;
   selectedMountainId: string | null;
   onSelectMountain: (id: string | null) => void;
+  userLocation: LatLon | null;
+  onUserLocationChange: (location: LatLon | null) => void;
 }
 
 export function ClosingDatesTable({
@@ -40,6 +44,8 @@ export function ClosingDatesTable({
   onSelectedRegionsChange,
   selectedMountainId,
   onSelectMountain,
+  userLocation,
+  onUserLocationChange,
 }: ClosingDatesTableProps) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const rowRefs = React.useRef<Map<string, HTMLTableRowElement>>(new Map());
@@ -51,8 +57,21 @@ export function ClosingDatesTable({
       selectedRegions.length === 0
         ? mountains
         : mountains.filter((m) => selectedRegions.includes(m.region));
-    return inRegion.map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
-  }, [mountains, selectedRegions, referenceDate]);
+    return inRegion.map((m) => ({
+      ...m,
+      status: getMountainStatus(m, referenceDate),
+      distanceMi:
+        userLocation && m.lat != null && m.lon != null
+          ? distanceMiles(userLocation, { lat: m.lat, lon: m.lon })
+          : null,
+    }));
+  }, [mountains, selectedRegions, referenceDate, userLocation]);
+
+  // Sharing a location sorts nearest first; clearing it drops that sort.
+  const handleUserLocationChange = (location: LatLon | null) => {
+    onUserLocationChange(location);
+    setSorting(location ? [{ id: "distance", desc: false }] : []);
+  };
 
   // Numeric columns that declare `meta.statusSortValue` are sorted here,
   // inside the status groups, rather than by TanStack across the table.
@@ -77,7 +96,12 @@ export function ClosingDatesTable({
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
     manualSorting: statusSort !== null,
-    state: { sorting },
+    // "distance" is sort-only. Last Updated makes way for the miles shown
+    // beside the state so the table keeps its width.
+    state: {
+      sorting,
+      columnVisibility: { distance: false, lastUpdated: userLocation === null },
+    },
   });
 
   // Scroll to selected mountain when it changes
@@ -94,6 +118,7 @@ export function ClosingDatesTable({
       <div className="flex flex-wrap items-start gap-4">
         <DateFilter date={asOfDate} onDateChange={onAsOfDateChange} />
         <RegionFilter selected={selectedRegions} onSelectionChange={onSelectedRegionsChange} />
+        <NearMe location={userLocation} onLocationChange={handleUserLocationChange} />
       </div>
       <div className="rounded-md border">
         <Table>

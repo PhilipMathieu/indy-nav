@@ -13,8 +13,11 @@ import { formatDistanceToNow, format, parseISO } from "date-fns";
 import type { Confidence, Mountain, ResortStats } from "@/lib/types";
 import { STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
-/** A table row: a mountain plus its status on the "as of" date. */
-export type MountainRow = Mountain & { status: MountainStatus };
+/**
+ * A table row: a mountain plus its status on the "as of" date and, once the
+ * viewer has shared a location, its straight-line distance in miles.
+ */
+export type MountainRow = Mountain & { status: MountainStatus; distanceMi?: number | null };
 
 declare module "@tanstack/react-table" {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -188,6 +191,30 @@ export const columns: ColumnDef<MountainRow>[] = [
   {
     accessorKey: "state",
     header: ({ column }) => <SortHeader label="State" column={column} />,
+    cell: ({ row }) => {
+      const miles = row.original.distanceMi;
+      if (miles == null) return row.original.state;
+      // With miles alongside, long state values ("Lake Tahoe") truncate so
+      // the table keeps its width.
+      return (
+        <span className="flex items-baseline whitespace-nowrap">
+          <span className="max-w-[5.5rem] truncate" title={row.original.state}>
+            {row.original.state}
+          </span>
+          <span className="ml-1 text-muted-foreground tabular-nums" title="Straight-line distance">
+            {row.original.state ? "· " : ""}
+            {Math.round(miles).toLocaleString("en-US")} mi
+          </span>
+        </span>
+      );
+    },
+  },
+  {
+    // Sort-only: "Near me" sorts by this, and the miles show in the State
+    // cell so the table doesn't grow a column. Always hidden.
+    id: "distance",
+    accessorFn: (row) => row.distanceMi ?? null,
+    meta: { statusSortValue: (row) => row.distanceMi },
   },
   {
     accessorKey: "status",
