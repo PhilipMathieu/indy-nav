@@ -1,0 +1,33 @@
+name: Deploy Site
+
+# Fast path for code and design changes: rebuild and publish Pages without
+# running the Gemini data pipeline. Runs on pushes to main that touch anything
+# the static build reads, or on demand from the Actions tab.
+#
+# Data commits made by the scheduled workflows use GITHUB_TOKEN, which does
+# not trigger push workflows, so those workflows deploy on their own.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "public/**"
+      - "data/**"
+      - "package.json"
+      - "package-lock.json"
+      - "next.config.ts"
+      - "postcss.config.mjs"
+      - "tsconfig.json"
+      - "components.json"
+      - ".github/workflows/deploy.yml"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy-pages.yml
