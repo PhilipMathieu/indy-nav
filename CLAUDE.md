@@ -82,8 +82,10 @@ GitHub Pages (deployed by Actions)
 
 - GitHub Pages at `philipmathieu.github.io/indy-nav`
 - `NEXT_PUBLIC_BASE_PATH=/indy-nav` is set during CI build
-- Daily GitHub Action at 6am ET runs the pipeline, commits if anything in `data/` changed, rebuilds Pages
-- Weekly GitHub Action (Mondays) refreshes `mountains.json` from indyskipass.com; it refuses to shrink the list by more than 20% unless run with `--force`
+- `.github/workflows/deploy-pages.yml` is the one reusable build-and-deploy workflow (with a `.next/cache` cache); every deploy goes through it
+- `deploy.yml` deploys on pushes to main that touch the site (`src/`, `public/`, `data/`, package or Next/Tailwind config), or manually — no pipeline run, a couple of minutes. Use it to ship cosmetic changes
+- Daily GitHub Action at 6am ET runs the pipeline, commits if anything in `data/` changed, then calls `deploy-pages.yml`
+- Weekly GitHub Action (Mondays) refreshes `mountains.json` from indyskipass.com and deploys if it changed (bot pushes with `GITHUB_TOKEN` don't trigger `deploy.yml`); it refuses to shrink the list by more than 20% unless run with `--force`
 - Both data workflows share a concurrency group so their commits to main don't collide
-- Manual trigger available via `workflow_dispatch`
+- Manual trigger available via `workflow_dispatch` on all three (`deploy.yml` for a site-only redeploy)
 - API key stored as repo secret `GOOGLE_GENERATIVE_AI_API_KEY`

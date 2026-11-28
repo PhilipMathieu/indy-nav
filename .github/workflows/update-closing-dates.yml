@@ -66,44 +66,7 @@ jobs:
           git pull --rebase origin main
           git push
 
-  build:
-    needs: update-data
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
-        with:
-          ref: main # Ensure we get any commits from update-data
-
-      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
-        with:
-          node-version: 22
-          cache: npm
-
-      - run: npm ci
-
-      - name: Build static site
-        env:
-          NEXT_PUBLIC_BASE_PATH: /indy-nav
-        run: npx next build
-
-      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
-
-      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
-        with:
-          path: out
-
-  # Deploy runs in its own job, as in GitHub's Pages starter workflows.
-  # Calling deploy-pages in the same job right after upload-pages-artifact
-  # races the artifact service: the upload finalizes, but ListArtifacts can
-  # still return 0 a few hundred ms later, and deploy-pages does not retry
-  # ("No artifacts named github-pages were found for this workflow run").
+  # Deploys on every run, as before, whether or not the data changed.
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5
+    needs: update-data
+    uses: ./.github/workflows/deploy-pages.yml
