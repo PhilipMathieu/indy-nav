@@ -71,3 +71,34 @@ export function groupAndSort<T extends Mountain>(
 
   return [...groups.open, ...groups["opening-soon"], ...groups.unknown, ...groups.closed];
 }
+
+const STATUS_RANK: Record<MountainStatus, number> = {
+  open: 0,
+  "opening-soon": 1,
+  unknown: 2,
+  closed: 3,
+};
+
+/**
+ * Sort by a number while keeping the status groups in place: open first,
+ * then opening soon, unknown and closed. Within each group rows go by
+ * `value` (descending when `desc`), with missing values last. This is what
+ * makes "biggest mountain open on Dec 23" or "nearest open mountain" read
+ * straight off the top of the table.
+ */
+export function sortWithinStatus<T extends { status: MountainStatus; name: string }>(
+  rows: T[],
+  value: (row: T) => number | null | undefined,
+  desc: boolean
+): T[] {
+  return [...rows].sort((a, b) => {
+    const rank = STATUS_RANK[a.status] - STATUS_RANK[b.status];
+    if (rank !== 0) return rank;
+    const x = value(a);
+    const y = value(b);
+    if (x == null && y == null) return a.name.localeCompare(b.name);
+    if (x == null) return 1;
+    if (y == null) return -1;
+    return desc ? y - x : x - y;
+  });
+}

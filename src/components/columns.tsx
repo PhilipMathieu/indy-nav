@@ -1,6 +1,6 @@
 "use client";
 
-import { ColumnDef, type Row } from "@tanstack/react-table";
+import { ColumnDef, type Row, type RowData } from "@tanstack/react-table";
 import { ArrowUpDown, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +15,17 @@ import { STATUS_LABEL, type MountainStatus } from "@/lib/status";
 
 /** A table row: a mountain plus its status on the "as of" date. */
 export type MountainRow = Mountain & { status: MountainStatus };
+
+declare module "@tanstack/react-table" {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface ColumnMeta<TData extends RowData, TValue> {
+    /**
+     * Numeric columns set this to sort inside the status groups (open
+     * first) instead of across the whole table. See `sortWithinStatus`.
+     */
+    statusSortValue?: (row: TData) => number | null | undefined;
+  }
+}
 
 const confidenceVariant: Record<Confidence, "default" | "secondary" | "destructive"> = {
   high: "default",
@@ -32,14 +43,18 @@ const statusClass: Record<MountainStatus, string> = {
 function SortHeader({
   label,
   column,
+  descFirst = false,
 }: {
   label: string;
   column: { toggleSorting: (desc?: boolean) => void; getIsSorted: () => false | "asc" | "desc" };
+  /** Sort descending on the first click (e.g. biggest first). */
+  descFirst?: boolean;
 }) {
+  const sorted = column.getIsSorted();
   return (
     <Button
       variant="ghost"
-      onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+      onClick={() => column.toggleSorting(sorted ? sorted === "asc" : descFirst)}
     >
       {label}
       <ArrowUpDown className="ml-2 h-4 w-4" />

@@ -20,7 +20,7 @@ import { columns, type MountainRow } from "@/components/columns";
 import { DateFilter } from "@/components/date-filter";
 import { RegionFilter } from "@/components/region-filter";
 import type { Mountain } from "@/lib/types";
-import { getMountainStatus, groupAndSort } from "@/lib/status";
+import { getMountainStatus, groupAndSort, sortWithinStatus } from "@/lib/status";
 
 interface ClosingDatesTableProps {
   mountains: Mountain[];
@@ -54,10 +54,21 @@ export function ClosingDatesTable({
     return inRegion.map((m) => ({ ...m, status: getMountainStatus(m, referenceDate) }));
   }, [mountains, selectedRegions, referenceDate]);
 
+  // Numeric columns that declare `meta.statusSortValue` are sorted here,
+  // inside the status groups, rather than by TanStack across the table.
+  const statusSort = React.useMemo(() => {
+    const active = sorting[0];
+    if (!active) return null;
+    const column = columns.find((c) => c.id === active.id);
+    const value = column?.meta?.statusSortValue;
+    return value ? { value, desc: active.desc } : null;
+  }, [sorting]);
+
   const sortedData = React.useMemo(() => {
+    if (statusSort) return sortWithinStatus(filteredData, statusSort.value, statusSort.desc);
     if (sorting.length > 0) return filteredData;
     return groupAndSort(filteredData, referenceDate);
-  }, [filteredData, referenceDate, sorting]);
+  }, [filteredData, referenceDate, sorting, statusSort]);
 
   const table = useReactTable({
     data: sortedData,
@@ -65,6 +76,7 @@ export function ClosingDatesTable({
     getCoreRowModel: getCoreRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
+    manualSorting: statusSort !== null,
     state: { sorting },
   });
 
