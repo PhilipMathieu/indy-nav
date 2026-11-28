@@ -32,6 +32,8 @@ npx tsx scripts/fetch-closing-dates.ts         # Run pipeline (incremental)
 npx tsx scripts/fetch-closing-dates.ts --force # Re-check all mountains
 npx tsx scripts/cross-check-closing-dates.ts   # Report conflicts vs OnTheSnow
 npx tsx scripts/cross-check-closing-dates.ts --fix # Apply corrections
+npm run test:e2e                               # Build, then run Playwright responsive tests (phone/tablet/desktop)
+npx playwright test --trace off                # Re-run e2e tests against an existing out/ build
 ```
 
 ## Important Conventions
@@ -44,6 +46,7 @@ npx tsx scripts/cross-check-closing-dates.ts --fix # Apply corrections
 - **Seasons are never hard-coded.** Use `getSeason()` from `src/lib/season.ts` (rolls over on August 1). Every row in `closing-dates.json` carries a `season`; rows without one are 2025-26. Status (open / opening soon / closed / unknown) comes from `src/lib/status.ts`, shared by the table and map.
 - **GitHub Actions are pinned by full SHA** with version comments. Use Node.js 24 versions (v5/v6) of all actions.
 - **Static export** — the app uses `import closingDates from "../../data/closing-dates.json"`, not `readFileSync`. No Node.js APIs at runtime.
+- **Mobile layout** — below Tailwind's `sm` breakpoint (640px) the table is replaced by a card list (`data-testid="mountain-list"`) with a "Sort by" select; filters stack and use 36px+ tap targets. Columns can carry `meta.className` for responsive visibility (e.g. Last Updated is `lg`+ only). `e2e/responsive.spec.ts` checks for horizontal overflow and layout on phone, tablet, and desktop viewports and runs on every PR (`.github/workflows/e2e.yml`).
 - **Map + table shared state** — filter state (date, regions) and selection state are lifted to `page.tsx` (client component) and passed down to both `ResortMap` and `ClosingDatesTable`. The map merges lat/lon from `mountains.json` at the component level.
 
 ## Data Flow
